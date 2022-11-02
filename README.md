@@ -2,7 +2,7 @@
 
 # Awesome Nexa
 
-### https://nexa.org
+### ↳ https://nexa.org
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
