@@ -6,9 +6,9 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of Nexa resources and projects.
+A "community" curated list of Nexa resources and projects for all levels of enthusiasts.
 
-If you want to add to the list, [here's how](CONTRIBUTING.md).
+If you would like to add to this list, [__here's how__](CONTRIBUTING.md).
 
 
 ## List of content
