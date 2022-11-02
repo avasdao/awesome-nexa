@@ -9,39 +9,33 @@
 A "community" curated list of Nexa resources and projects for all levels of enthusiasts.
 
 If you would like to add to _(or update)_ this list, [__here's how__](CONTRIBUTING.md).
+Pull requests on interesting tools/projects/resources are more than welcome.
 
 
-## List of content
+## Table of Contents
 
-- [Utilities](#utilities)
-- [Blockchain API and Web services](#blockchain-api-and-web-services)
-- [Wallets API](#wallets-api)
-- [Open Source wallets](#open-source-wallets)
+- [Official Sites](#official-sites)
+- [Non-official Sites](#non-official-sites)
 - [Blockchain Explorers](#blockchain-explorers)
-- [C++ Libraries](#c-libraries)
-- [JavaScript Libraries](#javascript-libraries)
-- [PHP Libraries](#php-libraries)
-- [Ruby Libraries](#ruby-libraries)
-- [Python Libraries](#python-libraries)
-- [Java Libraries](#java-libraries)
-- [Scala Libraries](#scala-libraries)
-- [.Net Libraries](#net-libraries)
+- [Libraries](#libraries)
+  - [C++ Libraries](#c-libraries)
+  - [JavaScript Libraries](#javascript-libraries)
+  - [PHP Libraries](#php-libraries)
+  - [Ruby Libraries](#ruby-libraries)
+  - [Python Libraries](#python-libraries)
+  - [Java Libraries](#java-libraries)
 - [Playgrounds](#playgrounds)
-- [Blockchain dump](#blockchain-dump)
-- [Full nodes](#full-nodes)
-- [Read](#read)
-- [Course](#course)
-- [Additional Resources](#additional-resources)
+- [Related Projects](#related-projects)
 
 
-## Official sites
+## Official Sites
 
 - [Homepage](https://nexa.org/)
 - [Matrix group](https://matrix.to/#/#nexacoin:matrix.org) (almost all discussion happens here)
 - [Telegram group](https://discord.gg/JGEqqmS) (almost all discussion happens here)
 
 
-## Non-official sites
+## Non-official Sites
 
 - [Wiki](https://nexa.wiki/)
 
@@ -55,7 +49,7 @@ If you would like to add to _(or update)_ this list, [__here's how__](CONTRIBUTI
 - [Forum]()
 
 
-## Block explorers
+## Block Explorers
 
 - [Nexa Explorer (explorer.nexa.org)](https://explorer.nexa.org/)
 
@@ -108,7 +102,7 @@ If you would like to add to _(or update)_ this list, [__here's how__](CONTRIBUTI
 - [What is Nexa?]()
 
 
-## Related projects
+## Related Projects
 
 - [Bitcoin](https://bitcoin.org) Version 1.0
 - [Bitcoin Cash](https://bitcoincash.org) Version 2.0
