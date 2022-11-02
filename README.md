@@ -8,27 +8,13 @@ A curated list of Nexa resources and projects.
 
 If you want to add to the list, [here's how](CONTRIBUTING.md).
 
-## Main sites
+## Official sites
 - [Homepage](https://nexa.org/)
 - [Matrix group](https://matrix.to/#/#nexacoin:matrix.org) (almost all discussion happens here)
 - [Telegram group](https://discord.gg/JGEqqmS) (almost all discussion happens here)
+
+## Non-official sites
 - [Wiki](https://nexa.wiki/)
-
-## Faucets
-- [TBD]()
-
-## Articles and explanations
-- [Official whitepaper]()
-
-## Videos
-- [What is Nexa?]()
-
-## Trackers
-- [CoinMarketCap]()
-- [CoinGecko]()
-
-## Block explorers
-- [explorer.nexa.org](https://explorer.nexa.org/)
 
 ## Social media
 - [Twitter](https://twitter.com/nexamoney)
@@ -37,16 +23,22 @@ If you want to add to the list, [here's how](CONTRIBUTING.md).
 - [Instagram](https://www.instagram.com/nexacoin/)
 - [Forum]()
 
+## Block explorers
+- [explorer.nexa.org](https://explorer.nexa.org/)
+
+## Faucets
+- [TBD]()
+
+## Trackers
+- [CoinMarketCap]()
+- [CoinGecko]()
+
 ## Exchanges
 - ### Centralized
     - [MERCATOX]()
 - ### Decentralized
     - [Uniswap]()
     - [Shiftly](https://shiftly.finance/)
-
-## Related projects
-- [Bitcoin](https://bitcoin.org) Version 1.0
-- [Bitcoin Cash](https://bitcoincash.org) Version 2.0
 
 ## Mining
 - ### Guides
@@ -61,6 +53,16 @@ If you want to add to the list, [here's how](CONTRIBUTING.md).
     - [SoliditySHA3Miner GitHub repo](https://github.com/lwYeo/SoliditySHA3Miner)
 - ### Pools
     - [Nexa Rocks!](https://nexa.rocks/)
+
+## Articles and explanations
+- [Official whitepaper]()
+
+## Videos
+- [What is Nexa?]()
+
+## Related projects
+- [Bitcoin](https://bitcoin.org) Version 1.0
+- [Bitcoin Cash](https://bitcoincash.org) Version 2.0
 
 ## Misc
 - [TBD]()
