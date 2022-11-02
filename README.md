@@ -11,6 +11,29 @@ A curated list of Nexa resources and projects.
 If you want to add to the list, [here's how](CONTRIBUTING.md).
 
 
+## List of content
+
+- [Utilities](#utilities)
+- [Blockchain API and Web services](#blockchain-api-and-web-services)
+- [Wallets API](#wallets-api)
+- [Open Source wallets](#open-source-wallets)
+- [Blockchain Explorers](#blockchain-explorers)
+- [C++ Libraries](#c-libraries)
+- [JavaScript Libraries](#javascript-libraries)
+- [PHP Libraries](#php-libraries)
+- [Ruby Libraries](#ruby-libraries)
+- [Python Libraries](#python-libraries)
+- [Java Libraries](#java-libraries)
+- [Scala Libraries](#scala-libraries)
+- [.Net Libraries](#net-libraries)
+- [Playgrounds](#playgrounds)
+- [Blockchain dump](#blockchain-dump)
+- [Full nodes](#full-nodes)
+- [Read](#read)
+- [Course](#course)
+- [Additional Resources](#additional-resources)
+
+
 ## Official sites
 
 - [Homepage](https://nexa.org/)
