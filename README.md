@@ -1,3 +1,5 @@
+![Nexa Banner](banner.png)
+
 # Awesome Nexa
 
 ### https://nexa.org
