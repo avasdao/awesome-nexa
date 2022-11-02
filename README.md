@@ -8,7 +8,7 @@
 
 A "community" curated list of Nexa resources and projects for all levels of enthusiasts.
 
-If you would like to add to this list, [__here's how__](CONTRIBUTING.md).
+If you would like to add to _(or update)_ this list, [__here's how__](CONTRIBUTING.md).
 
 
 ## List of content
