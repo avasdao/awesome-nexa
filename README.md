@@ -1,4 +1,4 @@
-![Nexa Banner](banner.png)
+![Nexa Banner](assets/banner.png)
 
 # Awesome Nexa
 
