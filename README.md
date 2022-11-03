@@ -50,6 +50,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
   - [Swift](#swift)
 - [Articles and Explanations](#articles-and-explanations)
 - [Videos](#videos)
+- [Community](#community)
 - [Related Projects](#related-projects)
 - [Misc](#misc)
 
@@ -57,8 +58,10 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 ## Official Sites
 
 - [Homepage](https://nexa.org/)
-- [Matrix group](https://matrix.to/#/#nexacoin:matrix.org) (almost all discussion happens here)
-- [Telegram group](https://discord.gg/JGEqqmS) (almost all discussion happens here)
+- [Specification](https://spec.nexa.org/)
+- [Bitcoin Unlimited](https://www.bitcoinunlimited.info/)
+- [Matrix group](https://matrix.to/#/#nexacoin:matrix.org) _(almost all discussion happens here)_
+- [Telegram group](https://discord.gg/JGEqqmS) _(almost all discussion happens here)_
 - [Twitter](https://twitter.com/nexamoney)
 - [Reddit](https://www.reddit.com/r/Nexa/)
 - [YouTube](https://www.youtube.com/channel/UCH03nTnxs3TLmbSHtm54B1g)
@@ -73,7 +76,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Block Explorers
 
-- [Nexa Explorer (explorer.nexa.org)](https://explorer.nexa.org/)
+- [Nexa Explorer _(explorer.nexa.org)_](https://explorer.nexa.org/)
 
 
 ## Faucets
@@ -99,20 +102,21 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 ## Mining
 
 - ### Guides
-    - [TBD]()
+    - [Mining quick(ish) start](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/)
+    - [Nexa Rocks! Solo Mining](https://nexa.rocks/solo/)
 
 - ### Calculators
     - [minerstat](https://minerstat.com/coin/)
     - [CoinCalculators](https://www.coincalculators.io/)
     - [CoinToMine](https://cointomine.today/calculator/)
     - [CryptoRival](https://cryptorival.com/calcs/)
+    - [Nexa Rocks! Calculator](https://nexa.rocks/calculator/)
 
 - ### Software
-    - [COSMiC-v3 Bitbucket repo](https://bitbucket.org/LieutenantTofu/cosmic-v3/src/master/)
-    - [SoliditySHA3Miner GitHub repo](https://github.com/lwYeo/SoliditySHA3Miner)
+    - [Nexa Rocks! Software](https://nexa.rocks/software/)
 
 - ### Pools
-    - [Nexa Rocks!](https://nexa.rocks/)
+    - [Nexa Rocks! Mining Pool](https://nexa.rocks/pool/)
 
 
 ## Articles and Explanations
@@ -125,6 +129,11 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [What is Nexa?]()
 
 
+## Community
+
+- [TBD]()
+
+
 ## Related Projects
 
 - [Bitcoin (BTC)](https://bitcoin.org) Version 1.0
@@ -135,8 +144,17 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 - [TBD]()
 
----
+
+## Contributing
 
 Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
 
 Special thanks to everyone who forked or starred the repository ❤️
+
+---
+
+License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
+
+To the extent possible under law, [__Ava's DAO__](https://github.com/avasdao/) has waived all copyright and related or neighboring rights to __Awesome Nexa__. For the full license, see [LICENSE](LICENSE.md).
