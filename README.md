@@ -8,19 +8,19 @@
 ⚡ A curated list of awesome resources related to the <a href='https://nexa.org/'><strong>Nexa</strong></a> Blockchain.
 <br />
 <br />
-Nexa is an open-source, proof of work blockchain and smart contract computing platform.
+Nexa is an open-source, proof-of-work blockchain and smart contract computing platform.
 <br />
 <br />
-<a href="https://gitlab.com/nexa/nexa" target="_blank">
+<a href="https://gitlab.com/nexa/nexa">
 <img src="https://badgen.net/gitlab/last-commit/nexa/nexa/" /></a>
 &nbsp;&nbsp;
-<a href="https://gitlab.com/nexa/nexa" target="_blank">
+<a href="https://gitlab.com/nexa/nexa">
 <img src="https://badgen.net/gitlab/open-issues/nexa/nexa" /></a>
 &nbsp;&nbsp;
-<a href="https://gitlab.com/nexa/nexa" target="_blank">
+<a href="https://gitlab.com/nexa/nexa">
 <img src="https://badgen.net/npm/dm/bitcoinjs" /></a>
 &nbsp;&nbsp;
-<a href="https://gitlab.com/nexa/nexa" target="_blank">
+<a href="https://gitlab.com/nexa/nexa">
 <img src="https://img.shields.io/badge/License-CC--0-blue.svg" /></a>
 </div>
 
@@ -41,13 +41,13 @@ Nexa is an open-source, proof of work blockchain and smart contract computing pl
   - [Software](#software)
   - [Pools](#pools)
 - [Libraries](#libraries)
-  - [JavaScript Libraries](#javascript-libraries)
-  - [Rust Libraries](#rust-libraries)
-  - [Python Libraries](#python-libraries)
-  - [C++ Libraries](#cpp-libraries)
-  - [PHP Libraries](#php-libraries)
-  - [Java Libraries](#java-libraries)
-  - [Swift Libraries](#swift-libraries)
+  - [JavaScript](#javascript)
+  - [Rust](#rust)
+  - [Python](#python)
+  - [C++](#cpp)
+  - [PHP](#php)
+  - [Java](#java)
+  - [Swift](#swift)
 - [Articles and Explanations](#articles-and-explanations)
 - [Videos](#videos)
 - [Related Projects](#related-projects)
@@ -148,4 +148,4 @@ License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
-To the extent possible under law, [Ava's DAO](https://github.com/avasdao/) has waived all copyright and related or neighboring rights to `Awesome Nexa.` For the full license, see [LICENSE](LICENSE.md).
+To the extent possible under law, [__Ava's DAO__](https://github.com/avasdao/) has waived all copyright and related or neighboring rights to __Awesome Nexa__. For the full license, see [LICENSE](LICENSE.md).
