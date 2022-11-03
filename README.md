@@ -12,7 +12,7 @@ _If you would like to add to (or update) this list, pull requests on __interesti
 ## Table of Contents
 
 - [Official Sites](#official-sites)
-- [Non-official Sites](#non-official-sites)
+- [Featured Sites](#featured-sites)
 - [Blockchain Explorers](#blockchain-explorers)
 - [Faucets](#faucets)
 - [Trackers](#trackers)
@@ -49,7 +49,7 @@ _If you would like to add to (or update) this list, pull requests on __interesti
 - [Instagram](https://www.instagram.com/nexacoin/)
 
 
-## Non-official Sites
+## Featured Sites
 
 - [Wiki](https://nexa.wiki/)
 - [Forum]()
