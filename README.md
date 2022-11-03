@@ -5,10 +5,10 @@
 ### ↳ https://nexa.org
 
 <div align="center">
-⚡ A curated list of awesome resources related to the <a href='https://nexa.org/'><strong>Nexa</strong></a> Blockchain.
+⚡ A curated list of awesome resources related to the <a href='https://nexa.org/'><strong>Nexa</strong></a> blockchain.
 <br />
 <br />
-Nexa is an open-source, proof-of-work blockchain and smart contract computing platform.
+Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value system.
 <br />
 <br />
 <a href="https://gitlab.com/nexa/nexa">
@@ -127,8 +127,8 @@ Nexa is an open-source, proof-of-work blockchain and smart contract computing pl
 
 ## Related Projects
 
-- [Bitcoin](https://bitcoin.org) Version 1.0
-- [Bitcoin Cash](https://bitcoincash.org) Version 2.0
+- [Bitcoin (BTC)](https://bitcoin.org) Version 1.0
+- [Bitcoin Cash (BCH)](https://bitcoincash.org) Version 2.0
 
 
 ## Misc
