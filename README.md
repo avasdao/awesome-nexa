@@ -16,7 +16,12 @@ Pull requests on interesting tools/projects/resources are more than welcome.
 
 - [Official Sites](#official-sites)
 - [Non-official Sites](#non-official-sites)
+- [Social Media](#social-media)
 - [Blockchain Explorers](#blockchain-explorers)
+- [Faucets](#faucets)
+- [Trackers](#trackers)
+- [Exchanges](#exchanges)
+- [Mining](#mining)
 - [Libraries](#libraries)
   - [JavaScript Libraries](#javascript-libraries)
   - [Rust Libraries](#rust-libraries)
@@ -25,8 +30,10 @@ Pull requests on interesting tools/projects/resources are more than welcome.
   - [PHP Libraries](#php-libraries)
   - [Java Libraries](#java-libraries)
   - [Swift Libraries](#swift-libraries)
-- [Playgrounds](#playgrounds)
+- [Articles and Explanations](#articles-and-explanations)
+- [Videos](#videos)
 - [Related Projects](#related-projects)
+- [Misc](#misc)
 
 
 ## Official Sites
@@ -41,7 +48,7 @@ Pull requests on interesting tools/projects/resources are more than welcome.
 - [Wiki](https://nexa.wiki/)
 
 
-## Social media
+## Social Media
 
 - [Twitter](https://twitter.com/nexamoney)
 - [Reddit](https://www.reddit.com/r/Nexa/)
@@ -93,7 +100,7 @@ Pull requests on interesting tools/projects/resources are more than welcome.
     - [Nexa Rocks!](https://nexa.rocks/)
 
 
-## Articles and explanations
+## Articles and Explanations
 
 - [Official whitepaper]()
 
@@ -116,7 +123,7 @@ Pull requests on interesting tools/projects/resources are more than welcome.
 ---
 
 Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
-Created by Ava's DAO contributors.
+Created by Ava's DAO developers.
 
 ---
 
