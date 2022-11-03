@@ -4,9 +4,25 @@
 
 ### ↳ https://nexa.org
 
-### A community-curated list of Nexa resources and projects.
-
-_If you would like to add to (or update) this list, pull requests on __interesting tools/projects/resources__ are more than welcome. Here's a complete guide on [__How-to Contribute__](CONTRIBUTING.md)._
+<div align="center">
+⚡ A curated list of awesome resources related to the <a href='https://nexa.org/'><strong>Nexa</strong></a> Blockchain.
+<br />
+<br />
+Nexa is an open-source, proof of work blockchain and smart contract computing platform.
+<br />
+<br />
+<a href="https://gitlab.com/nexa/nexa" target="_blank">
+<img src="https://badgen.net/gitlab/last-commit/nexa/nexa/" /></a>
+&nbsp;&nbsp;
+<a href="https://gitlab.com/nexa/nexa" target="_blank">
+<img src="https://badgen.net/gitlab/open-issues/nexa/nexa" /></a>
+&nbsp;&nbsp;
+<a href="https://gitlab.com/nexa/nexa" target="_blank">
+<img src="https://badgen.net/npm/dm/bitcoinjs" /></a>
+&nbsp;&nbsp;
+<a href="https://gitlab.com/nexa/nexa" target="_blank">
+<img src="https://img.shields.io/badge/License-CC--0-blue.svg" /></a>
+</div>
 
 
 ## Table of Contents
@@ -119,15 +135,17 @@ _If you would like to add to (or update) this list, pull requests on __interesti
 
 - [TBD]()
 
+
+## Contributing
+
+Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
+
+Special thanks to everyone who forked or starred the repository ❤️
+
 ---
 
-Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
-Created by Ava's DAO developers.
+License
 
----
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
-### License
-
-[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Ava's DAO](https://github.com/avasdao/) has waived all copyright and related or neighboring rights to this work.
+To the extent possible under law, [Ava's DAO](https://github.com/avasdao/) has waived all copyright and related or neighboring rights to `Awesome Nexa.` For the full license, see [LICENSE](LICENSE.md).
