@@ -16,12 +16,17 @@ Pull requests on interesting tools/projects/resources are more than welcome.
 
 - [Official Sites](#official-sites)
 - [Non-official Sites](#non-official-sites)
-- [Social Media](#social-media)
 - [Blockchain Explorers](#blockchain-explorers)
 - [Faucets](#faucets)
 - [Trackers](#trackers)
 - [Exchanges](#exchanges)
+  - [Centralized](#centralized)
+  - [Decentralized](#decentralized)
 - [Mining](#mining)
+  - [Guides](#guides)
+  - [Calculators](#calculators)
+  - [Software](#software)
+  - [Pools](#pools)
 - [Libraries](#libraries)
   - [JavaScript Libraries](#javascript-libraries)
   - [Rust Libraries](#rust-libraries)
@@ -41,19 +46,15 @@ Pull requests on interesting tools/projects/resources are more than welcome.
 - [Homepage](https://nexa.org/)
 - [Matrix group](https://matrix.to/#/#nexacoin:matrix.org) (almost all discussion happens here)
 - [Telegram group](https://discord.gg/JGEqqmS) (almost all discussion happens here)
+- [Twitter](https://twitter.com/nexamoney)
+- [Reddit](https://www.reddit.com/r/Nexa/)
+- [YouTube](https://www.youtube.com/channel/UCH03nTnxs3TLmbSHtm54B1g)
+- [Instagram](https://www.instagram.com/nexacoin/)
 
 
 ## Non-official Sites
 
 - [Wiki](https://nexa.wiki/)
-
-
-## Social Media
-
-- [Twitter](https://twitter.com/nexamoney)
-- [Reddit](https://www.reddit.com/r/Nexa/)
-- [YouTube](https://www.youtube.com/channel/UCH03nTnxs3TLmbSHtm54B1g)
-- [Instagram](https://www.instagram.com/nexacoin/)
 - [Forum]()
 
 
@@ -83,6 +84,7 @@ Pull requests on interesting tools/projects/resources are more than welcome.
 
 
 ## Mining
+
 - ### Guides
     - [TBD]()
 
