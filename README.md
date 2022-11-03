@@ -1,15 +1,12 @@
 ![Nexa Banner](assets/banner.png)
 
-# Awesome Nexa
+# Awesome Nexa [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 ### ↳ https://nexa.org
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+### A community-curated list of Nexa resources and projects.
 
-A "community" curated list of Nexa resources and projects for all levels of enthusiasts.
-
-If you would like to add to _(or update)_ this list, [__here's how__](CONTRIBUTING.md).
-Pull requests on interesting tools/projects/resources are more than welcome.
+_If you would like to add to (or update) this list, pull requests on __interesting tools/projects/resources__ are more than welcome. Here's a complete guide on [__How-to Contribute__](CONTRIBUTING.md)._
 
 
 ## Table of Contents
