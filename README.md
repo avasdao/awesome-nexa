@@ -131,7 +131,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Community
 
-- [TBD]()
+- [Nexa OTC P2P Trading Chat](https://t.me/nexaP2Ptrading)
 
 
 ## Related Projects
