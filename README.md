@@ -1,4 +1,4 @@
-![Nexa Banner](assets/banner.png)
+![Nexa Banner](assets/ani-banner.gif)
 
 # Awesome Nexa [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
