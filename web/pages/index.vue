@@ -1,5 +1,9 @@
 <template>
-  <Tutorial />
+    <main>
+        <HeroView />
+        <BlogView />
+        <CommunityView />
+    </main>
 </template>
 
 <script>
