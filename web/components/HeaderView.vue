@@ -239,11 +239,12 @@
                                     <div class="w-1/2 bg-white"></div>
                                     <div class="w-1/2 bg-gray-50"></div>
                                 </div>
+
                                 <div class="relative mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
                                     <nav class="grid gap-y-10 bg-white px-4 py-8 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                                         <div>
                                             <h3 class="text-base font-medium text-gray-500">
-                                                Most Popular
+                                                Most Popular Places
                                             </h3>
 
                                             <ul role="list" class="mt-5 space-y-6">
@@ -424,6 +425,7 @@
                                                 </li>
                                             </ul>
                                         </div>
+
                                         <div class="mt-6 text-sm font-medium">
                                             <a href="javascript://" class="text-indigo-600 hover:text-indigo-500">
                                                 View all posts
@@ -437,8 +439,13 @@
                     </nav>
 
                     <div class="flex items-center md:ml-12">
-                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
-                        <a href="javascript://" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
+                        <a href="javascript://" class="text-lg font-medium text-gray-500 hover:text-gray-900">
+                            1M NEX/USD <span class="text-xl text-indigo-600 hover:text-indigo-500">$1.00</span>
+                        </a>
+
+                        <a href="javascript://" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
+                            Sign in
+                        </a>
                     </div>
                 </div>
             </div>
@@ -489,7 +496,10 @@
                                             />
                                         </svg>
                                     </div>
-                                    <div class="ml-4 text-base font-medium text-gray-900">Analytics</div>
+
+                                    <div class="ml-4 text-base font-medium text-gray-900">
+                                        Most Popular Places
+                                    </div>
                                 </a>
 
                                 <a href="javascript://" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
@@ -547,7 +557,7 @@
                 <div class="py-6 px-5">
                     <div class="grid grid-cols-2 gap-4">
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Pricing
+                            Social Media
                         </a>
 
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
@@ -572,10 +582,15 @@
                     </div>
 
                     <div class="mt-6">
-                        <a href="javascript://" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Sign up</a>
-                        <p class="mt-6 text-center text-base font-medium text-gray-500">
-                            Existing customer?
-                            <a href="javascript://" class="text-indigo-600 hover:text-indigo-500">Sign in</a>
+                        <a href="javascript://" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
+                            Sign in
+                        </a>
+
+                        <p class="mt-6 text-center text-xl font-medium text-gray-500">
+                            1M NEX/USD
+                            <a href="javascript://" class="text-xl text-indigo-600 hover:text-indigo-500">
+                                $1.00
+                            </a>
                         </p>
                     </div>
                 </div>

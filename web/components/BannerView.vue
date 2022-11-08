@@ -14,16 +14,24 @@
                                 />
                             </svg>
                         </span>
+
                         <p class="ml-3 truncate font-medium text-white">
-                            <span class="md:hidden">Nexa Roadmap Released! 👀</span>
-                            <span class="hidden md:inline">Big news! Nexa Core Developer Team has released their "Official" Roadmap 👀</span>
+                            <span class="md:hidden">
+                                Nexa Roadmap Released! 👀
+                            </span>
+
+                            <span class="hidden md:inline">
+                                Big news! Nexa Core Dev Team released their "Official" Roadmap 👀
+                            </span>
                         </p>
                     </div>
+
                     <div class="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
                         <a href="javascript://" class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-lg font-medium text-yellow-600 shadow-sm hover:bg-yellow-50">
-                            Open Roadmap
+                            Open Nexa Roadmap
                         </a>
                     </div>
+
                     <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
                         <button type="button" class="-mr-1 flex rounded-md p-2 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-white">
                             <span class="sr-only">Dismiss</span>
