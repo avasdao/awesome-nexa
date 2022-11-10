@@ -11,14 +11,14 @@
 Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value system.
 <br />
 <br />
+<a href="https://matrix.to/#/#nexacoin:matrix.org">
+<img src="https://img.shields.io/badge/matrix-%23nexacoin%3Amatrix.org-blue.svg" /></a>
+&nbsp;&nbsp;
 <a href="https://gitlab.com/nexa/nexa/-/commits/dev">
 <img src="https://badgen.net/gitlab/last-commit/nexa/nexa/" /></a>
 &nbsp;&nbsp;
 <a href="https://gitlab.com/nexa/nexa/-/issues">
 <img src="https://badgen.net/gitlab/open-issues/nexa/nexa" /></a>
-&nbsp;&nbsp;
-<a href="https://gitlab.com/nexa/nexa/-/releases">
-<img src="https://badgen.net/npm/dm/bitcoinjs" /></a>
 &nbsp;&nbsp;
 <a href="https://gitlab.com/nexa/nexa">
 <img src="https://img.shields.io/badge/License-CC--0-blue.svg" /></a>
