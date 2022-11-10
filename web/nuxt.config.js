@@ -40,6 +40,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    ['nuxt-matomo', { matomoUrl: '//matomo.avasdao.org/', siteId: 5 }],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
