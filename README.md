@@ -61,7 +61,8 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [Specification](https://spec.nexa.org/)
 - [Bitcoin Unlimited](https://www.bitcoinunlimited.info/)
 - [Matrix group](https://matrix.to/#/#nexacoin:matrix.org) _(almost all discussion happens here)_
-- [Telegram group](https://discord.gg/JGEqqmS) _(almost all discussion happens here)_
+- [Telegram group](https://t.me/nexacoin) _(almost all discussion happens here)_
+- [Discord channel](https://discord.gg/2yQNsZV6EJ) _(almost all discussion happens here)_
 - [Twitter](https://twitter.com/nexamoney)
 - [Reddit](https://www.reddit.com/r/Nexa/)
 - [YouTube](https://www.youtube.com/channel/UCH03nTnxs3TLmbSHtm54B1g)
@@ -93,40 +94,38 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 ## Exchanges
 
 - ### Centralized
-    - [TBD]()
+    - [Exbitron](https://www.exbitron.com/trading/nexausdt)
 
 - ### Decentralized
-    - [Uniswap]()
+    - [Nexa Swap](https://nexaswap.com)
 
 
 ## Mining
 
 - ### Guides
-    - [Mining quick(ish) start](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/)
-    - [Nexa Rocks! Solo Mining](https://nexa.rocks/solo/)
+    - [Solo Mining (CPU)](https://nexa.rocks/solo/)
+    - [Mining quick(ish) start (CPU)](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/)
 
 - ### Calculators
-    - [minerstat](https://minerstat.com/coin/)
-    - [CoinCalculators](https://www.coincalculators.io/)
-    - [CoinToMine](https://cointomine.today/calculator/)
-    - [CryptoRival](https://cryptorival.com/calcs/)
-    - [Nexa Rocks! Calculator](https://nexa.rocks/calculator/)
+    _TBD_
 
 - ### Software
-    - [Nexa Rocks! Software](https://nexa.rocks/software/)
+    - [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner/-/blob/main/doc/build-ubuntu.md)
 
 - ### Pools
-    - [Nexa Rocks! Mining Pool](https://nexa.rocks/pool/)
+    - [Pool137](https://nexapool.crypto137.com/)
+    - [Nexa Rocks!](https://nexa.rocks/pool/)
+    - [Rplant Pool](https://pool.rplant.xyz/)
 
 
 ## Articles and Explanations
 
-- [Official whitepaper]()
+- [Official Whitepaper]()
 
 
 ## Videos
 
-- [What is Nexa?]()
+- [Signature Scaling Via Hardware by Peter Rizun](https://www.youtube.com/watch?v=pDRCWcw5sAU)
 
 
 ## Community
