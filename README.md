@@ -110,7 +110,8 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
     _TBD_
 
 - ### Software
-    - [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner/-/blob/main/doc/build-ubuntu.md)
+    - [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner)
+    - [WildRig Multi](https://github.com/andru-kun/wildrig-multi)
 
 - ### Pools
     - [Pool137](https://nexapool.crypto137.com/)
