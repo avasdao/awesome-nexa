@@ -1,16 +1,39 @@
 <script setup>
 /* Import modules. */
 import numeral from 'numeral'
+import { ref } from 'vue'
 
-const ENDPOINT = 'https://www.exbitron.com/api/v2/peatio/public/markets/nexausdt/tickers'
-const { data: response } = await useFetch(ENDPOINT)
-// const nexUsd = ticker.value
-const ticker = response.value.ticker
-const last = ticker.last * 1000000.0
-const nexUsd = numeral(last).format('$0,0.00[00]')
-console.log('NEX/USD', nexUsd)
-// const json = JSON.parse(nexUsd)
-// nexUsd.value = json
+let nexUsd = ref(1.337)
+
+// const counter = useState('counter', () => Math.round(Math.random() * 1000))
+
+// , { baseURL: config.API_BASE_URL }
+setInterval(async () => {
+
+    const ENDPOINT = 'https://www.exbitron.com/api/v2/peatio/public/markets/nexausdt/tickers'
+    // const { data: response, pending, refresh, error } = await useFetch(ENDPOINT)
+    const response = await $fetch(ENDPOINT)
+        .catch(err => console.error)
+    console.log('RESPONSE', response)
+    // const nexUsd = ticker.value
+    const ticker = response.ticker
+    const last = ticker.last * 1000000.0
+    nexUsd.value = numeral(last).format('$0,0.00[00]')
+    console.log('NEX/USD', nexUsd)
+    // const json = JSON.parse(nexUsd)
+    // nexUsd.value = json
+
+}, 5000)
+
+// const response = await $fetch(
+//     `http://localhost:3333/documents`,
+//     {
+//       method: "POST",
+//       body: {
+//         data: values,
+//       },
+//     }
+//   )
 </script>
 
 
@@ -479,7 +502,8 @@ console.log('NEX/USD', nexUsd)
         From: "opacity-100 scale-100"
         To: "opacity-0 scale-95"
     -->
-        <div class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden">
+        <!-- <div class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"> -->
+        <div class="hidden">
             <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <div class="px-5 pt-5 pb-6 sm:pb-8">
                     <div class="flex items-center justify-between">
