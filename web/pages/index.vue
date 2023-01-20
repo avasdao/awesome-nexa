@@ -4,7 +4,7 @@
 
         <HeroView />
         <BlogView />
-        <CommunityView />
+        <TeamView />
 
         <BannerView />
     </main>
