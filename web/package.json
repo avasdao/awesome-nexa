@@ -9,10 +9,12 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "6.2.0",
+  "dependencies": {
+    "numeral": "2.0.6",
     "nuxt": "3.0.0",
     "vue-matomo": "4.2.0"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "6.2.0"
+  }
 }

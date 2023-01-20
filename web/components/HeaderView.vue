@@ -1,3 +1,19 @@
+<script setup>
+/* Import modules. */
+import numeral from 'numeral'
+
+const ENDPOINT = 'https://www.exbitron.com/api/v2/peatio/public/markets/nexausdt/tickers'
+const { data: response } = await useFetch(ENDPOINT)
+// const nexUsd = ticker.value
+const ticker = response.value.ticker
+const last = ticker.last * 1000000.0
+const nexUsd = numeral(last).format('$0,0.00[00]')
+console.log('NEX/USD', nexUsd)
+// const json = JSON.parse(nexUsd)
+// nexUsd.value = json
+</script>
+
+
 <template>
     <div class="relative bg-white">
         <div class="pointer-events-none absolute inset-0 z-30 shadow" aria-hidden="true"></div>
@@ -55,7 +71,8 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div class="absolute inset-x-0 top-full z-10 hidden transform bg-white shadow-lg md:block">
+                            <!-- <div class="absolute inset-x-0 top-full z-10 hidden transform bg-white shadow-lg md:block"> -->
+                            <div class="hidden">
                                 <div class="mx-auto grid max-w-7xl gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
                                     <a href="javascript://" class="-m-3 flex flex-col justify-between rounded-lg p-3 hover:bg-gray-50">
                                         <div class="flex md:h-full lg:flex-col">
@@ -234,7 +251,8 @@
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div class="absolute inset-x-0 top-full z-10 hidden transform shadow-lg md:block">
+                            <!-- <div class="absolute inset-x-0 top-full z-10 hidden transform shadow-lg md:block"> -->
+                            <div class="hidden">
                                 <div class="absolute inset-0 flex">
                                     <div class="w-1/2 bg-white"></div>
                                     <div class="w-1/2 bg-gray-50"></div>
@@ -440,7 +458,7 @@
 
                     <div class="flex items-center md:ml-12">
                         <a href="javascript://" class="text-lg font-medium text-gray-500 hover:text-gray-900">
-                            1M NEX/USD <span class="text-xl text-indigo-600 hover:text-indigo-500">$1.00</span>
+                            1M NEX/USD <span class="text-xl text-indigo-600 hover:text-indigo-500">{{nexUsd}}</span>
                         </a>
 
                         <a href="javascript://" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
@@ -598,9 +616,3 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    //
-}
-</script>

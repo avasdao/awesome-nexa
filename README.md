@@ -40,7 +40,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
   - [Calculators](#calculators)
   - [Software](#software)
   - [Pools](#pools)
-- [Libraries](#libraries)
+- [Development Tools](#development-tools)
   - [JavaScript](#javascript)
   - [Rust](#rust)
   - [Python](#python)
@@ -82,7 +82,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Faucets
 
-- [TBD]()
+- [Nexa Club](https://faucet.nexaclub.org/)
 
 
 ## Trackers
@@ -95,9 +95,13 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 - ### Centralized
     - [Exbitron](https://www.exbitron.com/trading/nexausdt)
+    - [Txbit](https://txbit.io/Trade/NEXA/USDT)
+
+- ### Instant
+    - [Nexa Swap](https://nexaswap.com)
 
 - ### Decentralized
-    - [Nexa Swap](https://nexaswap.com)
+    _TBD_
 
 
 ## Mining
@@ -114,9 +118,21 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
     - [WildRig Multi](https://github.com/andru-kun/wildrig-multi)
 
 - ### Pools
-    - [Pool137](https://nexapool.crypto137.com/)
-    - [Nexa Rocks!](https://nexa.rocks/pool/)
-    - [Rplant Pool](https://pool.rplant.xyz/)
+    - [Rplant Pool — GPU mining pool](https://pool.rplant.xyz/)
+    - [Pool137 — GPU mining pool](https://nexapool.crypto137.com/)
+    - [Nexa Rocks! — CPU mining pool](https://nexa.rocks/pool/)
+
+
+## Development Tools
+
+- ### JavaScript
+    - [NexaJS — Library and Software Development Kit (SDK)](https://nexajs.org/)
+
+- ### Python
+    - [PyNexa](https://pynexa.org/)
+
+- ### Rust
+    - [NexaRs](https://nexa.rs/)
 
 
 ## Articles and Explanations
@@ -149,7 +165,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
 
-Special thanks to everyone who forked or starred the repository ❤️
+Special thanks to everyone who forked and/or starred the repository ❤️
 
 ---
 

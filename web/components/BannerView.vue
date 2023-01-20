@@ -1,7 +1,7 @@
 <template>
     <main class="fixed inset-x-0 bottom-0 pb-2 sm:pb-5">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="rounded-lg bg-yellow-600 p-2 shadow-lg sm:p-3">
+            <div class="rounded-lg bg-yellow-600 border-2 border-yellow-800 p-2 shadow-lg sm:p-3">
                 <div class="flex flex-wrap items-center justify-between">
                     <div class="flex w-0 flex-1 items-center">
                         <span class="flex rounded-lg bg-yellow-800 p-2">
@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
-                        <a href="javascript://" class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-lg font-medium text-yellow-600 shadow-sm hover:bg-yellow-50">
+                        <a href="https://www.nexa.org/news/the-nexa-roadmap" target="_blank" class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-lg font-medium text-yellow-600 shadow-sm hover:bg-yellow-50">
                             Open Nexa Roadmap
                         </a>
                     </div>
