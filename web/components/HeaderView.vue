@@ -8,7 +8,7 @@ const nexUsd = ref(null)
 
 const ENDPOINT = 'https://www.exbitron.com/api/v2/peatio/public/markets/nexausdt/tickers'
 
-setInterval(async () => {
+const updateTicker = async () => {
     const response = await $fetch(ENDPOINT)
         .catch(err => console.error)
 
@@ -20,8 +20,12 @@ setInterval(async () => {
     const last = ticker.last * 1000000.0
 
     nexUsd.value = numeral(last).format('$0,0.00[00]')
-    console.log('NEX/USD', nexUsd)
-}, 5000) // TODO: Set as constant.
+    // console.log('NEX/USD', nexUsd)
+}
+
+updateTicker()
+
+setInterval(updateTicker, 30000) // TODO: Set as constant.
 </script>
 
 
@@ -61,7 +65,7 @@ setInterval(async () => {
                                 class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                 aria-expanded="false"
                             >
-                                <span>Solutions</span>
+                                <span>Featured</span>
                                 <!--
                     Heroicon name: mini/chevron-down
 

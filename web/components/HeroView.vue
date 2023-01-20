@@ -11,16 +11,23 @@
             </svg>
 
             <div class="relative">
-                <h2 class="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">A better way to send money</h2>
-                <p class="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in, accusamus quisquam.</p>
+                <h2 class="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                    A Peer-to-Peer Digital Value System
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
+                    Nexa is a 3rd-generation Bitcoin blockchain which launched on June 21st 2022 and is a financial blockchain of programmable, packetized value.
+                </p>
             </div>
 
             <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
                 <div class="relative">
-                    <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Transfer funds world-wide</h3>
+                    <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+                        3rd Generation Bitcoin Blockchain
+                    </h3>
+
                     <p class="mt-3 text-lg text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere. Totam,
-                        velit.
+                        Unlike Bitcoin, which attempts to be a "Digital Gold", or Bitcoin Cash which attempts to be "Digital Cash", or Ethereum which attempts to be a "World Computer", Nexa is a new blockchain which includes all the financial primitives to build the new global, Web3 economy.
                     </p>
 
                     <dl class="mt-10 space-y-10">
