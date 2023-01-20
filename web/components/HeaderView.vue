@@ -3,37 +3,25 @@
 import numeral from 'numeral'
 import { ref } from 'vue'
 
-let nexUsd = ref(1.337)
+/* Initialize NEX/USD holder. */
+const nexUsd = ref(null)
 
-// const counter = useState('counter', () => Math.round(Math.random() * 1000))
+const ENDPOINT = 'https://www.exbitron.com/api/v2/peatio/public/markets/nexausdt/tickers'
 
-// , { baseURL: config.API_BASE_URL }
 setInterval(async () => {
-
-    const ENDPOINT = 'https://www.exbitron.com/api/v2/peatio/public/markets/nexausdt/tickers'
-    // const { data: response, pending, refresh, error } = await useFetch(ENDPOINT)
     const response = await $fetch(ENDPOINT)
         .catch(err => console.error)
-    console.log('RESPONSE', response)
+
+        // console.log('RESPONSE', response)
     // const nexUsd = ticker.value
+
     const ticker = response.ticker
+
     const last = ticker.last * 1000000.0
+
     nexUsd.value = numeral(last).format('$0,0.00[00]')
     console.log('NEX/USD', nexUsd)
-    // const json = JSON.parse(nexUsd)
-    // nexUsd.value = json
-
-}, 5000)
-
-// const response = await $fetch(
-//     `http://localhost:3333/documents`,
-//     {
-//       method: "POST",
-//       body: {
-//         data: values,
-//       },
-//     }
-//   )
+}, 5000) // TODO: Set as constant.
 </script>
 
 
@@ -481,11 +469,11 @@ setInterval(async () => {
 
                     <div class="flex items-center md:ml-12">
                         <a href="javascript://" class="text-lg font-medium text-gray-500 hover:text-gray-900">
-                            1M NEX/USD <span class="text-xl text-indigo-600 hover:text-indigo-500">{{nexUsd}}</span>
+                            1M NEX/USD <span class="text-2xl text-indigo-600 hover:text-indigo-500">{{nexUsd}}</span>
                         </a>
 
                         <a href="javascript://" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
-                            Sign in
+                            Get Connected
                         </a>
                     </div>
                 </div>
