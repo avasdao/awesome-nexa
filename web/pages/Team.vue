@@ -54,5 +54,7 @@ import { ref } from 'vue'
             </div>
 
         </section>
+
+        <FooterView />
     </main>
 </template>

@@ -7,5 +7,7 @@
         <TeamView />
 
         <BannerView />
+
+        <FooterView />
     </main>
 </template>

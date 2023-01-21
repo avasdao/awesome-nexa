@@ -10,8 +10,8 @@ import { ref } from 'vue'
         <HeaderView />
 
         <div class="pt-10 flex justify-center">
-            <h1 class="text-5xl font-bold tracking-widest">
-                Blank Page
+            <h1 class="text-4xl font-bold tracking-widest">
+                Awesome Nexa Newsletter — January 2023
             </h1>
         </div>
 
