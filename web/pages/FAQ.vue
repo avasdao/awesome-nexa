@@ -32,6 +32,41 @@ import { ref } from 'vue'
                             <dd class="mt-2 text-base leading-7 text-gray-600">You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
                         </div>
 
+                        <div>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">What is Nexa?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Answer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
+                        </div>
+
+                        <div>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">How does Nexa compare to Bitcoin (BTC)?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Answer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
+                        </div>
+
+                        <div>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">How does Nexa compare to Bitcoin Cash (BCH)?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Answer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
+                        </div>
+
+                        <div>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">How does one acquire the NEX token?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Answer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
+                        </div>
+
+                        <div>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">What are the advantages of Nexa?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Answer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
+                        </div>
+
+                        <div>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">Is Nexa legal?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Answer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
+                        </div>
+
+                        <div>
+                            <dt class="text-base font-semibold leading-7 text-gray-900">Who created Nexa?</dt>
+                            <dd class="mt-2 text-base leading-7 text-gray-600">Answer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</dd>
+                        </div>
+
                         <!-- More questions... -->
                     </dl>
                 </div>

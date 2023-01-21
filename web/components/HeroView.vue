@@ -112,7 +112,7 @@
                         <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
                     </svg>
 
-                    <section class="ml-0 sm:ml-10 pl-10 pr-5 pt-5 pb-2 bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-200 rounded-lg shadow">
+                    <section class="mx-3 sm:ml-10 pl-10 pr-5 pt-5 pb-2 bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-200 rounded-lg shadow">
                         <h1 class="text-2xl text-indigo-500 font-medium">
                             Ready to Buy Nexa?
                         </h1>
