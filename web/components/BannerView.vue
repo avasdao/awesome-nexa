@@ -1,5 +1,13 @@
+<script setup>
+/* Import modules. */
+import { ref } from 'vue'
+
+/* Initialize showing flag. */
+const isShowing = ref(true)
+</script>
+
 <template>
-    <main class="fixed inset-x-0 bottom-0 pb-2 sm:pb-5">
+    <main v-if="isShowing" class="fixed inset-x-0 bottom-0 pb-2 sm:pb-5">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="rounded-lg bg-yellow-600 border-2 border-yellow-800 p-2 shadow-lg sm:p-3">
                 <div class="flex flex-wrap items-center justify-between">
@@ -33,7 +41,7 @@
                     </div>
 
                     <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
-                        <button type="button" class="-mr-1 flex rounded-md p-2 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-white">
+                        <button @click="isShowing = false" type="button" class="-mr-1 flex rounded-md p-2 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-white">
                             <span class="sr-only">Dismiss</span>
                             <!-- Heroicon name: outline/x-mark -->
                             <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -46,9 +54,3 @@
         </div>
     </main>
 </template>
-
-<script>
-export default {
-    //
-}
-</script>

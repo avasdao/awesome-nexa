@@ -36,10 +36,10 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
         <div class="relative z-20">
             <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-4 md:justify-start md:space-x-10 lg:px-8">
                 <div>
-                    <a href="javascript://" class="flex">
+                    <NuxtLink to="/" class="flex">
                         <span class="sr-only">Awesome Nexa Logo</span>
                         <img class="h-8 w-auto sm:h-10" src="~/assets/logo.png" alt="Awesome Nexa Logo" />
-                    </a>
+                    </NuxtLink>
                 </div>
 
                 <div class="-my-2 -mr-2 md:hidden">
@@ -237,7 +237,11 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                             </div>
                         </div>
                         <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a>
-                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">Docs</a>
+
+                        <NuxtLink to="/faq" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            FAQ
+                        </NuxtLink>
+
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button

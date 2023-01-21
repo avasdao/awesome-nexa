@@ -23,11 +23,4 @@
             </div>
         </section>
     </main>
-
 </template>
-
-<script>
-export default {
-  name: 'IndexPage'
-}
-</script>

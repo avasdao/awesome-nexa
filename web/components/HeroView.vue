@@ -43,9 +43,15 @@
                                         />
                                     </svg>
                                 </div>
-                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Competitive exchange rates</p>
+
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
+                                    Native Tokens
+                                </p>
                             </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Nexa is bringing advanced tokens & NFTs to layer-1. Create your new token product or service with no effort and essentially no cost due to the simple and efficient design.
+                            </dd>
                         </div>
 
                         <div class="relative">
@@ -89,6 +95,22 @@
                         </defs>
                         <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
                     </svg>
+
+                    <section class="ml-0 sm:ml-10 pl-10 pr-5 pt-5 pb-2 bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-200 rounded-lg shadow">
+                        <h1 class="text-2xl text-indigo-500 font-medium">
+                            Ready to Buy Nexa?
+                        </h1>
+
+                        <h3 class="text-gray-500">
+                            Choose from <strong>over 100+</strong> different cryptos to trade for $NEX
+                        </h3>
+
+                        <footer class="pt-5 flex justify-end">
+                            <a href="https://nexa.exchange" target="_blank" class="group text-xs text-gray-400 font-light">Powered by <span class="text-blue-400 font-normal group-hover:underline">Nexa.Exchange</span></a>
+                        </footer>
+                    </section>
+
+
                     <img class="relative mx-auto" width="490" src="https://tailwindui.com/img/features/feature-example-1.png" alt="" />
                 </div>
             </div>
