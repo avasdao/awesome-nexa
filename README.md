@@ -42,11 +42,10 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
   - [Pools](#pools)
 - [Development Tools](#development-tools)
   - [JavaScript](#javascript)
-  - [Rust](#rust)
   - [Python](#python)
-  - [C++](#cpp)
-  - [PHP](#php)
-  - [Java](#java)
+  - [Rust](#rust)
+  - [C++](#c++)
+  - [Java/Kotlin](#java-kotlin)
   - [Swift](#swift)
 - [Articles and Explanations](#articles-and-explanations)
 - [Videos](#videos)
@@ -121,6 +120,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
     - [Rplant Pool — GPU mining pool](https://pool.rplant.xyz/)
     - [Pool137 — GPU mining pool](https://nexapool.crypto137.com/)
     - [Nexa Rocks! — CPU mining pool](https://nexa.rocks/pool/)
+    - [Vipor.net — Solo and PPLNS GPU mining pool](https://vipor.net/)
 
 
 ## Development Tools
@@ -133,6 +133,15 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 - ### Rust
     - [NexaRs](https://nexa.rs/)
+
+- ### C++
+    - [CashLib](https://gitlab.com/nexa/nexa/-/tree/dev/src/cashlib)
+
+- ### Java/Kotline
+    _TBD_
+
+- ### Swift
+    _TBD_
 
 
 ## Articles and Explanations
