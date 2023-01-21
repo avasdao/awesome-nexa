@@ -8,7 +8,7 @@
                     </h2>
 
                     <p class="text-xl text-gray-500">
-                        The Nexa blockchain is built and maintained by the team from Bitcoin Unlimited.
+                        The Nexa blockchain is built and maintained by the team from <a href="https://bitcoinunlimited.info" target="_blank" class="text-blue-500 hover:underline">Bitcoin Unlimited</a>.
                         They have over a decade of experience in building scalable blockchain technologies.
                     </p>
                 </div>
@@ -63,6 +63,11 @@
                     </li>
 
                     <!-- More people... -->
+                    <NuxtLink to="/team" class="flex items-center justify-center bg-gradient-to-r from-yellow-300 to-yellow-400 border-2 border-yellow-600 rounded-lg shadow">
+                        <span class="text-sm text-yellow-800 font-medium">
+                            Show (12) more...
+                        </span>
+                    </NuxtLink>
                 </ul>
             </div>
         </div>
