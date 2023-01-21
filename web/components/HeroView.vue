@@ -1,5 +1,5 @@
 <template>
-    <main class="overflow-hidden bg-gray-50 py-16 lg:py-24">
+    <main class="overflow-hidden bg-gray-50 py-12 lg:py-16">
         <div class="relative mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <svg class="absolute left-full hidden -translate-x-1/2 -translate-y-1/4 transform lg:block" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
                 <defs>
@@ -9,6 +9,10 @@
                 </defs>
                 <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
             </svg>
+
+            <div class="my-5 flex justify-center">
+                <img src="~/assets/ani-banner.gif" class="w-8/12" />
+            </div>
 
             <div class="relative">
                 <h2 class="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
@@ -66,9 +70,15 @@
                                         />
                                     </svg>
                                 </div>
-                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">No hidden fees</p>
+
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
+                                    Scalable Up To 100K TPS
+                                </p>
                             </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Nexa is taking layer-1 scalability to the next level. No other layers are necessary, meaning fees will stay low and there will always be capacity for your transactions and contracts.
+                            </dd>
                         </div>
 
                         <div class="relative">
@@ -79,9 +89,15 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                                     </svg>
                                 </div>
-                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Transfers are instant</p>
+
+                                <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
+                                    Meta/EVM Chain
+                                </p>
                             </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                This EVM-compatible sidechain make it possible for Nexa uses to participate in advanced DeFi platforms.
+                            </dd>
                         </div>
                     </dl>
                 </div>
