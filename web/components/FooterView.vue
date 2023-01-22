@@ -20,19 +20,27 @@ import { ref } from 'vue'
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Marketing
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Analytics
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Commerce
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Insights
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -44,19 +52,19 @@ import { ref } from 'vue'
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Pricing</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Documentation</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Guides</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">API Status</a>
                                 </li>
                             </ul>
                         </div>
@@ -70,23 +78,23 @@ import { ref } from 'vue'
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">About</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Blog</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Jobs</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Press</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Partners</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Partners</a>
                                 </li>
                             </ul>
                         </div>
@@ -98,15 +106,15 @@ import { ref } from 'vue'
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Claim</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Privacy</a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Terms</a>
                                 </li>
                             </ul>
                         </div>
@@ -136,7 +144,7 @@ import { ref } from 'vue'
                         <div class="mt-4 rounded-md sm:mt-0 sm:ml-4 sm:flex-shrink-0">
                             <button
                                 type="submit"
-                                class="flex w-full items-center justify-center rounded-md bg-indigo-500 py-1.5 px-3 text-base font-semibold leading-7 text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 sm:text-sm sm:leading-6"
+                                class="flex w-full items-center justify-center rounded-md bg-indigo-500 py-1.5 px-3 text-base font-semibold leading-7 text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 sm:text-base sm:leading-6"
                             >
                                 Subscribe
                             </button>
@@ -201,8 +209,8 @@ import { ref } from 'vue'
                     </a>
                 </div>
 
-                <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-                    Brought to you with ♡ by Nexa contributors
+                <p class="mt-8 text-base leading-5 text-gray-400 md:order-1 md:mt-0">
+                    Brought to you with <span class="text-rose-500 font-bold">♡</span> by a community of Nexa volunteers
                 </p>
             </div>
         </div>

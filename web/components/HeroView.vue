@@ -31,7 +31,7 @@
                     </h3>
 
                     <p class="mt-3 text-lg text-gray-500">
-                        Unlike Bitcoin, which attempts to be a "Digital Gold", or Bitcoin Cash which attempts to be "Digital Cash", or Ethereum which attempts to be a "World Computer", Nexa is a new blockchain which includes all the financial primitives to build the new global, Web3 economy.
+                        Unlike Bitcoin which attempts to be a "Digital Gold", or Bitcoin Cash which attempts to be "Digital Cash", or Ethereum which attempts to be a "World Computer", <span class="font-medium">Nexa is a new blockchain which includes ALL the financial primitives required to build the NEW global, web3 economy.</span>
                     </p>
 
                     <dl class="mt-10 space-y-10">
@@ -49,12 +49,12 @@
                                 </div>
 
                                 <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
-                                    Native Tokens
+                                    Scalable Up To 100K TPS
                                 </p>
                             </dt>
 
                             <dd class="mt-2 ml-16 text-base text-gray-500">
-                                Nexa is bringing advanced tokens & NFTs to layer-1. Create your new token product or service with no effort and essentially no cost due to the simple and efficient design.
+                                Nexa is taking layer-1 scalability to the next level. No other layers are necessary, meaning fees will stay low and there will always be capacity for your transactions and contracts.
                             </dd>
                         </div>
 
@@ -72,12 +72,12 @@
                                 </div>
 
                                 <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
-                                    Scalable Up To 100K TPS
+                                    Native Tokens
                                 </p>
                             </dt>
 
                             <dd class="mt-2 ml-16 text-base text-gray-500">
-                                Nexa is taking layer-1 scalability to the next level. No other layers are necessary, meaning fees will stay low and there will always be capacity for your transactions and contracts.
+                                Nexa is bringing advanced tokens & NFTs to layer-1. Create your new token product or service with no effort and essentially no cost due to the simple and efficient design.
                             </dd>
                         </div>
 
@@ -114,11 +114,11 @@
 
                     <section class="mx-3 sm:ml-10 pl-10 pr-5 pt-5 pb-2 bg-gradient-to-r from-yellow-50 to-yellow-100 border-2 border-yellow-200 rounded-lg shadow">
                         <h1 class="text-2xl text-indigo-500 font-medium">
-                            Ready to Buy Nexa?
+                            Looking to Buy Nexa?
                         </h1>
 
                         <h3 class="text-gray-500">
-                            Choose from <strong>over 100+</strong> different cryptos to trade for $NEX
+                            Choose from <strong>OVER 100+</strong> cryptos to <strong>INSTANTLY</strong> trade for $NEX
                         </h3>
 
                         <footer class="pt-5 flex justify-end">
@@ -143,8 +143,13 @@
             <div class="relative mt-12 sm:mt-16 lg:mt-24">
                 <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
                     <div class="lg:col-start-2">
-                        <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Always in the loop</h3>
-                        <p class="mt-3 text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo.</p>
+                        <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+                            New &amp; Noteworthy
+                        </h3>
+
+                        <p class="mt-3 text-lg text-gray-500">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
+                        </p>
 
                         <dl class="mt-10 space-y-10">
                             <div class="relative">
@@ -159,9 +164,15 @@
                                             />
                                         </svg>
                                     </div>
-                                    <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Mobile notifications</p>
+
+                                    <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
+                                        Monthly Showcase
+                                    </p>
                                 </dt>
-                                <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+
+                                <dd class="mt-2 ml-16 text-base text-gray-500">
+                                    On the 1st of every month, we send out an email newsletter highlighting the most notable events from the past month.
+                                </dd>
                             </div>
 
                             <div class="relative">
@@ -176,9 +187,15 @@
                                             />
                                         </svg>
                                     </div>
-                                    <p class="ml-16 text-lg font-medium leading-6 text-gray-900">Reminder emails</p>
+
+                                    <p class="ml-16 text-lg font-medium leading-6 text-gray-900">
+                                        Monthly BUIDL School
+                                    </p>
                                 </dt>
-                                <dd class="mt-2 ml-16 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+
+                                <dd class="mt-2 ml-16 text-base text-gray-500">
+                                    Each month, we'll showcase a NEW and EXCITING feature of the Nexa blockchain for users to Learn, Code and Deliver into a real live decentralized application (dApp).
+                                </dd>
                             </div>
                         </dl>
                     </div>
