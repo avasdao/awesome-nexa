@@ -3,6 +3,8 @@
 import numeral from 'numeral'
 import { ref } from 'vue'
 
+const isShowingStartMenu = ref(false)
+
 /* Initialize NEX/USD holder. */
 const nexUsd = ref(null)
 
@@ -61,8 +63,9 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
+                                @click="isShowingStartMenu = !isShowingStartMenu"
                                 type="button"
-                                class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                class="px-2 py-1 text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                 aria-expanded="false"
                             >
                                 <span>Featured</span>
@@ -86,10 +89,10 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <!-- <div class="absolute inset-x-0 top-full z-10 hidden transform bg-white shadow-lg md:block"> -->
-                            <div class="hidden">
+                            <div v-if="isShowingStartMenu" class="absolute inset-x-0 top-full z-10 hidden transform bg-gradient-to-r from-yellow-100 to-yellow-200 shadow-lg md:block">
                                 <div class="mx-auto grid max-w-7xl gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
-                                    <a href="javascript://" class="-m-3 flex flex-col justify-between rounded-lg p-3 hover:bg-gray-50">
+
+                                    <a href="https://www.nexa.org/download" target="_blank" class="-m-3 flex flex-col justify-between rounded-lg p-3 hover:bg-gray-50">
                                         <div class="flex md:h-full lg:flex-col">
                                             <div class="flex-shrink-0">
                                                 <span class="inline-flex h-10 w-10 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
@@ -103,11 +106,18 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                                                     </svg>
                                                 </span>
                                             </div>
+
                                             <div class="ml-4 md:flex md:flex-1 md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                                 <div>
-                                                    <p class="text-base font-medium text-gray-900">Analytics</p>
-                                                    <p class="mt-1 text-sm text-gray-500">Get a better understanding of where your traffic is coming from.</p>
+                                                    <p class="text-base font-medium text-gray-900">
+                                                        Download the Wallet
+                                                    </p>
+
+                                                    <p class="mt-1 text-sm text-gray-500">
+                                                        Install the desktop wallet from the "official" Nexa website to store your assets.
+                                                    </p>
                                                 </div>
+
                                                 <p class="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
                                                     Learn more
                                                     <span aria-hidden="true"> &rarr;</span>
