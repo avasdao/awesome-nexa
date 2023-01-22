@@ -15,31 +15,31 @@ import { ref } from 'vue'
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 class="text-lg font-semibold leading-6 text-white">
-                                Solutions
+                                For Users
                             </h3>
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        Marketing
+                                    <a href="https://explorer.nexa.org/" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Block Explorer
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.nexa.org/roadmap" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Roadmap
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.nexa.org/download" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Download Wallet
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        Analytics
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        Commerce
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        Insights
+                                        Specification
                                     </a>
                                 </li>
                             </ul>
@@ -47,24 +47,32 @@ import { ref } from 'vue'
 
                         <div class="mt-10 md:mt-0">
                             <h3 class="text-lg font-semibold leading-6 text-white">
-                                Support
+                                For Builders
                             </h3>
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Pricing</a>
+                                    <a href="https://gitlab.com/nexa/nexa" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Open Source Code
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Documentation</a>
+                                    <a href="https://spec.nexa.org/" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Specification
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Guides</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Guides
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">API Status</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        API Status
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -73,29 +81,40 @@ import { ref } from 'vue'
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 class="text-lg font-semibold leading-6 text-white">
-                                Company
+                                Bitcoin Unlimited
                             </h3>
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">About</a>
+                                    <a href="https://www.bitcoinunlimited.info/about/organization" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        About
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Blog</a>
+                                    <a href="https://www.bitcoinunlimited.info/download" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Download
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Jobs</a>
+                                    <a href="https://www.bitcoinunlimited.info/faq/what-is-bu" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        FAQ
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Press</a>
+                                    <a href="https://www.bitcoinunlimited.info/blog" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Blog
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Partners</a>
+                                    <a href="https://www.bitcoinunlimited.info/donate" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Donate
+                                    </a>
                                 </li>
+
                             </ul>
                         </div>
 
@@ -106,15 +125,27 @@ import { ref } from 'vue'
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Claim</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Regulations
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Privacy</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Privacy
+                                    </a>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">Terms</a>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Terms
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Code of Conduct
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -127,7 +158,7 @@ import { ref } from 'vue'
                     </h3>
 
                     <p class="mt-2 text-lg leading-6 text-gray-300">
-                        The latest news, articles, and resources, sent to your inbox weekly.
+                        Receive the latest Nexa news, reviews and resources, sent to your inbox monthly.
                     </p>
 
                     <form class="mt-6 sm:flex sm:max-w-md">
