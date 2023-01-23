@@ -87,7 +87,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Trackers
 
-- [CoinMarketCap](https://coinmarketcap.com/) - _coming soon..._
+- [CoinMarketCap](https://coinmarketcap.com/) - _coming soon_
 - [CoinGecko](https://www.coingecko.com/en/coins/nexacoin)
 
 
@@ -103,7 +103,7 @@ A review of the different exchanges supporting NEXA.
 - [Nexa Swap](https://nexaswap.com)
 
 ### Decentralized
-- _TBD_
+_TBD_
 
 
 ## Mining
@@ -115,7 +115,7 @@ A collection of mining resources for Nexa.
 - [Mining quick(ish) start (CPU)](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/)
 
 ### Calculators
-- _TBD_
+_TBD_
 
 ### Software
 - [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner)
@@ -144,11 +144,11 @@ All of the supported tools for Builders.
 ### C&plus;&plus;
 - [CashLib](https://gitlab.com/nexa/nexa/-/tree/dev/src/cashlib)
 
-### Java/Kotline
-- _TBD_
+### Java/Kotlin
+_TBD_
 
 ### Swift
-- _TBD_
+_TBD_
 
 
 ## Articles and Explanations
@@ -168,13 +168,13 @@ All of the supported tools for Builders.
 
 ## Related Projects
 
-- [Bitcoin (BTC)](https://bitcoin.org) Version 1.0
-- [Bitcoin Cash (BCH)](https://bitcoincash.org) Version 2.0
+- [Bitcoin (BTC)](https://bitcoin.org) - _(1st Generation)_
+- [Bitcoin Cash (BCH)](https://bitcoincash.org) - _(2nd Generation)_
 
 
 ## Misc
 
-- [TBD]()
+_TBD_
 
 
 ## Contributing
