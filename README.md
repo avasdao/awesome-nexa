@@ -34,6 +34,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [Trackers](#trackers)
 - [Exchanges](#exchanges)
   - [Centralized](#centralized)
+  - [Instant](#instant)
   - [Decentralized](#decentralized)
 - [Mining](#mining)
   - [Guides](#guides)
@@ -44,7 +45,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
   - [JavaScript](#javascript)
   - [Python](#python)
   - [Rust](#rust)
-  - [C++](#c++)
+  - [C++](#c)
   - [Java/Kotlin](#java-kotlin)
   - [Swift](#swift)
 - [Articles and Explanations](#articles-and-explanations)
@@ -92,56 +93,62 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Exchanges
 
+A review of the different exchanges supporting NEXA.
+
 ### Centralized
-    - [Exbitron](https://www.exbitron.com/trading/nexausdt)
-    - [Txbit](https://txbit.io/Trade/NEXA/USDT)
+- [Exbitron](https://www.exbitron.com/trading/nexausdt)
+- [Txbit](https://txbit.io/Trade/NEXA/USDT)
 
 ### Instant
-    - [Nexa Swap](https://nexaswap.com)
+- [Nexa Swap](https://nexaswap.com)
 
 ### Decentralized
-    _TBD_
+- _TBD_
 
 
 ## Mining
 
+A collection of mining resources for Nexa.
+
 ### Guides
-    - [Solo Mining (CPU)](https://nexa.rocks/solo/)
-    - [Mining quick(ish) start (CPU)](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/)
+- [Solo Mining (CPU)](https://nexa.rocks/solo/)
+- [Mining quick(ish) start (CPU)](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/)
 
 ### Calculators
-    _TBD_
+- _TBD_
 
 ### Software
-    - [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner)
-    - [WildRig Multi](https://github.com/andru-kun/wildrig-multi)
+- [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner)
+- [WildRig Multi](https://github.com/andru-kun/wildrig-multi)
 
 ### Pools
-    - [Rplant Pool - GPU mining pool](https://pool.rplant.xyz/)
-    - [Pool137 - GPU mining pool](https://nexapool.crypto137.com/)
-    - [Nexa Rocks! - CPU mining pool](https://nexa.rocks/pool/)
-    - [Vipor.net - Solo and PPLNS GPU mining pool](https://vipor.net/)
+- [Rplant Pool - GPU mining pool](https://pool.rplant.xyz/)
+- [Pool137 - GPU mining pool](https://nexapool.crypto137.com/)
+- [Nexa Rocks! - CPU mining pool](https://nexa.rocks/pool/)
+- [Vipor.net - Solo and PPLNS GPU mining pool](https://vipor.net/)
 
 
 ## Development Tools
 
+All of the supported tools for Builders.
+
 ### JavaScript
-    - [NexaJS - Library and Software Development Kit (SDK)](https://nexajs.org/)
+- [NexaJS - Library and Software Development Kit (SDK)](https://nexajs.org/)
 
 ### Python
-    - [PyNexa](https://pynexa.org/)
+- [PyNexa](https://pynexa.org/)
 
 ### Rust
-    - [NexaRs](https://nexa.rs/)
+- [NexaRs](https://nexa.rs/)
 
-### C++
-    - [CashLib](https://gitlab.com/nexa/nexa/-/tree/dev/src/cashlib)
+### C&plus;&plus;
+- [CashLib](https://gitlab.com/nexa/nexa/-/tree/dev/src/cashlib)
 
 ### Java/Kotline
-    _TBD_
+- _TBD_
 
 ### Swift
-    _TBD_
+- _TBD_
 
 
 ## Articles and Explanations
