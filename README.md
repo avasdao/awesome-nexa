@@ -46,7 +46,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
   - [Python](#python)
   - [Rust](#rust)
   - [C++](#c)
-  - [Java/Kotlin](#java-kotlin)
+  - [Java/Kotlin](#javakotlin)
   - [Swift](#swift)
 - [Articles and Explanations](#articles-and-explanations)
 - [Videos](#videos)
@@ -153,7 +153,7 @@ _TBD_
 
 ## Articles and Explanations
 
-- [Official Whitepaper]()
+- [Official Roadmap](https://www.nexa.org/roadmap)
 
 
 ## Videos
