@@ -1,8 +1,8 @@
-![Nexa Banner](assets/ani-banner.gif)
+![Nexa Banner](/assets/ani-banner.gif)
 
 # Awesome Nexa [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-### ↳ https://awesomenexa.org
+<a href="https://awesomenexa.org"><h3>↳ https://awesomenexa.org</h3></a>
 
 <div align="center">
 ⚡ A curated list of awesome resources related to the <a href='https://nexa.org/'><strong>Nexa</strong></a> blockchain.
@@ -117,16 +117,16 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
     - [WildRig Multi](https://github.com/andru-kun/wildrig-multi)
 
 - ### Pools
-    - [Rplant Pool — GPU mining pool](https://pool.rplant.xyz/)
-    - [Pool137 — GPU mining pool](https://nexapool.crypto137.com/)
-    - [Nexa Rocks! — CPU mining pool](https://nexa.rocks/pool/)
-    - [Vipor.net — Solo and PPLNS GPU mining pool](https://vipor.net/)
+    - [Rplant Pool - GPU mining pool](https://pool.rplant.xyz/)
+    - [Pool137 - GPU mining pool](https://nexapool.crypto137.com/)
+    - [Nexa Rocks! - CPU mining pool](https://nexa.rocks/pool/)
+    - [Vipor.net - Solo and PPLNS GPU mining pool](https://vipor.net/)
 
 
 ## Development Tools
 
 - ### JavaScript
-    - [NexaJS — Library and Software Development Kit (SDK)](https://nexajs.org/)
+    - [NexaJS - Library and Software Development Kit (SDK)](https://nexajs.org/)
 
 - ### Python
     - [PyNexa](https://pynexa.org/)

@@ -3,7 +3,8 @@
 import numeral from 'numeral'
 import { ref } from 'vue'
 
-const isShowingStartMenu = ref(false)
+const isShowingDownlaodsMenu = ref(false)
+const isShowingExtrasMenu = ref(false)
 
 /* Initialize NEX/USD holder. */
 const nexUsd = ref(null)
@@ -59,16 +60,16 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                 </div>
 
                 <div class="hidden md:flex md:flex-1 md:items-center md:justify-between">
-                    <nav class="flex space-x-10">
+                    <nav class="flex space-x-10 items-center">
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
-                                @click="isShowingStartMenu = !isShowingStartMenu"
+                                @click="isShowingDownlaodsMenu = !isShowingDownlaodsMenu"
                                 type="button"
                                 class="px-2 py-1 text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                 aria-expanded="false"
                             >
-                                <span>Featured</span>
+                                <span>Downloads</span>
                                 <!--
                     Heroicon name: mini/chevron-down
 
@@ -89,7 +90,7 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <div v-if="isShowingStartMenu" class="absolute inset-x-0 top-full z-10 hidden transform bg-gradient-to-r from-yellow-100 to-yellow-200 shadow-lg md:block">
+                            <div v-if="isShowingDownlaodsMenu" class="absolute inset-x-0 top-full z-10 hidden transform bg-gradient-to-r from-yellow-100 to-yellow-200 shadow-lg md:block">
                                 <div class="mx-auto grid max-w-7xl gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
 
                                     <a href="https://www.nexa.org/download" target="_blank" class="-m-3 flex flex-col justify-between rounded-lg p-3 hover:bg-gray-50">
@@ -207,6 +208,7 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                                         </div>
                                     </a>
                                 </div>
+
                                 <div class="bg-gray-50">
                                     <div class="mx-auto max-w-7xl space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                                         <div class="flow-root">
@@ -246,7 +248,10 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                                 </div>
                             </div>
                         </div>
-                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+
+                        <a href="javascript://" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Pricing
+                        </a>
 
                         <NuxtLink to="/faq" class="text-base font-medium text-gray-500 hover:text-gray-900">
                             FAQ
@@ -255,11 +260,12 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                         <div>
                             <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                             <button
+                                @click="isShowingExtrasMenu = !isShowingExtrasMenu"
                                 type="button"
-                                class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                class="px-2 py-1 text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                 aria-expanded="false"
                             >
-                                <span>More</span>
+                                <span>What's Hot!</span>
                                 <!--
                     Heroicon name: mini/chevron-down
 
@@ -280,8 +286,7 @@ setInterval(updateTicker, 30000) // TODO: Set as constant.
                     From: "opacity-100 translate-y-0"
                     To: "opacity-0 -translate-y-1"
                 -->
-                            <!-- <div class="absolute inset-x-0 top-full z-10 hidden transform shadow-lg md:block"> -->
-                            <div class="hidden">
+                            <div v-if="isShowingExtrasMenu" class="absolute inset-x-0 top-full z-10 hidden transform shadow-lg md:block">
                                 <div class="absolute inset-0 flex">
                                     <div class="w-1/2 bg-white"></div>
                                     <div class="w-1/2 bg-gray-50"></div>
