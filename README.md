@@ -71,10 +71,10 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 ## Featured Sites
 
 - [Wiki](https://nexa.wiki/)
-- [Forum]()
+- [Forum](https://nexa.forum/)
 
 
-## Block Explorers
+## Blockchain Explorers
 
 - [Nexa Explorer _(explorer.nexa.org)_](https://explorer.nexa.org/)
 
@@ -86,37 +86,37 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Trackers
 
-- [CoinMarketCap]()
-- [CoinGecko]()
+- [CoinMarketCap](https://coinmarketcap.com/) - _coming soon..._
+- [CoinGecko](https://www.coingecko.com/en/coins/nexacoin)
 
 
 ## Exchanges
 
-- ### Centralized
+### Centralized
     - [Exbitron](https://www.exbitron.com/trading/nexausdt)
     - [Txbit](https://txbit.io/Trade/NEXA/USDT)
 
-- ### Instant
+### Instant
     - [Nexa Swap](https://nexaswap.com)
 
-- ### Decentralized
+### Decentralized
     _TBD_
 
 
 ## Mining
 
-- ### Guides
+### Guides
     - [Solo Mining (CPU)](https://nexa.rocks/solo/)
     - [Mining quick(ish) start (CPU)](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/)
 
-- ### Calculators
+### Calculators
     _TBD_
 
-- ### Software
+### Software
     - [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner)
     - [WildRig Multi](https://github.com/andru-kun/wildrig-multi)
 
-- ### Pools
+### Pools
     - [Rplant Pool - GPU mining pool](https://pool.rplant.xyz/)
     - [Pool137 - GPU mining pool](https://nexapool.crypto137.com/)
     - [Nexa Rocks! - CPU mining pool](https://nexa.rocks/pool/)
@@ -125,22 +125,22 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Development Tools
 
-- ### JavaScript
+### JavaScript
     - [NexaJS - Library and Software Development Kit (SDK)](https://nexajs.org/)
 
-- ### Python
+### Python
     - [PyNexa](https://pynexa.org/)
 
-- ### Rust
+### Rust
     - [NexaRs](https://nexa.rs/)
 
-- ### C++
+### C++
     - [CashLib](https://gitlab.com/nexa/nexa/-/tree/dev/src/cashlib)
 
-- ### Java/Kotline
+### Java/Kotline
     _TBD_
 
-- ### Swift
+### Swift
     _TBD_
 
 
