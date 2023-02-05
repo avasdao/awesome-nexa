@@ -110,7 +110,7 @@ import { ref } from 'vue'
                 <span class="my-2 block text-base text-rose-700 text-center font-bold">DO YOUR OWN RESEARCH (DYOR)</span>
 
                 <span class="block">
-                    Read our <NuxtLink to="/disclaimer" class="text-rose-700 font-medium hover:underline">Disclaimer Terms</NuxtLink> and <NuxtLink to="/privacy" class="text-rose-700 font-medium hover:underline">Privacy Policy</NuxtLink>
+                    Read our <NuxtLink to="/terms" class="text-rose-700 font-medium hover:underline">Terms of Use</NuxtLink> and <NuxtLink to="/privacy" class="text-rose-700 font-medium hover:underline">Privacy Policy</NuxtLink>
                 </span>
             </p>
         </section>

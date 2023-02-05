@@ -9,7 +9,7 @@ import { ref } from 'vue'
     <main class="max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
             <h1 class="text-5xl font-bold tracking-widest">
-                Disclaimer
+                Regulations
             </h1>
         </div>
 

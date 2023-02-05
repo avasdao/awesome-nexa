@@ -9,7 +9,7 @@ import { ref } from 'vue'
     <main class="max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
             <h1 class="text-5xl font-bold tracking-widest">
-                API Documentation
+                API Data Feeds
             </h1>
         </div>
 
@@ -27,5 +27,10 @@ import { ref } from 'vue'
                 <li><a href="/api/wallets" class="text-blue-500 font-medium hover:underline">/api/wallets</a></li>
             </ul>
         </section>
+
+        <p class="flex flex-row items-center gap-2 mb-10 justify-center italic">
+            <span class="text-sm text-gray-500 font-medium">Last updated:</span>
+            <span class="text-lg text-rose-500 font-medium">February 5th, 2023</span>
+        </p>
     </main>
 </template>

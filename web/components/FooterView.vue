@@ -51,6 +51,13 @@ import { ref } from 'vue'
                             </h3>
 
                             <ul role="list" class="mt-6 space-y-4">
+
+                                <li>
+                                    <NuxtLink to="/api" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        API Data Feeds
+                                    </NuxtLink>
+                                </li>
+
                                 <li>
                                     <a href="https://gitlab.com/nexa/nexa" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Open Source Code
@@ -69,11 +76,6 @@ import { ref } from 'vue'
                                     </a>
                                 </li>
 
-                                <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        API Status
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -125,27 +127,27 @@ import { ref } from 'vue'
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink to="/regulations" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Regulations
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink to="/privacy" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Privacy
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        Terms
-                                    </a>
+                                    <NuxtLink to="/terms" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Terms of Use
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink to="/conduct" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Code of Conduct
-                                    </a>
+                                    </NuxtLink>
                                 </li>
                             </ul>
                         </div>
