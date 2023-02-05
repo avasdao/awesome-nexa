@@ -5,5 +5,7 @@
         <slot />
 
         <FooterView />
+
+        <SpotlightWin />
     </main>
 </template>

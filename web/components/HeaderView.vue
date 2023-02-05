@@ -27,9 +27,9 @@ const updateTicker = async () => {
     // console.log('NEX/USD', nexUsd)
 }
 
-updateTicker()
+// updateTicker()
 
-setInterval(updateTicker, 30000) // TODO: Set as constant.
+// setInterval(updateTicker, 30000) // TODO: Set as constant.
 </script>
 
 

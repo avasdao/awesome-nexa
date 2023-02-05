@@ -1,7 +1,12 @@
 <template>
     <main>
-        <HeroView />
+        <NewHeroView />
+        <!-- <HeroView /> -->
+
+        <GalleryView />
+
         <BlogView />
+
         <TeamView />
 
         <BannerView />
