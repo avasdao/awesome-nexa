@@ -12,7 +12,17 @@ import { ref } from 'vue'
         </template>
 
         <template #url>
-            https://woolypooly.com/en/coin/nexa
+            <a
+                href="https://woolypooly.com/en/coin/nexa"
+                target="_blank"
+                class="text-xl text-blue-500 font-medium hover:underline"
+            >
+                https://woolypooly.com/en/coin/nexa
+            </a>
+        </template>
+
+        <template #tagline>
+            An experienced mining pool
         </template>
 
         <template #slideshow>
@@ -21,5 +31,10 @@ import { ref } from 'vue'
                 class="my-10 w-7/12 h-96 border-4 border-indigo-500 rounded-xl shadow object-cover"
             />
         </template>
+
+        <template #description>
+            WoolyPooly is one of the most profitable pools with our focus on minimal commission fees for PPLNS & SOLO reward systems.
+        </template>
+
     </NuxtLayout>
 </template>
