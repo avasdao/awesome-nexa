@@ -3,7 +3,7 @@
 import { ref } from 'vue'
 
 /* Initialize showing flag. */
-const isShowing = ref(true)
+const isShowing = ref(false)
 </script>
 
 <template>

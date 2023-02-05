@@ -175,7 +175,7 @@ import { ref } from 'vue'
                         <div class="mt-4 rounded-md sm:mt-0 sm:ml-4 sm:flex-shrink-0">
                             <button
                                 type="submit"
-                                class="flex w-full items-center justify-center rounded-md bg-indigo-500 py-1.5 px-3 text-base font-semibold leading-7 text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 sm:text-base sm:leading-6"
+                                class="flex w-full items-center justify-center rounded-md bg-indigo-500 py-1.5 px-3 text-2xl font-semibold leading-7 text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 sm:text-base sm:leading-6"
                             >
                                 Subscribe
                             </button>
@@ -185,7 +185,8 @@ import { ref } from 'vue'
             </div>
 
             <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
-                <div class="flex space-x-6 md:order-2">
+                <div class="flex justify-center space-x-6 md:order-2">
+
                     <a href="javascript://" class="text-gray-500 hover:text-gray-400">
                         <span class="sr-only">Facebook</span>
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -240,7 +241,7 @@ import { ref } from 'vue'
                     </a>
                 </div>
 
-                <p class="mt-8 text-base leading-5 text-gray-400 md:order-1 md:mt-0">
+                <p class="text-center mt-8 text-base leading-5 text-gray-400 md:order-1 md:mt-0">
                     Brought to you with <span class="text-rose-500 font-bold">♡</span> by a community of Nexa volunteers
                 </p>
             </div>
