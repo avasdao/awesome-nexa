@@ -7,8 +7,6 @@ import { ref } from 'vue'
 
 <template>
     <main class="">
-        <HeaderView />
-
         <!-- This example requires Tailwind CSS v3.0+ -->
         <section class="bg-white">
             <div class="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
@@ -72,7 +70,5 @@ import { ref } from 'vue'
                 </div>
             </div>
         </section>
-
-        <FooterView />
     </main>
 </template>

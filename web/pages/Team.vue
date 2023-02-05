@@ -38,8 +38,6 @@ members.value.push({
 
 <template>
     <main class="">
-        <HeaderView />
-
         <div class="pt-10 flex justify-center">
             <h1 class="text-5xl text-yellow-600 font-bold tracking-widest">
                 The Nexa Team
@@ -63,7 +61,5 @@ members.value.push({
                 </h2>
             </div>
         </section>
-
-        <FooterView />
     </main>
 </template>

@@ -1,7 +1,5 @@
 <template>
     <main class="w-screen h-screen bg-gradient-to-r from-rose-100 to-rose-300">
-        <HeaderView />
-
         <div class="pt-10 flex justify-center">
             <h1 class="text-5xl font-bold tracking-widest">
                 Awesome Nexa Assets
@@ -23,7 +21,5 @@
                 </h2>
             </div>
         </section>
-
-        <FooterView />
     </main>
 </template>
