@@ -20,8 +20,12 @@ import { ref } from 'vue'
         </section>
 
         <section>
-            <NuxtLink to="MiningPoolStats" class="w-32 h-32 flex p-3 bg-rose-300 rounded-lg">
+            <NuxtLink to="/mining/MiningPoolStats" class="w-32 h-32 flex p-3 bg-rose-300 rounded-lg">
                 Mining Pool Stats
+            </NuxtLink>
+
+            <NuxtLink to="/mining/WoolyPooly" class="w-32 h-32 flex p-3 bg-rose-300 rounded-lg">
+                Wooly Pooly
             </NuxtLink>
         </section>
     </main>

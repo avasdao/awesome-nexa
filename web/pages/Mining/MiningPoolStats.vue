@@ -18,5 +18,12 @@ import { ref } from 'vue'
                 https://miningpoolstats.stream/nexa
             </p>
         </section>
+
+        <section>
+            <img
+                src="~/assets/screenshots/mining-pool-stats_01.jpg"
+                class="my-10 w-7/12 h-96 border-4 border-indigo-500 rounded-xl shadow object-cover"
+            />
+        </section>
     </main>
 </template>
