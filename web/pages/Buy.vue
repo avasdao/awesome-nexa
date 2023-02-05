@@ -102,59 +102,59 @@ import { ref } from 'vue'
                 </div>
 
                 <div class="mt-5 flex gap-4">
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         1
-                    </Button>
+                    </button>
 
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         2
-                    </Button>
+                    </button>
 
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         3
-                    </Button>
+                    </button>
                 </div>
 
                 <div class="mt-5 flex gap-4">
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         4
-                    </Button>
+                    </button>
 
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         5
-                    </Button>
+                    </button>
 
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         6
-                    </Button>
+                    </button>
                 </div>
 
                 <div class="mt-5 flex gap-4">
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         7
-                    </Button>
+                    </button>
 
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         8
-                    </Button>
+                    </button>
 
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         9
-                    </Button>
+                    </button>
                 </div>
 
                 <div class="mt-5 flex gap-4">
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         .
-                    </Button>
+                    </button>
 
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         0
-                    </Button>
+                    </button>
 
-                    <Button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
+                    <button class="w-1/3 h-16 p-2 bg-gray-500 rounded-xl hover:bg-gray-600">
                         &lt;
-                    </Button>
+                    </button>
                 </div>
 
             </div>
