@@ -59,5 +59,56 @@ import { ref } from 'vue'
                 </span>
             </p>
         </section>
+
+        <hr />
+
+        <section class="mt-5">
+            <h2 class="text-3xl font-light">
+                Rating and Reviews
+            </h2>
+
+            <div class="w-96 flex flex-row justify-between items-end">
+                <span><span class="text-5xl font-medium">5.0</span> out of 5</span>
+                <span><span class="text-2xl font-bold">2</span> Ratings</span>
+            </div>
+
+            <div class="my-5 flex flex-row gap-8">
+                <div class="w-1/3 flex flex-col p-5 bg-gray-300 border-2 border-gray-500 rounded-lg">
+                    <header class="flex justify-between">
+                        <h3>@Shomari</h3>
+
+                        <span class="text-sm">8 days ago</span>
+                    </header>
+
+                    <p class="mt-3 text-sm">
+                        A wonderful pool, it is convenient to use immediately in the wallet and receive NEXA for mining.
+                    </p>
+                </div>
+
+                <div class="w-1/3 flex flex-col p-5 bg-gray-300 border-2 border-gray-500 rounded-lg">
+                    <header class="flex justify-between">
+                        <h3>@Satoshi</h3>
+
+                        <span class="text-sm">2 weeks ago</span>
+                    </header>
+
+                    <p class="mt-3 text-sm">
+                        Finally, a pool where I can show off my incredible hash power!
+                    </p>
+                </div>
+            </div>
+
+            <div class="my-10 flex flex-row items-center gap-4">
+                <button class="px-3 py-2 bg-yellow-500 border-2 border-yellow-700 rounded-lg">
+                    <span class="text-2xl text-gray-900 font-medium">
+                        Write a Review
+                    </span>
+                </button>
+
+                <p class="w-96 text-sm">
+                    You must first <span class="px-2 py-1 bg-blue-500 text-white font-medium rounded">Get Connected</span> with a Nexa ID-compatible wallet to write a review.
+                </p>
+            </div>
+        </section>
     </main>
 </template>
