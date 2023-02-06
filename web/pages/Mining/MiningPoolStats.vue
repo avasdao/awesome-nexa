@@ -6,7 +6,7 @@ import { ref } from 'vue'
 </script>
 
 <template>
-    <main class="max-w-5xl mx-auto">
+    <main class="px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
             <h1 class="text-5xl font-bold tracking-widest">
                 Mining Pool Stats

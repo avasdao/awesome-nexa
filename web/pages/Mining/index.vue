@@ -6,7 +6,7 @@ import { ref } from 'vue'
 </script>
 
 <template>
-    <main class="max-w-5xl mx-auto">
+    <main class="px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
             <h1 class="text-5xl font-bold tracking-widest">
                 Mining
@@ -19,14 +19,6 @@ import { ref } from 'vue'
             </p>
         </section>
 
-        <section>
-            <NuxtLink to="/mining/MiningPoolStats" class="w-32 h-32 flex p-3 bg-rose-300 rounded-lg">
-                Mining Pool Stats
-            </NuxtLink>
-
-            <NuxtLink to="/mining/WoolyPooly" class="w-32 h-32 flex p-3 bg-rose-300 rounded-lg">
-                Wooly Pooly
-            </NuxtLink>
-        </section>
+        <GalleryView />
     </main>
 </template>

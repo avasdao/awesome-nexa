@@ -2,66 +2,27 @@
 /* Import modules. */
 import { ref } from 'vue'
 
-//
+const mining = await $fetch('/api/mining')
+console.log('MINING', mining)
 </script>
 
 <template>
-    <main class="max-w-7xl mx-auto my-10">
+    <ul class="px-3 max-w-7xl mx-auto my-10 flex flex-col lg:flex-row">
+        <NuxtLink to="/mining/WoolyPooly" v-for="listing of mining" :key="listing.id" class="py-5 w-full lg:w-1/3 flex gap-4">
+            <img
+                :src="listing.imgUrl"
+                class="w-24 h-24 bg-gradient-to-r from-gray-100 to-gray-300 border-2 border-yellow-500 rounded-lg overlay-hidden shadow-md"
+            />
 
-        <header class="flex justify-between items-end">
-            <h2 class="text-3xl font-medium">Mining</h2>
+            <div class="">
+                <h3 class="text-lg font-medium">
+                    {{listing.title}}
+                </h3>
 
-            <NuxtLink to="/mining" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
-                See all Mining
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-            </NuxtLink>
-        </header>
-
-
-        <ul class="flex">
-            <li class="w-1/3 flex">
-                <img class="w-24 h-24 my-5 bg-rose-500 rounded-lg" />
-
-                <div class="mx-3 my-6">
-                    <h3 class="text-lg font-medium">
-                        Some title
-                    </h3>
-
-                    <p class="text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-            </li>
-
-            <li class="w-1/3 flex">
-                <img class="w-24 h-24 my-5 bg-rose-500 rounded-lg" />
-
-                <div class="mx-3 my-6">
-                    <h3 class="text-lg font-medium">
-                        Some title
-                    </h3>
-
-                    <p class="text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-            </li>
-
-            <li class="w-1/3 flex">
-                <img class="w-24 h-24 my-5 bg-rose-500 rounded-lg" />
-
-                <div class="mx-3 my-6">
-                    <h3 class="text-lg font-medium">
-                        Some title
-                    </h3>
-
-                    <p class="text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-            </li>
-        </ul>
-    </main>
+                <p class="text-sm">
+                    {{listing.summary}}
+                </p>
+            </div>
+        </NuxtLink>
+    </ul>
 </template>
