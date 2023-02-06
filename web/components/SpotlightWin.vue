@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-const isShowingSpotlight = ref(true)
+const isShowingSpotlight = ref(false)
 
 const loadBuy = () => {
     isShowingSpotlight.value = false
