@@ -22,15 +22,15 @@ import { ref } from 'vue'
             </slot>
         </section>
 
-        <section class="flex">
+        <section class="flex flex-col-reverse sm:flex-row gap-7">
             <slot name="slideshow">
                 <img
                     src="~/assets/ani-banner.gif"
-                    class="my-0 w-7/12 h-96 border-4 border-indigo-500 rounded-xl shadow object-cover"
+                    class="w-full sm:w-7/12 h-96 border-2 border-gray-300 rounded-xl shadow-md object-cover"
                 />
             </slot>
 
-            <div class="w-full px-5 pt-7">
+            <div class="w-full px-5 sm:pt-7">
                 <p class="text-2xl font-medium text-gray-500">
                     <span class="inline-block relative -mr-2 text-7xl text-yellow-500">&ldquo;</span>
                     <slot name="summary">
@@ -41,7 +41,7 @@ import { ref } from 'vue'
             </div>
         </section>
 
-        <section class="my-10 px-10 flex flex-col items-center">
+        <section class="my-10 px-3 sm:px-10 flex flex-col items-center">
             <div class="flex flex-col gap-6 text-lg text-gray-500">
                 <slot name="description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum quod laudantium praesentium doloribus error qui natus neque, voluptates expedita deleniti modi ducimus sequi quaerat ipsa fugit. Fugit, corrupti ad.
@@ -56,13 +56,13 @@ import { ref } from 'vue'
                 Rating and Reviews
             </h2>
 
-            <div class="w-96 flex flex-row justify-between items-end">
+            <div class="max-w-96 flex flex-row justify-between items-end">
                 <span><span class="text-5xl font-medium">5.0</span> out of 5</span>
                 <span><span class="text-2xl font-bold">2</span> Ratings</span>
             </div>
 
-            <div class="my-5 flex flex-row gap-8">
-                <div class="w-1/3 flex flex-col p-5 bg-gray-300 border-2 border-gray-500 rounded-lg">
+            <div class="my-5 flex flex-col sm:flex-row gap-4 sm:gap-8">
+                <div class="w-full sm:w-1/3 flex flex-col p-5 bg-gray-300 border-2 border-gray-500 rounded-lg">
                     <header class="flex justify-between">
                         <h3>@Shomari</h3>
 
@@ -74,7 +74,7 @@ import { ref } from 'vue'
                     </p>
                 </div>
 
-                <div class="w-1/3 flex flex-col p-5 bg-gray-300 border-2 border-gray-500 rounded-lg">
+                <div class="w-full sm:w-1/3 flex flex-col p-5 bg-gray-300 border-2 border-gray-500 rounded-lg">
                     <header class="flex justify-between">
                         <h3>@Satoshi</h3>
 
@@ -87,14 +87,14 @@ import { ref } from 'vue'
                 </div>
             </div>
 
-            <div class="my-10 flex flex-row items-center gap-4">
+            <div class="my-10 flex flex-col sm:flex-row items-center gap-4">
                 <button class="px-3 py-2 bg-yellow-500 border-2 border-yellow-700 rounded-lg">
                     <span class="text-2xl text-gray-900 font-medium">
                         Write a Review
                     </span>
                 </button>
 
-                <p class="w-96 text-sm">
+                <p class="px-7 sm:px-0 max-w-96 text-sm">
                     You must first <span class="px-2 py-1 bg-blue-500 text-white font-medium rounded">Get Connected</span> with a Nexa ID-compatible wallet to write a review.
                 </p>
             </div>
@@ -103,7 +103,7 @@ import { ref } from 'vue'
         <hr />
 
         <section class="my-10">
-            <p class="w-1/2 my-5 px-7 py-5 text-sm bg-gradient-to-r from-rose-100 to-rose-200 border-2 border-rose-300 rounded-xl shadow">
+            <p class="w-full px-3 sm:w-1/2 my-5 px-7 py-5 text-sm bg-gradient-to-r from-rose-100 to-rose-200 border-2 border-rose-300 rounded-xl shadow">
                 Awesome Nexa is NOT responsible for ANY of the resources listed in this catalog.
                 Using this site, you take your own risks.
 
