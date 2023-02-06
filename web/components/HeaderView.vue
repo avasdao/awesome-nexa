@@ -30,6 +30,10 @@ const updateTicker = async () => {
 // updateTicker()
 
 // setInterval(updateTicker, 30000) // TODO: Set as constant.
+
+const connect = () => {
+    console.log('GET CONNECTED!')
+}
 </script>
 
 
@@ -512,9 +516,9 @@ const updateTicker = async () => {
                             1M NEX/USD <span class="text-2xl text-indigo-600 hover:text-indigo-500">{{nexUsd}}</span>
                         </NuxtLink>
 
-                        <span class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
+                        <button @click="connect" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
-                        </span>
+                        </button>
                     </div>
                 </div>
             </div>
