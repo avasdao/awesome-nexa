@@ -34,7 +34,8 @@ const updateTicker = async () => {
 
 
 <template>
-    <div class="relative bg-white">
+    <!-- <div class="relative bg-white"> -->
+    <div class="sticky top-0 z-50 bg-white opacity-[.99]">
         <div class="pointer-events-none absolute inset-0 z-30 shadow" aria-hidden="true"></div>
 
         <div class="relative z-20">
