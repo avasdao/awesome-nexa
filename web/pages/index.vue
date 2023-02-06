@@ -1,7 +1,6 @@
 <template>
     <main>
-        <NewHeroView />
-        <!-- <HeroView /> -->
+        <HeroView />
 
         <GalleryView />
 
