@@ -1,9 +1,9 @@
 <template>
     <main class="max-w-7xl px-0 lg:px-5 py-5 mx-auto flex flex-col lg:flex-row gap-4">
         <section class="w-full lg:w-2/3">
-            <div class="h-64 lg:h-96 mx-3 my-2 rounded-3xl overflow-hidden bg-gray-900 border-4 border-yellow-500 shadow-md">
+            <div class="h-64 sm:h-96 mx-3 my-2 rounded-3xl overflow-hidden bg-gray-900 border-4 border-yellow-500 shadow-md">
 
-                <h2 class="ml-3 mt-2 lg:ml-5 lg:mt-5 relative text-gray-100 opacity-50 text-lg lg:text-2xl font-medium z-10">
+                <h2 class="ml-3 mt-2 sm:ml-5 sm:mt-5 relative text-gray-100 opacity-50 text-lg sm:text-2xl font-medium z-10">
                     Featured Spotlight
                 </h2>
 
@@ -12,7 +12,7 @@
                     class="-mt-12 py-5 h-full object-cover relative inset-0"
                 />
 
-                <div class="relative -mt-5 lg:-mt-10 flex gap-6 justify-center">
+                <div class="relative -mt-5 sm:-mt-10 flex gap-6 justify-center">
                     <button class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
 
                     <button class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
