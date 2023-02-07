@@ -56,7 +56,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [Homepage](https://nexa.org/) - A digital economy with capacity for all.
 - [Specification](https://spec.nexa.org/) - Nexa blockchain protocol and consensus specifications.
 - [Bitcoin Unlimited](https://www.bitcoinunlimited.info/) - Bitcoin Unlimited provides a voice to all stakeholders in the Bitcoin ecosystem.
-- [Discord channel](https://discord.gg/2yQNsZV6EJ) - Largest social media community.
+- [Discord channel](https://discord.gg/2yQNsZV6EJ) - Currently hosting Nexa's largest social media community.
 - [Telegram group](https://t.me/nexacoin) - Conversations about Nexa happening on Telegram.
 - [Development group on [matrix]](https://matrix.to/#/#nexa-dev:matrix.org) - Chat directly with the BU/Nexa team and community developers.
 - [Twitter](https://twitter.com/nexamoney) - Official Twitter account.
