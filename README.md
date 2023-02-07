@@ -89,21 +89,21 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Exchanges
 
-Users have several options when Buying and/or Selling NEXA on the open market; depending mostly on the source of funds that will be used during the transaction.
+Users will have several options when __Buying and/or Selling NEXA__ on the open market; depending mostly on the source of funds that will be used during their transaction.
 
 ### Centralized
-- [Exbitron](https://www.exbitron.com/trading/nexausdt) - Offering trading pairs for USDT (Tron) and BCH.
-- [Txbit](https://txbit.io/Trade/NEXA/USDT) - Offering trading pairs for USDT (BSC).
+- [Exbitron](https://www.exbitron.com/trading/nexausdt) - Offering trading pairs for USDT (via Tron) and BCH.
+- [Txbit](https://txbit.io/Trade/NEXA/USDT) - Offering trading pairs for USDT (via BNB Smart Chain).
 - [SafeTrade](https://safe.trade/trading/nexausdt) - Offering trading pairs for USDT.
 - [TradeOgre](https://www.tradeogre.com/) - Offering trading pairs for USDT.
 
 ### Instant
-- [Nexa Swap](https://nexaswap.com) - Offering instant exchange to/from Nexa and over 100+ cryptocurrencies.
+- [Nexa Swap](https://nexaswap.com) - Offering instant exchange to/from NEXA and over 100+ cryptocurrencies.
 
 
 ## Mining
 
-Nexa uses the unique NexaPOW mining algorithm, which is currently CPU and GPU compatible.
+Nexa uses the unique [__NexaPOW__](https://spec.nexa.org/nexa/NexaPOW.md) mining algorithm, which is currently CPU and GPU compatible.
 
 ### Pools
 - [Rplant Pool](https://pool.rplant.xyz/) - A GPU mining pool.
@@ -130,7 +130,7 @@ Nexa uses the unique NexaPOW mining algorithm, which is currently CPU and GPU co
 
 ## Development Tools
 
-Nexa supports Decentralized Application (dApp) Development using many of the most popular programming languages.
+Nexa offers a premium __Developer Experience (DX)__ from beginner thru advanced __Decentralized Application (dApp)__ development; supporting many of today's MOST popular programming languages.
 
 ### JavaScript
 - [NexaJS](https://nexajs.org/) - A JavaScript library and software development kit (SDK).
