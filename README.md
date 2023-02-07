@@ -103,7 +103,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Mining
 
-Nexa uses the unique [__NexaPOW__](https://spec.nexa.org/nexa/NexaPOW.md) mining algorithm, which is currently CPU and GPU compatible.
+> Nexa uses the unique [__NexaPOW__](https://spec.nexa.org/nexa/NexaPOW.md) mining algorithm, which is currently CPU and GPU compatible.
 
 ### Pools
 - [Rplant Pool](https://pool.rplant.xyz/) - A GPU mining pool.
@@ -130,7 +130,7 @@ Nexa uses the unique [__NexaPOW__](https://spec.nexa.org/nexa/NexaPOW.md) mining
 
 ## Development Tools
 
-Nexa offers a premium __Developer Experience (DX)__ from beginner thru advanced __Decentralized Application (dApp)__ development; supporting many of today's MOST popular programming languages.
+> Nexa offers a premium __Developer Experience (DX)__ from beginner thru advanced __Decentralized Application (dApp)__ development; supporting many of today's MOST popular programming languages.
 
 ### JavaScript
 - [NexaJS](https://nexajs.org/) - A JavaScript library and software development kit (SDK).
