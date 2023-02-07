@@ -40,19 +40,15 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
   - [Software](#software)
   - [Guides](#guides)
   - [Calculators](#calculators)
-  - [Charts & Statistics](#charts-statistics)
+  - [Charts & Statistics](#chartsstatistics)
 - [Development Tools](#development-tools)
   - [JavaScript](#javascript)
-  - [Python](#python)
-  - [Rust](#rust)
   - [C++](#c)
   - [Java/Kotlin](#javakotlin)
-  - [Swift](#swift)
 - [Articles and Explanations](#articles-and-explanations)
 - [Videos](#videos)
 - [Community](#community)
 - [Related Projects](#related-projects)
-- [Misc](#misc)
 
 
 ## Official Sites
@@ -141,6 +137,9 @@ Nexa supports Decentralized Application (dApp) Development using many of the mos
 
 ### C&plus;&plus;
 - [CashLib](https://gitlab.com/nexa/nexa/-/tree/dev/src/cashlib) - Source and header files for C++ development.
+
+### Java/Kotlin
+- [Kotlin for JS](https://kotlinlang.org/docs/js-interop.html) - Use JavaScript code from Kotlin.
 
 
 ## Articles and Explanations
