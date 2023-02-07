@@ -89,7 +89,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Exchanges
 
-Users will have several options when __Buying and/or Selling NEXA__ on the open market; depending mostly on the source of funds that will be used during their transaction.
+> Users will have several options when __Buying and/or Selling NEXA__ on the open market; depending mostly on the source of funds that will be used during their transaction.
 
 ### Centralized
 - [Exbitron](https://www.exbitron.com/trading/nexausdt) - Offering trading pairs for USDT (via Tron) and BCH.
