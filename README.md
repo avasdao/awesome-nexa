@@ -35,12 +35,12 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [Exchanges](#exchanges)
   - [Centralized](#centralized)
   - [Instant](#instant)
-  - [Decentralized](#decentralized)
 - [Mining](#mining)
+  - [Pools](#pools)
+  - [Software](#software)
   - [Guides](#guides)
   - [Calculators](#calculators)
-  - [Software](#software)
-  - [Pools](#pools)
+  - [Charts & Statistics](#charts-statistics)
 - [Development Tools](#development-tools)
   - [JavaScript](#javascript)
   - [Python](#python)
@@ -110,10 +110,12 @@ Users have several options when Buying and/or Selling NEXA on the open market; d
 Nexa uses the unique NexaPOW mining algorithm, which is currently CPU and GPU compatible.
 
 ### Pools
-- [Rplant Pool](https://pool.rplant.xyz/) - GPU mining pool
-- [Pool137](https://nexapool.crypto137.com/) - GPU mining pool
-- [Nexa Rocks!](https://nexa.rocks/pool/) - CPU mining pool
-- [Vipor.net](https://vipor.net/) - Solo and PPLNS GPU mining pool
+- [Rplant Pool](https://pool.rplant.xyz/) - A GPU mining pool.
+- [Pool137](https://nexapool.crypto137.com/) - A GPU mining pool.
+- [Nexa Rocks!](https://nexa.rocks/pool/) - A CPU solo and cloud mining pool.
+- [Vipor.net](https://vipor.net/) - A Solo and PPLNS GPU mining pool.
+- [WoolyPooly](https://woolypooly.com/en/coin/nexa) - A Solo and PPLNS GPU mining pool.
+- [ACC Pool](https://nexa.acc-pool.pw/) - A PPLNS GPU mining pool.
 
 ### Software
 - [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner) - The first NVIDIA GPU miner.
