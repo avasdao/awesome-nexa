@@ -57,124 +57,109 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ## Official Sites
 
-- [Homepage](https://nexa.org/)
-- [Specification](https://spec.nexa.org/)
-- [Bitcoin Unlimited](https://www.bitcoinunlimited.info/)
-- [Matrix group](https://matrix.to/#/#nexacoin:matrix.org) _(almost all discussion happens here)_
-- [Telegram group](https://t.me/nexacoin) _(almost all discussion happens here)_
-- [Discord channel](https://discord.gg/2yQNsZV6EJ) _(almost all discussion happens here)_
-- [Twitter](https://twitter.com/nexamoney)
-- [Reddit](https://www.reddit.com/r/Nexa/)
-- [YouTube](https://www.youtube.com/channel/UCH03nTnxs3TLmbSHtm54B1g)
-- [Instagram](https://www.instagram.com/nexacoin/)
+- [Homepage](https://nexa.org/) - A digital economy with capacity for all.
+- [Specification](https://spec.nexa.org/) - Nexa blockchain protocol and consensus specifications.
+- [Bitcoin Unlimited](https://www.bitcoinunlimited.info/) - Bitcoin Unlimited provides a voice to all stakeholders in the Bitcoin ecosystem.
+- [Discord channel](https://discord.gg/2yQNsZV6EJ) - Largest social media community.
+- [Telegram group](https://t.me/nexacoin) - Conversations about Nexa happening on Telegram.
+- [Development group on [matrix]](https://matrix.to/#/#nexa-dev:matrix.org) - Chat directly with the BU/Nexa team and community developers.
+- [Twitter](https://twitter.com/nexamoney) - Official Twitter account.
+- [Reddit](https://www.reddit.com/r/Nexa/) - Official Reddit account.
+- [YouTube](https://www.youtube.com/channel/UCH03nTnxs3TLmbSHtm54B1g) - Official YouTube channel.
+- [Instagram](https://www.instagram.com/nexacoin/) - Official Instagram account.
+- [TikTok](https://www.tiktok.com/@nexacoin) - Official TikTok account.
 
 
 ## Featured Sites
 
-- [Wiki](https://nexa.wiki/)
-- [Forum](https://nexa.forum/)
+- [Forum](https://nexa.forum/) - A community-run forum for Nexa questions and answers.
 
 
 ## Blockchain Explorers
 
-- [Nexa Explorer _(explorer.nexa.org)_](https://explorer.nexa.org/)
+- [Nexa Explorer _(explorer.nexa.org)_](https://explorer.nexa.org/) - Official block explorer.
 
 
 ## Faucets
 
-- [Nexa Club](https://faucet.nexaclub.org/)
+- [Nexa Club](https://faucet.nexaclub.org/) - A community-run NEXA faucet.
 
 
 ## Trackers
 
-- [CoinMarketCap](https://coinmarketcap.com/) - _coming soon_
-- [CoinGecko](https://www.coingecko.com/en/coins/nexacoin)
+- [CoinMarketCap](https://coinmarketcap.com/currencies/nexa/) - The #1 Crypto price & market tracking portal.
+- [CoinGecko](https://www.coingecko.com/en/coins/nexacoin) - One of the leading Crypto price indices.
 
 
 ## Exchanges
 
-A review of the different exchanges supporting NEXA.
+Users have several options when Buying and/or Selling NEXA on the open market; depending mostly on the source of funds that will be used during the transaction.
 
 ### Centralized
-- [Exbitron](https://www.exbitron.com/trading/nexausdt)
-- [Txbit](https://txbit.io/Trade/NEXA/USDT)
+- [Exbitron](https://www.exbitron.com/trading/nexausdt) - Offering trading pairs for USDT (Tron) and BCH.
+- [Txbit](https://txbit.io/Trade/NEXA/USDT) - Offering trading pairs for USDT (BSC).
+- [SafeTrade](https://safe.trade/trading/nexausdt) - Offering trading pairs for USDT.
+- [TradeOgre](https://www.tradeogre.com/) - Offering trading pairs for USDT.
 
 ### Instant
-- [Nexa Swap](https://nexaswap.com)
-
-### Decentralized
-_TBD_
+- [Nexa Swap](https://nexaswap.com) - Offering instant exchange to/from Nexa and over 100+ cryptocurrencies.
 
 
 ## Mining
 
-A collection of mining resources for Nexa.
-
-### Guides
-- [Solo Mining (CPU)](https://nexa.rocks/solo/)
-- [Mining quick(ish) start (CPU)](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/)
-
-### Calculators
-_TBD_
-
-### Software
-- [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner)
-- [WildRig Multi](https://github.com/andru-kun/wildrig-multi)
+Nexa uses the unique NexaPOW mining algorithm, which is currently CPU and GPU compatible.
 
 ### Pools
-- [Rplant Pool - GPU mining pool](https://pool.rplant.xyz/)
-- [Pool137 - GPU mining pool](https://nexapool.crypto137.com/)
-- [Nexa Rocks! - CPU mining pool](https://nexa.rocks/pool/)
-- [Vipor.net - Solo and PPLNS GPU mining pool](https://vipor.net/)
+- [Rplant Pool](https://pool.rplant.xyz/) - GPU mining pool
+- [Pool137](https://nexapool.crypto137.com/) - GPU mining pool
+- [Nexa Rocks!](https://nexa.rocks/pool/) - CPU mining pool
+- [Vipor.net](https://vipor.net/) - Solo and PPLNS GPU mining pool
+
+### Software
+- [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner) - The first NVIDIA GPU miner.
+- [WildRig Multi](https://github.com/andru-kun/wildrig-multi) - Multi-algorithm miner for AMD & NVIDIA.
+
+### Guides
+- [Mining quick(ish) start (CPU)](https://www.reddit.com/r/Nexa/comments/vhgubw/mining_quickish_start/) - Guide to getting setup with Solo CPU mining.
+- [Solo Mining (CPU)](https://nexa.rocks/solo/) - Guide to getting setup with Solo CPU mining.
+
+### Calculators
+- [minerstat](https://minerstat.com/coin/NEX) - Estimated earnings, costs, and profits for mining NEX.
+
+### Charts & Statistics
+- [MiningPoolStats](https://miningpoolstats.stream/nexa) - View and compare statistics for all of the NexaPOW supported mining pools.
 
 
 ## Development Tools
 
-All of the supported tools for Builders.
+Nexa supports Decentralized Application (dApp) Development using many of the most popular programming languages.
 
 ### JavaScript
-- [NexaJS - Library and Software Development Kit (SDK)](https://nexajs.org/)
-
-### Python
-- [PyNexa](https://pynexa.org/)
-
-### Rust
-- [NexaRs](https://nexa.rs/)
+- [NexaJS](https://nexajs.org/) - A JavaScript library and software development kit (SDK).
 
 ### C&plus;&plus;
-- [CashLib](https://gitlab.com/nexa/nexa/-/tree/dev/src/cashlib)
-
-### Java/Kotlin
-_TBD_
-
-### Swift
-_TBD_
+- [CashLib](https://gitlab.com/nexa/nexa/-/tree/dev/src/cashlib) - Source and header files for C++ development.
 
 
 ## Articles and Explanations
 
-- [Official Roadmap](https://www.nexa.org/roadmap)
+- [Official Roadmap](https://www.nexa.org/roadmap) - A detailed guide explaining when and how the Nexa project will proceed over the next few years.
 
 
 ## Videos
 
-- [Signature Scaling Via Hardware by Peter Rizun](https://www.youtube.com/watch?v=pDRCWcw5sAU)
+- [Signature Scaling Via Hardware](https://www.youtube.com/watch?v=pDRCWcw5sAU) - A technical presentation by [Peter Rizun](https://twitter.com/PeterRizun) (Nexa's Chief Scientist).
 
 
 ## Community
 
-- [Nexa OTC P2P Trading Chat](https://t.me/nexaP2Ptrading)
+- [Nexa OTC](https://t.me/nexaP2Ptrading) - P2P trading chat.
 
 
 ## Related Projects
 
-- [Bitcoin (BTC)](https://bitcoin.org) - _(1st Generation)_
-- [Bitcoin Cash (BCH)](https://bitcoincash.org) - _(2nd Generation)_
-
-
-## Misc
-
-_TBD_
+- [Bitcoin (BTC)](https://bitcoin.org) - 1st generation P2P electronic cash blockchain.
+- [Bitcoin Cash (BCH)](https://bitcoincash.org) - 2nd generation P2P electronic cash blockchain.
 
 
 ## Contributing
