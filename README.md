@@ -40,7 +40,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
   - [Software](#software)
   - [Guides](#guides)
   - [Calculators](#calculators)
-  - [Charts & Statistics](#chartsstatistics)
+  - [Charts & Statistics](#charts--statistics)
 - [Development Tools](#development-tools)
   - [JavaScript](#javascript)
   - [C++](#c)
