@@ -2,7 +2,7 @@
 
 # Awesome Nexa [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<a href="https://awesomenexa.org">↳ AwesomeNexa.org</a>
+<a href="https://awesomenexa.org"><strong>👉 Awesomenexa.org 👀</strong></a>
 
 <div align="center">
 ⚡ A curated list of awesome resources related to the <a href='https://nexa.org/'><strong>Nexa</strong></a> blockchain.
