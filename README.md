@@ -95,7 +95,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [Exbitron](https://www.exbitron.com/trading/nexausdt) - Offering trading pairs for USDT (via Tron) and BCH.
 - [Txbit](https://txbit.io/Trade/NEXA/USDT) - Offering trading pairs for USDT (via BNB Smart Chain).
 - [SafeTrade](https://safe.trade/trading/nexausdt) - Offering trading pairs for USDT.
-- [TradeOgre](https://www.tradeogre.com/) - Offering trading pairs for USDT.
+- [TradeOgre](https://www.tradeogre.com/) - Offering trading pairs for USDT (via Ethereum).
 
 ### Instant
 - [Nexa Swap](https://nexaswap.com) - Offering instant exchange to/from NEXA and over 100+ cryptocurrencies.
