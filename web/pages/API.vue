@@ -23,8 +23,8 @@ import { ref } from 'vue'
             </h3>
 
             <ul class="list-disc mt-3 pl-10 flex flex-col gap-3">
-                <li><a href="/api/mining" class="text-blue-500 font-medium hover:underline">/api/mining</a></li>
-                <li><a href="/api/wallets" class="text-blue-500 font-medium hover:underline">/api/wallets</a></li>
+                <li><a href="/api/v1/mining" class="text-blue-500 font-medium hover:underline">/api/v1/mining</a></li>
+                <li><a href="/api/v1/wallets" class="text-blue-500 font-medium hover:underline">/api/v1/wallets</a></li>
             </ul>
         </section>
 

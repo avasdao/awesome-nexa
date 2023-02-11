@@ -2,7 +2,7 @@
 /* Import modules. */
 import { ref } from 'vue'
 
-const mining = await $fetch('/api/mining')
+const mining = await $fetch('/api/v1/mining')
 console.log('MINING', mining)
 </script>
 
