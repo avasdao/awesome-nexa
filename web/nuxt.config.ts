@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    /* Application Settings */
     app: {
+        /* Application Header */
         head: {
             // charset: 'utf-16',
             // viewport: 'width=500, initial-scale=1',
@@ -20,5 +22,18 @@ export default defineNuxtConfig({
         },
     },
 
-    modules: ['@nuxtjs/tailwindcss'],
+    /* Modules */
+    modules: [
+        /* Tailwind CSS */
+        '@nuxtjs/tailwindcss',
+    ],
+
+    /* Route Rules */
+    routeRules: {
+        /* Disable server-side rendering for Admin area. */
+        '/admin/**': { ssr: false },
+
+        /* Add CORS headers to API. */
+        '/api/v1/**': { cors: true },
+    },
 })

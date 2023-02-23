@@ -2,7 +2,12 @@
 /* Import modules. */
 import { ref } from 'vue'
 
-//
+const { data: status } = await useFetch('/api/status')
+console.log('STATUS', status)
+
+const { data: response } = await useFetch('/api/hello?name=Satoshi')
+console.log('RESPONSE', response)
+
 </script>
 
 <template>
@@ -23,14 +28,54 @@ import { ref } from 'vue'
             </h3>
 
             <ul class="list-disc mt-3 pl-10 flex flex-col gap-3">
-                <li><a href="/api/v1/mining" class="text-blue-500 font-medium hover:underline">/api/v1/mining</a></li>
-                <li><a href="/api/v1/wallets" class="text-blue-500 font-medium hover:underline">/api/v1/wallets</a></li>
+                <li><a href="/api/mining" class="text-blue-500 font-medium hover:underline">/api/mining</a></li>
+                <li><a href="/api/wallets" class="text-blue-500 font-medium hover:underline">/api/wallets</a></li>
             </ul>
         </section>
 
         <p class="flex flex-row items-center gap-2 mb-10 justify-center italic">
             <span class="text-sm text-gray-500 font-medium">Last updated:</span>
-            <span class="text-lg text-rose-500 font-medium">February 5th, 2023</span>
+            <span class="text-lg text-rose-500 font-medium">February 23rd, 2023</span>
         </p>
+
+        <section class="mx-20 my-5 py-3 grid grid-cols-2 gap-x-4 gap-y-2 bg-gradient-to-r from-gray-50 to-gray-200 border-2 border-gray-300 rounded shadow">
+            <div class="flex justify-end items-center">
+                <h3 class="text-gray-500 font-medium uppercase">
+                    Database
+                </h3>
+            </div>
+
+            <div class="flex">
+                <h2 class="text-xl text-green-600 font-medium">
+                    {{ status?.db }}
+                </h2>
+            </div>
+
+            <div class="flex justify-end items-center">
+                <h3 class="text-gray-500 font-medium uppercase">
+                    Price Ticker
+                </h3>
+            </div>
+
+            <div class="flex">
+                <h2 class="text-xl text-green-600 font-medium">
+                    {{ status?.ticker }}
+                </h2>
+            </div>
+
+            <div class="flex justify-end items-center">
+                <h3 class="text-gray-500 font-medium uppercase">
+                    NexID Server
+                </h3>
+            </div>
+
+            <div class="flex">
+                <h2 class="text-xl text-green-600 font-medium">
+                    {{ status?.nexid }}
+                </h2>
+            </div>
+
+        </section>
+
     </main>
 </template>

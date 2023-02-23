@@ -6,7 +6,7 @@
  */
 
 /* Initialize listings. */
-const listings = []
+const listings: Object[] = []
 
 // NOTE: Listings are listed in alphabetical order.
 //       However, listings are sorted by date when reported by the API.
