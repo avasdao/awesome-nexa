@@ -6,21 +6,23 @@ import { ref } from 'vue'
 </script>
 
 <template>
-    <main class="">
-        <HeaderView />
+    <NuxtLayout name="newsletter">
+        <template #title>
+            January 2023
+        </template>
 
-        <div class="pt-10 flex justify-center">
-            <h1 class="text-4xl font-bold tracking-widest">
-                Awesome Nexa Newsletter — January 2023
-            </h1>
-        </div>
+        <template #summary>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perferendis iusto perspiciatis quasi repudiandae magnam rem optio nam, blanditiis maiores dolores, ullam, sed omnis id similique sint adipisci accusamus. Impedit.
+        </template>
 
-        <section class="py-10 flex flex-col items-center gap-10">
+        <template #description>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod, commodi id asperiores reiciendis temporibus nisi quasi dolorem perspiciatis unde atque illo? Sed porro similique debitis perferendis dolor sequi voluptas!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio perferendis recusandae rem, doloribus ex quo voluptatum harum numquam autem magnam eius provident hic dolorum cumque aliquam, ab fugiat quisquam dolore?
             </p>
-        </section>
 
-        <FooterView />
-    </main>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio possimus deserunt porro minima maxime dolores aspernatur labore amet laboriosam error odio, quis dolorem blanditiis tempore commodi in iste nemo earum!
+            </p>
+        </template>
+    </NuxtLayout>
 </template>
