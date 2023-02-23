@@ -23,22 +23,22 @@ console.log('HELLO', hello)
         </div>
 
         <section class="py-10 flex flex-col items-center">
-            <h3 class="mt-10 text-2xl font-medium">
-                Premium Endpoints:
+            <h3 class="text-2xl font-medium">
+                Featured Endpoints
             </h3>
 
             <ul class="list-disc mt-3 pl-10 flex flex-col gap-3">
-                <li><a href="/status" class="text-blue-500 font-medium hover:underline">/status</a></li>
-                <li><a href="/ticker" class="text-blue-500 font-medium hover:underline">/ticker</a></li>
                 <li><a href="/markets" class="text-blue-500 font-medium hover:underline">/markets</a></li>
                 <li><a href="/mcap" class="text-blue-500 font-medium hover:underline">/mcap</a></li>
                 <li><a href="/price" class="text-blue-500 font-medium hover:underline">/price</a></li>
+                <li><a href="/status" class="text-blue-500 font-medium hover:underline">/status</a></li>
+                <li><a href="/ticker" class="text-blue-500 font-medium hover:underline">/ticker</a></li>
             </ul>
         </section>
 
         <section class="py-10 flex flex-col items-center">
-            <h3 class="mt-10 text-2xl font-medium">
-                Available Endpoints:
+            <h3 class="text-2xl font-medium">
+                Category Endpoints
             </h3>
 
             <ul class="list-disc mt-3 pl-10 flex flex-col gap-3">
@@ -48,24 +48,14 @@ console.log('HELLO', hello)
         </section>
 
         <section class="py-10 flex flex-col items-center">
-            <h2 class="text-3xl font-medium italic">
-                Full documentation is coming soon...
-            </h2>
-
-            <h3 class="mt-10 text-2xl font-medium">
-                Available Endpoints:
+            <h3 class="text-2xl font-medium">
+                Other Endpoints
             </h3>
 
             <ul class="list-disc mt-3 pl-10 flex flex-col gap-3">
-                <li><a href="/api/mining" class="text-blue-500 font-medium hover:underline">/api/mining</a></li>
-                <li><a href="/api/wallets" class="text-blue-500 font-medium hover:underline">/api/wallets</a></li>
+                <li><a href="/api/nexid" class="text-blue-500 font-medium hover:underline">/api/nexid</a></li>
             </ul>
         </section>
-
-        <p class="flex flex-row items-center gap-2 mb-10 justify-center italic">
-            <span class="text-sm text-gray-500 font-medium">Last updated:</span>
-            <span class="text-lg text-rose-500 font-medium">February 23rd, 2023</span>
-        </p>
 
         <section class="mx-20 my-5 py-3 grid grid-cols-2 gap-x-4 gap-y-2 bg-gradient-to-r from-gray-50 to-gray-200 border-2 border-gray-300 rounded shadow">
             <div class="col-span-2 flex justify-center">
