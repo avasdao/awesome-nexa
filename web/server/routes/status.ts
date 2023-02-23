@@ -4,7 +4,7 @@ export default defineEventHandler((event) => {
     const nexidStatus = 'ok'
 
     return {
-        db: dbStatus,
+        database: dbStatus,
         ticker: tickerStatus,
         nexid: nexidStatus,
     }

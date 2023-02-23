@@ -34,6 +34,6 @@ export default defineNuxtConfig({
         '/admin/**': { ssr: false },
 
         /* Add CORS headers to API. */
-        '/api/v1/**': { cors: true },
+        '/api/**': { cors: true },
     },
 })
