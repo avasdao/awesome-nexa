@@ -1,8 +1,26 @@
-export default defineEventHandler((event) => {
-    /* Set price. */
-    // FIXME FOR DEV PURPOSES ONLY
-    const price = '0.000013370000'
+/* Define Ticker */
+interface Ticker {
+    quote: Quote,
+}
 
-    /* Send response. */
-    event.node.res.end(price)
+/* Define Quote */
+interface Quote {
+    USD: Currency,
+}
+
+/* Define Currency */
+interface Currency {
+    price: number,
+}
+
+export default defineEventHandler(async (event) => {
+    /* Request ticker (from our own API). */
+    const ticker: Ticker = await $fetch('/ticker')
+    // console.log('TICKER', ticker)
+
+    /* Set price. */
+    const price: number = ticker?.quote?.USD?.price
+
+    /* Return price. */
+    event.node.res.end(price?.toString())
 })

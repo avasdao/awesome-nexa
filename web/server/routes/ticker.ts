@@ -1,3 +1,14 @@
+/* Define Ticker */
+interface APIResponse {
+    status: Object,
+    data: CMCData,
+}
+
+/* Define CoinMarketCap Data */
+interface CMCData {
+    NEXA: Object,
+}
+
 const CMC_API_KEY: string | undefined = process.env.CMC_API_KEY
 
 /* Set endpoint. */
@@ -7,7 +18,7 @@ const CMC_API_ENDPOINT: string = 'https://pro-api.coinmarketcap.com/v1/cryptocur
 const target: string = CMC_API_ENDPOINT + `?symbol=NEXA` // ID = 23380
 
 /* Initialize ticker. */
-let ticker: Object | unknown
+let ticker: CMCData | unknown
 
 const headers: HeadersInit = {
     'accept': 'json',
@@ -24,13 +35,13 @@ const headers: HeadersInit = {
 ;(async () => {
     try {
         /* Request data. */
-        const response: Object | unknown = await $fetch(target, {
+        const response: APIResponse = await $fetch(target, {
             headers,
         })
         console.log('API RESPONSE', response)
 
         /* Set ticker to the response. */
-        ticker = response
+        ticker = response?.data?.NEXA
     } catch (err) {
         // FIXME Handle errors. (setup Bugsnag)
         console.error(err)
@@ -45,5 +56,5 @@ export default defineEventHandler((event) => {
     }
 
     /* Return ticker. */
-    return ticker?.data?.NEXA || errorMsg
+    return ticker || errorMsg
 })
