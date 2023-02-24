@@ -45,6 +45,17 @@ const connect = () => {
     console.log('GET CONNECTED!')
 }
 
+/**
+ * Go To
+ *
+ * Will handle closing any open windows, modals, etc before navigating to the
+ * destination page.
+ *
+ * @param {String} _target Location of destination page.
+ */
+const goto = (_target) => {
+    console.log('GOTO ', _target)
+}
 </script>
 
 <template>
@@ -61,7 +72,7 @@ const connect = () => {
                         <img class="h-14 w-auto sm:h-12" src="~/assets/logo.png" alt="Awesome Nexa Logo" />
                     </NuxtLink>
 
-                    <NuxtLink to="/buy" class="sm:hidden flex flex-col justify-center items-center">
+                    <NuxtLink to="/buy" class="lg:hidden flex flex-col justify-center items-center">
                         <span class="text-4xl text-indigo-600 font-medium">
                             {{nexUsd}}
                         </span>
@@ -551,6 +562,7 @@ const connect = () => {
                         <div>
                             <img class="h-14 w-auto" src="~/assets/logo.png" alt="Awesome Nexa Logo" />
                         </div>
+
                         <div class="-mr-2">
                             <button
                                 @click="isShowingMobileMenu = false"
@@ -558,7 +570,6 @@ const connect = () => {
                                 class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                             >
                                 <span class="sr-only">Close menu</span>
-                                <!-- Heroicon name: outline/x-mark -->
                                 <svg class="h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
@@ -638,9 +649,10 @@ const connect = () => {
                                     </div>
                                 </a>
                             </div>
+
                             <div class="mt-8 text-base">
                                 <a href="javascript://" class="font-medium text-indigo-600 hover:text-indigo-500">
-                                    View all products &amp; services
+                                    View more Nexa products &amp; services
                                     <span aria-hidden="true"> &rarr;</span>
                                 </a>
                             </div>
@@ -650,17 +662,17 @@ const connect = () => {
 
                 <div class="py-6 px-5">
                     <div class="grid grid-cols-2 gap-4">
-                        <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Social Media
-                        </a>
+                        <NuxtLink to="https://discord.gg/2yQNsZV6EJ" target="_blank" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                            Join the Discord
+                        </NuxtLink>
 
-                        <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Docs
-                        </a>
+                        <NuxtLink to="https://spec.nexa.org" target="_blank" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                            Technical Specifications
+                        </NuxtLink>
 
-                        <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Company
-                        </a>
+                        <NuxtLink to="https://www.bitcoinunlimited.info/" target="_blank" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                            Bitcoin Unlimited
+                        </NuxtLink>
 
                         <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                             Community
@@ -670,15 +682,15 @@ const connect = () => {
                             Blog
                         </a>
 
-                        <a href="javascript://" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
-                            Contact Sales
-                        </a>
+                        <Button @click="goto('/help')" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                            Do you need help?
+                        </Button>
                     </div>
 
                     <div class="mt-6">
-                        <a href="javascript://" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
+                        <Button @click="connect" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
-                        </a>
+                        </Button>
                     </div>
                 </div>
             </div>
