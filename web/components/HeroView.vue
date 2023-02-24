@@ -32,20 +32,36 @@
 
                 <div class="w-full h-20 px-3 py-1 bg-purple-700 rounded-lg">
                     <h2 class="text-purple-100 text-sm font-medium">
-                        Latest News
+                        Featured News
                     </h2>
                 </div>
 
-                <div class="w-full h-20 px-3 py-1 bg-purple-700 rounded-lg">
-                    <h2 class="text-purple-100 text-sm font-medium">
-                        Latest Twitter
-                    </h2>
-                </div>
-
-                <NuxtLink to="https://www.youtube.com/watch?v=7pmoT3M262A" target="_blank" class="w-full h-20 px-3 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
+                <NuxtLink to="https://twitter.com/NexaMoney/status/1628422269356888071" target="_blank" class="w-full h-20 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
                     <div>
                         <h3 class="text-purple-300 text-xs font-medium uppercase">
-                            Latest Video
+                            Featured Social
+                        </h3>
+
+                        <h2 class="text-purple-100 text-base font-bold">
+                            Twitter Space
+                        </h2>
+
+                        <h3 class="text-purple-100 text-xs font-medium italic">
+                            Mon, Feb 27 @ 9am EST
+                        </h3>
+
+                        <h3 class="text-purple-100 text-xs font-bold">
+                            1st Nexa community discussion
+                        </h3>
+                    </div>
+
+                    <img src="https://pbs.twimg.com/media/FplRaX-aYAAOXzJ?format=jpg&name=900x900" class="h-full border border-purple-400 rounded-lg shadow" />
+                </NuxtLink>
+
+                <NuxtLink to="https://www.youtube.com/watch?v=7pmoT3M262A" target="_blank" class="w-full h-20 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
+                    <div>
+                        <h3 class="text-purple-300 text-xs font-medium uppercase">
+                            Featured Video
                         </h3>
 
                         <h2 class="text-purple-100 text-base font-bold">
@@ -61,7 +77,7 @@
                         </h3>
                     </div>
 
-                    <img src="~/assets/thumbnails/the-power-of-tokens-on-nexa.jpg" class="h-full border border-purple-400 rounded shadow" />
+                    <img src="~/assets/thumbnails/the-power-of-tokens-on-nexa.jpg" class="h-full border border-purple-400 rounded-lg shadow" />
                 </NuxtLink>
             </div>
         </section>
