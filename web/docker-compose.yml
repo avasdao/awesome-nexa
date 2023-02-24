@@ -9,4 +9,4 @@ services:
     ports:
       - '127.0.0.1:3000:3000'
   environment:
-    CMC_API_KEY: ${CMC_API_KEY}
+    - CMC_API_KEY: ${CMC_API_KEY} # change this to match your system's ENV
