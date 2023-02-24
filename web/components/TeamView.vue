@@ -56,7 +56,7 @@
                             <div class="space-y-2">
                                 <div class="text-xs font-medium lg:text-sm">
                                     <h3>Dr. Peter Rizun</h3>
-                                    <p class="text-indigo-600">Chier Scientist</p>
+                                    <p class="text-indigo-600">Chief Scientist</p>
                                 </div>
                             </div>
                         </div>

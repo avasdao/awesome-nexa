@@ -25,7 +25,7 @@ import { ref } from 'vue'
             </h2>
 
             <p class="w-3/4 mt-2 text-lg leading-8 text-gray-600">
-                The Awesome Nexa team is ready, willing and able to help make your Crypto BUIDL dreams a reality.
+                The Awesome Nexa team is ready, willing and able to help make your Crypto #BUIDL dreams a reality.
             </p>
 
             <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
@@ -126,25 +126,30 @@ import { ref } from 'vue'
                 </form>
 
                 <div class="lg:mt-6 lg:w-80 lg:flex-none">
-                    <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" />
+                    <!-- <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" /> -->
                     <figure class="mt-10">
-                        <blockquote class="text-lg font-semibold leading-8 text-gray-900">
-                            <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+                        <blockquote class="text-xl font-semibold leading-8 text-gray-900">
+                            <p>
+                                <span class="text-5xl">“</span>
+                                Awesome Nexa is a rapidly growing community project,
+                                which offers me the pleasure of cataloging the MOST incredible projects from some of the hardest working BUIDLers in all of Crypto.
+                                <span class="inline-block absolute -mt-2 text-5xl">”</span>
+                            </p>
                         </blockquote>
 
-                        <NuxtLink to="https://twitter.com/0xShomari" target="_blank" class="group px-3 py-2 mt-10 flex items-center gap-x-6 bg-blue-200 rounded-lg border border-blue-300 shadow hover:bg-blue-300">
+                        <NuxtLink to="https://twitter.com/0xShomari" target="_blank" class="group px-3 py-2 mt-10 flex items-center gap-x-6 bg-violet-200 rounded-lg border border-violet-300 shadow hover:bg-violet-300">
                             <img
                                 src="https://pbs.twimg.com/profile_images/617458563/profile5_400x400.jpg"
                                 alt=""
-                                class="h-14 w-14 flex-none rounded-full bg-gray-50 border-2 border-blue-600 shadow"
+                                class="h-14 w-14 flex-none rounded-full bg-gray-50 border-2 border-yellow-400 shadow"
                             />
 
                             <div>
-                                <div class="text-2xl font-semibold text-blue-900 group-hover:text-blue-700">
+                                <div class="text-2xl font-semibold text-violet-900 group-hover:text-violet-700">
                                     0xShomari
                                 </div>
 
-                                <div class="text-lg font-medium text-blue-600 group-hover:text-blue-900">
+                                <div class="text-lg font-medium text-violet-600 group-hover:text-violet-900">
                                     Crypto Master Builder
                                 </div>
                             </div>
