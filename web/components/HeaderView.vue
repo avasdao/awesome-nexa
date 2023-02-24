@@ -3,39 +3,49 @@
 import numeral from 'numeral'
 import { ref } from 'vue'
 
+/* Initialize constants. */
+const TICKER_UPDATE_INTERVAL = 60000 // 60 seconds
+
+/* Initialize flags. */
 const isShowingDownlaodsMenu = ref(false)
 const isShowingExtrasMenu = ref(false)
 const isShowingMobileMenu = ref(false)
 
-/* Initialize NEX/USD holder. */
+/* Initialize holders. */
 const nexUsd = ref(null)
 
-const ENDPOINT = 'https://www.exbitron.com/api/v2/peatio/public/markets/nexausdt/tickers'
 
+/**
+ * Update Ticker
+ */
 const updateTicker = async () => {
-    const response = await $fetch(ENDPOINT)
+    const price = await $fetch('/price')
         .catch(err => console.error)
+    // console.log('PRICE', price)
 
-        // console.log('RESPONSE', response)
-    // const nexUsd = ticker.value
+    /* Convert to MEX. */
+    const MEX = price * 1000000.0
 
-    const ticker = response.ticker
-
-    const last = ticker.last * 1000000.0
-
-    nexUsd.value = numeral(last).format('$0,0.00[00]')
+    /* Format and set to display. */
+    nexUsd.value = numeral(MEX).format('$0,0.00[00]')
     // console.log('NEX/USD', nexUsd)
 }
 
-// updateTicker()
+/* Update ticker details. */
+updateTicker()
 
-// setInterval(updateTicker, 30000) // TODO: Set as constant.
+/* Set interval for auto-update. */
+setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
 
+
+/**
+ * Connect
+ */
 const connect = () => {
     console.log('GET CONNECTED!')
 }
-</script>
 
+</script>
 
 <template>
     <!-- <div class="relative bg-white"> -->
