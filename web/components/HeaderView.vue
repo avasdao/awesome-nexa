@@ -45,17 +45,6 @@ const connect = () => {
     console.log('GET CONNECTED!')
 }
 
-/**
- * Go To
- *
- * Will handle closing any open windows, modals, etc before navigating to the
- * destination page.
- *
- * @param {String} _target Location of destination page.
- */
-const goto = (_target) => {
-    console.log('GOTO ', _target)
-}
 </script>
 
 <template>
@@ -581,9 +570,8 @@ const goto = (_target) => {
                         <nav>
                             <div class="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
 
-                                <a href="https://nexa.org" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                                <NuxtLink to="https://nexa.org" target="_blank" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                                        <!-- Heroicon name: outline/cursor-arrow-rays -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                             <path
                                                 stroke-linecap="round"
@@ -596,28 +584,23 @@ const goto = (_target) => {
                                     <div class="ml-4 text-base font-medium text-gray-900">
                                         Nexa Homepage
                                     </div>
-                                </a>
+                                </NuxtLink>
 
-                                <NuxtLink to="/downloads" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
-                                    <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                                        <!-- Heroicon name: outline/chart-bar -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
-                                            />
+                                <NuxtLink to="/spotlight" @click="isShowingMobileMenu = false" class="-m-3 group flex items-center rounded-lg p-3 hover:bg-yellow-400">
+                                    <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-yellow-400 text-white sm:h-12 sm:w-12 group-hover:bg-yellow-900">
+                                        <svg class="w-8 h-8 text-yellow-900 group-hover:text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"></path>
                                         </svg>
                                     </div>
 
-                                    <div class="ml-4 text-base font-medium text-gray-900">
-                                        Downloads
+                                    <div class="ml-4 text-xl font-medium text-gray-900">
+                                        What's HOT!
                                     </div>
                                 </NuxtLink>
 
-                                <a href="https://github.com/avasdao/awesome-nexa#readme" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                                <NuxtLink to="https://github.com/avasdao/awesome-nexa#readme" target="_blank" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                                        <!-- Heroicon name: outline/shield-check -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                             <path
                                                 stroke-linecap="round"
@@ -630,9 +613,9 @@ const goto = (_target) => {
                                     <div class="ml-4 text-base font-medium text-gray-900">
                                         Awesome List
                                     </div>
-                                </a>
+                                </NuxtLink>
 
-                                <a href="javascript://" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                                <NuxtLink to="https://nexa.org/roadmap" target="_blank" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                                         <!-- Heroicon name: outline/squares-2x2 -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -645,16 +628,16 @@ const goto = (_target) => {
                                     </div>
 
                                     <div class="ml-4 text-base font-medium text-gray-900">
-                                        Integrations
+                                        Nexa Roadmap
                                     </div>
-                                </a>
+                                </NuxtLink>
                             </div>
 
                             <div class="mt-8 text-base">
-                                <a href="javascript://" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                <NuxtLink to="/spotlight" @click="isShowingMobileMenu = false" class="font-medium text-indigo-600 hover:text-indigo-500">
                                     View more Nexa products &amp; services
                                     <span aria-hidden="true"> &rarr;</span>
-                                </a>
+                                </NuxtLink>
                             </div>
                         </nav>
                     </div>
@@ -682,13 +665,13 @@ const goto = (_target) => {
                             Blog
                         </a>
 
-                        <Button @click="goto('/help')" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
+                        <NuxtLink to="/help" @click="isShowingMobileMenu = false" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                             Do you need help?
-                        </Button>
+                        </NuxtLink>
                     </div>
 
                     <div class="mt-6">
-                        <Button @click="connect" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
+                        <Button @click="connect(); isShowingMobileMenu = false" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
                         </Button>
                     </div>

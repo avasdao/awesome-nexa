@@ -38,9 +38,9 @@ import { ref } from 'vue'
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        Specification
-                                    </a>
+                                    <NuxtLink to="/help" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Help &amp; Support
+                                    </NuxtLink>
                                 </li>
                             </ul>
                         </div>
@@ -59,21 +59,21 @@ import { ref } from 'vue'
                                 </li>
 
                                 <li>
-                                    <a href="https://gitlab.com/nexa/nexa" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink to="https://gitlab.com/nexa/nexa" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Open Source Code
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="https://spec.nexa.org/" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink to="https://spec.nexa.org/" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Specification
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="javascript://" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        Guides
-                                    </a>
+                                    <NuxtLink to="/contact" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Contact Our Team
+                                    </NuxtLink>
                                 </li>
 
                             </ul>
