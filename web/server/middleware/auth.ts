@@ -1,5 +1,6 @@
 export default defineEventHandler((event) => {
     event.context.auth = {
-        profileid: 1337,
+        // FIXME FOR DEV PURPOSES ONLY
+        profileid: 1338,
     }
 })

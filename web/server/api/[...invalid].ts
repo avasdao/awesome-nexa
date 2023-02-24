@@ -1,5 +1,5 @@
 export default defineEventHandler((event) => {
-    /* Set (bad) path URL. */
+    /* Set (invalid) path URL. */
     const path = event.context.params.invalid
 
     return {
