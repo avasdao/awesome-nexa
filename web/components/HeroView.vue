@@ -42,11 +42,27 @@
                     </h2>
                 </div>
 
-                <div class="w-full h-20 px-3 py-1 bg-purple-700 rounded-lg">
-                    <h2 class="text-purple-100 text-sm font-medium">
-                        Latest Video
-                    </h2>
-                </div>
+                <NuxtLink to="https://www.youtube.com/watch?v=7pmoT3M262A" target="_blank" class="w-full h-20 px-3 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
+                    <div>
+                        <h3 class="text-purple-300 text-xs font-medium uppercase">
+                            Latest Video
+                        </h3>
+
+                        <h2 class="text-purple-100 text-base font-bold">
+                            The Nexa Drop
+                        </h2>
+
+                        <h3 class="text-purple-100 text-xs font-medium italic">
+                            Andrew Stone & Paul Church
+                        </h3>
+
+                        <h3 class="text-purple-100 text-xs font-bold">
+                            The Power of Tokens on Nexa
+                        </h3>
+                    </div>
+
+                    <img src="~/assets/thumbnails/the-power-of-tokens-on-nexa.jpg" class="h-full border border-purple-400 rounded shadow" />
+                </NuxtLink>
             </div>
         </section>
     </main>
