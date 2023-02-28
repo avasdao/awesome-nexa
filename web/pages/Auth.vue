@@ -27,8 +27,7 @@ if (!sessionid.value) {
 }
 
 /* Set constants. */
-const LOGIN_ENDPOINT = 'nexid://awesomenexa.org/_login_/auto'
-const REGISTRATION_ENDPOINT = 'nexid://awesomenexa.org/_reg_/auto'
+const NEXID_ENDPOINT = 'nexid://awesomenexa.org/auth'
 
 const signOut = () => {
     Profile.deleteSession()
@@ -37,7 +36,7 @@ const signOut = () => {
 const qr = computed(() => {
     let dataString
 
-    regString.value = `${REGISTRATION_ENDPOINT}?op=login&proto=http&chal=${Profile.challenge}&cookie=${sessionid.value}&hdl=r&email=o`
+    regString.value = `${NEXID_ENDPOINT}?op=login&proto=http&chal=${Profile.challenge}&cookie=${sessionid.value}&hdl=r&email=o`
     console.log('CHALLENGE STRING', Profile.challenge)
     console.log('REG STRING', regString.value)
 
