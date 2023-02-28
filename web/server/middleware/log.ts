@@ -9,12 +9,16 @@ const logsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COU
 export default defineEventHandler(async (event) => {
     /* Set headers. */
     const headers = event.node.req.headers
-    console.log('HEADERS', headers)
+    // console.log('HEADERS', headers)
 
     /* Build log details. */
     const logDetails = {
         i18n: headers['accept-language'],
         client: headers['user-agent'],
+        referer: headers['referer'],
+        host: headers['host'],
+        ip: headers['x-real-ip'],
+        ip_fwd: headers['x-forwarded-for'],
         url: event.node.req.url,
     }
 
