@@ -25,7 +25,8 @@ import { ref } from 'vue'
             </h2>
 
             <p class="w-3/4 mt-2 text-lg leading-8 text-gray-600">
-                The Awesome Nexa team is ready, willing and able to help make your Crypto #BUIDL dreams a reality.
+                The Awesome Nexa team is <span class="text-indigo-500 font-medium">ready, willing and able</span> to assist in making your Crypto <span class="text-indigo-500 font-medium">#BUIDL</span> dreams a reality.
+                So what are you waiting for?
             </p>
 
             <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
