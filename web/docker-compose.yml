@@ -10,6 +10,8 @@ services:
       - '127.0.0.1:3000:3000'
     environment:
       - CMC_API_KEY=${CMC_API_KEY} # change this to match your system's ENV
+      - COUCHDB_USER=${COUCHDB_USER} # change this to match your system's ENV
+      - COUCHDB_PASSWORD=${COUCHDB_PASSWORD} # change this to match your system's ENV
   couchdb:
       image: couchdb
       restart: always
@@ -18,7 +20,7 @@ services:
         - '127.0.0.1:4369:4369'
         - '127.0.0.1:9100:9100'
       environment:
-        - COUCHDB_USER=${COUCHDB_USER}
-        - COUCHDB_PASSWORD=${COUCHDB_PASSWORD}
+        - COUCHDB_USER=${COUCHDB_USER} # change this to match your system's ENV
+        - COUCHDB_PASSWORD=${COUCHDB_PASSWORD} # change this to match your system's ENV
       volumes:
           - ./data:/opt/couchdb/data
