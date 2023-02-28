@@ -666,6 +666,14 @@
     tailwindcss "^3.2.1"
     ufo "^0.8.6"
 
+"@pinia-plugin-persistedstate/nuxt@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@pinia-plugin-persistedstate/nuxt/-/nuxt-1.0.0.tgz#057fd3b0649e9c4ce90f60e3fc136eeef50c0777"
+  integrity sha512-oBLnkFXy0mcP9wCR0NQj1SguhgalEoubDF302gpRr1lh0V34vSL2Nlw8XDwRrULq5v3eHt4da632YSjNny1+BA==
+  dependencies:
+    "@nuxt/kit" "^3.0.0"
+    pinia-plugin-persistedstate ">=3.0.0"
+
 "@pinia/nuxt@^0.4.7":
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/@pinia/nuxt/-/nuxt-0.4.7.tgz#dc1bd597869043fc4ef8c14977454c7b909ba5d0"
@@ -4172,6 +4180,11 @@ pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
+
+pinia-plugin-persistedstate@>=3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-3.1.0.tgz#eada2b61ecd478fce88e490a685210415cd7a1b4"
+  integrity sha512-8UN+vYMEPBdgNLwceY08mi5olI0wkYaEb8b6hD6xW7SnBRuPydWHlEhZvUWgNb/ibuf4PvufpvtS+dmhYjJQOw==
 
 pinia@>=2.0.31, pinia@^2.0.32:
   version "2.0.32"

@@ -1,17 +1,22 @@
 /* Import modules. */
 import { defineStore } from 'pinia'
-import { v4 as uuidv4 } from 'uuid'
 
 /**
  * Profile Store
  */
 export const useProfileStore = defineStore('profile', {
-    state: () => ({
-        /* Initialize session. */
-        session: null,
+    state: () => {
+        return {
+            /* Initialize session. */
+            session: null,
+        }
+    },
+    // state: () => ({
+    //     /* Initialize session. */
+    //     session: null,
 
-        // TBD
-    }),
+    //     // TBD
+    // }),
 
     getters: {
         sessionid(_state) {
@@ -21,9 +26,10 @@ export const useProfileStore = defineStore('profile', {
 
     actions: {
         async initSession () {
+            console.log('INIT SESSION', this.session)
             /* Check for existing session. */
             if (this.session) {
-                return session
+                return this.session
             }
 
             /* Request new session. */
@@ -40,9 +46,6 @@ export const useProfileStore = defineStore('profile', {
         deleteSession() {
             /* Set session. */
             _setSession(null)
-
-            /* Set cash accounts. */
-            _setCashAccounts(null)
         },
 
         /**
@@ -53,6 +56,7 @@ export const useProfileStore = defineStore('profile', {
         _setSession (_session) {
             /* Set session. */
             this.session = _session
+            console.log('SET SESSION', this.session)
         },
     },
     persist: true,

@@ -3,16 +3,21 @@
 import { ref } from 'vue'
 import QRCode from 'qrcode'
 import { v4 as uuidv4 } from 'uuid'
+import { useProfileStore } from '@/stores/profile'
 
-import { useProfileStore } from '../stores/profile.js'
-
+/* Initialize Profile store. */
 const Profile = useProfileStore()
 
-if (!Profile.sessionid) {
-    const session = await Profile.initSession()
-    console.log('NEW SESSION', session)
+/* Initialize session (holder). */
+let session
+
+// NOTE: We ONLY request Session from the Client.
+if (!Profile.sessionid && process.client) {
+    session = await Profile.initSession()
+    console.log('NEW SESSION (auth page):', session)
 }
 
+/* Set constants. */
 const LOGIN_ENDPOINT = 'nexid://awesomenexa.org/_login_/auto'
 const REGISTRATION_ENDPOINT = 'nexid://awesomenexa.org/_reg_/auto'
 
@@ -72,7 +77,8 @@ const qr = () => {
 
             <p>
                 SESSION ID
-                {{Profile.sessionid}}
+                [{{Profile.sessionid}}]
+
             </p>
 
             <p>

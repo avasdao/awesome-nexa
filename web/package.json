@@ -10,18 +10,19 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.7",
+    "@pinia/nuxt": "0.4.7",
     "moment": "2.29.4",
     "numeral": "2.0.6",
     "nuxt": "3.0.0",
-    "pinia": "^2.0.32",
+    "pinia": "2.0.32",
     "pouchdb": "8.0.1",
-    "qrcode": "^1.5.1",
+    "qrcode": "1.5.1",
     "uuid": "9.0.0",
     "vue-matomo": "4.2.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "6.2.0",
+    "@pinia-plugin-persistedstate/nuxt": "1.0.0",
     "@types/node": "18.14.2",
     "@types/pouchdb": "6.4.0",
     "@types/uuid": "9.0.1"
