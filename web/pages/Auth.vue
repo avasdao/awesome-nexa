@@ -27,7 +27,7 @@ if (!sessionid.value) {
 }
 
 /* Set constants. */
-const NEXID_ENDPOINT = 'nexid://awesomenexa.org/auth'
+const NEXID_ENDPOINT = 'nexid://awesomenexa.org/api/auth'
 
 const signOut = () => {
     Profile.deleteSession()
