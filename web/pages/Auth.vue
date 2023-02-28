@@ -36,7 +36,7 @@ const signOut = () => {
 const qr = computed(() => {
     let dataString
 
-    regString.value = `${NEXID_ENDPOINT}?op=login&proto=http&chal=${Profile.challenge}&cookie=${sessionid.value}&hdl=r&email=o`
+    regString.value = `${NEXID_ENDPOINT}?op=reg&proto=http&chal=${Profile.challenge}&cookie=${sessionid.value}&hdl=r&email=o`
     console.log('CHALLENGE STRING', Profile.challenge)
     console.log('REG STRING', regString.value)
 
