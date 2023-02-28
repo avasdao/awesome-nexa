@@ -22,11 +22,15 @@ export const useProfileStore = defineStore('profile', {
         sessionid(_state) {
             return _state.session?.id
         },
+
+        challenge(_state) {
+            return _state.session?.challenge
+        },
     },
 
     actions: {
         async initSession () {
-            console.log('INIT SESSION', this.session)
+            console.log('INIT SESSION (before):', this.session)
             /* Check for existing session. */
             if (this.session) {
                 return this.session
@@ -34,7 +38,7 @@ export const useProfileStore = defineStore('profile', {
 
             /* Request new session. */
             const session = await $fetch('/newSession')
-            // console.log('INIT SESSION', session)
+            console.log('INIT SESSION (after fetch):', session)
 
             /* Set session. */
             this._setSession(session)
@@ -45,7 +49,7 @@ export const useProfileStore = defineStore('profile', {
 
         deleteSession() {
             /* Set session. */
-            _setSession(null)
+            this._setSession(null)
         },
 
         /**

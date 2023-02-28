@@ -1,18 +1,27 @@
 <script setup>
 /* Import modules. */
 import { ref } from 'vue'
+import { storeToRefs } from 'pinia'
 import QRCode from 'qrcode'
 import { v4 as uuidv4 } from 'uuid'
+
 import { useProfileStore } from '@/stores/profile'
 
 /* Initialize Profile store. */
 const Profile = useProfileStore()
 
-/* Initialize session (holder). */
 let session
 
+/* Initialize session (holder). */
+// let session
+const { sessionid, challenge } = storeToRefs(Profile)
+console.log('SESSION ID', sessionid.value)
+console.log('CHALLENGE', challenge.value)
+
+let regString = ref(null)
+
 // NOTE: We ONLY request Session from the Client.
-if (!Profile.sessionid && process.client) {
+if (!sessionid.value) {
     session = await Profile.initSession()
     console.log('NEW SESSION (auth page):', session)
 }
@@ -21,20 +30,18 @@ if (!Profile.sessionid && process.client) {
 const LOGIN_ENDPOINT = 'nexid://awesomenexa.org/_login_/auto'
 const REGISTRATION_ENDPOINT = 'nexid://awesomenexa.org/_reg_/auto'
 
-/* Generate new challenge. */
-// NOTE: We MUST replace dashes with underscores to comply with the protocol.
-const challenge =  uuidv4().replace(/-/g, '_')
+const signOut = () => {
+    Profile.deleteSession()
+}
 
-/* Request (session) cookie. */
-const cookie = Profile.sessionid
-
-const regString = `${REGISTRATION_ENDPOINT}?op=reg&proto=http&chal=${challenge}&cookie=${cookie}&hdl=r&email=o`
-console.log('REG STRING', regString)
-
-const qr = () => {
+const qr = computed(() => {
     let dataString
 
-    dataString = regString
+    regString.value = `${REGISTRATION_ENDPOINT}?op=login&proto=http&chal=${Profile.challenge}&cookie=${sessionid.value}&hdl=r&email=o`
+    console.log('CHALLENGE STRING', Profile.challenge)
+    console.log('REG STRING', regString.value)
+
+    dataString = regString.value
 
     /* Initialize (string) value. */
     let strValue = ''
@@ -61,7 +68,7 @@ const qr = () => {
 
     /* Return (string) value. */
     return strValue
-}
+})
 </script>
 
 <template>
@@ -73,28 +80,32 @@ const qr = () => {
         </div>
 
         <section class="py-10 flex flex-col items-center gap-10">
-            <div class="" v-html="qr()" />
+            <div class="" v-html="qr" />
 
             <p>
                 SESSION ID
-                [{{Profile.sessionid}}]
+                [{{sessionid}}]
 
             </p>
 
             <p>
                 COOKIE
-                {{cookie}}
+                {{Profile.sessionid}}
             </p>
 
             <p>
                 CHALLENGE
-                {{challenge}}
+                {{Profile.challenge}}
             </p>
 
             <p>
                 LOGIN
                 nexid://spec.nexa.org/_login_/auto?op=login&proto=http&chal=super_awesome_secret&cookie=833ea884-71a2-4bee-9cdf-45fe4c0350bb&hdl
             </p>
+
+            <button @click="signOut">
+                Sign Out
+            </button>
         </section>
     </main>
 </template>

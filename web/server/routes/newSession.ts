@@ -11,6 +11,9 @@ export default defineEventHandler(async (event) => {
     /* Create new session id. */
     const sessionid = uuidv4()
 
+    /* Create new challenge. */
+    const challenge = uuidv4()
+
     /* Set creation time. */
     const createdAt = moment().unix()
 
@@ -20,6 +23,7 @@ export default defineEventHandler(async (event) => {
     /* Build (database) session. */
     const dbSession = {
         _id: sessionid,
+        challenge,
         createdAt,
         expiresAt,
     }
@@ -33,6 +37,7 @@ export default defineEventHandler(async (event) => {
     /* Build (web) session. */
     const webSession = {
         id: sessionid,
+        challenge,
         createdAt,
         expiresAt,
     }
