@@ -31,7 +31,7 @@ export default defineEventHandler(async (event) => {
             body: logDetails,
             createdAt: moment().unix(),
         })
-    console.log('SUCCESS (logs):', success)
+    // console.log('SUCCESS (logs):', success)
 
-    console.info('LOG (api):', logDetails)
+    // console.info('LOG (api):', logDetails)
 })

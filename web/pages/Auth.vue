@@ -2,8 +2,29 @@
 /* Import modules. */
 import { ref } from 'vue'
 import QRCode from 'qrcode'
+import { v4 as uuidv4 } from 'uuid'
 
-const regString = `nexid://awesomenexa.org/_reg_/auto?op=reg&proto=http&chal=super_awesome_secret&cookie=833ea884-71a2-4bee-9cdf-45fe4c0350bb&hdl=r&email=o`
+import { useProfileStore } from '../stores/profile.js'
+
+const Profile = useProfileStore()
+
+if (!Profile.sessionid) {
+    const session = await Profile.initSession()
+    console.log('NEW SESSION', session)
+}
+
+const LOGIN_ENDPOINT = 'nexid://awesomenexa.org/_login_/auto'
+const REGISTRATION_ENDPOINT = 'nexid://awesomenexa.org/_reg_/auto'
+
+/* Generate new challenge. */
+// NOTE: We MUST replace dashes with underscores to comply with the protocol.
+const challenge =  uuidv4().replace(/-/g, '_')
+
+/* Request (session) cookie. */
+const cookie = Profile.sessionid
+
+const regString = `${REGISTRATION_ENDPOINT}?op=reg&proto=http&chal=${challenge}&cookie=${cookie}&hdl=r&email=o`
+console.log('REG STRING', regString)
 
 const qr = () => {
     let dataString
@@ -50,8 +71,18 @@ const qr = () => {
             <div class="" v-html="qr()" />
 
             <p>
-                REGISTRATION
+                SESSION ID
+                {{Profile.sessionid}}
+            </p>
 
+            <p>
+                COOKIE
+                {{cookie}}
+            </p>
+
+            <p>
+                CHALLENGE
+                {{challenge}}
             </p>
 
             <p>

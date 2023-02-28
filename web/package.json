@@ -10,9 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.4.7",
     "moment": "2.29.4",
     "numeral": "2.0.6",
     "nuxt": "3.0.0",
+    "pinia": "^2.0.32",
     "pouchdb": "8.0.1",
     "qrcode": "^1.5.1",
     "uuid": "9.0.0",

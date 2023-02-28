@@ -483,9 +483,9 @@ const connect = () => {
                     </div>
 
                     <div class="mt-6">
-                        <Button @click="connect(); isShowingMobileMenu = false" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
+                        <button @click="connect(); isShowingMobileMenu = false" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
-                        </Button>
+                        </button>
                     </div>
                 </div>
             </div>

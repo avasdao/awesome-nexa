@@ -4,8 +4,6 @@ export default defineNuxtConfig({
     app: {
         /* Application Header */
         head: {
-            // charset: 'utf-16',
-            // viewport: 'width=500, initial-scale=1',
             title: 'Awesome Nexa — A Peer-to-Peer Digital Value System',
             meta: [
                 { charset: 'utf-8' },
@@ -26,6 +24,9 @@ export default defineNuxtConfig({
     modules: [
         /* Tailwind CSS */
         '@nuxtjs/tailwindcss',
+
+        /* Pinia */
+        '@pinia/nuxt',
     ],
 
     /* Route Rules */
