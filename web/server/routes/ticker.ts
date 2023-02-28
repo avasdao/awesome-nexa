@@ -1,3 +1,8 @@
+/* Import modules. */
+import moment from 'moment'
+import PouchDB from 'pouchdb'
+import { v4 as uuidv4 } from 'uuid'
+
 /* Define Ticker */
 interface APIResponse {
     status: Object,
@@ -26,6 +31,10 @@ const headers: HeadersInit = {
     'X-CMC_PRO_API_KEY': CMC_API_KEY || '',
 }
 
+/* Initialize databases. */
+const logsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/logs`)
+const tickerDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/ticker`)
+
 /**
  * Manage the latest ticker information for NEXA.
  *
@@ -40,8 +49,30 @@ const headers: HeadersInit = {
         })
         console.log('API RESPONSE', response)
 
-        /* Set ticker to the response. */
-        ticker = response?.data?.NEXA
+        let success
+
+        success = await logsDb
+            .put({
+                _id: uuidv4(),
+                source: 'ticker',
+                body: response,
+                createdAt: moment().unix(),
+            })
+        console.log('SUCCESS (logs):', success)
+
+        if (response?.data?.NEXA) {
+            /* Set ticker to the response. */
+            ticker = response.data.NEXA
+
+            success = await tickerDb
+                .put({
+                    _id: uuidv4(),
+                    ...response.data.NEXA,
+                    createdAt: moment().unix(),
+                })
+            console.log('SUCCESS (ticker):', success)
+        }
+
     } catch (err) {
         // FIXME Handle errors. (setup Bugsnag)
         console.error(err)
