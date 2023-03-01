@@ -3839,7 +3839,7 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-nexajs@^23.2.27:
+nexajs@23.2.27:
   version "23.2.27"
   resolved "https://registry.yarnpkg.com/nexajs/-/nexajs-23.2.27.tgz#606ebc4a0276478e96ecd6f23ee001edcceca0fe"
   integrity sha512-IZr6INYofDVtehuUXM+XPxQOEMeFbfOqNx38W9Q+vrQSiKCWvD5LjsbhzODzYAqndU8QrD/TgABG319DH7TnnA==
@@ -5768,11 +5768,6 @@ vue-devtools-stub@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz#a65b9485edecd4273cedcb8102c739b83add2c81"
   integrity sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==
-
-vue-matomo@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/vue-matomo/-/vue-matomo-4.2.0.tgz#d65e369e4ead1d95ef790bef3627512cac3d25e9"
-  integrity sha512-m5hCw7LH3wPDcERaF4sp/ojR9sEx7Rl8TpOyH/4jjQxMF2DuY/q5pO+i9o5Dx+BXLSa9+IQ0qhAbWYRyESQXmA==
 
 vue-router@^4.1.6:
   version "4.1.6"
