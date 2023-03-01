@@ -13,6 +13,11 @@ services:
       - CMC_API_KEY=${CMC_API_KEY} # change this to match your system's ENV
       - COUCHDB_USER=${COUCHDB_USER} # change this to match your system's ENV
       - COUCHDB_PASSWORD=${COUCHDB_PASSWORD} # change this to match your system's ENV
+    logging: # apply better controls to Docker overlay folder
+      driver: 'json-file'
+      options:
+        max-file: 5
+        max-size: 10m
   couchdb:
       image: couchdb
       restart: always
@@ -25,3 +30,8 @@ services:
         - COUCHDB_PASSWORD=${COUCHDB_PASSWORD} # change this to match your system's ENV
       volumes:
           - ./data:/opt/couchdb/data
+      logging: # apply better controls to Docker overlay folder
+        driver: 'json-file'
+        options:
+          max-file: 5
+          max-size: 10m
