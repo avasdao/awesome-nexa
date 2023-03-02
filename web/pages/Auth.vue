@@ -78,13 +78,33 @@ const qr = computed(() => {
 <template>
     <main class="px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
-            <h1 class="text-5xl font-bold tracking-widest">
+            <h1 class="text-3xl sm:text-5xl font-bold tracking-widest">
                 Authorization Page
             </h1>
         </div>
 
-        <section class="py-10 flex flex-col items-center gap-10">
-            <div class="p-5 bg-gradient-to-r from-gray-700 to-gray-500 border-4 border-gray-700 rounded-lg">
+        <div class="max-w-xl mx-auto mt-5 flex flex-col gap-4 items-center">
+            <p class="px-10 text-sm font-medium text-center">
+                If you're using the Wally mobile wallet, just click the link below
+            </p>
+
+            <NuxtLink :to="regLink" class="px-5 py-2 flex justify-center bg-yellow-400 border-4 border-yellow-700 rounded-lg">
+                <span class="text-lg text-yellow-900 font-medium">
+                    Wallet Wallet Login
+                </span>
+            </NuxtLink>
+
+            <button @click="signOut" class="px-5 py-2 bg-red-500 text-xl text-red-50 font-medium border-4 border-red-700 rounded-md shadow-md hover:bg-red-600">
+                Sign Out
+            </button>
+        </div>
+
+        <div class="py-10 flex flex-col items-center gap-10">
+            <p class="px-10 text-sm font-medium text-center">
+                If you're using a Desktop browser, scan the Qr Code below with Wally wallet
+            </p>
+
+            <div class="mx-2 p-5 bg-gradient-to-r from-gray-700 to-gray-500 border-4 border-gray-700 rounded-lg">
                 <div class="border-4 border-yellow-500 rounded-lg overflow-hidden" v-html="qr" />
             </div>
 
@@ -119,10 +139,6 @@ const qr = computed(() => {
                     {{Profile.challenge}}
                 </span>
             </section>
-
-            <button @click="signOut" class="px-5 py-2 bg-red-500 text-xl text-red-50 font-medium border-2 border-red-700 rounded-md shadow-md hover:bg-red-600">
-                Sign Out
-            </button>
-        </section>
+        </div>
     </main>
 </template>
