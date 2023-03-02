@@ -5,6 +5,7 @@ import { Rpc } from 'nexajs'
 
 /* Initialize databases. */
 const logsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/logs`)
+const profilesDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/profiles`)
 const sessionsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/sessions`)
 
 export default defineEventHandler(async (event) => {
@@ -31,6 +32,7 @@ export default defineEventHandler(async (event) => {
 
     /* Set holders. */
     let params
+    let profile
     let result
     let session
     let success
@@ -78,11 +80,39 @@ export default defineEventHandler(async (event) => {
         updatedAt: moment().unix(),
     }
 
-    /* Request database update. */
+    /* Request session update. */
     result = await sessionsDb
         .put(session)
         .catch(err => console.error(err))
     console.log('SESSION UPDATE:', result)
+
+    /* Request profile. */
+    profile = await profilesDb
+        .get(addr)
+        .catch(err => console.error(err))
+    console.log('PROFILE:', profile)
+
+    if (!profile) {
+        /* Create NEW profile. */
+        profile = {
+            _id: addr,
+            nickname: hdl,
+            auths: 1,
+            createdAt: moment().unix(),
+        }
+    } else {
+        profile = {
+            ...profile,
+            auths: profile.auths++,
+            updatedAt: moment().unix(),
+        }
+    }
+
+    /* Request profile update. */
+    result = await profilesDb
+        .put(profile)
+        .catch(err => console.error(err))
+    console.log('PROFILE UPDATE:', result)
 
     /* Return success. */
     return `Authorization SUCCESS!`
