@@ -37,14 +37,6 @@ updateTicker()
 /* Set interval for auto-update. */
 setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
 
-
-/**
- * Connect
- */
-const connect = () => {
-    console.log('GET CONNECTED!')
-}
-
 </script>
 
 <template>
@@ -334,11 +326,17 @@ const connect = () => {
                     </nav>
 
                     <div class="flex items-center md:ml-12">
-                        <NuxtLink to="/buy" class="text-lg font-medium text-gray-500 hover:text-gray-900">
-                            1M NEX/USD <span class="text-2xl text-indigo-600 hover:text-indigo-500">{{nexUsd}}</span>
+                        <NuxtLink to="/buy" class="lg:hidden flex flex-col justify-center items-center">
+                            <span class="text-4xl text-indigo-600 font-medium">
+                                {{nexUsd}}
+                            </span>
+
+                            <span class="text-sm text-gray-500 font-light">
+                                1M NEX/USD
+                            </span>
                         </NuxtLink>
 
-                        <NuxtLink to="/auth" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
+                        <NuxtLink to="/profile" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
                         </NuxtLink>
                     </div>
@@ -483,9 +481,9 @@ const connect = () => {
                     </div>
 
                     <div class="mt-6">
-                        <button @click="connect(); isShowingMobileMenu = false" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
+                        <NuxtLink to="/profile" @click="isShowingMobileMenu = false" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
-                        </button>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,10 @@
 <template>
     <main>
-        <HeaderView />
+        <Header />
 
         <slot />
 
-        <FooterView />
+        <Footer />
 
         <SpotlightWin />
     </main>

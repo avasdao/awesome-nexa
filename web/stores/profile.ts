@@ -35,7 +35,7 @@ export const useProfileStore = defineStore('profile', {
             }
 
             /* Request new session. */
-            const session = await $fetch('/newSession')
+            const session = await $fetch('/api/newSession')
             console.log('INIT SESSION (after fetch):', session)
 
             /* Set session. */

@@ -1,6 +1,6 @@
 <template>
     <main>
-        <HeroView />
+        <Hero />
 
         <div class="px-3 max-w-7xl mx-auto my-10">
             <header class="flex justify-between items-end">
@@ -18,12 +18,12 @@
             </header>
         </div>
 
-        <GalleryView />
+        <Gallery />
 
-        <TeamView />
+        <Team />
 
-        <BlogView />
+        <Blog />
 
-        <BannerView />
+        <Banner />
     </main>
 </template>
