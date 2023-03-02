@@ -5,9 +5,6 @@ import { ref } from 'vue'
 /* Initialize stores. */
 import { useProfileStore } from '@/stores/profile'
 
-/* Initialize responsive holders. */
-let target = ref(null)
-
 /* Initialize constants. */
 const POLLING_FREQUENCY = 3000 // 3 seconds
 
@@ -22,20 +19,40 @@ const isLoading = ref(true)
 const nickname = ref(null)
 nickname.value = 'Satoshi'
 
-/* Set target. */
-target.value = '/api/auth?sid=' + Profile.sessionid
-// console.log('TARGET', target)
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+}
 
 const pollForAuth = async () => {
     console.log('POLLING FOR AUTH')
 
-    const session = await $fetch(target.value)
+    if (!Profile.sessionid) {
+        /* Handle loading flag. */
+        if (isLoading.value) {
+            isLoading.value = false
+        }
+
+        return console.error('Oops! We DO NOT have an active Session.')
+    }
+
+    /* Set target. */
+    const target = '/api/auth?sid=' + Profile.sessionid
+    console.log('TARGET', target)
+
+    const session = await $fetch(target)
     console.log('SESSION', session)
 
     /* Validate authorized session. */
     if (session?.profileid) {
         /* Set authorization flag. */
         hasAuth.value = true
+
+        /* Scroll to page top. */
+        scrollToTop()
 
         /* Stop polling. */
         if (pollingid) {
@@ -68,7 +85,14 @@ if (process.client) {
  * Deletes ALL stored values from the browsers (IndexedDB) cache.
  */
  const signOut = () => {
+    /* Delete ALL session data. */
     Profile.deleteSession()
+
+    /* Initialize route handler. */
+    const router = useRouter()
+
+    /* Go to homepage. */
+    router.replace('/')
 }
 
 /* Handle mounting. */
