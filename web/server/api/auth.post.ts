@@ -11,7 +11,7 @@ const sessionsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env
 export default defineEventHandler(async (event) => {
     /* Set (request) body. */
     const body = await readBody(event)
-    // console.log('BODY (_reg_/auto', body)
+    console.log('BODY (_reg_/auto', body)
 
     if (!body) {
         return `Authorization FAILED!`
@@ -22,12 +22,14 @@ export default defineEventHandler(async (event) => {
     const sig = body.sig
     const cookie = body.cookie
     const hdl = body.hdl
+    const e = body.e
 
     console.log({
         addr,
         sig,
         cookie,
         hdl,
+        e,
     })
 
     /* Set holders. */
@@ -97,13 +99,14 @@ export default defineEventHandler(async (event) => {
         profile = {
             _id: addr,
             nickname: hdl,
+            email: e,
             auths: 1,
             createdAt: moment().unix(),
         }
     } else {
         profile = {
             ...profile,
-            auths: profile.auths++,
+            auths: profile.auths + 1,
             updatedAt: moment().unix(),
         }
     }
