@@ -5,6 +5,9 @@ import { ref } from 'vue'
 /* Initialize stores. */
 import { useProfileStore } from '@/stores/profile'
 
+/* Initialize responsive holders. */
+let target = ref(null)
+
 /* Initialize constants. */
 const POLLING_FREQUENCY = 3000 // 3 seconds
 
@@ -19,13 +22,14 @@ const isLoading = ref(true)
 const nickname = ref(null)
 nickname.value = 'Satoshi'
 
-const target = '/api/auth?sid=' + Profile.sessionid
+/* Set target. */
+target.value = '/api/auth?sid=' + Profile.sessionid
 // console.log('TARGET', target)
 
 const pollForAuth = async () => {
     console.log('POLLING FOR AUTH')
 
-    const session = await $fetch(target)
+    const session = await $fetch(target.value)
     console.log('SESSION', session)
 
     /* Validate authorized session. */
@@ -70,6 +74,13 @@ if (process.client) {
 /* Handle mounting. */
 onMounted(() => {
     console.log('MOUNTED!!!')
+})
+
+onBeforeUnmount(() => {
+    /* Stop polling. */
+    if (pollingid) {
+        clearInterval(pollingid)
+    }
 })
 </script>
 
