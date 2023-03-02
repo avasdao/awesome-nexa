@@ -1,6 +1,6 @@
 {
   "name": "awesome-nexa",
-  "version": "23.2.27",
+  "version": "23.3.1",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",

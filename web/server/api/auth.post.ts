@@ -22,14 +22,15 @@ export default defineEventHandler(async (event) => {
     const sig = body.sig
     const cookie = body.cookie
     const hdl = body.hdl
-    const e = body.e
+    const nickname = hdl        // NOTE: We use nickname instead of hdl.
+    const email = body.email
 
     console.log({
         addr,
         sig,
         cookie,
         hdl,
-        e,
+        email,
     })
 
     /* Set holders. */
@@ -98,8 +99,8 @@ export default defineEventHandler(async (event) => {
         /* Create NEW profile. */
         profile = {
             _id: addr,
-            nickname: hdl,
-            email: e,
+            nickname,
+            email,
             auths: 1,
             createdAt: moment().unix(),
         }
