@@ -24,15 +24,6 @@ if (!Profile.sessionid) {
 }
 
 /**
- * Sign Out
- *
- * Deletes ALL stored values from the browsers (IndexedDB) cache.
- */
-const signOut = () => {
-    Profile.deleteSession()
-}
-
-/**
  * QR Code
  *
  * Displays a QR code, used to authenticate users.
@@ -77,12 +68,6 @@ const qr = computed(() => {
 
 <template>
     <main class="px-3 max-w-5xl mx-auto">
-        <div class="pt-10 flex justify-center">
-            <h1 class="text-3xl sm:text-5xl font-bold tracking-widest">
-                Authorization Page
-            </h1>
-        </div>
-
         <div class="max-w-xl mx-auto mt-5 flex flex-col gap-4 items-center">
             <p class="px-10 text-sm font-medium text-center">
                 If you're using the Wally mobile wallet, just click the link below
@@ -93,10 +78,6 @@ const qr = computed(() => {
                     Wallet Wallet Login
                 </span>
             </NuxtLink>
-
-            <button @click="signOut" class="px-5 py-2 bg-red-500 text-xl text-red-50 font-medium border-4 border-red-700 rounded-md shadow-md hover:bg-red-600">
-                Sign Out
-            </button>
         </div>
 
         <div class="py-10 flex flex-col items-center gap-10">

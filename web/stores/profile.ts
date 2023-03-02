@@ -50,6 +50,11 @@ export const useProfileStore = defineStore('profile', {
             this._setSession(null)
         },
 
+        saveSession(_session) {
+            /* Set session. */
+            this._setSession(_session)
+        },
+
         /**
          * Set Session
          *
