@@ -3,7 +3,7 @@
 import { ref } from 'vue'
 
 const mining = await $fetch('/api/mining')
-console.log('MINING', mining)
+// console.log('MINING', mining)
 </script>
 
 <template>

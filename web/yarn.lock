@@ -500,12 +500,17 @@
   dependencies:
     is-promise "^4.0.0"
 
-"@nexajs/address@23.2.25":
-  version "23.2.25"
-  resolved "https://registry.yarnpkg.com/@nexajs/address/-/address-23.2.25.tgz#963b3c54ac90792b68ebd712fed7d9dd555b2017"
-  integrity sha512-8ocHrKJMzCEJIa1/si5NLgX4V0cQVFtf/wND4RnbX2yMWLocFiTxFPuOKia/N1CzT92NRxaJjbA87tobhKqwlg==
+"@nexajs/address@23.2.28":
+  version "23.2.28"
+  resolved "https://registry.yarnpkg.com/@nexajs/address/-/address-23.2.28.tgz#00f1c2ff02ba2f877953161bdfc7129854c0589b"
+  integrity sha512-iCufHbLoU/S+DmlAe1yy0LD5D/NX0KcsZV2omPKzqX2bYk3RnEELPAmz2nQsfp9WLzr6tX4EM//Mt0TuoutUsw==
   dependencies:
     big-integer "1.6.51"
+
+"@nexajs/purse@23.2.22":
+  version "23.2.22"
+  resolved "https://registry.yarnpkg.com/@nexajs/purse/-/purse-23.2.22.tgz#45d1396937f99e942986462068ba7dca4a1a179f"
+  integrity sha512-rdBtwvjuXmVXzfZhIsF9DG3NZnvDZt3YlWnuFLIZsCiqMV1zVFMdjr870QTibrJ+faHhfNTZG9S7jKvoDHDtQA==
 
 "@nexajs/rpc@23.2.28":
   version "23.2.28"
@@ -3839,13 +3844,14 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-nexajs@23.2.27:
-  version "23.2.27"
-  resolved "https://registry.yarnpkg.com/nexajs/-/nexajs-23.2.27.tgz#606ebc4a0276478e96ecd6f23ee001edcceca0fe"
-  integrity sha512-IZr6INYofDVtehuUXM+XPxQOEMeFbfOqNx38W9Q+vrQSiKCWvD5LjsbhzODzYAqndU8QrD/TgABG319DH7TnnA==
+nexajs@^23.3.1:
+  version "23.3.1"
+  resolved "https://registry.yarnpkg.com/nexajs/-/nexajs-23.3.1.tgz#176f2e2aee02a9aa3eaf55f7935b34a2dd609405"
+  integrity sha512-tGS9itBcYjSTMhIHuREYFfII5HN1zDFe1fq8/3ayePlOVgy3b9sYM0l6Bu0ZVDMz1yIoKnj61OmjkKAKRUSTvQ==
   dependencies:
     "@bitauth/libauth" "1.19.1"
-    "@nexajs/address" "23.2.25"
+    "@nexajs/address" "23.2.28"
+    "@nexajs/purse" "23.2.22"
     "@nexajs/rpc" "23.2.28"
 
 nitropack@^1.0.0:

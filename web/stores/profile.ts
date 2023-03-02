@@ -5,35 +5,33 @@ import { defineStore } from 'pinia'
  * Profile Store
  */
 export const useProfileStore = defineStore('profile', {
-    state: () => {
-        return {
-            /* Initialize session. */
-            session: null,
-        }
-    },
-    // state: () => ({
-    //     /* Initialize session. */
-    //     session: null,
+    state: () => ({
+        /* Initialize session. */
+        _session: null,
 
-    //     // TBD
-    // }),
+        // TBD
+    }),
 
     getters: {
+        session(_state) {
+            return _state._session
+        },
+
         sessionid(_state) {
-            return _state.session?.id
+            return _state._session?.id
         },
 
         challenge(_state) {
-            return _state.session?.challenge
+            return _state._session?.challenge
         },
     },
 
     actions: {
         async initSession () {
-            console.log('INIT SESSION (before):', this.session)
+            console.log('INIT SESSION (before):', this._session)
             /* Check for existing session. */
-            if (this.session) {
-                return this.session
+            if (this._session) {
+                return this._session
             }
 
             /* Request new session. */
@@ -59,8 +57,8 @@ export const useProfileStore = defineStore('profile', {
          */
         _setSession (_session) {
             /* Set session. */
-            this.session = _session
-            console.log('SET SESSION', this.session)
+            this._session = _session
+            console.log('SET SESSION', this._session)
         },
     },
     persist: true,
