@@ -2,9 +2,26 @@
 /* Import modules. */
 import { ref } from 'vue'
 
-const nickname = ref(null)
+/* Initialize stores. */
+import { useProfileStore } from '@/stores/profile'
 
+/* Initialize Profile store. */
+const Profile = useProfileStore()
+
+const hasAuth = ref(false)
+
+const nickname = ref(null)
 nickname.value = 'Satoshi'
+
+const target = '/api/auth?sid=' + Profile.sessionid
+console.log('TARGET', target)
+
+const session = await $fetch(target)
+console.log('SESSION', session)
+
+if (session?.profileid) {
+    hasAuth.value = true
+}
 </script>
 
 <template>
@@ -15,12 +32,14 @@ nickname.value = 'Satoshi'
             </h1>
         </div>
 
-        <section class="py-10 flex flex-col items-center gap-10">
+        <section v-if="hasAuth" class="py-10 flex flex-col items-center gap-10">
             <p>
                 Nickname
 
                 [ {{nickname}} ]
             </p>
         </section>
+
+        <AuthView v-else />
     </main>
 </template>
