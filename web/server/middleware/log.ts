@@ -31,6 +31,7 @@ export default defineEventHandler(async (event) => {
             body: logDetails,
             createdAt: moment().unix(),
         })
+        .catch(err => console.error(err))
     // console.log('SUCCESS (logs):', success)
 
     // console.info('LOG (api):', logDetails)

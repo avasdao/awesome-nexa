@@ -20,7 +20,9 @@ export default defineEventHandler(async (event) => {
     }
 
     let profileid
+    let summary
     let title
+    let url
 
     /* Set profile id. */
     profileid = body.session?.profileid
@@ -28,10 +30,18 @@ export default defineEventHandler(async (event) => {
     /* Set listing title. */
     title = body.title
 
+    /* Set listing URL. */
+    url = body.url
+
+    /* Set listing summary. */
+    summary = body.summary
+
     const pkg = {
         _id: uuidv4(),
         profileid,
         title,
+        url,
+        summary,
         createdAt: moment().unix(),
     }
 
