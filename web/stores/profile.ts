@@ -9,6 +9,10 @@ export const useProfileStore = defineStore('profile', {
         /* Initialize session. */
         _session: null,
 
+        _address: null,
+
+        _pubkey: null,
+
         // TBD
     }),
 
