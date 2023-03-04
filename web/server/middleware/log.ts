@@ -24,14 +24,14 @@ export default defineEventHandler(async (event) => {
 
     let success
 
-    success = await logsDb
-        .put({
-            _id: uuidv4(),
-            source: 'headers',
-            body: logDetails,
-            createdAt: moment().unix(),
-        })
-        .catch(err => console.error(err))
+    // success = await logsDb
+    //     .put({
+    //         _id: uuidv4(),
+    //         source: 'headers',
+    //         body: logDetails,
+    //         createdAt: moment().unix(),
+    //     })
+    //     .catch(err => console.error(err))
     // console.log('SUCCESS (logs):', success)
 
     // console.info('LOG (api):', logDetails)
