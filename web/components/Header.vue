@@ -453,7 +453,7 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                     </div>
                 </div>
 
-                <div class="py-6 px-5">
+                <div class="hidden py-6 px-5">
                     <div class="grid grid-cols-2 gap-4">
                         <NuxtLink to="https://discord.gg/2yQNsZV6EJ" target="_blank" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                             Join the Discord

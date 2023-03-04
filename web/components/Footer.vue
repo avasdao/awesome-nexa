@@ -171,13 +171,16 @@ import { ref } from 'vue'
                             id="email-address"
                             autocomplete="email"
                             required
-                            class="w-full min-w-0 appearance-none rounded-md border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-lg leading-7 text-gray-50 placeholder-gray-500 shadow-lg focus:border-indigo-500 focus:ring-indigo-500 sm:w-64 sm:leading-6 xl:w-full"
+                            class="cursor-not-allowed w-full min-w-0 appearance-none rounded-md border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-lg leading-7 text-gray-50 placeholder-gray-500 shadow-lg focus:border-indigo-500 focus:ring-indigo-500 sm:w-64 sm:leading-6 xl:w-full"
                             placeholder="Enter your email"
+                            disabled
                         />
+
                         <div class="mt-4 rounded-md sm:mt-0 sm:ml-4 sm:flex-shrink-0">
                             <button
                                 type="submit"
-                                class="flex w-full items-center justify-center rounded-md bg-indigo-500 py-1.5 px-3 text-2xl font-semibold leading-7 text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 sm:text-base sm:leading-6"
+                                class="cursor-not-allowed flex w-full items-center justify-center rounded-md bg-indigo-500 py-1.5 px-3 text-2xl font-semibold leading-7 text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 sm:text-base sm:leading-6"
+                                disabled
                             >
                                 Subscribe
                             </button>
