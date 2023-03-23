@@ -43,6 +43,7 @@ const tickerDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.C
  */
 ;(async () => {
     try {
+        return
         /* Request data. */
         const response: APIResponse = await $fetch(target, {
             headers,
