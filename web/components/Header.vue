@@ -19,7 +19,7 @@ const nexUsd = ref(null)
  * Update Ticker
  */
 const updateTicker = async () => {
-    const price = await $fetch('/price')
+    const price = await $fetch('https://nexa.exchange/price')
         .catch(err => console.error)
     // console.log('PRICE', price)
 
