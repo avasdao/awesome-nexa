@@ -1,6 +1,6 @@
 {
   "name": "awesome-nexa",
-  "version": "23.3.1",
+  "version": "23.8.10",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -12,7 +12,7 @@
   "dependencies": {
     "@pinia/nuxt": "0.4.7",
     "moment": "2.29.4",
-    "nexajs": "23.3.1",
+    "nexajs": "23.8.9",
     "numeral": "2.0.6",
     "nuxt": "3.0.0",
     "pinia": "2.0.32",
