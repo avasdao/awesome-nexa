@@ -13,7 +13,7 @@ let pollingid
 /* Initialize Profile store. */
 const Profile = useProfileStore()
 
-const hasAuth = ref(false)
+// const hasAuth = ref(false)
 const isLoading = ref(true)
 
 const nickname = ref(null)
@@ -49,7 +49,7 @@ const pollForAuth = async () => {
     /* Validate authorized session. */
     if (session?.profileid) {
         /* Set authorization flag. */
-        hasAuth.value = true
+        // hasAuth.value = true
 
         /* Scroll to page top. */
         scrollToTop()
@@ -111,7 +111,7 @@ onBeforeUnmount(() => {
 <template>
     <main class="px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
-            <h1 v-if="isLoading || hasAuth" class="text-3xl sm:text-5xl font-bold tracking-widest text-center">
+            <h1 v-if="isLoading || session?.profileid" class="text-3xl sm:text-5xl font-bold tracking-widest text-center">
                 My Profile
             </h1>
             <h1 v-else class="text-3xl sm:text-5xl font-bold tracking-widest text-center">
@@ -126,7 +126,7 @@ onBeforeUnmount(() => {
         </section>
 
         <div v-else>
-            <section v-if="hasAuth" class="py-10 flex flex-col items-center gap-10">
+            <section v-if="session?.profileid" class="py-10 flex flex-col items-center gap-10">
                 <!-- <p>
                     Nickname
 
