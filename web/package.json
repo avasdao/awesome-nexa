@@ -1,6 +1,6 @@
 {
   "name": "awesome-nexa",
-  "version": "23.8.10",
+  "version": "24.5.27",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -12,7 +12,7 @@
   "dependencies": {
     "@pinia/nuxt": "0.4.7",
     "moment": "2.29.4",
-    "nexajs": "23.8.9",
+    "nexajs": "23.12.29",
     "numeral": "2.0.6",
     "nuxt": "3.0.0",
     "pinia": "2.0.32",
@@ -21,8 +21,8 @@
     "uuid": "9.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "6.2.0",
-    "@pinia-plugin-persistedstate/nuxt": "1.0.0",
+    "@nuxtjs/i18n": "8.0.0-rc.2",
+    "@nuxtjs/tailwindcss": "6.4.1",
     "@types/node": "18.14.2",
     "@types/pouchdb": "6.4.0",
     "@types/uuid": "9.0.1"

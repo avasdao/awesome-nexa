@@ -27,13 +27,7 @@ export default defineNuxtConfig({
 
         /* Pinia */
         '@pinia/nuxt',
-        '@pinia-plugin-persistedstate/nuxt',
     ],
-
-    /* Pinia Storage */
-    piniaPersistedstate: {
-        storage: 'localStorage', // NOTE: Default is cookies.
-    },
 
     /* Route Rules */
     routeRules: {

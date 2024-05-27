@@ -1,8 +1,8 @@
 <script setup>
 /* Import modules. */
-import { ref } from 'vue'
+// import { ref } from 'vue'
 
-const mining = await $fetch('/mining')
+const mining = await $fetch('/_mining')
 // console.log('MINING', mining)
 </script>
 

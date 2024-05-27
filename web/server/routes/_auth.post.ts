@@ -1,12 +1,12 @@
 /* Import modules. */
 import moment from 'moment'
-import PouchDB from 'pouchdb'
+// import PouchDB from 'pouchdb'
 import { Rpc } from '@nexajs/rpc'
 
 /* Initialize databases. */
-const logsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/logs`)
-const profilesDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/profiles`)
-const sessionsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/sessions`)
+// const logsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/logs`)
+// const profilesDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/profiles`)
+// const sessionsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@127.0.0.1:5984/sessions`)
 
 export default defineEventHandler(async (event) => {
     /* Set (request) body. */
@@ -41,10 +41,10 @@ export default defineEventHandler(async (event) => {
     let success
 
     /* Request session. */
-    session = await sessionsDb
-        .get(cookie)
-        .catch(err => console.error(err))
-    console.log('SESSION (cookie):', session)
+    // session = await sessionsDb
+    //     .get(cookie)
+    //     .catch(err => console.error(err))
+    // console.log('SESSION (cookie):', session)
 
     if (!session) {
         return `Authorization FAILED!`
@@ -84,16 +84,16 @@ export default defineEventHandler(async (event) => {
     }
 
     /* Request session update. */
-    result = await sessionsDb
-        .put(session)
-        .catch(err => console.error(err))
-    console.log('SESSION UPDATE:', result)
+    // result = await sessionsDb
+    //     .put(session)
+    //     .catch(err => console.error(err))
+    // console.log('SESSION UPDATE:', result)
 
     /* Request profile. */
-    profile = await profilesDb
-        .get(addr)
-        .catch(err => console.error(err))
-    console.log('PROFILE:', profile)
+    // profile = await profilesDb
+    //     .get(addr)
+    //     .catch(err => console.error(err))
+    // console.log('PROFILE:', profile)
 
     if (!profile) {
         /* Create NEW profile. */
@@ -113,10 +113,10 @@ export default defineEventHandler(async (event) => {
     }
 
     /* Request profile update. */
-    result = await profilesDb
-        .put(profile)
-        .catch(err => console.error(err))
-    console.log('PROFILE UPDATE:', result)
+    // result = await profilesDb
+    //     .put(profile)
+    //     .catch(err => console.error(err))
+    // console.log('PROFILE UPDATE:', result)
 
     /* Return success. */
     return `Authorization SUCCESS!`
