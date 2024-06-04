@@ -1,7 +1,7 @@
 <script setup>
 /* Import modules. */
 import numeral from 'numeral'
-import { ref } from 'vue'
+
 
 /* Initialize constants. */
 const TICKER_UPDATE_INTERVAL = 60000 // 60 seconds

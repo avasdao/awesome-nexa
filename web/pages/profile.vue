@@ -1,6 +1,6 @@
 <script setup>
 /* Import modules. */
-import { ref } from 'vue'
+
 
 /* Initialize stores. */
 import { useProfileStore } from '@/stores/profile'

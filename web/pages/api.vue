@@ -1,6 +1,6 @@
 <script setup>
 /* Import modules. */
-import { ref } from 'vue'
+
 
 const status = await $fetch('/status')
 console.log('STATUS', status)
