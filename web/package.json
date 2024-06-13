@@ -1,6 +1,6 @@
 {
   "name": "awesome-nexa",
-  "version": "24.5.27",
+  "version": "24.6.12",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -14,7 +14,7 @@
     "moment": "2.29.4",
     "nexajs": "23.12.29",
     "numeral": "2.0.6",
-    "nuxt": "3.0.0",
+    "nuxt": "3.7.4",
     "pinia": "2.0.32",
     "pouchdb": "8.0.1",
     "qrcode": "1.5.1",
