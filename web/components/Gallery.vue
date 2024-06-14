@@ -11,7 +11,7 @@ const listings = ref()
 
 
 const init = async () => {
-    console.log('INIT CATEGORY', props.cat)
+    // console.log('INIT CATEGORY', props.cat)
 
     switch(props.cat) {
     case 'exchanges':
@@ -20,8 +20,14 @@ const init = async () => {
     case 'mining':
         listings.value = await $fetch('/_mining')
         break
+    case 'tooling':
+        listings.value = await $fetch('/_tooling')
+        break
+    case 'wallets':
+        listings.value = await $fetch('/_wallets')
+        break
     }
-    console.log('LISTINGS', listings)
+    // console.log('LISTINGS', listings)
 
 }
 

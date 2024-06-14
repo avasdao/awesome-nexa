@@ -1,10 +1,3 @@
-/*******************************************************************************
- *
- * MINING
- *
- * https://awesomenexa.org/mining
- */
-
 /* Initialize listings. */
 const listings: Object[] = []
 
