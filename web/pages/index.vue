@@ -18,7 +18,7 @@
             </header>
         </div>
 
-        <Gallery />
+        <Gallery cat="mining" />
 
         <div class="px-3 max-w-7xl mx-auto my-10">
             <header class="flex justify-between items-end">
@@ -36,7 +36,7 @@
             </header>
         </div>
 
-        <Gallery />
+        <Gallery cat="exchanges" />
 
         <Team />
 

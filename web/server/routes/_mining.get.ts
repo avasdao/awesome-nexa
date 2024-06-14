@@ -12,30 +12,30 @@ const listings: Object[] = []
 //       However, listings are sorted by date when reported by the API.
 
 listings.push({
-    id: '70657c74-fc6b-4698-98f5-23c5ec3d9286',
-    title: 'Cashdrive Miners Guild',
-    summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
-    url: 'https://cashdriveminers.org/',
-    imgUrl: 'https://i.ibb.co/Ryg4n2x/image.png',
-    createdAt: 1675603538,
+    id: 'e90d84cc-0b6d-4c02-89e4-02244566cd1b',
+    title: 'BzMiner',
+    summary: `Fast Windows/Linux crypto miner with remote management.`,
+    url: 'https://www.bzminer.com/',
+    imgUrl: 'https://i.ibb.co/pRS5L2T/image.png',
+    createdAt: 1718395848,
 })
 
 listings.push({
-    id: 'ab267cd3-7773-4c4b-a7f1-7563af31c4c2',
-    title: 'Homemade Crypto',
-    summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
-    url: 'https://homemadecrypto.com/',
-    imgUrl: 'https://i.ibb.co/wMztZvW/image.png',
-    createdAt: 1675603396,
+    id: '08fbeed1-c74d-4322-9bd4-6e0045d847a3',
+    title: 'f2pool',
+    summary: `f2pool is the world’s leading mining pool, serving miners in more than 100 countries.`,
+    url: 'https://f2pool.zendesk.com/hc/en-us/articles/30086739823001-How-to-mine-Nexa',
+    imgUrl: 'https://i.ibb.co/jTCDkbK/image.png',
+    createdAt: 1718395848,
 })
 
 listings.push({
-    id: 'ab267cd3-7773-4c4b-a7f1-7563af31c4c3',
-    title: 'Real Satoshi Clan',
-    summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
-    url: 'https://realsatoshiclan.com/',
-    imgUrl: 'https://i.ibb.co/37Zqf6h/image.png',
-    createdAt: 1675613396,
+    id: 'ba962025-c9b4-40e5-a22e-89c6c3e5f4b3',
+    title: 'WoolyPooly',
+    summary: `WoolyPooly is one of the most profitable pools with our focus on minimal commission fees for PPLNS & SOLO reward systems.`,
+    url: 'https://woolypooly.com/',
+    imgUrl: 'https://i.ibb.co/TYXSc20/image.png',
+    createdAt: 1718395848,
 })
 
 // TODO: Sort by date created.
