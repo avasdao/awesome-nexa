@@ -25,7 +25,7 @@ listings.push({
 listings.push({
     id: '8752fefe-10a4-4aeb-a0b8-4364e25c026e',
     title: 'Hush Your Money',
-    summary: `Hush Your Money — Spend Privately. Fearlessly!`,
+    summary: `Spend Privately. Fearlessly!`,
     url: 'https://hushyourmoney.com',
     imgUrl: 'https://i.ibb.co/8zMZ61k/icon.png',
     createdAt: 1718410624,

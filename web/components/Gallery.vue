@@ -25,11 +25,23 @@ const init = async () => {
     case 'apps':
         listings.value = await $fetch('/_apps')
         break
+    case 'builders':
+        listings.value = await $fetch('/_builders')
+        break
+    case 'daos':
+        listings.value = await $fetch('/_daos')
+        break
     case 'exchanges':
         listings.value = await $fetch('/_exchanges')
         break
     case 'mining':
         listings.value = await $fetch('/_mining')
+        break
+    case 'nfts':
+        listings.value = await $fetch('/_nfts')
+        break
+    case 'tokens':
+        listings.value = await $fetch('/_tokens')
         break
     case 'tooling':
         listings.value = await $fetch('/_tooling')
@@ -53,7 +65,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <ul class="px-3 max-w-7xl mx-auto my-10 flex flex-col lg:flex-row">
+    <ul class="px-3 max-w-7xl mx-auto mt-10 mb-20 flex flex-col lg:flex-row">
         <NuxtLink :to="listing.url" target="_blank" v-for="listing of featuredListings" :key="listing.id" class="py-5 w-full lg:w-1/3 flex gap-4">
             <img
                 :src="listing.imgUrl"
