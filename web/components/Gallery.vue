@@ -65,8 +65,8 @@ onMounted(() => {
 </script>
 
 <template>
-    <ul class="px-3 max-w-7xl mx-auto mt-10 mb-20 flex flex-col lg:flex-row">
-        <NuxtLink :to="listing.url" target="_blank" v-for="listing of featuredListings" :key="listing.id" class="py-5 w-full lg:w-1/3 flex gap-4">
+    <ul class="px-3 max-w-7xl mx-auto mt-10 mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <NuxtLink :to="listing.url" target="_blank" v-for="listing of featuredListings" :key="listing.id" class="py-5 w-full flex gap-4">
             <img
                 :src="listing.imgUrl"
                 class="w-24 h-24 p-1 bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-yellow-500 rounded-lg overlay-hidden shadow-md"
@@ -77,10 +77,37 @@ onMounted(() => {
                     {{listing.title}}
                 </h3>
 
-                <p class="text-sm">
+                <p class="text-sm limit-3-lines">
                     {{listing.summary}}
                 </p>
             </div>
         </NuxtLink>
     </ul>
 </template>
+
+<style scoped>
+.limit-3-lines {
+    --lh: 1.4rem;
+    line-height: var(--lh);
+
+    --max-lines: 3;
+    max-height: calc(var(--lh) * var(--max-lines));
+    overflow: hidden;
+}
+
+.limit-3-lines::before {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.limit-3-lines::after {
+    content: "";
+    position: absolute;
+    right: 0; /* note: not using bottom */
+    width: 1rem;
+    height: 1rem;
+    background: white;
+}
+</style>
