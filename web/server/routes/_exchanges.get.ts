@@ -23,6 +23,15 @@ listings.push({
 })
 
 listings.push({
+    id: '91b41306-dc41-4b49-86e3-2e818078e1fd',
+    title: 'WiserSwap',
+    summary: `TBD...`,
+    url: 'https://wiserswap.com',
+    imgUrl: 'https://i.ibb.co/LghzxXt/image.png',
+    createdAt: 1718393667,
+})
+
+listings.push({
     id: 'a5935c83-f728-4244-b6ed-d22b1f1b43ee',
     title: 'BingX',
     summary: `Founded in 2018, BingX is a leading crypto exchange, serving over 10 million users worldwide.`,

@@ -25,7 +25,7 @@ listings.push({
 listings.push({
     id: 'ba962025-c9b4-40e5-a22e-89c6c3e5f4b3',
     title: 'WoolyPooly',
-    summary: `WoolyPooly is one of the most profitable pools with our focus on minimal commission fees for PPLNS & SOLO reward systems.`,
+    summary: `One of the most profitable pools with our focus on minimal commission fees for PPLNS & SOLO reward systems.`,
     url: 'https://woolypooly.com/',
     imgUrl: 'https://i.ibb.co/TYXSc20/image.png',
     createdAt: 1718395848,
