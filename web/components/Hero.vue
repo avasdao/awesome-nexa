@@ -1,23 +1,53 @@
+<script setup lang="ts">
+/* Define properties. */
+// https://vuejs.org/guide/components/props.html#props-declaration
+const props = defineProps({
+    data: {
+        type: [Object],
+    },
+})
+
+const launchBanner = async () => {
+    console.log('launching banner...')
+
+    window.open('http://www.wallywallet.org')
+}
+
+const loadBanner = async (_bannerid) => {
+    console.log('loading banner...', _bannerid)
+}
+
+// onMounted(() => {
+//     console.log('Mounted!')
+//     // Now it's safe to perform setup operations.
+// })
+
+// onBeforeUnmount(() => {
+//     console.log('Before Unmount!')
+//     // Now is the time to perform all cleanup operations.
+// })
+</script>
+
 <template>
     <main class="max-w-7xl px-0 lg:px-5 py-5 mx-auto flex flex-col lg:flex-row gap-4">
         <section class="w-full lg:w-2/3 h-[400px]">
-            <div class="h-64 sm:h-96 mx-3 my-2 rounded-3xl overflow-hidden bg-gray-900 border-4 border-yellow-500 shadow-md">
+            <div @click="launchBanner" class="h-64 sm:h-96 mx-3 my-2 rounded-3xl overflow-hidden bg-gray-900 border-4 border-yellow-500 shadow-md cursor-pointer">
 
-                <h2 class="ml-3 mt-2 sm:ml-5 sm:mt-5 relative text-gray-100 opacity-50 text-lg sm:text-2xl font-medium z-10">
+                <!-- <h2 class="ml-3 mt-2 sm:ml-5 sm:mt-5 relative text-gray-100 opacity-10 text-lg sm:text-2xl font-medium z-10">
                     Featured Spotlight
-                </h2>
+                </h2> -->
 
                 <img
-                    src="~/assets/banners/txbit-listing.jpg"
-                    class="-mt-12 py-5 h-full object-cover relative inset-0"
+                    src="~/assets/banners/01-wally-wallet.jpg"
+                    class="h-full object-cover relative inset-0"
                 />
 
                 <div class="relative -mt-5 sm:-mt-10 flex gap-6 justify-center">
-                    <button class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
+                    <button @click.stop="loadBanner(0)" class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
 
-                    <button class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
+                    <button @click.stop="loadBanner(1)" class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
 
-                    <button class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
+                    <button @click.stop="loadBanner(2)" class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
                 </div>
             </div>
         </section>

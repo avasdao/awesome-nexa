@@ -16,7 +16,7 @@ listings.push({
 listings.push({
     id: '08fbeed1-c74d-4322-9bd4-6e0045d847a3',
     title: 'f2pool',
-    summary: `f2pool is the world’s leading mining pool, serving miners in more than 100 countries.`,
+    summary: `World's leading mining pool, serving miners in more than 100+ countries.`,
     url: 'https://f2pool.zendesk.com/hc/en-us/articles/30086739823001-How-to-mine-Nexa',
     imgUrl: 'https://i.ibb.co/jTCDkbK/image.png',
     createdAt: 1718395848,

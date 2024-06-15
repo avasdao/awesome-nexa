@@ -7,7 +7,7 @@ const listings: Object[] = []
 listings.push({
     id: '71d7adcc-8872-461f-99ad-bc93afedc9f7',
     title: 'MEXC Global',
-    summary: `Founded in 2018, MEXC is known as the exchange of high performance and mega transaction matching technology.`,
+    summary: `Reputable exchange offering high performance and mega transaction matching technology.`,
     url: 'https://www.mexc.com/exchange/NEXA_USDT',
     imgUrl: 'https://i.ibb.co/YQrQgWC/image.png',
     createdAt: 1718393667,
@@ -16,7 +16,7 @@ listings.push({
 listings.push({
     id: 'ec2c5673-7369-49fc-87d6-d426c0636077',
     title: 'CoinEx',
-    summary: `CoinEx is a global crypto exchange committed to making crypto trading easier.`,
+    summary: `A global crypto exchange committed to making crypto trading easier.`,
     url: 'https://www.coinex.com/en/exchange/NEXA-USDT',
     imgUrl: 'https://i.ibb.co/bJj3CKt/image.png',
     createdAt: 1718393667,
@@ -25,9 +25,9 @@ listings.push({
 listings.push({
     id: '91b41306-dc41-4b49-86e3-2e818078e1fd',
     title: 'WiserSwap',
-    summary: `TBD...`,
+    summary: `Automated Market Maker (AMM) built to support over 100K+ asset TPS.`,
     url: 'https://wiserswap.com',
-    imgUrl: 'https://i.ibb.co/LghzxXt/image.png',
+    imgUrl: 'https://i.ibb.co/mBMFHFT/icon.png',
     createdAt: 1718393667,
 })
 

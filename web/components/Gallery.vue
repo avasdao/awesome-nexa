@@ -40,8 +40,6 @@ const init = async () => {
     }
     // console.log('LISTINGS', listings)
 
-    console.log('FEATURED', featuredListings)
-
 }
 
 onMounted(() => {
