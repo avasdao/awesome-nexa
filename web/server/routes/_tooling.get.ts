@@ -31,6 +31,15 @@ listings.push({
     createdAt: 1718408183,
 })
 
+listings.push({
+    id: '94e9a48f-7b80-4fd3-b833-19b129ca9c99',
+    title: 'Script Debugger',
+    summary: `Test and debug smart contracts written for the Nexa blockchain.`,
+    url: 'https://debug.nexa.org/',
+    imgUrl: 'https://i.ibb.co/dk8RdxF/script.png',
+    createdAt: 1718410624,
+})
+
 // TODO: Sort by date created.
 
 export default defineEventHandler((event) => {

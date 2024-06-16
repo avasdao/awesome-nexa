@@ -24,7 +24,7 @@ listings.push({
 
 listings.push({
     id: '30f6824f-6694-43b1-8af8-c3e41dfe2320',
-    title: 'Your NEW! Project Here',
+    title: 'Your NEW! Game Here',
     summary: `Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.`,
     url: 'https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1',
     imgUrl: 'https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png',

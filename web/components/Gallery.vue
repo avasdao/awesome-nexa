@@ -7,12 +7,14 @@ const props = defineProps({
     cat: String,
 })
 
+const MAXIMUM_LISTINGS_PER_CATEGORY = 6
+
 const listings = ref()
 
 const featuredListings = computed(() => {
     // console.log('LISTINGS', listings)
     if (listings?.value) {
-        return listings.value.slice(0, 3)
+        return listings.value.slice(0, MAXIMUM_LISTINGS_PER_CATEGORY)
     }
 
     return []
