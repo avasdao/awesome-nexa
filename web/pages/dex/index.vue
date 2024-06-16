@@ -9,7 +9,7 @@
     <main class="px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
             <h1 class="text-5xl font-bold tracking-widest">
-                Exchanges
+                Decentralized Exchanges
             </h1>
         </div>
 

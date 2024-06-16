@@ -30,14 +30,17 @@ const init = async () => {
     case 'builders':
         listings.value = await $fetch('/_builders')
         break
+    case 'cex':
+        listings.value = await $fetch('/_cex')
+        break
     case 'daos':
         listings.value = await $fetch('/_daos')
         break
     case 'defi':
         listings.value = await $fetch('/_defi')
         break
-    case 'exchanges':
-        listings.value = await $fetch('/_exchanges')
+    case 'dex':
+        listings.value = await $fetch('/_dex')
         break
     case 'gaming':
         listings.value = await $fetch('/_gaming')
