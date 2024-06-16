@@ -7,19 +7,24 @@
 
 <template>
     <main class="bg-white">
-        <div class="mx-auto max-w-7xl px-6 py-12">
-            Please check out the
-            <NuxtLink to="https://nexa.wiki" target="_blank" class="text-lg text-blue-500 font-medium hover:underline">
-                Wiki
-            </NuxtLink>
-        </div>
+        <section class="grid grid-cols-2 gap-8">
+            <div class="mx-auto max-w-7xl px-6 pt-10">
+                Please check out the
+                <NuxtLink to="https://nexa.wiki" target="_blank" class="text-lg text-blue-500 font-medium hover:underline">
+                    Wiki
+                </NuxtLink>
+            </div>
 
-        <div class="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
+            <div class="mx-auto max-w-7xl px-6 py-12">
+                Please check out the
+                <NuxtLink to="https://forum.nexa.org/" target="_blank" class="text-lg text-blue-500 font-medium hover:underline">
+                    Forum
+                </NuxtLink>
+            </div>
+        </section>
+
+        <div class="mx-auto max-w-7xl px-6 py-6 sm:py-8 lg:py-10 lg:px-8">
             <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-
-                <section>
-                    Check out the Wiki
-                </section>
 
                 <h2 class="text-3xl font-bold leading-10 tracking-tight text-gray-900">
                     Frequently Asked Questions
@@ -56,7 +61,7 @@
                         </dt>
                         <dd class="mt-2 pr-12" id="faq-0">
                             <p class="text-base leading-7 text-gray-600">
-                                I don&#039;t know, but team is hard at work, and so it's only a matter of time...
+                                I don&#039;t know, but the <NuxtLink to="https://bitcoinunlimited.info" target="_blank" class="text-blue-500 font-medium hover:underline">BitcoinUnlimited</NuxtLink> team is hard at work, and so it's only a matter of time...
                             </p>
                         </dd>
                     </div>

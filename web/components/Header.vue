@@ -28,7 +28,7 @@ const updateTicker = async () => {
 
     /* Format and set to display. */
     nexUsd.value = numeral(MEX).format('$0,0.00[00]')
-    // console.log('NEX/USD', nexUsd)
+    // console.log('NEXA/USD', nexUsd)
 }
 
 /* Update ticker details. */
@@ -50,7 +50,7 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                 <div class="flex items-center gap-4">
                     <NuxtLink to="/" class="flex">
                         <span class="sr-only">Awesome Nexa Logo</span>
-                        <img class="h-14 w-auto sm:h-12" src="~/assets/logo.png" alt="Awesome Nexa Logo" />
+                        <img class="h-14 w-auto sm:h-16" src="~/assets/logo.png" alt="Awesome Nexa Logo" />
                     </NuxtLink>
 
                     <NuxtLink to="/buy" class="lg:hidden flex flex-col justify-center items-center">
@@ -59,7 +59,7 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                         </span>
 
                         <span class="text-sm text-gray-500 font-light">
-                            1M NEX/USD
+                            1M NEXA/USD
                         </span>
                     </NuxtLink>
                 </div>
@@ -100,7 +100,7 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                             </span>
 
                             <span class="text-sm text-gray-500 font-light">
-                                1M NEX/USD
+                                1M NEXA/USD
                             </span>
                         </NuxtLink>
 
@@ -164,7 +164,7 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                                     </div>
                                 </NuxtLink>
 
-                                <NuxtLink to="/spotlight" @click="isShowingMobileMenu = false" class="-m-3 group flex items-center rounded-lg p-3 hover:bg-yellow-400">
+                                <!-- <NuxtLink to="/spotlight" @click="isShowingMobileMenu = false" class="-m-3 group flex items-center rounded-lg p-3 hover:bg-yellow-400">
                                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-yellow-400 text-white sm:h-12 sm:w-12 group-hover:bg-yellow-900">
                                         <svg class="w-8 h-8 text-yellow-900 group-hover:text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"></path>
@@ -175,7 +175,7 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                                     <div class="ml-4 text-xl font-medium text-gray-900">
                                         What's HOT!
                                     </div>
-                                </NuxtLink>
+                                </NuxtLink> -->
 
                                 <NuxtLink to="https://github.com/avasdao/awesome-nexa#readme" target="_blank" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">

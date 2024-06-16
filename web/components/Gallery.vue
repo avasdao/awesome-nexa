@@ -31,8 +31,20 @@ const init = async () => {
     case 'daos':
         listings.value = await $fetch('/_daos')
         break
+    case 'defi':
+        listings.value = await $fetch('/_defi')
+        break
     case 'exchanges':
         listings.value = await $fetch('/_exchanges')
+        break
+    case 'gaming':
+        listings.value = await $fetch('/_gaming')
+        break
+    case 'media':
+        listings.value = await $fetch('/_media')
+        break
+    case 'merchants':
+        listings.value = await $fetch('/_merchants')
         break
     case 'mining':
         listings.value = await $fetch('/_mining')
@@ -40,11 +52,11 @@ const init = async () => {
     case 'nfts':
         listings.value = await $fetch('/_nfts')
         break
-    case 'tokens':
-        listings.value = await $fetch('/_tokens')
-        break
     case 'tooling':
         listings.value = await $fetch('/_tooling')
+        break
+    case 'utilities':
+        listings.value = await $fetch('/_utilities')
         break
     case 'wallets':
         listings.value = await $fetch('/_wallets')
@@ -95,19 +107,19 @@ onMounted(() => {
     overflow: hidden;
 }
 
-.limit-3-lines::before {
+/*.limit-3-lines::before {
     content: "...";
     position: absolute;
     bottom: 0;
     right: 0;
-}
+}*/
 
-.limit-3-lines::after {
+/*.limit-3-lines::after {
     content: "";
     position: absolute;
-    right: 0; /* note: not using bottom */
+    right: 0;
     width: 1rem;
     height: 1rem;
     background: white;
-}
+}*/
 </style>

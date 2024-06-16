@@ -23,6 +23,42 @@
         <div class="px-3 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
+                    Merchants
+                </h2>
+
+                <NuxtLink to="/merchants" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                    See all Merchants
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </NuxtLink>
+            </header>
+        </div>
+
+        <Gallery cat="merchants" />
+
+        <div class="px-3 max-w-7xl mx-auto mt-10">
+            <header class="flex justify-between items-end">
+                <h2 class="text-3xl font-medium">
+                    DeFi
+                </h2>
+
+                <NuxtLink to="/defi" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                    See all DeFi
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </NuxtLink>
+            </header>
+        </div>
+
+        <Gallery cat="defi" />
+
+        <div class="px-3 max-w-7xl mx-auto mt-10">
+            <header class="flex justify-between items-end">
+                <h2 class="text-3xl font-medium">
                     Mining
                 </h2>
 
@@ -77,11 +113,11 @@
         <div class="px-3 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
-                    Tokens
+                    Gaming
                 </h2>
 
-                <NuxtLink to="/tokens" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
-                    See all Tokens
+                <NuxtLink to="/gaming" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                    See all Gaming
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -90,7 +126,7 @@
             </header>
         </div>
 
-        <Gallery cat="tokens" />
+        <Gallery cat="gaming" />
 
         <div class="px-3 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -113,11 +149,11 @@
         <div class="px-3 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
-                    Tooling
+                    News &amp; Media
                 </h2>
 
-                <NuxtLink to="/tooling" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
-                    See all Tooling
+                <NuxtLink to="/media" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                    See all News &amp; Media
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -126,7 +162,7 @@
             </header>
         </div>
 
-        <Gallery cat="tooling" />
+        <Gallery cat="media" />
 
         <div class="px-3 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -145,6 +181,42 @@
         </div>
 
         <Gallery cat="builders" />
+
+        <div class="px-3 max-w-7xl mx-auto mt-10">
+            <header class="flex justify-between items-end">
+                <h2 class="text-3xl font-medium">
+                    Tooling
+                </h2>
+
+                <NuxtLink to="/tooling" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                    See all Tooling
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </NuxtLink>
+            </header>
+        </div>
+
+        <Gallery cat="tooling" />
+
+        <div class="px-3 max-w-7xl mx-auto mt-10">
+            <header class="flex justify-between items-end">
+                <h2 class="text-3xl font-medium">
+                    Utilities
+                </h2>
+
+                <NuxtLink to="/utilities" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                    See all Utilities
+
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </NuxtLink>
+            </header>
+        </div>
+
+        <Gallery cat="utilities" />
 
         <Team />
 
