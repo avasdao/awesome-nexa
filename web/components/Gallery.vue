@@ -52,6 +52,9 @@ const init = async () => {
     case 'nfts':
         listings.value = await $fetch('/_nfts')
         break
+    case 'references':
+        listings.value = await $fetch('/_references')
+        break
     case 'tooling':
         listings.value = await $fetch('/_tooling')
         break

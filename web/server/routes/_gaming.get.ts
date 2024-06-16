@@ -7,7 +7,7 @@ const listings: Object[] = []
 listings.push({
     id: '369af2b7-d00a-44a8-9c8e-f28f5b0f4a04',
     title: 'Nexa Games',
-    summary: `Join the excitement in our growing community of real-money Gamers and the talented Creators who build & publish the games they love.`,
+    summary: `Community of real-money Gamers and the talented Creators who build & publish the games they love.`,
     url: 'https://nexa.games/',
     imgUrl: 'https://i.ibb.co/wBw9zGG/image.png',
     createdAt: 1718514208,
@@ -24,10 +24,10 @@ listings.push({
 
 listings.push({
     id: '30f6824f-6694-43b1-8af8-c3e41dfe2320',
-    title: 'gaming title',
-    summary: `summary`,
-    url: 'url',
-    imgUrl: 'https://assets.super.so/ddffb637-6356-4624-9f22-bb4755755d09/images/e2b226d0-e5de-48f9-a521-35af4c4f2e53/nexa-logo-mark.svg',
+    title: 'Your NEW! Project Here',
+    summary: `Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.`,
+    url: 'https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1',
+    imgUrl: 'https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png',
     createdAt: 1718514208,
 })
 

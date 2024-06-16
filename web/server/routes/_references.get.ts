@@ -5,30 +5,30 @@ const listings: Object[] = []
 //       However, listings are sorted by date when reported by the API.
 
 listings.push({
-    id: 'a9b85906-6050-4aec-92a8-40b0430f7de3',
-    title: '@ultrasoundape',
-    summary: `Nexa community manager.`,
-    url: 'https://twitter.com/ultrasoundape',
-    imgUrl: 'https://pbs.twimg.com/profile_images/1770508738618650624/2G604MWk_400x400.jpg',
-    createdAt: 1718410624,
+    id: '8f3e8d75-d40f-439f-90b4-d74b7131319b',
+    title: 'Nexa Specifications',
+    summary: `A detailed document covering the full Nexa protocol and consensus specifications.`,
+    url: 'https://spec.nexa.org/',
+    imgUrl: 'https://i.ibb.co/VjGyXh9/clipboard.png',
+    createdAt: 1718570767,
 })
 
 listings.push({
-    id: 'a9b85906-6050-4aec-92a8-40b0430f7de3',
-    title: 'media title',
+    id: '017d2aec-c721-4bf5-8fbe-5c1f91c3e7e5',
+    title: 'reference title',
     summary: `summary`,
     url: 'url',
     imgUrl: 'https://assets.super.so/ddffb637-6356-4624-9f22-bb4755755d09/images/e2b226d0-e5de-48f9-a521-35af4c4f2e53/nexa-logo-mark.svg',
-    createdAt: 1718410624,
+    createdAt: 1718570767,
 })
 
 listings.push({
-    id: 'a9b85906-6050-4aec-92a8-40b0430f7de3',
-    title: 'media title',
+    id: '34493d14-48a5-4463-bb6a-e14be9d5bd6e',
+    title: 'reference title',
     summary: `summary`,
     url: 'url',
     imgUrl: 'https://assets.super.so/ddffb637-6356-4624-9f22-bb4755755d09/images/e2b226d0-e5de-48f9-a521-35af4c4f2e53/nexa-logo-mark.svg',
-    createdAt: 1718410624,
+    createdAt: 1718570767,
 })
 
 // TODO: Sort by date created.
