@@ -4,11 +4,11 @@ export default defineNuxtConfig({
     app: {
         /* Application Header */
         head: {
-            title: 'Awesome Nexa — A Peer-to-Peer Digital Value System',
+            title: 'Awesome Nexa — Building Bitcoin 3.0',
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { hid: 'description', name: 'description', content: 'Everything that is awesome about Nexa, all in one place.' },
+                { hid: 'description', name: 'description', content: `Everything that's awesome about the Nexa ecosystem, all in one convenient place.` },
                 { name: 'format-detection', content: 'telephone=no' }
             ],
             link: [

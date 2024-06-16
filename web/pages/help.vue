@@ -7,8 +7,19 @@
 
 <template>
     <main class="bg-white">
-        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40 lg:px-8">
+        <div class="mx-auto max-w-7xl px-6 py-12">
+            Please check out the
+            <NuxtLink to="https://nexa.wiki" target="_blank" class="text-lg text-blue-500 font-medium hover:underline">
+                Wiki
+            </NuxtLink>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
             <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+
+                <section>
+                    Check out the Wiki
+                </section>
 
                 <h2 class="text-3xl font-bold leading-10 tracking-tight text-gray-900">
                     Frequently Asked Questions
