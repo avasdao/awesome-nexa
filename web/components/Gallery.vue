@@ -89,7 +89,7 @@ onMounted(() => {
         <NuxtLink :to="listing.url" target="_blank" v-for="listing of featuredListings" :key="listing.id" class="py-5 w-full flex gap-4">
             <img
                 :src="listing.imgUrl"
-                class="w-24 h-24 p-1 bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-yellow-500 rounded-lg overlay-hidden shadow-md"
+                class="w-24 h-24 aspect-square p-1 bg-gradient-to-r from-gray-50 to-gray-100 border-2 border-yellow-500 rounded-lg overlay-hidden shadow-md"
             />
 
             <div class="">
