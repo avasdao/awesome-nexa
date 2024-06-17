@@ -8,7 +8,7 @@
                     Apps
                 </h2>
 
-                <NuxtLink to="/apps" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/apps" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all Apps
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -26,7 +26,7 @@
                     Merchants
                 </h2>
 
-                <NuxtLink to="/merchants" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/merchants" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all Merchants
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -44,7 +44,7 @@
                     DeFi
                 </h2>
 
-                <NuxtLink to="/defi" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/defi" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all DeFi
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -62,7 +62,7 @@
                     Mining
                 </h2>
 
-                <NuxtLink to="/mining" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/mining" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all Mining
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -80,7 +80,7 @@
                     Exchanges — Centralized
                 </h2>
 
-                <NuxtLink to="/cex" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/cex" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all CEXs
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -98,7 +98,7 @@
                     Exchanges — Decentralized
                 </h2>
 
-                <NuxtLink to="/dex" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/dex" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all DEXs
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -116,7 +116,7 @@
                     Wallets
                 </h2>
 
-                <NuxtLink to="/wallets" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/wallets" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all Wallets
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -134,7 +134,7 @@
                     Gaming
                 </h2>
 
-                <NuxtLink to="/gaming" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/gaming" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all Gaming
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -152,7 +152,7 @@
                     NFT Collections
                 </h2>
 
-                <NuxtLink to="/nfts" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/nfts" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all NFT Collections
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -170,7 +170,7 @@
                     News &amp; Media
                 </h2>
 
-                <NuxtLink to="/media" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/media" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all News &amp; Media
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -188,7 +188,7 @@
                     Utilities
                 </h2>
 
-                <NuxtLink to="/utilities" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/utilities" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all Utilities
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -206,7 +206,7 @@
                     Builders
                 </h2>
 
-                <NuxtLink to="/builders" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/builders" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all Builders
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -224,7 +224,7 @@
                     Tooling
                 </h2>
 
-                <NuxtLink to="/tooling" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/tooling" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all Tooling
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -242,7 +242,7 @@
                     References
                 </h2>
 
-                <NuxtLink to="/references" class="flex items-center gap-2 text-blue-500 text-lg font-medium hover:underline">
+                <NuxtLink to="/references" class="flex items-center gap-2 text-sky-500 text-lg font-medium hover:underline">
                     See all References
 
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

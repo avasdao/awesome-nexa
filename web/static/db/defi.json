@@ -1,0 +1,26 @@
+[
+    {
+        "id": "a9b85906-6050-4aec-92a8-40b0430f7de3",
+        "title": "Stakehouse",
+        "summary": "Stake your $AVAS for daily rewards.",
+        "url": "https://avas.cash/staking",
+        "imgUrl": "https://i.ibb.co/cDLtWKS/beef-steak.png",
+        "createdAt": 1718608918
+    },
+    {
+        "id": "1938e234-2bbc-4e3a-b05c-402d8bfeb2a6",
+        "title": "Trading Post",
+        "summary": "Trade peer-to-peer on a safe and secure platform.",
+        "url": "https://github.com/avasdao/wisebox/blob/master/market/TradingPost/v1/TradingPost_Group.nex",
+        "imgUrl": "https://i.ibb.co/cJfLGHk/post-office.png",
+        "createdAt": 1718608918
+    },
+    {
+        "id": "a9b85906-6050-4aec-92a8-40b0430f7de3",
+        "title": "Your NEW! Project Here",
+        "summary": "Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.",
+        "url": "https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1",
+        "imgUrl": "https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png",
+        "createdAt": 1234567890
+    }
+]

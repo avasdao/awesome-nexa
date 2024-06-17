@@ -1,5 +1,13 @@
 [
     {
+        "id": "66b7be55-db84-441f-9839-308f9390a834",
+        "title": "Nxy Social",
+        "summary": "A self-sustaining and uncensorable #SoFi network running as an L1+ on the Nexa blockchain.",
+        "url": "https://nxy.social/",
+        "imgUrl": "https://i.ibb.co/MZR8bYr/icon.png",
+        "createdAt": 1718608220
+    },
+    {
         "id": "a9b85906-6050-4aec-92a8-40b0430f7de3",
         "title": "NiftyArt",
         "summary": "Buy, sell, and create NFT tokens in this open marketplace.",
