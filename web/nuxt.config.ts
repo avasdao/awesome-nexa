@@ -16,6 +16,7 @@ export default defineNuxtConfig({
             ],
             script: [
                 { src: '/js/matomo.js' },
+                { src: '/js/mailchimp.js' },
             ],
         },
     },
