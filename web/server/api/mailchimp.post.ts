@@ -1,3 +1,17 @@
+/* Import modules. */
+import mailchimp from '@mailchimp/mailchimp_marketing'
+
+/* Initialize Mailchimp configuration. */
+mailchimp.setConfig({
+  apiKey: process.env.MAILCHIMP_API_KEY,
+  server: 'us21',
+})
+
+const callPing = async () => {
+    const response = await mailchimp.ping.get()
+    console.log('PING RESPONSE', response)
+}
+
 export default defineEventHandler(async (event) => {
     /* Initialize locals. */
     let body
@@ -7,17 +21,6 @@ export default defineEventHandler(async (event) => {
     /* Initialize API key. */
     const mailchimpApiKey = process.env.MAILCHIMP_API_KEY
     console.log('MAILCHIMP API KEY', mailchimpApiKey)
-
-    /* Set authorization. */
-    // const context = event.context
-    // console.log('MAILCHIMP', context)
-
-    // if (auth.profileid !== 1337) {
-    //     throw createError({
-    //         statusCode: 401,
-    //         statusMessage: 'You are NOT an authorized administrator.',
-    //     })
-    // }
 
     /* Set (request) body. */
     body = await readBody(event)
@@ -32,7 +35,8 @@ export default defineEventHandler(async (event) => {
     } catch (err) {
         console.error(err)
     }
-    // console.log('BODY', JSON.stringify(body, null, 2))
+
+    callPing() // FOR DEV PURPOSES ONLY
 
     return {
         status: 'is working!',
