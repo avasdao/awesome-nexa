@@ -1,17 +1,15 @@
-version: '3.7'
-
 services:
   app:
     build: .
     image: awesome-nexa
     container_name: awesome-nexa
     restart: unless-stopped
-    # network_mode: 'host'
     ports:
       - '127.0.0.1:3000:3000'
     environment:
-      - ETERNALDB_HOST=${ETERNALDB_HOST} # change this to match your system's ENV
-    logging: # apply better controls to Docker overlay folder
+      - ETERNALDB_HOST=${ETERNALDB_HOST}
+      - MAILCHIMP_API_KEY=${MAILCHIMP_API_KEY}
+    logging:
       driver: 'json-file'
       options:
         max-file: '5'

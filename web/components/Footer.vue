@@ -1,6 +1,23 @@
 <script setup>
 /* Import modules. */
 
+const email = ref()
+
+const subscribe = async () => {
+    console.log('SUBSCRIBE')
+
+    const response = await fetch('/api/mailchimp', {
+        method: 'POST',
+        body: JSON.stringify({
+            email: email.value,
+        })
+    }).catch(err => console.error(err))
+    console.log('RESPONSE', response)
+
+    const status = await response.json()
+        .catch(err => console.error(err))
+    console.log('STATUS', status)
+}
 
 //
 </script>
@@ -94,12 +111,6 @@
                                 </li>
 
                                 <li>
-                                    <a href="https://www.bitcoinunlimited.info/download" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        Download
-                                    </a>
-                                </li>
-
-                                <li>
                                     <a href="https://www.bitcoinunlimited.info/faq/what-is-bu" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         FAQ
                                     </a>
@@ -160,37 +171,48 @@
                     </h3>
 
                     <p class="mt-2 text-lg leading-6 text-gray-300">
-                        Receive the latest Nexa news, reviews and resources, sent to your inbox monthly.
+                        Receive the latest Nexa news, reviews and resources, sent to your inbox each week.
                     </p>
 
-                    <form class="mt-6 sm:flex sm:max-w-md">
+                    <div class="mt-6 sm:flex sm:max-w-md">
                         <label for="email-address" class="sr-only">Email address</label>
                         <input
+                            v-model="email"
                             type="email"
-                            name="email-address"
-                            id="email-address"
                             autocomplete="email"
                             required
-                            class="cursor-not-allowed w-full min-w-0 appearance-none rounded-md border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-lg leading-7 text-gray-50 placeholder-gray-500 shadow-lg focus:border-indigo-500 focus:ring-indigo-500 sm:w-64 sm:leading-6 xl:w-full"
+                            class="w-full min-w-0 appearance-none rounded-md border-white/10 bg-gray-400/10 px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-lg leading-7 text-gray-50 placeholder-gray-500 shadow-lg focus:border-indigo-500 focus:ring-indigo-500 sm:w-64 sm:leading-6 xl:w-full"
                             placeholder="Enter your email"
-                            disabled
                         />
 
                         <div class="mt-4 rounded-md sm:mt-0 sm:ml-4 sm:flex-shrink-0">
                             <button
-                                type="submit"
+                                @click="subscribe"
                                 class="cursor-not-allowed flex w-full items-center justify-center rounded-md bg-indigo-500 py-1.5 px-3 text-2xl font-semibold leading-7 text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 sm:text-base sm:leading-6"
-                                disabled
                             >
                                 Subscribe
                             </button>
                         </div>
-                    </form>
+                    </div>
 
                 </div>
             </div>
 
-            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
+            <section class="mt-16 mb-8">
+
+                <!-- Runnin on Flux banner -->
+                <NuxtLink to="https://runonflux.io" target="_blank">
+                    <img
+                        src="~/assets/running-on-flux.png"
+                        class="border border-gray-500 h-16 rounded-xl shadow"
+                        />
+                </NuxtLink>
+
+                <!-- ADD MORE BANNERS / KEY SPONSORS -->
+
+            </section>
+
+            <div class="border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
                 <div class="flex justify-center space-x-6 md:order-2">
 
                     <NuxtLink to="https://twitter.com/AvasDAO" target="_blank" class="text-gray-500 hover:text-gray-400">
