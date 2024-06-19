@@ -20,13 +20,42 @@ export default defineNuxtConfig({
         },
     },
 
-    /* Modules */
+    /* Progressive Web Application Settings */
+    pwa: {
+        manifest: {
+            name: 'Awesome Nexa — Building Bitcoin 3.0',
+            short_name: 'Awesome Nexa',
+            description: `Everything that's awesome about the Nexa ecosystem, all in one convenient place.`,
+            lang: 'en',
+            theme_color: '#518c96',
+            background_color: '#518c96',
+            // useWebmanifestExtension: false,
+        },
+        meta: {
+            name: 'Awesome Nexa — Building Bitcoin 3.0',
+            description: `Everything that's awesome about the Nexa ecosystem, all in one convenient place.`,
+            author: `Nexa contributors`,
+        },
+        // icon: false, // disables the icon module
+        workbox: {
+            // workboxURL: 'TBD',
+            // enabled: true, // FOR DEV PURPOSES ONLY
+        },
+    },
+
+    /* Application Modules */
     modules: [
         /* Tailwind CSS */
         '@nuxtjs/tailwindcss',
 
         /* Pinia */
         '@pinia/nuxt',
+
+        /* Internationalization for Nuxt */
+        '@nuxtjs/i18n',
+
+        /* Progressive Web Application */
+        '@kevinmarrec/nuxt-pwa',
     ],
 
     /* Route Rules */

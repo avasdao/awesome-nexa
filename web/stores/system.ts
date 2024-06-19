@@ -31,6 +31,9 @@ export const useSystemStore = defineStore('system', {
         ONE_MEX: BigInt('100000000'),
         ONE_META: BigInt('1000000000000000000'),
 
+        /* Set Nexa Exchange API endpoint. */
+        NEXA_EXCHANGE_ENDPOINT: 'https://nexa.exchange',
+
         /* Initialize notifications. */
         notif: {
             isShowing: false,
@@ -78,45 +81,43 @@ export const useSystemStore = defineStore('system', {
          */
         _notices: null,
 
+        _ticker: null,
+
         /**
          * Tickers
          *
          * Support for multiple exchange tickers across multiple currencies.
          */
-        _tickers: null,
+        // _tickers: null,
     }),
 
     getters: {
-        avasUsd() {
-            if (!this._tickers?.AVAS) {
-                return null
-            }
+        // nex() {
+        //     if (!this._tickers?.NEXA) {
+        //         return null
+        //     }
 
-            return this._tickers.AVAS.price
+        //     return this._tickers.NEXA.quote.USD.price
+        // },
+
+        ticker(_state) {
+            return _state._ticker
         },
 
-        nex() {
-            if (!this._tickers?.NEXA) {
-                return null
-            }
+        usd(_state) {
+            const usd = _state._ticker?.quote?.USD?.price
 
-            return this._tickers.NEXA.quote.USD.price
+            const formatted = parseFloat((usd * 1000000.0).toFixed(4))
+
+            return formatted
         },
 
-        usd() {
-            if (!this.nex) {
+        locale(_state) {
+            if (!_state._locale) {
                 return null
             }
 
-            return this.nex * 10**6
-        },
-
-        locale() {
-            if (!this._locale) {
-                return null
-            }
-
-            return this._locale
+            return _state._locale
         },
 
     },
@@ -155,19 +156,24 @@ export const useSystemStore = defineStore('system', {
             locale.value = this.locale
         },
 
-        async updateTicker () {
-            if (!this._tickers.AVAS) {
-                this._tickers.AVAS = {}
-            }
-
-            if (!this._tickers.NEXA) {
-                this._tickers.NEXA = {}
-            }
-
-            this._tickers.AVAS = await $fetch('https://nexa.exchange/v1/ticker/quote/57f46c1766dc0087b207acde1b3372e9f90b18c7e67242657344dcd2af660000')
-
-            this._tickers.NEXA = await $fetch('https://nexa.exchange/ticker')
+        async updateTicker() {
+            this._ticker = await $fetch(this.NEXA_EXCHANGE_ENDPOINT + '/ticker')
+                .catch(err => console.error(err))
+            // console.info('SYSTEM (update ticker):', this.ticker)
         },
+        // async updateTicker () {
+        //     if (!this._tickers.AVAS) {
+        //         this._tickers.AVAS = {}
+        //     }
+
+        //     if (!this._tickers.NEXA) {
+        //         this._tickers.NEXA = {}
+        //     }
+
+        //     this._tickers.AVAS = await $fetch('https://nexa.exchange/v1/ticker/quote/57f46c1766dc0087b207acde1b3372e9f90b18c7e67242657344dcd2af660000')
+
+        //     this._tickers.NEXA = await $fetch('https://nexa.exchange/ticker')
+        // },
 
         async getSender(_tx) {
             const inputs = _tx?.vin

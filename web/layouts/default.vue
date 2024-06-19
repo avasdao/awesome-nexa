@@ -48,16 +48,16 @@ watch([Profile.$state, System.$state], (_state) => {
     )
 })
 
-// onMounted(() => {
-//     console.log('Mounted!')
-//     // Now it's safe to perform setup operations.
-// })
+onMounted(() => {
+    console.info('Application is starting...')
 
-// onBeforeUnmount(() => {
-//     console.log('Before Unmount!')
-//     // Now is the time to perform all cleanup operations.
-// })
+    /* Initialize the (Application's) System. */
+    System.init()
+})
 
+onBeforeUnmount(() => {
+    console.info('Application is shutting down...')
+})
 </script>
 
 <template>

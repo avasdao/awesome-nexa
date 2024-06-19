@@ -1,6 +1,6 @@
 {
   "name": "awesome-nexa",
-  "version": "24.6.18",
+  "version": "24.6.19",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -23,7 +23,8 @@
     "uuid": "9.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/i18n": "8.0.0-rc.2",
+    "@kevinmarrec/nuxt-pwa": "0.17.0",
+    "@nuxtjs/i18n": "8.3.1",
     "@nuxtjs/tailwindcss": "6.4.1",
     "@types/node": "18.14.2",
     "@types/pouchdb": "6.4.0",

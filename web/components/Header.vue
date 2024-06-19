@@ -2,40 +2,106 @@
 /* Import modules. */
 import numeral from 'numeral'
 
+/* Import stores. */
+import { useSystemStore } from '@/stores/system'
+const System = useSystemStore()
 
-/* Initialize constants. */
-const TICKER_UPDATE_INTERVAL = 60000 // 60 seconds
+const props = defineProps({
+    isShowingPrice: Boolean,
+    isShowingCommunity: Boolean,
+    isShowingMenu: Boolean,
+})
 
-/* Initialize flags. */
-// const isShowingDownlaodsMenu = ref(false)
-// const isShowingExtrasMenu = ref(false)
+const emit = defineEmits(['togglePrice', 'toggleCommunity', 'toggleMenu'])
+
 const isShowingMobileMenu = ref(false)
 
-/* Initialize holders. */
-const nexUsd = ref(null)
-
-
-/**
- * Update Ticker
- */
-const updateTicker = async () => {
-    const price = await $fetch('https://nexa.exchange/price')
-        .catch(err => console.error)
-    // console.log('PRICE', price)
-
-    /* Convert to MEX. */
-    const MEX = price * 1000000.0
-
-    /* Format and set to display. */
-    nexUsd.value = numeral(MEX).format('$0,0.00[00]')
-    // console.log('NEXA/USD', nexUsd)
+const togglePrice = () => {
+    emit('togglePrice')
 }
 
-/* Update ticker details. */
-updateTicker()
+const toggleCommunity = () => {
+    emit('toggleCommunity')
+}
 
-/* Set interval for auto-update. */
-setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
+const toggleMenu = () => {
+    emit('toggleMenu')
+}
+
+const displayTicker = computed(() => {
+    if (!System.ticker) {
+        return '$0.00'
+    }
+
+    /* Set quote. */
+    const quote = System.ticker.quote
+
+    /* Validate quote. */
+    if (!quote) {
+        return '$0.00'
+    }
+
+    /* Set price. */
+    const price = quote?.USD?.price
+
+    /* Validate price. */
+    if (!price) {
+        return '$0.00'
+    }
+
+    /* Return formatted price. */
+    return numeral(price * 1000000).format('$0,0.00')
+})
+
+const displayPctChg = computed(() => {
+    if (!System.ticker) {
+        return '0.0%'
+    }
+
+    /* Set quote. */
+    const quote = System.ticker.quote
+
+    /* Validate quote. */
+    if (!quote) {
+        return '0.0%'
+    }
+
+    /* Set percentage change. */
+    const pctChg24h = quote?.USD?.pctChg24h
+
+    /* Validate change. */
+    if (!pctChg24h) {
+        return '0.0%'
+    }
+
+    /* Return formatted price. */
+    return numeral(pctChg24h / 100).format('0.00%')
+})
+
+const displayVol = computed(() => {
+    if (!System.ticker) {
+        return '0'
+    }
+
+    /* Set quote. */
+    const quote = System.ticker.quote
+
+    /* Validate quote. */
+    if (!quote) {
+        return '0'
+    }
+
+    /* Set percentage change. */
+    const vol = quote?.USD?.vol24
+
+    /* Validate change. */
+    if (!vol) {
+        return '0'
+    }
+
+    /* Return formatted price. */
+    return numeral(vol).format('0[.]0a')
+})
 
 </script>
 
@@ -53,7 +119,7 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                         <img class="h-14 w-auto sm:h-16" src="~/assets/logo.png" alt="Awesome Nexa Logo" />
                     </NuxtLink>
 
-                    <NuxtLink to="/buy" class="lg:hidden flex flex-col justify-center items-center">
+                    <!-- <NuxtLink to="/buy" class="lg:hidden flex flex-col justify-center items-center">
                         <span class="text-4xl text-indigo-600 font-medium">
                             {{nexUsd}}
                         </span>
@@ -61,6 +127,38 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                         <span class="text-sm text-gray-500 font-light">
                             1M NEXA/USD
                         </span>
+                    </NuxtLink> -->
+
+                    <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="flex flex-col lg:hidden pr-2 sm:pr-8 lg:pr-16 items-center cursor-pointer">
+                        <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
+                            <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
+                                {{displayTicker}}
+                            </h2>
+
+                            <div class="text-[0.6em] text-gray-400 leading-3">
+                                mNEXA
+                                <span class="block pl-1">/  USD</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row items-center">
+                            <span class="font-bold text-sm">
+                                <span class="text-gray-500">
+                                    {{displayPctChg}}
+                                </span>
+
+                                <svg v-if="displayPctChg[0] === '-'" class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>
+                                <svg v-else class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+
+                                <span class="mx-2 text-yellow-400 font-bold">
+                                    ▽
+                                </span>
+
+                                <span class="text-gray-500">
+                                    {{displayVol}}
+                                </span>
+                            </span>
+                        </div>
                     </NuxtLink>
                 </div>
 
@@ -94,7 +192,7 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                     </nav>
 
                     <div class="flex items-center md:ml-12">
-                        <NuxtLink to="/buy" class="flex flex-col justify-center items-center">
+                        <!-- <NuxtLink to="/buy" class="flex flex-col justify-center items-center">
                             <span class="text-4xl text-indigo-600 font-medium">
                                 {{nexUsd}}
                             </span>
@@ -102,6 +200,38 @@ setInterval(updateTicker, TICKER_UPDATE_INTERVAL)
                             <span class="text-sm text-gray-500 font-light">
                                 1M NEXA/USD
                             </span>
+                        </NuxtLink> -->
+
+                        <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="pr-2 sm:pr-8 lg:pr-16 flex flex-col items-center cursor-pointer">
+                            <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
+                                <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
+                                    {{displayTicker}}
+                                </h2>
+
+                                <div class="text-[0.6em] text-gray-400 leading-3">
+                                    mNEXA
+                                    <span class="block pl-1">/  USD</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row items-center">
+                                <span class="font-bold text-sm">
+                                    <span class="text-gray-500">
+                                        {{displayPctChg}}
+                                    </span>
+
+                                    <svg v-if="displayPctChg[0] === '-'" class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>
+                                    <svg v-else class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+
+                                    <span class="mx-2 text-yellow-400 font-bold">
+                                        ▽
+                                    </span>
+
+                                    <span class="text-gray-500">
+                                        {{displayVol}}
+                                    </span>
+                                </span>
+                            </div>
                         </NuxtLink>
 
                         <NuxtLink to="/profile" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
