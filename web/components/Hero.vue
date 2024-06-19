@@ -61,15 +61,15 @@ const loadBanner = async (_bannerid) => {
                             Featured Social
                         </h3>
 
-                        <h2 class="text-purple-100 text-base font-bold">
+                        <h2 class="text-purple-100 text-base font-bold truncate overflow-hidden">
                             Team AMA
                         </h2>
 
-                        <h3 class="text-purple-100 text-xs font-medium italic">
+                        <h3 class="text-purple-100 text-xs font-medium italic truncate overflow-hidden">
                             Wed, May 29 @ 8am UTC
                         </h3>
 
-                        <h3 class="text-purple-100 text-xs font-bold">
+                        <h3 class="text-purple-100 text-xs font-bold truncate overflow-hidden">
                             Project + Marketing Updates
                         </h3>
                     </div>
@@ -82,15 +82,15 @@ const loadBanner = async (_bannerid) => {
                             Featured Event
                         </h3>
 
-                        <h2 class="text-purple-100 text-base font-bold">
+                        <h2 class="text-purple-100 text-base font-bold truncate overflow-hidden">
                             AU Crypto Convention
                         </h2>
 
-                        <h3 class="text-purple-100 text-xs font-medium italic">
+                        <h3 class="text-purple-100 text-xs font-medium italic truncate overflow-hidden">
                             Sat, Nov 23 thru 24
                         </h3>
 
-                        <h3 class="text-purple-100 text-xs font-bold">
+                        <h3 class="text-purple-100 text-xs font-bold truncate overflow-hidden">
                             FPGA Hardware Demo
                         </h3>
                     </div>
@@ -103,15 +103,15 @@ const loadBanner = async (_bannerid) => {
                             Featured Video
                         </h3>
 
-                        <h2 class="text-purple-100 text-base font-bold">
+                        <h2 class="text-purple-100 text-base font-bold truncate overflow-hidden">
                             The Nexa Drop
                         </h2>
 
-                        <h3 class="text-purple-100 text-xs font-medium italic">
+                        <h3 class="text-purple-100 text-xs font-medium italic truncate overflow-hidden">
                             Andrew Stone & Paul Church
                         </h3>
 
-                        <h3 class="text-purple-100 text-xs font-bold">
+                        <h3 class="text-purple-100 text-xs font-bold truncate overflow-hidden">
                             The Power of Tokens on Nexa
                         </h3>
                     </div>
