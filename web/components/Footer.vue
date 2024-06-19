@@ -204,7 +204,7 @@ const subscribe = async () => {
                 <NuxtLink to="https://runonflux.io" target="_blank">
                     <img
                         src="~/assets/running-on-flux.png"
-                        class="border border-gray-500 h-16 rounded-xl shadow"
+                        class="border border-gray-500 w-full sm:w-auto sm:h-16 rounded-xl shadow"
                         />
                 </NuxtLink>
 
