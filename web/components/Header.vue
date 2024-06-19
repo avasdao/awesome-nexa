@@ -143,7 +143,7 @@ const displayVol = computed(() => {
 
                         <div class="flex flex-row items-center">
                             <span class="font-bold text-sm">
-                                <span class="text-gray-500">
+                                <span class="text-gray-400">
                                     {{displayPctChg}}
                                 </span>
 
@@ -154,7 +154,7 @@ const displayVol = computed(() => {
                                     ▽
                                 </span>
 
-                                <span class="text-gray-500">
+                                <span class="text-gray-400">
                                     {{displayVol}}
                                 </span>
                             </span>
@@ -216,7 +216,7 @@ const displayVol = computed(() => {
 
                             <div class="flex flex-row items-center">
                                 <span class="font-bold text-sm">
-                                    <span class="text-gray-500">
+                                    <span class="text-gray-400">
                                         {{displayPctChg}}
                                     </span>
 
@@ -227,7 +227,7 @@ const displayVol = computed(() => {
                                         ▽
                                     </span>
 
-                                    <span class="text-gray-500">
+                                    <span class="text-gray-400">
                                         {{displayVol}}
                                     </span>
                                 </span>
