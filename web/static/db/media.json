@@ -22,5 +22,13 @@
         "url": "https://x.com/NexaMoney",
         "imgUrl": "https://pbs.twimg.com/profile_images/1785964334364991488/ZwyOVVTH_400x400.jpg",
         "createdAt": 1718741685
+    },
+    {
+        "id": "28a9d230-fd11-4445-b94c-7be03ccdea2a",
+        "title": "@TheDonAlucard",
+        "summary": "“In order to lead the orchestra, you must first turn your back to the crowd.”",
+        "url": "https://x.com/TheDonAlucard",
+        "imgUrl": "https://pbs.twimg.com/profile_images/1738253253182210048/TXQPwDuU_400x400.jpg",
+        "createdAt": 1718817665
     }
 ]
