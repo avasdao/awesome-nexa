@@ -1,10 +1,10 @@
 /*
- * Import tooling database.
+ * Import NFTs database.
  */
-import toolingDb from '../../static/db/tooling.json'
+import nftsDb from '../../../static/db/nfts.json'
 
 /* Initialize listings. */
-const listings: Object[] = [...toolingDb]
+const listings: Object[] = [...nftsDb]
 
 export default defineEventHandler((event) => {
     /* Return all listings. */

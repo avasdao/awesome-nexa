@@ -1,10 +1,10 @@
 /*
- * Import apps database.
+ * Import wallets database.
  */
-import appsDb from '../../static/db/apps.json'
+import walletsDb from '../../../static/db/wallets.json'
 
 /* Initialize listings. */
-const listings: Object[] = [...appsDb]
+const listings: Object[] = [...walletsDb]
 
 export default defineEventHandler((event) => {
     /* Return all listings. */

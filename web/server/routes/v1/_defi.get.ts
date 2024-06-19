@@ -1,10 +1,10 @@
 /*
- * Import NFTs database.
+ * Import DeFi database.
  */
-import nftsDb from '../../static/db/nfts.json'
+import defiDb from '../../../static/db/defi.json'
 
 /* Initialize listings. */
-const listings: Object[] = [...nftsDb]
+const listings: Object[] = [...defiDb]
 
 export default defineEventHandler((event) => {
     /* Return all listings. */

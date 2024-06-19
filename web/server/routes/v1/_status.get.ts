@@ -1,7 +1,7 @@
 export default defineEventHandler((event) => {
     const dbStatus = 'ok'
-    const tickerStatus = 'LEGACY'
-    const nexidStatus = 'LEGACY'
+    const tickerStatus = 'ok'
+    const nexidStatus = 'ok'
 
     return {
         database: dbStatus,

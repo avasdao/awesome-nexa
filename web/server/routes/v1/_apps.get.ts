@@ -1,10 +1,10 @@
 /*
- * Import DeFi database.
+ * Import apps database.
  */
-import defiDb from '../../static/db/defi.json'
+import appsDb from '../../../static/db/apps.json'
 
 /* Initialize listings. */
-const listings: Object[] = [...defiDb]
+const listings: Object[] = [...appsDb]
 
 export default defineEventHandler((event) => {
     /* Return all listings. */
