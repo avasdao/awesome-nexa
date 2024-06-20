@@ -1,7 +1,7 @@
 /*
  * Import DeFi database.
  */
-import defiDb from '../../../static/db/defi.json'
+import defiDb from '../../../static/db/listings/defi.json'
 
 /* Initialize listings. */
 const listings: Object[] = [...defiDb]

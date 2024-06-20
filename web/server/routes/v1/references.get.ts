@@ -1,7 +1,7 @@
 /*
  * Import references database.
  */
-import referencesDb from '../../../static/db/references.json'
+import referencesDb from '../../../static/db/listings/references.json'
 
 /* Initialize listings. */
 const listings: Object[] = [...referencesDb]

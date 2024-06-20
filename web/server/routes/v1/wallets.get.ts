@@ -1,7 +1,7 @@
 /*
  * Import wallets database.
  */
-import walletsDb from '../../../static/db/wallets.json'
+import walletsDb from '../../../static/db/listings/wallets.json'
 
 /* Initialize listings. */
 const listings: Object[] = [...walletsDb]

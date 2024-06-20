@@ -1,7 +1,7 @@
 /*
  * Import apps database.
  */
-import appsDb from '../../../static/db/apps.json'
+import appsDb from '../../../static/db/listings/apps.json'
 
 /* Initialize listings. */
 const listings: Object[] = [...appsDb]

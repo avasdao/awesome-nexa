@@ -1,7 +1,7 @@
 /*
  * Import tooling database.
  */
-import toolingDb from '../../../static/db/tooling.json'
+import toolingDb from '../../../static/db/listings/tooling.json'
 
 /* Initialize listings. */
 const listings: Object[] = [...toolingDb]

@@ -1,10 +1,9 @@
 /*
- * Import comments database.
+ * Initialize comments database.
  *
- * NOTE: New comments are added to the TOP of the JSON file.
+ * TODO Compile from ALL comments...
  */
-// import commentsDb from '../../../static/db/comments.json'
-let commentsDb // TODO Compile from ALL comments...
+let commentsDb
 
 export default defineEventHandler((event) => {
     /* Return all comments. */
