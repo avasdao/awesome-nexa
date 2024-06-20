@@ -8,7 +8,7 @@ export default defineNuxtConfig({
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { hid: 'description', name: 'description', content: `Everything that's awesome about the Nexa ecosystem, all in one convenient place.` },
+                { hid: 'description', name: 'description', content: `A curated list of TOP resources actively supporting the Nexa blockchain and its growing ecosystem.` },
                 { name: 'format-detection', content: 'telephone=no' }
             ],
             link: [
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         manifest: {
             name: 'Awesome Nexa — Building Bitcoin 3.0',
             short_name: 'Awesome Nexa',
-            description: `Everything that's awesome about the Nexa ecosystem, all in one convenient place.`,
+            description: `A curated list of TOP resources actively supporting the Nexa blockchain and its growing ecosystem.`,
             lang: 'en',
             theme_color: '#518c96',
             background_color: '#518c96',
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
         },
         meta: {
             name: 'Awesome Nexa — Building Bitcoin 3.0',
-            description: `Everything that's awesome about the Nexa ecosystem, all in one convenient place.`,
+            description: `A curated list of TOP resources actively supporting the Nexa blockchain and its growing ecosystem.`,
             author: `Nexa contributors`,
         },
         // icon: false, // disables the icon module

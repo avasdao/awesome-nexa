@@ -2,4 +2,4 @@
 
 ### ↳ https://awesomenexa.org
 
-This is the "official" Awesome Nexa web portal.
+A curated list of TOP resources actively supporting the Nexa blockchain and its growing ecosystem.
