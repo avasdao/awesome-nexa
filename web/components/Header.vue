@@ -119,16 +119,6 @@ const displayVol = computed(() => {
                         <img class="h-14 w-auto sm:h-16" src="~/assets/logo.png" alt="Awesome Nexa Logo" />
                     </NuxtLink>
 
-                    <!-- <NuxtLink to="/buy" class="lg:hidden flex flex-col justify-center items-center">
-                        <span class="text-4xl text-indigo-600 font-medium">
-                            {{nexUsd}}
-                        </span>
-
-                        <span class="text-sm text-gray-500 font-light">
-                            1M NEXA/USD
-                        </span>
-                    </NuxtLink> -->
-
                     <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="flex flex-col lg:hidden pr-2 sm:pr-8 lg:pr-16 items-center cursor-pointer">
                         <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
                             <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
@@ -192,16 +182,6 @@ const displayVol = computed(() => {
                     </nav>
 
                     <div class="flex items-center md:ml-12">
-                        <!-- <NuxtLink to="/buy" class="flex flex-col justify-center items-center">
-                            <span class="text-4xl text-indigo-600 font-medium">
-                                {{nexUsd}}
-                            </span>
-
-                            <span class="text-sm text-gray-500 font-light">
-                                1M NEXA/USD
-                            </span>
-                        </NuxtLink> -->
-
                         <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="pr-2 sm:pr-8 lg:pr-16 flex flex-col items-center cursor-pointer">
                             <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
                                 <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">

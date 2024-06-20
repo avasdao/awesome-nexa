@@ -1,3 +1,7 @@
+const dbStatus = 'ok'
+const tickerStatus = 'ok'
+const nexidStatus = 'ok'
+
 export default defineEventHandler((event) => {
     /* Set daily active users (DAU). */
     // FIXME FOR DEV PURPOSES ONLY
@@ -25,6 +29,10 @@ export default defineEventHandler((event) => {
 
     /* Build statistics. */
     const stats = {
+        database: dbStatus,
+        ticker: tickerStatus,
+        nexid: nexidStatus,
+
         dau,
         fusions,
         mau,
