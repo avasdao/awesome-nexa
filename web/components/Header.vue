@@ -111,7 +111,7 @@ const displayVol = computed(() => {
         <div class="pointer-events-none absolute inset-0 z-30 shadow" aria-hidden="true"></div>
 
         <div class="relative z-20">
-            <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-4 md:justify-start md:space-x-10 lg:px-8">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-4 lg:justify-start lg:space-x-10 lg:px-8">
 
                 <div class="flex items-center gap-4">
                     <NuxtLink to="/" class="flex">
@@ -152,7 +152,7 @@ const displayVol = computed(() => {
                     </NuxtLink>
                 </div>
 
-                <div class="-my-2 -mr-2 md:hidden">
+                <div class="-my-2 -mr-2 lg:hidden">
                     <button
                         @click="isShowingMobileMenu = true"
                         type="button"
@@ -167,7 +167,7 @@ const displayVol = computed(() => {
                     </button>
                 </div>
 
-                <div class="hidden md:flex md:flex-1 md:items-center md:justify-between">
+                <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-between">
                     <nav class="flex space-x-10 items-center">
                         <NuxtLink to="https://github.com/avasdao/awesome-nexa#readme" target="_blank" class="text-lg font-bold text-rose-500 hover:text-rose-700">
                             <div class="flex">
@@ -232,7 +232,7 @@ const displayVol = computed(() => {
         From: "opacity-100 scale-100"
         To: "opacity-0 scale-95"
     -->
-        <div v-if="isShowingMobileMenu" class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden">
+        <div v-if="isShowingMobileMenu" class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition lg:hidden">
             <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <div class="px-5 pt-5 pb-6 sm:pb-8">
                     <div class="flex items-center justify-between">
