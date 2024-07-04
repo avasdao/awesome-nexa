@@ -1,5 +1,13 @@
 [
     {
+        "id": "00c5c90c-bd8f-4956-821d-820eec8cd880",
+        "title": "Nexa Runes",
+        "summary": "Inscribe a rune on Nexa blockchain using Nexscript `NexaRunes.nex` contract.",
+        "url": "https://nexarunes.onrender.com/",
+        "imgUrl": "https://i.ibb.co/sC5tqPp/image.png",
+        "createdAt": 1720069974
+    },
+    {
         "id": "66b7be55-db84-441f-9839-308f9390a834",
         "title": "Nxy Social",
         "summary": "A self-sustaining and uncensorable #SoFi network running as an L1+ on the Nexa blockchain.",

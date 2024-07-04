@@ -7,20 +7,66 @@ const props = defineProps({
     },
 })
 
+const MAX_SHOWCASE_BANNERS = 2
+const SLIDESHOW_INTERVAL = 10000
+
+const bannerid = ref(null)
+const bannerUrl = ref(null)
+
 const launchBanner = async () => {
     console.log('launching banner...')
 
-    window.open('http://www.wallywallet.org')
+    switch(bannerid.value) {
+    case 0:
+        window.open('https://agnar.pages.dev')
+        break
+    case 1:
+        window.open('http://www.wallywallet.org')
+        break
+    default:
+        window.open('https://agnar.pages.dev')
+        break
+    }
 }
 
 const loadBanner = async (_bannerid) => {
     console.log('loading banner...', _bannerid)
+
+    bannerid.value = _bannerid
+
+    switch(_bannerid) {
+    case 0:
+        bannerUrl.value = 'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg'
+        break
+    case 1:
+        bannerUrl.value = 'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg'
+        break
+    default:
+        bannerUrl.value = 'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg'
+        break
+    }
 }
 
-// onMounted(() => {
-//     console.log('Mounted!')
-//     // Now it's safe to perform setup operations.
-// })
+const init = async () => {
+    /* Set banner id. */
+    bannerid.value = 0
+
+    /* Set banner url. */
+    bannerUrl.value = 'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg'
+
+    /* Begin slideshow. */
+    setInterval(() => {
+        if (bannerid.value >= MAX_SHOWCASE_BANNERS - 1) {
+            loadBanner(0)
+        } else {
+            loadBanner(bannerid.value + 1)
+        }
+    }, SLIDESHOW_INTERVAL)
+}
+
+onMounted(() => {
+    init()
+})
 
 // onBeforeUnmount(() => {
 //     console.log('Before Unmount!')
@@ -37,8 +83,12 @@ const loadBanner = async (_bannerid) => {
                     Featured Spotlight
                 </h2> -->
 
-                <img
+                <!-- <img
                     src="~/assets/banners/01-wally-wallet.jpg"
+                    class="h-full object-cover relative inset-0"
+                /> -->
+                <img
+                    :src="bannerUrl"
                     class="h-full object-cover relative inset-0"
                 />
 
