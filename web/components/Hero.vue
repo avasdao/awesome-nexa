@@ -76,8 +76,8 @@ onMounted(() => {
 
 <template>
     <main class="max-w-7xl px-0 lg:px-5 py-5 mx-auto flex flex-col lg:flex-row gap-4">
-        <section class="w-full lg:w-2/3 h-[400px]">
-            <div @click="launchBanner" class="h-64 sm:h-96 mx-3 my-2 rounded-3xl overflow-hidden bg-gray-900 border-4 border-yellow-500 shadow-md cursor-pointer">
+        <section class="w-full lg:w-2/3 h-[300px] lg:h-[400px]">
+            <div @click="launchBanner" class="h-full mx-3 my-2 rounded-3xl overflow-hidden bg-gray-900 border-4 border-yellow-500 shadow-md cursor-pointer">
 
                 <!-- <h2 class="ml-3 mt-2 sm:ml-5 sm:mt-5 relative text-gray-100 opacity-10 text-lg sm:text-2xl font-medium z-10">
                     Featured Spotlight
@@ -123,7 +123,11 @@ onMounted(() => {
                             Project + Marketing Updates
                         </h3>
                     </div>
-                    <img src="https://pbs.twimg.com/media/GOQI9N5aUAEA7uj?format=jpg&name=900x900" class="h-full border border-purple-400 rounded-lg shadow" />
+
+                    <img
+                        src="https://pbs.twimg.com/media/GOQI9N5aUAEA7uj?format=jpg&name=900x900"
+                        class="h-full border border-purple-400 rounded-lg shadow"
+                    />
                 </NuxtLink>
 
                 <NuxtLink to="https://auscryptocon.com/" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
@@ -144,7 +148,11 @@ onMounted(() => {
                             FPGA Hardware Demo
                         </h3>
                     </div>
-                    <img src="https://i.ibb.co/qmX4HHm/Australian-Crypto-Convention-2022.png" class="h-full border border-purple-400 rounded-lg shadow" />
+
+                    <img
+                        src="https://i.ibb.co/qmX4HHm/Australian-Crypto-Convention-2022.png"
+                        class="h-full border border-purple-400 rounded-lg shadow"
+                    />
                 </NuxtLink>
 
                 <NuxtLink to="https://www.youtube.com/watch?v=7pmoT3M262A" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
@@ -166,7 +174,10 @@ onMounted(() => {
                         </h3>
                     </div>
 
-                    <img src="~/assets/thumbnails/the-power-of-tokens-on-nexa.jpg" class="h-full border border-purple-400 rounded-lg shadow" />
+                    <img
+                        src="~/assets/thumbnails/the-power-of-tokens-on-nexa.jpg"
+                        class="h-full border border-purple-400 rounded-lg shadow"
+                    />
                 </NuxtLink>
             </div>
         </section>

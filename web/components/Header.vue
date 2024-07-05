@@ -103,6 +103,17 @@ const displayVol = computed(() => {
     return numeral(vol).format('0[.]0a')
 })
 
+const displayPctChgArrow = computed(() => {
+    const intVal = parseInt(displayPctChg.value)
+    console.log('INTVAL', intVal)
+    if (intVal < 0) {
+        return `down`
+        return `<svg class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>`
+    } else {
+        return `up`
+        return `<svg class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>`
+    }
+})
 </script>
 
 <template>
@@ -119,37 +130,39 @@ const displayVol = computed(() => {
                         <img class="h-14 w-auto sm:h-16" src="~/assets/logo.png" alt="Awesome Nexa Logo" />
                     </NuxtLink>
 
-                    <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="flex flex-col lg:hidden pr-2 sm:pr-8 lg:pr-16 items-center cursor-pointer">
-                        <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
-                            <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
-                                {{displayTicker}}
-                            </h2>
+                    <ClientOnly>
+                        <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="flex flex-col lg:hidden pr-2 sm:pr-8 lg:pr-16 items-center cursor-pointer">
+                            <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
+                                <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
+                                    {{displayTicker}}
+                                </h2>
 
-                            <div class="text-[0.6em] text-gray-400 leading-3">
-                                mNEXA
-                                <span class="block pl-1">/  USD</span>
+                                <div class="text-[0.6em] text-gray-400 leading-3">
+                                    mNEXA
+                                    <span class="block pl-1">/  USD</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="flex flex-row items-center">
-                            <span class="font-bold text-sm">
-                                <span class="text-gray-400">
-                                    {{displayPctChg}}
+                            <div class="flex flex-row items-center">
+                                <span class="font-bold text-sm">
+                                    <span class="text-gray-400">
+                                        {{displayPctChg}}
+                                    </span>
+
+                                    <svg v-if="displayPctChg[0] === '-'" class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>
+                                    <svg v-else class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+
+                                    <span class="mx-2 text-yellow-400 font-bold">
+                                        ▽
+                                    </span>
+
+                                    <span class="text-gray-400">
+                                        {{displayVol}}
+                                    </span>
                                 </span>
-
-                                <svg v-if="displayPctChg[0] === '-'" class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>
-                                <svg v-else class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
-
-                                <span class="mx-2 text-yellow-400 font-bold">
-                                    ▽
-                                </span>
-
-                                <span class="text-gray-400">
-                                    {{displayVol}}
-                                </span>
-                            </span>
-                        </div>
-                    </NuxtLink>
+                            </div>
+                        </NuxtLink>
+                    </ClientOnly>
                 </div>
 
                 <div class="-my-2 -mr-2 lg:hidden">
@@ -182,37 +195,39 @@ const displayVol = computed(() => {
                     </nav>
 
                     <div class="flex items-center md:ml-12">
-                        <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="pr-2 sm:pr-8 lg:pr-16 flex flex-col items-center cursor-pointer">
-                            <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
-                                <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
-                                    {{displayTicker}}
-                                </h2>
+                        <ClientOnly>
+                            <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="pr-2 sm:pr-8 lg:pr-16 flex flex-col items-center cursor-pointer">
+                                <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
+                                    <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
+                                        {{displayTicker}}
+                                    </h2>
 
-                                <div class="text-[0.6em] text-gray-400 leading-3">
-                                    mNEXA
-                                    <span class="block pl-1">/  USD</span>
+                                    <div class="text-[0.6em] text-gray-400 leading-3">
+                                        mNEXA
+                                        <span class="block pl-1">/  USD</span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-row items-center">
-                                <span class="font-bold text-sm">
-                                    <span class="text-gray-400">
-                                        {{displayPctChg}}
+                                <div class="flex flex-row items-center">
+                                    <span class="font-bold text-sm">
+                                        <span class="text-gray-400">
+                                            {{displayPctChg}}
+                                        </span>
+
+                                        <svg v-if="displayPctChg[0] === '-'" class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>
+                                        <svg v-else class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+
+                                        <span class="mx-2 text-yellow-400 font-bold">
+                                            ▽
+                                        </span>
+
+                                        <span class="text-gray-400">
+                                            {{displayVol}}
+                                        </span>
                                     </span>
-
-                                    <svg v-if="displayPctChg[0] === '-'" class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>
-                                    <svg v-else class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
-
-                                    <span class="mx-2 text-yellow-400 font-bold">
-                                        ▽
-                                    </span>
-
-                                    <span class="text-gray-400">
-                                        {{displayVol}}
-                                    </span>
-                                </span>
-                            </div>
-                        </NuxtLink>
+                                </div>
+                            </NuxtLink>
+                        </ClientOnly>
 
                         <NuxtLink to="/profile" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
