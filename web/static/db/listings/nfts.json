@@ -1,5 +1,13 @@
 [
     {
+        "id": "b6b4a266-2451-48d4-adc4-ccddf681c734",
+        "title": "Rott Pack by Oldremy",
+        "summary": "Nexa ROTT Klub is one of the premier (hand-drawn) art collections featured on Nexa.",
+        "url": "https://niftyart.cash/",
+        "imgUrl": "https://niftyart.cash/nftyc/cacf3d958161a925c28a970d3c40deec1a3fe06796fe1b4a7b68f377cdb90000093cb0da42e061fe87c2e7241e413914f9b11571d15e5c1bdeb1cefeb1cd3505/cardf.jpeg",
+        "createdAt": 1720339169
+    },
+    {
         "id": "2a093b88-ead6-4506-b781-63b91ca67566",
         "title": "Apes by Endo",
         "summary": "An exclusive collection of 300 Apes created by Nexa's illustrious community manager.",
@@ -8,19 +16,19 @@
         "createdAt": 1718410624
     },
     {
-        "id": "a9b85906-6050-4aec-92a8-40b0430f7de3",
-        "title": "Your NEW! Collection Here",
-        "summary": "Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.",
-        "url": "https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1",
-        "imgUrl": "https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png",
-        "createdAt": 1718410624
+        "id": "b1880ed6-b169-42c5-b93d-9e37c219b5b4",
+        "title": "Nexa-World-3 by Andrew ▼",
+        "summary": "The premier Nexa collection, that started it all, from the blockchain's illustrious Creator.",
+        "url": "https://niftyart.cash/",
+        "imgUrl": "https://niftyart.cash/nftyc/cacf3d958161a925c28a970d3c40deec1a3fe06796fe1b4a7b68f377cdb90000c305c9bcf91326bc831f8544fde6440f5b9fe3e3e21e187677a74d0fef78287d/cardf.jpeg",
+        "createdAt": 1720339384
     },
     {
-        "id": "a9b85906-6050-4aec-92a8-40b0430f7de3",
-        "title": "Your NEW! Collection Here",
-        "summary": "Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.",
-        "url": "https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1",
-        "imgUrl": "https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png",
-        "createdAt": 1718410624
+        "id": "d7da5a2e-9007-4718-b93b-a4ed95c2b5e1",
+        "title": "Bitcoin Adult collectors cards 25 of 30 by B1ackt34",
+        "summary": "An eye-popping collection of 30 high-definition photographs, best suited for mature adults HODLing crypto.",
+        "url": "https://niftyart.cash/",
+        "imgUrl": "https://niftyart.cash/nftyc/cacf3d958161a925c28a970d3c40deec1a3fe06796fe1b4a7b68f377cdb90000a4119a290cd7aebb9cbc27841392a01a06d602dfbd9d1a518f6278235510f535/cardf.png",
+        "createdAt": 1720339265
     }
 ]

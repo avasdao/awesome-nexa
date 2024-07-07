@@ -111,7 +111,7 @@ onMounted(() => {
             />
 
             <div class="">
-                <h3 class="text-lg font-medium">
+                <h3 class="text-lg font-medium limit-1-line">
                     {{listing.title}}
                 </h3>
 
@@ -124,6 +124,14 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.limit-1-line {
+    --lh: 1.4rem;
+    line-height: var(--lh);
+
+    --max-lines: 1;
+    max-height: calc(var(--lh) * var(--max-lines));
+    overflow: hidden;
+}
 .limit-3-lines {
     --lh: 1.4rem;
     line-height: var(--lh);
