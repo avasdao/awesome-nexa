@@ -8,7 +8,7 @@ const props = defineProps({
 })
 
 const MAX_SHOWCASE_BANNERS = 2
-const SLIDESHOW_INTERVAL = 10000
+const SLIDESHOW_INTERVAL = 7000
 
 const bannerid = ref(null)
 const bannerUrl = ref(null)
