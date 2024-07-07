@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-    title: 'Awesome Nexa — A Peer-to-Peer Digital Value System',
+    title: 'NEWSLETTER — Awesome Nexa',
     meta: [
         { name: 'description', content: 'Everything that is awesome about Nexa, all in one place.' }
     ],

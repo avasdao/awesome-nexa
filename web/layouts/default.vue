@@ -1,11 +1,4 @@
 <script setup lang="ts">
-useHead({
-    title: 'Awesome Nexa — A Peer-to-Peer Digital Value System',
-    meta: [
-        { name: 'description', content: 'Everything that is awesome about Nexa, all in one place.' }
-    ],
-})
-
 /* Initialize stores. */
 import { useProfileStore } from '@/stores/profile'
 import { useSystemStore } from '@/stores/system'
