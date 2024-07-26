@@ -3,16 +3,21 @@ import { defineStore } from 'pinia'
 
 /* Import modules. */
 import { encodeAddress } from '@nexajs/address'
-import { getTransaction } from '@nexajs/rostrum'
-import { binToHex } from '@nexajs/utils'
-import { hexToBin } from '@nexajs/utils'
-import { sha256 } from '@nexajs/crypto'
 
-/* Libauth helpers. */
-import { instantiateRipemd160 } from '@bitauth/libauth'
+import {
+    ripemd160,
+    sha256,
+} from '@nexajs/crypto'
 
-/* Libauth helpers. */
-import { encodeDataPush } from '@bitauth/libauth'
+import {
+    encodeDataPush,
+    OP,
+} from '@nexajs/script'
+
+import {
+    binToHex,
+    hexToBin,
+} from '@nexajs/utils'
 
 import './system/clipboard.ts'
 
@@ -189,17 +194,22 @@ export const useSystemStore = defineStore('system', {
             const scriptPushPubKey = encodeDataPush(publicKey)
             // console.log('SCRIPT PUSH PUBLIC KEY', scriptPushPubKey);
 
-            const ripemd160 = await instantiateRipemd160()
-
-            const publicKeyHash = ripemd160.hash(sha256(scriptPushPubKey))
+            const publicKeyHash = ripemd160(sha256(scriptPushPubKey))
             // console.log('PUBLIC KEY HASH (hex)', binToHex(publicKeyHash))
 
-            const pkhScript = hexToBin('17005114' + binToHex(publicKeyHash))
-            // console.info('  Public key hash Script:', binToHex(pkhScript))
+            /* Generate public key hash script. */
+            const scriptPubKey = new Uint8Array([
+                OP.ZERO,
+                OP.ONE,
+                ...encodeDataPush(publicKeyHash)
+            ])
 
+            /* Generate address. */
             const address = encodeAddress(
-                'nexa', 'TEMPLATE', pkhScript)
-            console.info('ADDRESS', address)
+                'nexa',
+                'TEMPLATE',
+                scriptPubKey,
+            )
 
             /* Set sender. */
             const sender = {

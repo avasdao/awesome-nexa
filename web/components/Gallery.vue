@@ -28,63 +28,63 @@ const init = async () => {
 
     switch(props.cat) {
     case 'apps':
-        listings.value = await $fetch('/v1/apps')
+        listings.value = await $fetch('/v1/listings/apps')
             .catch(err => console.error(err))
         break
     case 'builders':
-        listings.value = await $fetch('/v1/builders')
+        listings.value = await $fetch('/v1/listings/builders')
             .catch(err => console.error(err))
         break
     case 'cex':
-        listings.value = await $fetch('/v1/cex')
+        listings.value = await $fetch('/v1/listings/cex')
             .catch(err => console.error(err))
         break
     case 'daos':
-        listings.value = await $fetch('/v1/daos')
+        listings.value = await $fetch('/v1/listings/daos')
             .catch(err => console.error(err))
         break
     case 'defi':
-        listings.value = await $fetch('/v1/defi')
+        listings.value = await $fetch('/v1/listings/defi')
             .catch(err => console.error(err))
         break
     case 'dex':
-        listings.value = await $fetch('/v1/dex')
+        listings.value = await $fetch('/v1/listings/dex')
             .catch(err => console.error(err))
         break
     case 'gaming':
-        listings.value = await $fetch('/v1/gaming')
+        listings.value = await $fetch('/v1/listings/gaming')
             .catch(err => console.error(err))
         break
     case 'media':
-        listings.value = await $fetch('/v1/media')
+        listings.value = await $fetch('/v1/listings/media')
             .catch(err => console.error(err))
         break
     case 'merchants':
-        listings.value = await $fetch('/v1/merchants')
+        listings.value = await $fetch('/v1/listings/merchants')
             .catch(err => console.error(err))
         break
     case 'mining':
-        listings.value = await $fetch('/v1/mining')
+        listings.value = await $fetch('/v1/listings/mining')
             .catch(err => console.error(err))
         break
     case 'nfts':
-        listings.value = await $fetch('/v1/nfts')
+        listings.value = await $fetch('/v1/listings/nfts')
             .catch(err => console.error(err))
         break
     case 'references':
-        listings.value = await $fetch('/v1/references')
+        listings.value = await $fetch('/v1/listings/references')
             .catch(err => console.error(err))
         break
     case 'tooling':
-        listings.value = await $fetch('/v1/tooling')
+        listings.value = await $fetch('/v1/listings/tooling')
             .catch(err => console.error(err))
         break
     case 'utilities':
-        listings.value = await $fetch('/v1/utilities')
+        listings.value = await $fetch('/v1/listings/utilities')
             .catch(err => console.error(err))
         break
     case 'wallets':
-        listings.value = await $fetch('/v1/wallets')
+        listings.value = await $fetch('/v1/listings/wallets')
             .catch(err => console.error(err))
         break
     }
