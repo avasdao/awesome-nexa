@@ -7,9 +7,9 @@ definePageMeta({
 })
 
 useHead({
-    title: `Admin Home — Causes Cash`,
+    title: `Admin Home — Awesome Nexa`,
     meta: [
-        { name: 'description', content: `An uncensorable funding platform for radical creators and unstoppable service providers.` }
+        { name: 'description', content: `Awesome Nexa administration.` }
     ],
 })
 
