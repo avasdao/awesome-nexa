@@ -38,6 +38,11 @@ export default defineEventHandler(async _event => {
         .catch(err => console.error(err))
     // console.log('LISTINGS', listings)
 
+    /* Validate listings. */
+    if (!listings?.rows) {
+        return []
+    }
+
     /* Sanitize listings. */
     sanitized = listings.rows.map(_listing => {
         /* Set document. */
@@ -52,10 +57,16 @@ export default defineEventHandler(async _event => {
     })
     // console.log('SANITIZED', sanitized)
 
+    /* Validate sanitized. */
+    if (!sanitized) {
+        return []
+    }
+
+    /* Sort sanitized. */
     sorted = sanitized.sort((a, b) => {
         return b.updatedAt - a.updatedAt
     })
 
-    /* Return listings. */
+    /* Return (sorted) listings. */
     return sorted
 })
