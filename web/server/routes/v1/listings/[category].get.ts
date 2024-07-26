@@ -16,10 +16,11 @@ export default defineEventHandler(async _event => {
     /* Initialzie locals. */
     let listings
     let sanitized
+    let sorted
 
     /* Set category. */
     const category = _event?.context?.params?.category
-    console.log('CATEGORY', category)
+    // console.log('CATEGORY', category)
 
     /* Validate category. */
     if (!category) {
@@ -35,7 +36,7 @@ export default defineEventHandler(async _event => {
             include_docs: true,
         })
         .catch(err => console.error(err))
-    console.log('LISTINGS', listings)
+    // console.log('LISTINGS', listings)
 
     /* Sanitize listings. */
     sanitized = listings.rows.map(_listing => {
@@ -49,8 +50,12 @@ export default defineEventHandler(async _event => {
         /* Return document. */
         return doc
     })
-    console.log('SANITIZED', sanitized)
+    // console.log('SANITIZED', sanitized)
+
+    sorted = sanitized.sort((a, b) => {
+        return b.updatedAt - a.updatedAt
+    })
 
     /* Return listings. */
-    return sanitized
+    return sorted
 })
