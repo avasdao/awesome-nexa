@@ -16,22 +16,22 @@ const route = useRoute()
 
 const path = ref(route?.path)
 const listingid = ref()
+const isListing = ref(false)
+const isNotFound = ref(false)
 
 const init = () => {
-    /* Initialize locals. */
-    let isListing
-
-    /* Set listing flag. */
-    isListing = false
-
     /* Validate path. */
     if (path.value.includes('/apps/')) {
-        isListing = true
+        isListing.value = true
     }
 
     /* Validate listing. */
-    if (isListing) {
+    if (isListing.value) {
         listingid.value = path.value.slice(6)
+    }
+
+    if (!isListing.value) {
+        isNotFound.value = true
     }
 }
 
@@ -48,6 +48,6 @@ onMounted(() => {
 </script>
 
 <template>
-    <!-- <PageNotFound /> -->
-    <ListingDetail :listingid="listingid" />
+    <ListingDetail v-if="isListing" :listingid="listingid" />
+    <PageNotFound v-if="isNotFound" />
 </template>

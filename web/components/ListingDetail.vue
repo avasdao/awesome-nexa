@@ -7,6 +7,7 @@ const props = defineProps({
 })
 
 const listing = ref(null)
+const isNotFound = ref(false)
 
 watch(() => props.listingid, async (_newid, _oldid) => {
     // console.log('NEW ID', _newid)
@@ -31,6 +32,11 @@ const init = async () => {
         return _listing?.slug === props.listingid
     })
     console.log('LISTING', listing.value)
+
+    /* Validate listing. */
+    if (!listing.value) {
+        isNotFound.value = true
+    }
 }
 
 onMounted(() => {
@@ -44,7 +50,8 @@ onMounted(() => {
 </script>
 
 <template>
-    <NuxtLayout name="listing">
+    <PageNotFound v-if="isNotFound" />
+    <NuxtLayout v-if="listing" name="listing">
         <template #title>
             {{listing?.title}}
         </template>

@@ -1,11 +1,8 @@
 <script setup lang="ts">
-/* Define properties. */
-// https://vuejs.org/guide/components/props.html#props-declaration
-const props = defineProps({
-    data: {
-        type: [Object],
-    },
-})
+const route = useRoute()
+// console.log('ROUTE', route)
+
+const path = ref(route?.path)
 
 // onMounted(() => {
 //     console.log('Mounted!')
@@ -30,7 +27,7 @@ const props = defineProps({
             </h1>
 
             <p class="mt-4 text-base leading-7 text-gray-600 sm:mt-6 sm:text-lg sm:leading-8">
-                Sorry, we couldn’t find ( {{ path }} ).
+                Sorry, we couldn’t find ( {{path}} ).
             </p>
         </div>
 

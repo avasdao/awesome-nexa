@@ -48,7 +48,7 @@ const submit = async () => {
 
         <section class="py-10 flex flex-col items-center gap-10">
             <p>
-                We depend on the incredible efforts of the Nexa community to keep this Awesome List fresh with content.
+                We depend on the incredible efforts of the Nexa community to keep this Awesome Site fresh with content.
                 Please submit your favorite listing below.
             </p>
 

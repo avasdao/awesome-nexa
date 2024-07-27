@@ -182,12 +182,12 @@ const displayPctChgArrow = computed(() => {
 
                 <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-between">
                     <nav class="flex space-x-10 items-center">
-                        <NuxtLink to="https://github.com/avasdao/awesome-nexa#readme" target="_blank" class="text-lg font-bold text-rose-500 hover:text-rose-700">
+                        <!-- <NuxtLink to="https://github.com/avasdao/awesome-nexa#readme" target="_blank" class="text-lg font-bold text-rose-500 hover:text-rose-700">
                             <div class="flex">
                                 <img src="https://i.ibb.co/kq9gdS8/image.png" class="w-10" />
                                 Awesome List
                             </div>
-                        </NuxtLink>
+                        </NuxtLink> -->
 
                         <NuxtLink to="/help" class="text-lg font-medium text-gray-500 hover:text-gray-900">
                             🙋 Need help?
@@ -302,7 +302,7 @@ const displayPctChgArrow = computed(() => {
                                     </div>
                                 </NuxtLink> -->
 
-                                <NuxtLink to="https://github.com/avasdao/awesome-nexa#readme" target="_blank" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                                <!-- <NuxtLink to="https://github.com/avasdao/awesome-nexa#readme" target="_blank" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                             <path
@@ -316,7 +316,7 @@ const displayPctChgArrow = computed(() => {
                                     <div class="ml-4 text-base font-medium text-gray-900">
                                         Awesome List
                                     </div>
-                                </NuxtLink>
+                                </NuxtLink> -->
 
                                 <NuxtLink to="https://nexa.org/roadmap" target="_blank" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                                     <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
