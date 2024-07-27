@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-    title: `Catch-all — Awesome Nexa`,
+    title: `Awesome Nexa`,
     meta: [
         { name: 'description', content: `Awesome Nexa makes building your next BIG idea effortless.` }
     ],

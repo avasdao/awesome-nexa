@@ -17,8 +17,8 @@ watch(() => props.listingid, async (_newid, _oldid) => {
 })
 
 const init = async () => {
-    console.log('CATEGORY', props.category)
-    console.log('LISTING ID', props.listingid)
+    // console.log('CATEGORY', props.category)
+    // console.log('LISTING ID', props.listingid)
 
     /* Validate listing id. */
     if (!props.listingid) {
@@ -28,12 +28,12 @@ const init = async () => {
     /* Request ALL listings. */
     const listings = await $fetch('/v1/listings/' + props.category)
         .catch(err => console.error(err))
-    console.log('LISTINGS', listings)
+    // console.log('LISTINGS', listings)
 
     listing.value = listings.find(_listing => {
         return _listing?.slug === props.listingid
     })
-    console.log('LISTING', listing.value)
+    // console.log('LISTING', listing.value)
 
     /* Validate listing. */
     if (!listing.value) {
