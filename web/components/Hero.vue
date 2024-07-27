@@ -7,7 +7,7 @@ const props = defineProps({
     },
 })
 
-const MAX_SHOWCASE_BANNERS = 2
+const MAX_SHOWCASE_BANNERS = 3
 const SLIDESHOW_INTERVAL = 7000
 
 const bannerid = ref(null)
@@ -18,9 +18,12 @@ const launchBanner = async () => {
 
     switch(bannerid.value) {
     case 0:
-        window.open('https://agnar.pages.dev')
+        window.open('https://www.bitget.com/spot/NEXAUSDT')
         break
     case 1:
+        window.open('https://agnar.pages.dev')
+        break
+    case 2:
         window.open('http://www.wallywallet.org')
         break
     default:
@@ -29,6 +32,17 @@ const launchBanner = async () => {
     }
 }
 
+const BANNERS = [
+    'https://i.ibb.co/6tYhtm1/nexa-on-bitget.jpg',
+    'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg',
+    'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg',
+]
+
+/**
+ * Load Banner
+ *
+ * NOTE: Banner sizes are (FB) standard 640 x 281.
+ */
 const loadBanner = async (_bannerid) => {
     console.log('loading banner...', _bannerid)
 
@@ -36,13 +50,16 @@ const loadBanner = async (_bannerid) => {
 
     switch(_bannerid) {
     case 0:
-        bannerUrl.value = 'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg'
+        bannerUrl.value = BANNERS[0]
         break
     case 1:
-        bannerUrl.value = 'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg'
+        bannerUrl.value = BANNERS[1]
+        break
+    case 2:
+        bannerUrl.value = BANNERS[2]
         break
     default:
-        bannerUrl.value = 'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg'
+        bannerUrl.value = BANNERS[0]
         break
     }
 }
@@ -52,7 +69,7 @@ const init = async () => {
     bannerid.value = 0
 
     /* Set banner url. */
-    bannerUrl.value = 'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg'
+    bannerUrl.value = BANNERS[0]
 
     /* Begin slideshow. */
     setInterval(() => {
