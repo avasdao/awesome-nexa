@@ -14,6 +14,7 @@ const System = useSystemStore()
 const route = useRoute()
 // console.log('ROUTE', route)
 
+const category = ref(null)
 const path = ref(route?.path)
 const listingid = ref()
 const isListing = ref(false)
@@ -21,13 +22,18 @@ const isNotFound = ref(false)
 
 const init = () => {
     /* Validate path. */
-    if (path.value.includes('/apps/')) {
+    if (
+        path.value.includes('/apps') ||
+        path.value.includes('/mining')
+    ) {
         isListing.value = true
     }
 
     /* Validate listing. */
     if (isListing.value) {
-        listingid.value = path.value.slice(6)
+        category.value = path.value.slice(1, path.value.indexOf('/', 1))
+
+        listingid.value = path.value.slice(path.value.indexOf('/', 1) + 1)
     }
 
     if (!isListing.value) {
@@ -48,6 +54,6 @@ onMounted(() => {
 </script>
 
 <template>
-    <ListingDetail v-if="isListing" :listingid="listingid" />
+    <ListingDetail v-if="isListing" :category="category" :listingid="listingid" />
     <PageNotFound v-if="isNotFound" />
 </template>

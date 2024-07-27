@@ -3,6 +3,7 @@
 
 /* Define properties. */
 const props = defineProps({
+    category: String,
     listingid: String,
 })
 
@@ -16,6 +17,7 @@ watch(() => props.listingid, async (_newid, _oldid) => {
 })
 
 const init = async () => {
+    console.log('CATEGORY', props.category)
     console.log('LISTING ID', props.listingid)
 
     /* Validate listing id. */
@@ -24,7 +26,7 @@ const init = async () => {
     }
 
     /* Request ALL listings. */
-    const listings = await $fetch('/v1/listings/apps')
+    const listings = await $fetch('/v1/listings/' + props.category)
         .catch(err => console.error(err))
     console.log('LISTINGS', listings)
 
