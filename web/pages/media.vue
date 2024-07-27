@@ -3,7 +3,7 @@
 
 
 useHead({
-    title: `Media — Awesome Nexa`,
+    title: `News & Media — Awesome Nexa`,
     meta: [
         { name: 'description', content: `News & Media are the life-blood of the Nexa ecosystem.` }
     ],
