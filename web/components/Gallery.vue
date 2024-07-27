@@ -2,7 +2,6 @@
 /* Import modules. */
 
 /* Define properties. */
-// https://vuejs.org/guide/components/props.html#props-declaration
 const props = defineProps({
     cat: String,
 })
@@ -92,6 +91,22 @@ const init = async () => {
 
 }
 
+const getUrl = (_listing) => {
+    if (_listing.slug) {
+        return _listing.category + '/' + _listing.slug
+    } else {
+        return _listing.url
+    }
+}
+
+const getTarget = (_listing) => {
+    if (_listing.slug) {
+        return ''
+    }
+
+    return '_blank'
+}
+
 onMounted(() => {
     init()
 })
@@ -104,7 +119,7 @@ onMounted(() => {
 
 <template>
     <ul class="px-3 max-w-7xl mx-auto mt-10 mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <NuxtLink :to="listing.url" target="_blank" v-for="listing of featuredListings" :key="listing.id" class="py-5 w-full flex gap-4">
+        <NuxtLink :to="getUrl(listing)" :target="getTarget(listing)" v-for="listing of featuredListings" :key="listing.id" class="py-5 w-full flex gap-4">
             <img
                 :src="listing.imgUrl"
                 class="w-24 h-24 aspect-square p-1 bg-gradient-to-r from-gray-50 to-gray-100 border border-sky-200 rounded-xl overlay-hidden shadow"

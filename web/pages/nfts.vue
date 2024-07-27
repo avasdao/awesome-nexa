@@ -22,9 +22,9 @@ const System = useSystemStore()
         </template>
 
         <template #description>
-            NFT are the life-blood of the Nexa ecosystem.
+            NFTs are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="nft" />
+        <Gallery cat="nfts" />
     </NuxtLayout>
 </template>

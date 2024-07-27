@@ -157,7 +157,7 @@ onBeforeUnmount(() => {
 
         <hr />
 
-        <section class="my-10">
+        <section class="my-10 hidden">
             <p class="w-full px-3 sm:w-1/2 my-5 px-7 py-5 text-sm bg-gradient-to-r from-rose-100 to-rose-200 border-2 border-rose-300 rounded-xl shadow">
                 Awesome Nexa is NOT responsible for ANY of the resources listed in this catalog.
                 Using this site, you take your own risks.
