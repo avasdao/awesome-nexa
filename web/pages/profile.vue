@@ -72,11 +72,17 @@ const pollForAuth = async () => {
 /* Setup API polling. */
 // NOTE: ONLY RUN POLLING ON CLIENT
 if (process.client) {
-    pollForAuth()
+    // pollForAuth()
 
     /* Initialize authorization polling. */
     // FIXME How can we implement WebSockets for more efficiency?
-    pollingid = setInterval(pollForAuth, POLLING_FREQUENCY)
+    // pollingid = setInterval(pollForAuth, POLLING_FREQUENCY)
+
+    /* Handle loading flag. */
+    if (isLoading.value) {
+        isLoading.value = false
+    }
+
 }
 
 /**
@@ -93,36 +99,6 @@ if (process.client) {
 
     /* Go to homepage. */
     router.replace('/')
-}
-
-const web3Auth = async () => {
-    /* Validate embedded Web3 objects. */
-    if (!window.ethereum) {
-        return console.error('No Web3 provider found.')
-    }
-
-    /* Connect accounts. */
-    const accounts = await ethereum.request({
-        method: 'eth_requestAccounts'
-    })
-    console.info('Connected Web3 accounts:', accounts)
-
-    if (!accounts || accounts.length < 1) {
-        return alert('Please connect your MetaMask account to continue.')
-    }
-
-    /* Initialize provider. */
-    // const provider = new ethers
-    //     .providers
-    //     .Web3Provider(window.ethereum, 'any')
-
-    /* Set signer. */
-    // const signer = provider.getSigner()
-    // console.log('SIGNER', signer)
-}
-
-const testSign = async () => {
-    console.log('test sign')
 }
 
 /* Handle mounting. */
@@ -147,13 +123,6 @@ onBeforeUnmount(() => {
             <h1 v-else class="text-3xl sm:text-5xl font-bold tracking-widest text-center">
                 Authorization Required
             </h1>
-        </div>
-
-        <div>
-            <h2>Web3 Auth</h2>
-
-            <button @click="web3Auth">Start</button>
-            <button @click="testSign">Test Sign</button>
         </div>
 
         <section v-if="isLoading" class="pt-10 py-10 flex justify-center">
