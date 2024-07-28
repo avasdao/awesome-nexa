@@ -9,31 +9,35 @@ const profilesDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env
 const sessionsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@db.awesomenexa.org/sessions`)
 
 export default defineEventHandler(async (event) => {
-    /* Set (request) body. */
-    const body = await readBody(event)
-    console.log('BODY (_reg_/auto', body)
+    /* Initialize locals. */
+    let body
+    let message
+    let profile
+    let result
+    let session
+    let sessionid
+    let sig
+    let profileid
 
+    /* Set (request) body. */
+    body = await readBody(event)
+    // console.log('BODY (_reg_/auto', body)
+
+    /* Validate body. */
     if (!body) {
         return `Authorization FAILED!`
     }
 
     /* Set profile parameters. */
-    const sessionid = body.sessionid
-    const message = body.message
-    const sig = body.sig
+    sessionid = body.sessionid
+    message = body.message
+    sig = body.sig
 
     console.log({
         sessionid,
         message,
         sig,
     })
-
-    /* Set holders. */
-    let params
-    let profile
-    let result
-    let session
-    let profileid
 
     /* Request session. */
     session = await sessionsDb
@@ -45,11 +49,11 @@ export default defineEventHandler(async (event) => {
         return `Authorization FAILED!`
     }
 
-    const challenge = session.challenge
-    const expiresAt = session.expiresAt
+    // FIXME Validate TIME!!
+    if (!message.includes('Awesome Nexa Authorization')) {
+        return `Authorization FAILED!`
+    }
 
-
-// FIXME ***WILL AUTHORIZE ANY VALID SIG***
     profileid = ethers.verifyMessage(message, sig)
     console.log('VERIF (profileid)', profileid)
 
@@ -70,13 +74,13 @@ export default defineEventHandler(async (event) => {
     result = await sessionsDb
         .put(session)
         .catch(err => console.error(err))
-    console.log('SESSION UPDATE:', result)
+    // console.log('SESSION UPDATE:', result)
 
     /* Request profile. */
     profile = await profilesDb
         .get(profileid)
         .catch(err => console.error(err))
-    console.log('PROFILE:', profile)
+    // console.log('PROFILE:', profile)
 
     if (!profile) {
         /* Create NEW profile. */
@@ -99,7 +103,7 @@ export default defineEventHandler(async (event) => {
     result = await profilesDb
         .put(profile)
         .catch(err => console.error(err))
-    console.log('PROFILE UPDATE:', result)
+    // console.log('PROFILE UPDATE:', result)
 
     /* Return success. */
     return `Authorization SUCCESS!`
