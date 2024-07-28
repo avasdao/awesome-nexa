@@ -8,7 +8,7 @@ useHead({
 
 /* Initialize stores. */
 import { useSystemStore } from '@/stores/system'
-import ListingDetail from '~/components/ListingDetail.vue';
+
 const System = useSystemStore()
 
 const route = useRoute()
@@ -24,7 +24,9 @@ const init = () => {
     /* Validate path. */
     if (
         path.value.includes('/apps') ||
-        path.value.includes('/mining')
+        path.value.includes('/mining') ||
+        path.value.includes('/tooling') ||
+        path.value.includes('/wallets')
     ) {
         isListing.value = true
     }

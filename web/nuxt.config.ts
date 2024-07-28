@@ -66,4 +66,7 @@ export default defineNuxtConfig({
         /* Add CORS headers to API. */
         '/v1/**': { cors: true },
     },
+
+    /* Set compatibility date. */
+    compatibilityDate: '2024-07-26',
 })
