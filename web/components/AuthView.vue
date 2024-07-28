@@ -92,17 +92,17 @@ const web3Auth = async () => {
     console.log('SIGNER', signer)
 }
 
-const testSign = async () => {
-    console.log('test sign')
+const web3Signin = async () => {
+    console.log('Web3 sign-in')
 
     /* Initialize provider. */
     const provider = new ethers
         .BrowserProvider(window.ethereum, 'any')
-    console.log('PROVIDER', provider)
+    // console.log('PROVIDER', provider)
 
     /* Set signer. */
     const signer = await provider.getSigner()
-    console.log('SIGNER', signer)
+    // console.log('SIGNER', signer)
 
     // Our message
     const message = `Awesome Nexa Authorization
@@ -122,24 +122,20 @@ Requested on Sun, Jul 28, 2024 @ 4:53:25 PM`
 
     // Converting it to a Signature object provides more
     // flexibility, such as using it as a struct
-    const sig = Signature.from(rawSig);
+    const sig = ethers.Signature.from(rawSig);
     console.log('sig', sig)
     // Signature { r: "0xa617d0558818c7a479d5063987981b59d6e619332ef52249be8243572ef10868", s: "0x07e381afe644d9bb56b213f6e08374c893db308ac1a5ae2bf8b33bcddcb0f76a", yParity: 0, networkV: null }
 
-
-    // If the signature matches the EIP-2098 format, a Signature
-    // can be passed as the struct value directly, since the
-    // parser will pull out the matching struct keys from sig.
-    const res1 = await contract.recoverStringFromCompact(message, sig);
-    console.log('res1', res1)
-    // '0x0A489345F9E9bc5254E18dd14fA7ECfDB2cE5f21'
-
-    // Likewise, if the struct keys match an expanded signature
-    // struct, it can also be passed as the struct value directly.
-    const res2 = await contract.recoverStringFromExpanded(message, sig);
-    console.log('res2', res2)
-    // '0x0A489345F9E9bc5254E18dd14fA7ECfDB2cE5f21'
-
+    const response = await $fetch('/api/auth', {
+        method: 'POST',
+        body: {
+            sessionid: Profile.sessionid,
+            message,
+            sig: rawSig,
+        },
+    })
+    .catch(err => console.error(err))
+    console.log('AUTH RESPONSE', response)
 }
 
 </script>
@@ -158,13 +154,11 @@ Requested on Sun, Jul 28, 2024 @ 4:53:25 PM`
                     </span>
                 </NuxtLink>
 
-                <button @click="web3Auth" class="px-5 py-2 flex justify-center bg-yellow-400 border-4 border-yellow-700 rounded-lg">
+                <button @click="web3Signin" class="px-5 py-2 flex justify-center bg-yellow-400 border-4 border-yellow-700 rounded-lg">
                     <span class="text-lg text-yellow-900 font-medium">
-                        MetaMask/Web3 Auth
+                        MetaMask/Web3 Sign-in
                     </span>
                 </button>
-
-                <button @click="testSign">Test Sign</button>
             </div>
         </div>
 

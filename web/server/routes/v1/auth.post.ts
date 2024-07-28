@@ -1,3 +1,9 @@
+/**
+ * NOTE: This module is used to receive remote authorization from NexID clients;
+ *       following the specification as defined here:
+ *       https://spec.nexa.org/nexid/
+ */
+
 /* Import modules. */
 import moment from 'moment'
 // import PouchDB from 'pouchdb'

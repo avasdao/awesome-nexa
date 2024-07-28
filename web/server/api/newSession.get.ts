@@ -1,11 +1,10 @@
 /* Import modules. */
 import moment from 'moment'
-// import PouchDB from 'pouchdb'
+import PouchDB from 'pouchdb'
 import { v4 as uuidv4 } from 'uuid'
 
 /* Initialize databases. */
-// const logsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@db.awesomenexa.org/logs`)
-// const sessionsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@db.awesomenexa.org/sessions`)
+const sessionsDb = new PouchDB(`http://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@db.awesomenexa.org/sessions`)
 
 export default defineEventHandler(async (event) => {
     let success
@@ -31,10 +30,10 @@ export default defineEventHandler(async (event) => {
     }
 
     /* Save (database) session. */
-    // success = await sessionsDb
-    //     .put(dbSession)
-    //     .catch(err => console.error(err))
-    // console.log('NEW SESSION (success):', success)
+    success = await sessionsDb
+        .put(dbSession)
+        .catch(err => console.error(err))
+    console.log('NEW SESSION (success):', success)
 
     /* Build (web) session. */
     const webSession = {

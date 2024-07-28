@@ -11,11 +11,11 @@ export default defineEventHandler(async (event) => {
 
     /* Set (request) query. */
     const query = getQuery(event)
-    console.log('QUERY', query)
+    // console.log('QUERY', query)
 
     /* Set session id. */
     sessionid = query?.sid
-    console.log('SESSION ID', sessionid)
+    // console.log('SESSION ID', sessionid)
 
     /* Validate session id. */
     if (!sessionid) {
@@ -29,7 +29,7 @@ export default defineEventHandler(async (event) => {
     session = await sessionsDb
         .get(sessionid)
         .catch(err => console.error(err))
-    console.log('SESSION:', session)
+    // console.log('SESSION:', session)
 
     /* Validate session. */
     if (!session) {

@@ -72,17 +72,11 @@ const pollForAuth = async () => {
 /* Setup API polling. */
 // NOTE: ONLY RUN POLLING ON CLIENT
 if (process.client) {
-    // pollForAuth()
+    pollForAuth()
 
     /* Initialize authorization polling. */
     // FIXME How can we implement WebSockets for more efficiency?
-    // pollingid = setInterval(pollForAuth, POLLING_FREQUENCY)
-
-    /* Handle loading flag. */
-    if (isLoading.value) {
-        isLoading.value = false
-    }
-
+    pollingid = setInterval(pollForAuth, POLLING_FREQUENCY)
 }
 
 /**
@@ -158,5 +152,5 @@ onBeforeUnmount(() => {
 
             <AuthView v-else />
         </div>
-    </main>
+</main>
 </template>
