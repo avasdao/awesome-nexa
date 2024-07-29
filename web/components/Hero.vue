@@ -13,6 +13,9 @@ const SLIDESHOW_INTERVAL = 7000
 const bannerid = ref(null)
 const bannerUrl = ref(null)
 
+/* Initialize banner interval. */
+let bannerInterval
+
 const launchBanner = async () => {
     console.log('launching banner...')
 
@@ -72,7 +75,7 @@ const init = async () => {
     bannerUrl.value = BANNERS[0]
 
     /* Begin slideshow. */
-    setInterval(() => {
+    bannerInterval = setInterval(() => {
         if (bannerid.value >= MAX_SHOWCASE_BANNERS - 1) {
             loadBanner(0)
         } else {
@@ -85,10 +88,11 @@ onMounted(() => {
     init()
 })
 
-// onBeforeUnmount(() => {
-//     console.log('Before Unmount!')
-//     // Now is the time to perform all cleanup operations.
-// })
+onBeforeUnmount(() => {
+    console.log('Cleaning up Hero...')
+
+    clearInterval(bannerInterval)
+})
 </script>
 
 <template>
