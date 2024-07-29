@@ -13,10 +13,11 @@ let pollingid
 /* Initialize Profile store. */
 const Profile = useProfileStore()
 
+const nickname = ref(null)
+const profile = ref(null)
+
 const isLoading = ref(true)
 
-const nickname = ref(null)
-nickname.value = 'Satoshi'
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -57,6 +58,17 @@ const pollForAuth = async () => {
 
         /* Save session to profile. */
         Profile.saveSession(session)
+
+        /* Set profile id. */
+        const profileid = session?.profileid
+
+        /* Request profile (details). */
+        profile.value = await $fetch(`/v1/profile/${profileid}`)
+            .catch(err => console.error(err))
+        console.log('PROFILE', profile.value)
+
+        /* Set nickname. */
+        nickname.value = profile.value.nickname
     }
 
     /* Handle loading flag. */
@@ -73,6 +85,27 @@ if (process.client) {
     /* Initialize authorization polling. */
     // FIXME How can we implement WebSockets for more efficiency?
     pollingid = setInterval(pollForAuth, POLLING_FREQUENCY)
+}
+
+/**
+ * Save (Profile)
+ *
+ * Update the user's profile information.
+ */
+ const save = async () => {
+    if (!nickname.value) {
+        return alert('Oops! You MUST provide a nickname to continue.')
+    }
+
+    const response = await $fetch('/api/profile', {
+        method: 'POST',
+        body: {
+            sessionid: Profile.sessionid,
+            nickname: nickname.value,
+        },
+    })
+    .catch(err => console.error(err))
+    console.log('RESPONSE', response)
 }
 
 /**
@@ -123,25 +156,27 @@ onBeforeUnmount(() => {
 
         <div v-else>
             <section v-if="Profile?.session?.profileid" class="py-10 flex flex-col items-center gap-10">
-                <!-- <p>
-                    Nickname
+                <p>
+                    Customize your Ava's DAO profile here.
+                </p>
 
-                    [ {{nickname}} ]
-                </p> -->
-
-                <h2 class="text-3xl text-rose-500 font-bold">
-                   Coming Soon...
-                </h2>
+                <input
+                    type="text"
+                    v-model="nickname"
+                    class="px-3 py-4 w-full border-2 border-amber-300 bg-amber-100 text-2xl text-amber-800 placeholder:text-amber-500 font-medium rounded-xl shadow"
+                    placeholder="Choose your nickname"
+                />
 
                 <p class="max-w-lg text-xl text-center">
                     While you wait for your Awesome profile page, please submit your favorite Nexa link.
                 </p>
 
-                <NuxtLink to="/submit" class="px-5 py-2 bg-green-500 text-xl text-green-50 font-medium border-4 border-green-700 rounded-md shadow-md hover:bg-green-600">
-                    Submit a New Listing
-                </NuxtLink>
+                <button @click="save" class="px-5 py-2 bg-lime-500 text-2xl text-lime-50 font-medium border-4 border-lime-700 rounded-md shadow-md hover:bg-lime-600">
+                    Save My Profile
+                </button>
 
-                <button @click="signOut" class="px-5 py-2 bg-red-500 text-xl text-red-50 font-medium border-4 border-red-700 rounded-md shadow-md hover:bg-red-600">
+
+                <button @click="signOut" class="px-20 py-5 bg-red-500 text-3xl text-red-50 font-medium border-4 border-red-700 rounded-md shadow-md hover:bg-red-600">
                     Sign Out
                 </button>
             </section>

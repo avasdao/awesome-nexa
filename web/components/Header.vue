@@ -3,7 +3,9 @@
 import numeral from 'numeral'
 
 /* Import stores. */
+import { useProfileStore } from '@/stores/profile'
 import { useSystemStore } from '@/stores/system'
+const Profile = useProfileStore()
 const System = useSystemStore()
 
 const props = defineProps({
@@ -189,8 +191,12 @@ const displayPctChgArrow = computed(() => {
                             </div>
                         </NuxtLink> -->
 
-                        <NuxtLink to="/help" class="text-lg font-medium text-gray-500 hover:text-gray-900">
+                        <NuxtLink to="/help" class="text-xl font-medium text-gray-500 hover:text-gray-900">
                             🙋 Need help?
+                        </NuxtLink>
+
+                        <NuxtLink to="/add" class="text-xl font-medium text-rose-500 hover:text-rose-700">
+                            Add a Listing
                         </NuxtLink>
                     </nav>
 
@@ -229,7 +235,10 @@ const displayPctChgArrow = computed(() => {
                             </NuxtLink>
                         </ClientOnly>
 
-                        <NuxtLink to="/profile" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
+                        <NuxtLink v-if="Profile?.session?.profileid" to="/profile" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
+                            My Profile
+                        </NuxtLink>
+                        <NuxtLink v-else to="/profile" class="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-lg font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
                         </NuxtLink>
                     </div>

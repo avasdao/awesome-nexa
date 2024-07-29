@@ -33,7 +33,7 @@ export default defineEventHandler(async (event) => {
     success = await sessionsDb
         .put(dbSession)
         .catch(err => console.error(err))
-    console.log('NEW SESSION (success):', success)
+    // console.log('NEW SESSION (success):', success)
 
     /* Build (web) session. */
     const webSession = {

@@ -11,6 +11,7 @@ export default defineEventHandler(async (event) => {
     /* Initialize locals. */
     let body
     let message
+    let nickname
     let profile
     let result
     let session
@@ -20,7 +21,7 @@ export default defineEventHandler(async (event) => {
 
     /* Set (request) body. */
     body = await readBody(event)
-    // console.log('BODY (_reg_/auto', body)
+    console.log('BODY (_reg_/auto', body)
 
     /* Validate body. */
     if (!body) {
@@ -29,13 +30,11 @@ export default defineEventHandler(async (event) => {
 
     /* Set profile parameters. */
     sessionid = body.sessionid
-    message = body.message
-    sig = body.sig
+    nickname = body.nickname
 
     console.log({
         sessionid,
-        message,
-        sig,
+        nickname,
     })
 
     /* Request session. */
@@ -48,60 +47,35 @@ export default defineEventHandler(async (event) => {
         return `Authorization FAILED!`
     }
 
-    // FIXME Validate TIME!!
-    if (!message.includes('Awesome Nexa Authorization')) {
-        return `Authorization FAILED!`
-    }
+    /* Set profile id. */
+    profileid = session.profileid
 
-    profileid = ethers.verifyMessage(message, sig)
-    console.log('VERIF (profileid)', profileid)
 
     /* Verify profile id. */
-    if (typeof profileid === 'undefined') {
+    if (typeof profileid === 'undefined' || profileid === null) {
         return `Authorization FAILED!`
     }
-
-    /* Add profile (address + signature) to session. */
-    session = {
-        profileid,
-        auth: sig,
-        ...session,
-        updatedAt: moment().unix(),
-    }
-
-    /* Request session update. */
-    result = await sessionsDb
-        .put(session)
-        .catch(err => console.error(err))
-    // console.log('SESSION UPDATE:', result)
 
     /* Request profile. */
     profile = await profilesDb
         .get(profileid)
         .catch(err => console.error(err))
-    // console.log('PROFILE:', profile)
+    console.log('PROFILE:', profile)
 
-    if (!profile) {
-        /* Create NEW profile. */
-        profile = {
-            _id: profileid,
-            nickname: null,
-            auths: 1,
-            createdAt: moment().unix(),
-        }
-    } else {
-        profile = {
-            ...profile,
-            auths: profile.auths + 1,
-            updatedAt: moment().unix(),
-        }
+    console.log('NICKNAME', nickname)
+
+    if (nickname) {
+// FIXME CHECK FOR DUPLICATES
+
+        profile.nickname = nickname
+
+        /* Request profile update. */
+        result = await profilesDb
+            .put(profile)
+            .catch(err => console.error(err))
+        console.log('PROFILE UPDATE:', result)
+
     }
-
-    /* Request profile update. */
-    result = await profilesDb
-        .put(profile)
-        .catch(err => console.error(err))
-    // console.log('PROFILE UPDATE:', result)
 
     /* Return success. */
     return `Authorization SUCCESS!`

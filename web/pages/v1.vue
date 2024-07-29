@@ -28,7 +28,8 @@ const System = useSystemStore()
         </h1>
 
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eius voluptatem minus natus at eveniet dolorum eos mollitia, maxime animi excepturi harum omnis illum odit recusandae pariatur! Unde, explicabo molestias.
+            Awesome Nexa offers OPEN access to its data.
+            Learn how to leverage this information to enrich your own dApps and UX of your Users.
         </p>
     </main>
 

@@ -42,17 +42,17 @@ const submit = async () => {
     <main class="max-w-2xl px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
             <h1 class="text-3xl sm:text-5xl font-bold tracking-widest text-center">
-                Submit a New Listing
+                Add a New Listing
             </h1>
         </div>
 
         <section class="py-10 flex flex-col items-center gap-10">
-            <p>
+            <p class="w-3/4">
                 We depend on the incredible efforts of the Nexa community to keep this Awesome Site fresh with content.
                 Please submit your favorite listing below.
             </p>
 
-            <p>
+            <div>
                 <h3 class="text-sm text-gray-500 font-medium uppercase">
                     Your profileid
                 </h3>
@@ -73,7 +73,7 @@ const submit = async () => {
                         Click here to signin
                     </span>
                 </NuxtLink>
-            </p>
+            </div>
         </section>
 
         <section class="flex flex-col gap-4">

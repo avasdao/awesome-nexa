@@ -4,14 +4,6 @@ import PouchDB from 'pouchdb'
 /* Initialize databases. */
 const listingsDb = new PouchDB(`https://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@db.awesomenexa.org/listings`)
 
-/*
- * Import listings database.
- */
-// import listingsDb from '../../../static/db/listings/listings.json'
-
-/* Initialize listings. */
-// const listings: Object[] = [...listingsDb]
-
 export default defineEventHandler(async _event => {
     /* Initialzie locals. */
     let listings
