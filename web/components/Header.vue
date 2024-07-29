@@ -355,7 +355,7 @@ const displayPctChgArrow = computed(() => {
                     </div>
                 </div>
 
-                <div class="hidden py-6 px-5">
+                <div class="py-6 px-5">
                     <div class="grid grid-cols-2 gap-4">
                         <NuxtLink to="https://discord.gg/2yQNsZV6EJ" target="_blank" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">
                             Join the Discord
@@ -383,7 +383,10 @@ const displayPctChgArrow = computed(() => {
                     </div>
 
                     <div class="mt-6">
-                        <NuxtLink to="/profile" @click="isShowingMobileMenu = false" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
+                        <NuxtLink v-if="Profile?.session?.profileid" to="/profile" @click="isShowingMobileMenu = false" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
+                            My Profile
+                        </NuxtLink>
+                        <NuxtLink v-else to="/profile" @click="isShowingMobileMenu = false" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-xl font-medium text-white shadow-sm hover:bg-indigo-700">
                             Get Connected
                         </NuxtLink>
                     </div>
