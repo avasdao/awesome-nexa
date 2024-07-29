@@ -1,6 +1,7 @@
 <script setup>
 /* Import modules. */
 import { ethers } from 'ethers'
+import moment from 'moment'
 import QRCode from 'qrcode'
 
 /* Initialize stores. */
@@ -109,7 +110,7 @@ const web3Signin = async () => {
 
 Your New Session ID is d572abee-b6e4-481c-b1b7-2369943c6411
 
-Requested on Sun, Jul 28, 2024 @ 4:53:25 PM`
+Requested on ${moment().format('LLLL')}`
 
     // The raw signature; 65 bytes
     const rawSig = await signer.signMessage(message)
