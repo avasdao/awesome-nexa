@@ -2,7 +2,7 @@
 import PouchDB from 'pouchdb'
 
 /* Initialize databases. */
-const listingsDb = new PouchDB(`https://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@db.awesomenexa.org/listings`)
+const listingsDb = new PouchDB(`https://${process.env.COUCHDB_USER}:${process.env.COUCHDB_PASSWORD}@${process.env.COUCHDB_ENDPOINT}/listings`)
 
 export default defineEventHandler(async _event => {
     /* Initialzie locals. */
