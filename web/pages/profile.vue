@@ -40,7 +40,7 @@ const pollForAuth = async () => {
     }
 
     /* Set target. */
-    const target = '/api/auth?sid=' + Profile.sessionid
+    const target = '/api/session?sid=' + Profile.sessionid
     console.log('TARGET', target)
 
     const session = await $fetch(target)

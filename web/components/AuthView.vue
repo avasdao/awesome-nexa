@@ -8,7 +8,7 @@ import QRCode from 'qrcode'
 import { useProfileStore } from '@/stores/profile'
 
 /* Set constants. */
-const NEXID_ENDPOINT = 'nexid://awesomenexa.org/v1/auth'
+const NEXID_ENDPOINT = 'nexid://awesomenexa.org/v1/_auth'
 
 /* Initialize (reactive) holders. */
 let regLink = ref(null)
@@ -127,7 +127,7 @@ Requested on ${moment().format('LLLL')}`
     console.log('sig', sig)
     // Signature { r: "0xa617d0558818c7a479d5063987981b59d6e619332ef52249be8243572ef10868", s: "0x07e381afe644d9bb56b213f6e08374c893db308ac1a5ae2bf8b33bcddcb0f76a", yParity: 0, networkV: null }
 
-    const response = await $fetch('/api/auth', {
+    const response = await $fetch('/api/session', {
         method: 'POST',
         body: {
             sessionid: Profile.sessionid,
