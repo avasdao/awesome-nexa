@@ -2,6 +2,7 @@
  * Import ALL databases.
  */
 // import listingsDb from '../../../static/db/listings/listings.json'
+import toolingDb from '../../../../static/db/listings/tooling.json'
 import walletsDb from '../../../../static/db/listings/wallets.json'
 
 /* Initialize listings. */
@@ -20,6 +21,8 @@ export default defineEventHandler(async _event => {
     }
 
     switch(category) {
+    case 'tooling':
+        return toolingDb
     case 'wallets':
         return walletsDb
     default:
