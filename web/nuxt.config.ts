@@ -65,6 +65,9 @@ export default defineNuxtConfig({
 
         /* Add CORS headers to API. */
         '/v1/**': { cors: true },
+
+        /* Pre-rendered (dynamic) routes. */
+        '/v1/listings/wallets': { prerender: true },
     },
 
     /* Set compatibility date. */
