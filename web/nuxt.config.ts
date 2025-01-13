@@ -67,6 +67,7 @@ export default defineNuxtConfig({
         '/v1/**': { cors: true },
 
         /* Pre-rendered (dynamic) routes. */
+        '/v1/listings/apps.json': { prerender: true },
         '/v1/listings/builders.json': { prerender: true },
         '/v1/listings/media.json': { prerender: true },
         '/v1/listings/nfts.json': { prerender: true },

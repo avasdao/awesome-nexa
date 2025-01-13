@@ -1,6 +1,7 @@
 /*
  * Import ALL databases.
  */
+import appsDb from '../../../../static/db/listings/apps.json'
 import buildersDb from '../../../../static/db/listings/builders.json'
 import mediaDb from '../../../../static/db/listings/media.json'
 import nftsDb from '../../../../static/db/listings/nfts.json'
@@ -24,6 +25,8 @@ export default defineEventHandler(async _event => {
     }
 
     switch(category) {
+    case 'apps.json':
+        return appsDb
     case 'builders.json':
         return buildersDb
     case 'media.json':
