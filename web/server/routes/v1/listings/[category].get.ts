@@ -3,6 +3,7 @@
  */
 import appsDb from '../../../../static/db/listings/apps.json'
 import buildersDb from '../../../../static/db/listings/builders.json'
+import cexDb from '../../../../static/db/listings/cex.json'
 import mediaDb from '../../../../static/db/listings/media.json'
 import nftsDb from '../../../../static/db/listings/nfts.json'
 import referencesDb from '../../../../static/db/listings/references.json'
@@ -29,6 +30,8 @@ export default defineEventHandler(async _event => {
         return appsDb
     case 'builders.json':
         return buildersDb
+    case 'cex.json':
+        return cexDb
     case 'media.json':
         return mediaDb
     case 'nfts.json':
