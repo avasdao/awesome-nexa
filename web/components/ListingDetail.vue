@@ -26,7 +26,7 @@ const init = async () => {
     }
 
     /* Request ALL listings. */
-    const listings = await $fetch('/v1/listings/' + props.category)
+    const listings = await $fetch('/v1/listings/' + props.category + '.json')
         .catch(err => console.error(err))
     // console.log('LISTINGS', listings)
 
