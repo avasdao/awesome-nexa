@@ -70,6 +70,8 @@ export default defineNuxtConfig({
         '/v1/listings/apps.json': { prerender: true },
         '/v1/listings/builders.json': { prerender: true },
         '/v1/listings/cex.json': { prerender: true },
+        '/v1/listings/daos.json': { prerender: true },
+        '/v1/listings/defi.json': { prerender: true },
         '/v1/listings/media.json': { prerender: true },
         '/v1/listings/nfts.json': { prerender: true },
         '/v1/listings/references.json': { prerender: true },

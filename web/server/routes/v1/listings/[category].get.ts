@@ -4,6 +4,8 @@
 import appsDb from '../../../../static/db/listings/apps.json'
 import buildersDb from '../../../../static/db/listings/builders.json'
 import cexDb from '../../../../static/db/listings/cex.json'
+import daosDb from '../../../../static/db/listings/daos.json'
+import defiDb from '../../../../static/db/listings/defi.json'
 import mediaDb from '../../../../static/db/listings/media.json'
 import nftsDb from '../../../../static/db/listings/nfts.json'
 import referencesDb from '../../../../static/db/listings/references.json'
@@ -32,6 +34,10 @@ export default defineEventHandler(async _event => {
         return buildersDb
     case 'cex.json':
         return cexDb
+    case 'daos.json':
+        return daosDb
+    case 'defi.json':
+        return defiDb
     case 'media.json':
         return mediaDb
     case 'nfts.json':
