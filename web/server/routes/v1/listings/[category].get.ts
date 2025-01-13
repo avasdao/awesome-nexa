@@ -2,6 +2,10 @@
  * Import ALL databases.
  */
 // import listingsDb from '../../../static/db/listings/listings.json'
+import buildersDb from '../../../../static/db/listings/builders.json'
+import mediaDb from '../../../../static/db/listings/media.json'
+import nftsDb from '../../../../static/db/listings/nfts.json'
+import referencesDb from '../../../../static/db/listings/references.json'
 import toolingDb from '../../../../static/db/listings/tooling.json'
 import walletsDb from '../../../../static/db/listings/wallets.json'
 
@@ -21,6 +25,14 @@ export default defineEventHandler(async _event => {
     }
 
     switch(category) {
+    case 'builders':
+        return buildersDb
+    case 'media':
+        return mediaDb
+    case 'nfts':
+        return nftsDb
+    case 'references':
+        return referencesDb
     case 'tooling':
         return toolingDb
     case 'wallets':
