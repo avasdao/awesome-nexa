@@ -25,17 +25,17 @@ export default defineEventHandler(async _event => {
     }
 
     switch(category) {
-    case 'builders':
+    case 'builders.json':
         return buildersDb
-    case 'media':
+    case 'media.json':
         return mediaDb
-    case 'nfts':
+    case 'nfts.json':
         return nftsDb
-    case 'references':
+    case 'references.json':
         return referencesDb
-    case 'tooling':
+    case 'tooling.json':
         return toolingDb
-    case 'wallets':
+    case 'wallets.json':
         return walletsDb
     default:
         return []
