@@ -1,0 +1,17 @@
+[
+    {
+        "id": "0x0001",
+        "alias": "My Alias",
+        "createdAt": 1234567890
+    },
+    {
+        "id": "0x0002",
+        "alias": "My Alias",
+        "createdAt": 1234567890
+    },
+    {
+        "id": "0x0003",
+        "alias": "My Alias",
+        "createdAt": 1234567890
+    }
+]
