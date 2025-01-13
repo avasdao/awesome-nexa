@@ -1,6 +1,6 @@
 {
   "name": "awesome-nexa",
-  "version": "24.11.17",
+  "version": "25.1.13",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -33,5 +33,9 @@
   },
   "resolutions": {
     "string-width": "4.2.3"
+  },
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": ">=21.0.0"
   }
 }
