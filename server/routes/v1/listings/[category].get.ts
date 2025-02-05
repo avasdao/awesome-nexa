@@ -7,6 +7,8 @@ import cexDb from '../../../../static/db/listings/cex.json'
 import daosDb from '../../../../static/db/listings/daos.json'
 import defiDb from '../../../../static/db/listings/defi.json'
 import mediaDb from '../../../../static/db/listings/media.json'
+import merchantsDb from '../../../../static/db/listings/merchants.json'
+import miningDb from '../../../../static/db/listings/mining.json'
 import nftsDb from '../../../../static/db/listings/nfts.json'
 import referencesDb from '../../../../static/db/listings/references.json'
 import toolingDb from '../../../../static/db/listings/tooling.json'
@@ -40,6 +42,10 @@ export default defineEventHandler(async _event => {
         return defiDb
     case 'media.json':
         return mediaDb
+    case 'merchants.json':
+        return merchantsDb
+    case 'mining.json':
+        return miningDb
     case 'nfts.json':
         return nftsDb
     case 'references.json':

@@ -14,7 +14,7 @@ const System = useSystemStore()
 const route = useRoute()
 // console.log('ROUTE', route)
 
-const category = ref(null)
+const category = ref('')
 const path = ref(route?.path)
 const listingid = ref()
 const isListing = ref(false)
@@ -24,6 +24,7 @@ const init = () => {
     /* Validate path. */
     if (
         path.value.includes('/apps') ||
+        path.value.includes('/merchants') ||
         path.value.includes('/mining') ||
         path.value.includes('/tooling') ||
         path.value.includes('/wallets')

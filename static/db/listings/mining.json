@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1ba28ca6-b7fa-4919-a190-971b89399629",
+        "title": "BzMiner",
+        "summary": "Fast Windows/Linux crypto miner with remote management.",
+        "url": "https://www.bzminer.com/",
+        "imgUrl": "https://assets.awesomenexa.org/icons/bzminer.webp",
+        "createdAt": 1738735994
+    },
+    {
+        "id": "3e3e3b59-01c8-4c94-b953-4db89d0192ff",
+        "title": "WildRig Multi",
+        "summary": "Multi algo miner for AMD, NVIDIA and Intel gpu's.",
+        "url": "https://github.com/andru-kun/wildrig-multi",
+        "imgUrl": "https://assets.awesomenexa.org/icons/wildrig.webp",
+        "createdAt": 1738735994
+    },
+    {
+        "id": "98d233f6-fbd2-4471-b285-9c8e39133503",
+        "title": "WoolyPooly",
+        "summary": "WoolyPooly stands out as an exceptionally lucrative pool, concentrating on diminishing commission fees for both PPLNS and SOLO reward structures.",
+        "url": "https://woolypooly.com/en/coin/nexa",
+        "imgUrl": "https://assets.awesomenexa.org/icons/woolypooly.webp",
+        "createdAt": 1738735994
+    }
+]
