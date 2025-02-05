@@ -30,5 +30,13 @@
         "url": "https://2miners.com/nexa-mining-pool",
         "imgUrl": "https://assets.awesomenexa.org/icons/2miners.webp",
         "createdAt": 1738741768
+    },
+    {
+        "id": "329ee0d8-f99e-48cd-acfc-1d2a12cee523",
+        "title": "OneThirtySeven",
+        "summary": "Pool137 uses a fair reward system \"Pay Per Last N Shares\" or PPLNS. This system is used to prevent \"pool hopping\".",
+        "url": "https://nexa.pool137.io/",
+        "imgUrl": "https://assets.awesomenexa.org/icons/onethirtyseven.webp",
+        "createdAt": 1738742217
     }
 ]
