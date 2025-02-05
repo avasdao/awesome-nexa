@@ -22,5 +22,13 @@
         "url": "https://woolypooly.com/en/coin/nexa",
         "imgUrl": "https://assets.awesomenexa.org/icons/woolypooly.webp",
         "createdAt": 1738735994
+    },
+    {
+        "id": "9e8a43eb-42ed-4665-a741-21b6c332b798",
+        "title": "2Miners",
+        "summary": "The most profitable Nexa mining pool for GPU and ASIC. Regular payments, tutorials, reliable servers, rig monitoring bot. Fully compatible with Nicehash.",
+        "url": "https://2miners.com/nexa-mining-pool",
+        "imgUrl": "https://assets.awesomenexa.org/icons/2miners.webp",
+        "createdAt": 1738741768
     }
 ]
