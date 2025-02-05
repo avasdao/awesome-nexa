@@ -32,11 +32,27 @@
         "createdAt": 1738741768
     },
     {
+        "id": "d5f101be-6309-422e-b88e-e06724e5b2b4",
+        "title": "f2pool",
+        "summary": "f2pool has officially launched the Nexa (NEXA) mining pool! The pool will apply 1% PPLNS as the payout scheme.",
+        "url": "https://f2pool.zendesk.com/hc/en-us/articles/31821667302169-Nexa-NEXA-mining-pool-launched-at-f2pool",
+        "imgUrl": "https://assets.awesomenexa.org/icons/f2pool.webp",
+        "createdAt": 1738745386
+    },
+    {
         "id": "329ee0d8-f99e-48cd-acfc-1d2a12cee523",
         "title": "OneThirtySeven",
         "summary": "Pool137 uses a fair reward system \"Pay Per Last N Shares\" or PPLNS. This system is used to prevent \"pool hopping\".",
         "url": "https://nexa.pool137.io/",
         "imgUrl": "https://assets.awesomenexa.org/icons/onethirtyseven.webp",
         "createdAt": 1738742217
+    },
+    {
+        "id": "47e407c9-6cce-4867-8e36-e327217af248",
+        "title": "Rplant",
+        "summary": "Proof of work ( PoW ) mining pool. Realtime hashrate data.",
+        "url": "https://pool.rplant.xyz/",
+        "imgUrl": "https://assets.awesomenexa.org/icons/rplant.webp",
+        "createdAt": 1738745212
     }
 ]
