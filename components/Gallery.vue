@@ -7,6 +7,7 @@ const props = defineProps({
 })
 
 const MAXIMUM_LISTINGS_PER_CATEGORY = 6
+const API_ENDPOINT = 'https://awesomenexa.org/v1'
 
 const listings = ref()
 
@@ -27,63 +28,63 @@ const init = async () => {
 
     switch(props.cat) {
     case 'apps':
-        listings.value = await $fetch('/v1/listings/apps.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/apps.json`)
             .catch(err => console.error(err))
         break
     case 'builders':
-        listings.value = await $fetch('/v1/listings/builders.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/builders.json`)
             .catch(err => console.error(err))
         break
     case 'cex':
-        listings.value = await $fetch('/v1/listings/cex.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/cex.json`)
             .catch(err => console.error(err))
         break
     case 'daos':
-        listings.value = await $fetch('/v1/listings/daos.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/daos.json`)
             .catch(err => console.error(err))
         break
     case 'defi':
-        listings.value = await $fetch('/v1/listings/defi.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/defi.json`)
             .catch(err => console.error(err))
         break
     case 'dex':
-        listings.value = await $fetch('/v1/listings/dex.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/dex.json`)
             .catch(err => console.error(err))
         break
     case 'gaming':
-        listings.value = await $fetch('/v1/listings/gaming.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/gaming.json`)
             .catch(err => console.error(err))
         break
     case 'media':
-        listings.value = await $fetch('/v1/listings/media.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/media.json`)
             .catch(err => console.error(err))
         break
     case 'merchants':
-        listings.value = await $fetch('/v1/listings/merchants.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/merchants.json`)
             .catch(err => console.error(err))
         break
     case 'mining':
-        listings.value = await $fetch('/v1/listings/mining.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/mining.json`)
             .catch(err => console.error(err))
         break
     case 'nfts':
-        listings.value = await $fetch('/v1/listings/nfts.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/nfts.json`)
             .catch(err => console.error(err))
         break
     case 'references':
-        listings.value = await $fetch('/v1/listings/references.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/references.json`)
             .catch(err => console.error(err))
         break
     case 'tooling':
-        listings.value = await $fetch('/v1/listings/tooling.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/tooling.json`)
             .catch(err => console.error(err))
         break
     case 'utilities':
-        listings.value = await $fetch('/v1/listings/utilities.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/utilities.json`)
             .catch(err => console.error(err))
         break
     case 'wallets':
-        listings.value = await $fetch('/v1/listings/wallets.json')
+        listings.value = await $fetch(`${API_ENDPOINT}/listings/wallets.json`)
             .catch(err => console.error(err))
         break
     }

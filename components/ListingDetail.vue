@@ -10,6 +10,8 @@ const props = defineProps({
 const listing = ref(null)
 const isNotFound = ref(false)
 
+const API_ENDPOINT = 'https://awesomenexa.org/v1'
+
 watch(() => props.listingid, async (_newid, _oldid) => {
     // console.log('NEW ID', _newid)
     // console.log('OLD ID', _oldid)
@@ -26,7 +28,7 @@ const init = async () => {
     }
 
     /* Request ALL listings. */
-    const listings = await $fetch('/v1/listings/' + props.category + '.json')
+    const listings = await $fetch(`${API_ENDPOINT}/listings/${props.category}.json`)
         .catch(err => console.error(err))
     // console.log('LISTINGS', listings)
 
