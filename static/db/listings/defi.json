@@ -1,11 +1,11 @@
 [
     {
-        "id": "d1d235c0-9804-46ae-8935-b9ba9d11be5d",
-        "slug": "",
-        "title": "Your NEW! Project Here",
-        "summary": "Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.",
-        "url": "https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1",
-        "imgUrl": "https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png",
+        "id": "8bfc2178-ed63-4446-928e-7f64245de5bf",
+        "slug": "native-usd",
+        "title": "Native USD",
+        "summary": "A suite of stablecoins pegged to multiple fiat currencies on the Nexa blockchain, Natives.cash ensures that your digital assets remain as stable as the ground beneath your feet.",
+        "url": "https://explorer.nexa.org/token/nexa:trm9zcajh900a02t8fmqklw99uflcvcd6antut98asxfxlq4rcqqqdw80lls5",
+        "imgUrl": "https://assets.awesomenexa.org/icons/natives-usd.webp",
         "createdAt": 1234567890
     },
     {
