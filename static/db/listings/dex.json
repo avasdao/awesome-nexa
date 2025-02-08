@@ -1,7 +1,15 @@
 [
     {
+        "id": "f0493fe2-60cb-404b-b1a1-1ee4cf95b685",
+        "title": "WiserSwap",
+        "summary": "There is NO faster OR safer way to swap your Nexa assets. Enjoy a trustless AND permissionless experience that respects Your Keys. Your Coins.",
+        "url": "https://wiserswap.com/",
+        "imgUrl": "https://wiserswap.com/icon.svg",
+        "createdAt": 1739038003
+    },
+    {
         "id": "a9b85906-6050-4aec-92a8-40b0430f7de3",
-        "title": "Your NEW! Merchant Here",
+        "title": "Your NEW! Exchange Here",
         "summary": "Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.",
         "url": "https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1",
         "imgUrl": "https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png",
@@ -9,15 +17,7 @@
     },
     {
         "id": "a9b85906-6050-4aec-92a8-40b0430f7de3",
-        "title": "Your NEW! Merchant Here",
-        "summary": "Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.",
-        "url": "https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1",
-        "imgUrl": "https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png",
-        "createdAt": 1718410624
-    },
-    {
-        "id": "a9b85906-6050-4aec-92a8-40b0430f7de3",
-        "title": "Your NEW! Merchant Here",
+        "title": "Your NEW! Exchange Here",
         "summary": "Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.",
         "url": "https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1",
         "imgUrl": "https://forum.bitcoinunlimited.info/uploads/default/original/1X/86e990234960ccc6c51d065df8d2524670a4d6d7.png",

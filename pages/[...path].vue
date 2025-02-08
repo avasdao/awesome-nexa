@@ -25,7 +25,6 @@ const init = () => {
     if (
         path.value.includes('/apps') ||
         path.value.includes('/defi') ||
-        path.value.includes('/merchants') ||
         path.value.includes('/mining') ||
         path.value.includes('/tooling') ||
         path.value.includes('/wallets')

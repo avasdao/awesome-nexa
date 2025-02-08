@@ -21,8 +21,6 @@ const featuredListings = computed(() => {
 })
 
 const init = async () => {
-    // console.log('INIT CATEGORY', props.cat)
-
     /* Initialize locals. */
     let response
 
@@ -88,8 +86,6 @@ const init = async () => {
             .catch(err => console.error(err))
         break
     }
-    // console.log('LISTINGS', listings.value)
-
 }
 
 const getUrl = (_listing) => {
@@ -120,7 +116,13 @@ onMounted(() => {
 
 <template>
     <ul class="px-3 max-w-7xl mx-auto mt-10 mb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <NuxtLink :to="getUrl(listing)" :target="getTarget(listing)" v-for="listing of featuredListings" :key="listing.id" class="py-5 w-full flex gap-4">
+        <NuxtLink
+            :to="getUrl(listing)"
+            :target="getTarget(listing)"
+            v-for="listing of featuredListings"
+            :key="listing.id"
+            class="py-5 w-full flex gap-4"
+        >
             <img
                 :src="listing.imgUrl"
                 class="w-24 h-24 aspect-square p-1 bg-gradient-to-r from-gray-50 to-gray-100 border border-sky-200 rounded-xl overlay-hidden shadow"
