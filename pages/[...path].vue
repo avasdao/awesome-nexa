@@ -17,29 +17,30 @@ const route = useRoute()
 const category = ref('')
 const path = ref(route?.path)
 const listingid = ref()
-const isListing = ref(false)
+const hasListingDetail = ref(false)
 const isNotFound = ref(false)
 
 const init = () => {
-    /* Validate path. */
+    /* Validate (listing detail) path. */
     if (
         path.value.includes('/apps') ||
+        path.value.includes('/defi') ||
         path.value.includes('/merchants') ||
         path.value.includes('/mining') ||
         path.value.includes('/tooling') ||
         path.value.includes('/wallets')
     ) {
-        isListing.value = true
+        hasListingDetail.value = true
     }
 
     /* Validate listing. */
-    if (isListing.value) {
+    if (hasListingDetail.value) {
         category.value = path.value.slice(1, path.value.indexOf('/', 1))
 
         listingid.value = path.value.slice(path.value.indexOf('/', 1) + 1)
     }
 
-    if (!isListing.value) {
+    if (!hasListingDetail.value) {
         isNotFound.value = true
     }
 }
@@ -57,6 +58,6 @@ onMounted(() => {
 </script>
 
 <template>
-    <ListingDetail v-if="isListing" :category="category" :listingid="listingid" />
+    <ListingDetail v-if="hasListingDetail" :category="category" :listingid="listingid" />
     <PageNotFound v-if="isNotFound" />
 </template>
