@@ -1,6 +1,7 @@
 [
     {
         "id": "d1d235c0-9804-46ae-8935-b9ba9d11be5d",
+        "slug": "",
         "title": "Your NEW! Project Here",
         "summary": "Dream it. Build it. Profit! Join the Nexa hackathon to discover your hidden Builder talents.",
         "url": "https://forum.bitcoinunlimited.info/t/buip201-nexa-1st-hackathon/371/1",
@@ -9,6 +10,7 @@
     },
     {
         "id": "e73765fb-6b0d-4213-be48-b473d84bf114",
+        "slug": "trading-post",
         "title": "Trading Post",
         "summary": "Trade peer-to-peer on a safe and secure platform.",
         "url": "https://github.com/avasdao/wisebox/blob/master/market/TradingPost/v1/TradingPost_Group.nex",
@@ -17,6 +19,7 @@
     },
     {
         "id": "fec7705a-a059-4598-8adc-c8e802c48c19",
+        "slug": "stakehouse",
         "title": "Stakehouse",
         "summary": "Stake your $AVAS for daily rewards.",
         "url": "https://avas.cash/staking",
