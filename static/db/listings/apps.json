@@ -1,5 +1,13 @@
 [
     {
+        "id": "523dc3b8-1856-4dfa-ae84-bb73050c9a74",
+        "title": "Nebula",
+        "summary": "A user-friendly NFT marketplace that enables users to create, manage, and soon trade NFTs directly on Nexa. Built to support NFT collection creators and individual artists alike, Nebula opens up exciting new opportunities for community members to express their creativity and connect with collectors in a secure, decentralized environment.",
+        "url": "https://nebula.markets/",
+        "imgUrl": "https://assets.awesomenexa.org/icons/nebula-markets.webp",
+        "createdAt": 1738742217
+    },
+    {
         "id": "00c5c90c-bd8f-4956-821d-820eec8cd880",
         "title": "Nexa Runes",
         "summary": "Inscribe a rune on Nexa blockchain using Nexscript `NexaRunes.nex` contract.",

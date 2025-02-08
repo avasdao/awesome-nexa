@@ -36,15 +36,17 @@ const launchBanner = async () => {
 }
 
 const BANNERS = [
-    'https://i.ibb.co/6tYhtm1/nexa-on-bitget.jpg',
-    'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg',
-    'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg',
+    'https://assets.awesomenexa.org/banners/nebula-markets.webp', // alt
+    'https://i.ibb.co/6tYhtm1/nexa-on-bitget.jpg', // fb
+    'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg', // fb
+    'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg', // fb
 ]
 
 /**
  * Load Banner
  *
  * NOTE: Banner sizes are (FB) standard 640 x 281.
+ * NOTE: ALT banner size is 1024 x 480.
  */
 const loadBanner = async (_bannerid) => {
     console.log('loading banner...', _bannerid)
@@ -60,6 +62,9 @@ const loadBanner = async (_bannerid) => {
         break
     case 2:
         bannerUrl.value = BANNERS[2]
+        break
+    case 3:
+        bannerUrl.value = BANNERS[3]
         break
     default:
         bannerUrl.value = BANNERS[0]
