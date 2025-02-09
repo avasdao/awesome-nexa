@@ -25,6 +25,6 @@ const System = useSystemStore()
             Merchants are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="merchants" />
+        <Gallery cat="merchants" :showAll="true" />
     </NuxtLayout>
 </template>

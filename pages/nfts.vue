@@ -25,6 +25,6 @@ const System = useSystemStore()
             NFTs are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="nfts" />
+        <Gallery cat="nfts" :showAll="true" />
     </NuxtLayout>
 </template>

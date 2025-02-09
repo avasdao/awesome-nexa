@@ -25,6 +25,6 @@ const System = useSystemStore()
             DEX are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="dex" />
+        <Gallery cat="dex" :showAll="true" />
     </NuxtLayout>
 </template>

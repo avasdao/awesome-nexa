@@ -4,6 +4,7 @@
 /* Define properties. */
 const props = defineProps({
     cat: String,
+    showAll: Boolean,
 })
 
 const MAXIMUM_LISTINGS_PER_CATEGORY = 6
@@ -14,7 +15,11 @@ const listings = ref()
 const featuredListings = computed(() => {
     // console.log('LISTINGS', listings)
     if (listings?.value) {
-        return listings.value.slice(0, MAXIMUM_LISTINGS_PER_CATEGORY)
+        if (typeof props.showAll !== 'undefined' && props.showAll === true) {
+            return listings.value
+        } else {
+            return listings.value.slice(0, MAXIMUM_LISTINGS_PER_CATEGORY)
+        }
     }
 
     return []

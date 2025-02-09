@@ -25,6 +25,6 @@ const System = useSystemStore()
             CEXs are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="cex" />
+        <Gallery cat="cex" :showAll="true" />
     </NuxtLayout>
 </template>

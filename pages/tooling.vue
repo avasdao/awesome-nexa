@@ -25,6 +25,6 @@ const System = useSystemStore()
             Tooling is the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="tooling" />
+        <Gallery cat="tooling" :showAll="true" />
     </NuxtLayout>
 </template>

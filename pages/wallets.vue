@@ -25,6 +25,6 @@ const System = useSystemStore()
             Wallets are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="wallets" />
+        <Gallery cat="wallets" :showAll="true" />
     </NuxtLayout>
 </template>

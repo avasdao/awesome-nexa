@@ -24,6 +24,6 @@ const System = useSystemStore()
             Mining is the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="mining" />
+        <Gallery cat="mining" :showAll="true" />
     </NuxtLayout>
 </template>

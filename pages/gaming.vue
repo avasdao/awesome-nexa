@@ -25,6 +25,6 @@ const System = useSystemStore()
             Gaming is the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="gaming" />
+        <Gallery cat="gaming" :showAll="true" />
     </NuxtLayout>
 </template>

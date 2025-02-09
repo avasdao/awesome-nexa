@@ -25,6 +25,6 @@ const System = useSystemStore()
             Apps are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="apps" />
+        <Gallery cat="apps" :showAll="true" />
     </NuxtLayout>
 </template>

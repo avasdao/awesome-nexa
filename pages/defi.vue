@@ -25,6 +25,6 @@ const System = useSystemStore()
             DeFi are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="defi" />
+        <Gallery cat="defi" :showAll="true" />
     </NuxtLayout>
 </template>

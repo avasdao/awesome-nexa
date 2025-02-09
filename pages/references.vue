@@ -25,6 +25,6 @@ const System = useSystemStore()
             References are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="references" />
+        <Gallery cat="references" :showAll="true" />
     </NuxtLayout>
 </template>

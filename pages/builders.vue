@@ -25,6 +25,6 @@ const System = useSystemStore()
             Builders are the life-blood of the Nexa ecosystem.
         </template>
 
-        <Gallery cat="builders" />
+        <Gallery cat="builders" :showAll="true" />
     </NuxtLayout>
 </template>
