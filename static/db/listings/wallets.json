@@ -1,5 +1,13 @@
 [
     {
+        "id": "e87b0cdb-840c-42c4-a213-fb0f2e36125d",
+        "title": "OneKey",
+        "summary": "A hardware wallet that provides robust security measures for storing Nexa coins offline, offering an extra layer of protection against online threats.",
+        "url": "https://onekey.so/",
+        "imgUrl": "https://assets.awesomenexa.org/icons/onekey.webp",
+        "createdAt": 1739092029
+    },
+    {
         "id": "37d91563-be0b-45ee-b8af-083ffd57e26a",
         "title": "Otoplo",
         "summary": "A simple, secure and useful gateway to all the technology building on Nexa.",
