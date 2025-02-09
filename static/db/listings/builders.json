@@ -1,5 +1,13 @@
 [
     {
+        "id": "4c60c8aa-6fc4-4539-bf89-16f6f25e1044",
+        "title": "@ImGettingHold",
+        "summary": "Web3 Developer | NFT Creator | AI Adopter | Meme Generator",
+        "url": "https://x.com/ImGettingHold",
+        "imgUrl": "https://assets.awesomenexa.org/pfp/imgettinghold.webp",
+        "createdAt": 1739102270
+    },
+    {
         "id": "a34cbb31-ff5c-4eaa-9c69-afe35eb52287",
         "title": "@OldremyCrypto",
         "summary": "For KennelKlub and $KIBL, we chose Nexa not just because it’s fast and scalable but because it’s built for the future.",
@@ -9,10 +17,10 @@
     },
     {
         "id": "2cab7dfa-b2e8-49ba-b2b8-c992b22b0cec",
-        "title": "OneThirtySeven",
-        "summary": "Developing and providing services and hosting for FinTech and general computing applications.",
-        "url": "https://onethirtyseven.dev/",
-        "imgUrl": "https://assets.awesomenexa.org/icons/onethirtyseven.webp",
+        "title": "@137Devs",
+        "summary": "We take the crypto 'hype' out of real world applications, and build tech that lasts.",
+        "url": "https://x.com/137Devs",
+        "imgUrl": "https://assets.awesomenexa.org/pfp/137devs.webp",
         "createdAt": 1739041745
     },
     {
