@@ -77,10 +77,6 @@ const init = async () => {
         listings.value = await $fetch(`${API_ENDPOINT}/listings/tooling.json`)
             .catch(err => console.error(err))
         break
-    case 'utilities':
-        listings.value = await $fetch(`${API_ENDPOINT}/listings/utilities.json`)
-            .catch(err => console.error(err))
-        break
     case 'wallets':
         listings.value = await $fetch(`${API_ENDPOINT}/listings/wallets.json`)
             .catch(err => console.error(err))

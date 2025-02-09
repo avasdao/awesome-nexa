@@ -80,7 +80,6 @@ export default defineNuxtConfig({
         '/v1/listings/nfts.json': { prerender: true },
         '/v1/listings/references.json': { prerender: true },
         '/v1/listings/tooling.json': { prerender: true },
-        '/v1/listings/utilities.json': { prerender: true },
         '/v1/listings/wallets.json': { prerender: true },
     },
 

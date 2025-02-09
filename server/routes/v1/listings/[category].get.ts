@@ -14,7 +14,6 @@ import miningDb from '../../../../static/db/listings/mining.json'
 import nftsDb from '../../../../static/db/listings/nfts.json'
 import referencesDb from '../../../../static/db/listings/references.json'
 import toolingDb from '../../../../static/db/listings/tooling.json'
-import utilitiesDb from '../../../../static/db/listings/utilities.json'
 import walletsDb from '../../../../static/db/listings/wallets.json'
 
 /* Initialize listings. */
@@ -59,8 +58,6 @@ export default defineEventHandler(async _event => {
         return referencesDb
     case 'tooling.json':
         return toolingDb
-    case 'utilities.json':
-        return utilitiesDb
     case 'wallets.json':
         return walletsDb
     default:
