@@ -36,8 +36,8 @@ export const useSystemStore = defineStore('system', {
         ONE_MEX: BigInt('100000000'),
         ONE_META: BigInt('1000000000000000000'),
 
-        /* Set Nexa Exchange API endpoint. */
-        NEXA_EXCHANGE_ENDPOINT: 'https://nexa.exchange',
+        /* Set WiserSwap API endpoint. */
+        WISERSWAP_ENDPOINT: 'https://wiserswap.com/v1',
 
         /* Initialize notifications. */
         notif: {
@@ -162,7 +162,7 @@ export const useSystemStore = defineStore('system', {
         },
 
         async updateTicker() {
-            this._ticker = await $fetch(this.NEXA_EXCHANGE_ENDPOINT + '/ticker')
+            this._ticker = await $fetch(this.WISERSWAP_ENDPOINT + '/ticker/NEXA')
                 .catch(err => console.error(err))
             // console.info('SYSTEM (update ticker):', this.ticker)
         },
