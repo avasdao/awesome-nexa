@@ -1,6 +1,6 @@
 {
   "name": "awesome-nexa",
-  "version": "25.2.10",
+  "version": "25.2.13",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -12,12 +12,12 @@
   "dependencies": {
     "@kevinmarrec/nuxt-pwa": "0.17.0",
     "@mailchimp/mailchimp_marketing": "3.0.80",
+    "@nexajs/address": "24.10.1",
+    "@nexajs/rostrum": "24.6.23",
     "@nuxtjs/i18n": "9.0.0",
     "@nuxtjs/tailwindcss": "6.4.1",
     "@pinia/nuxt": "0.4.7",
-    "ethers": "6.13.0",
     "moment": "2.29.4",
-    "nexajs": "24.7.20",
     "numeral": "2.0.6",
     "nuxt": "3.12.4",
     "pinia": "2.0.32",
