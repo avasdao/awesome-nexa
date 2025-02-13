@@ -12,7 +12,7 @@ import {
 } from '@nexajs/rostrum'
 
 useHead({
-    title: 'Address - NexaShell',
+    title: 'Address — Awesome Nexa',
     meta: [{
         name: 'description',
         content: 'Address'

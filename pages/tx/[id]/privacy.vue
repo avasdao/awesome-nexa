@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-    title: 'Privacy Report - NexaShell',
+    title: 'Privacy Report — Awesome Nexa',
     meta: [{
         name: 'description',
         content: 'Privacy Report'

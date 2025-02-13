@@ -4,7 +4,7 @@ import moment from 'moment'
 import numeral from 'numeral'
 
 useHead({
-    title: 'Contracts - NexaShell',
+    title: 'Contracts — Awesome Nexa',
     meta: [{
         name: 'description',
         content: 'Wise Contracts are the MOST efficient smart contracts available in the blockchain ecosystem.'

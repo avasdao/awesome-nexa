@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-    title: 'Token - NexaShell',
+    title: 'Token — Awesome Nexa',
     meta: [{
         name: 'description',
         content: 'Token'

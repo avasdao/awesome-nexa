@@ -17,7 +17,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 
 useHead({
-    title: 'Contract Details - NexaShell',
+    title: 'Contract Details — Awesome Nexa',
     meta: [{
         name: 'description',
         content: 'Transaction'

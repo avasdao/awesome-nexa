@@ -3,7 +3,7 @@
 import { jsPDF } from 'jspdf'
 
 useHead({
-    title: 'Transaction Receipt by NexaShell',
+    title: 'Transaction Receipt by Awesome Nexa',
     meta: [{
         name: 'description',
         content: 'Transaction Receipt'
@@ -41,7 +41,7 @@ const openDoc = () => {
         name: 'tx-receipt.pdf',
         filename: 'tx-receipt.pdf',
         subject: 'Transaction Receipt',
-        author: "NexaShell developers",
+        author: "Awesome Nexa developers",
         keywords: 'nexa, receipt',
         creator: "NEXA.sh",
     })
@@ -59,7 +59,7 @@ const openDoc = () => {
     doc.setFontSize(20)
     doc.setFont('helvetica', 'bold')
     doc.setTextColor(150)
-    doc.text(`NexaShell`, lMargin, tMargin)
+    doc.text(`Awesome Nexa`, lMargin, tMargin)
 
     // reset txt color
     doc.setTextColor(defaultTxtColor)

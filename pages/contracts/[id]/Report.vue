@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-    title: 'Contract Report - NexaShell',
+    title: 'Contract Report — Awesome Nexa',
     meta: [{
         name: 'description',
         content: 'Contract Report'
