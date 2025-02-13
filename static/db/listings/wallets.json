@@ -1,5 +1,13 @@
 [
     {
+        "id": "dbf1d76f-8e6f-46f0-bb50-643de34a80bd",
+        "title": "Wally Wallet",
+        "summary": "A cryptocurrency wallet focused on the Nexa blockchain.",
+        "url": "http://www.wallywallet.org/",
+        "imgUrl": "https://i.ibb.co/vzWndTY/image.png",
+        "createdAt": 1718408183
+    },
+    {
         "id": "e87b0cdb-840c-42c4-a213-fb0f2e36125d",
         "title": "OneKey",
         "summary": "A hardware wallet that provides robust security measures for storing Nexa coins offline, offering an extra layer of protection against online threats.",
@@ -21,14 +29,6 @@
         "summary": "Protecting your money and privacy with the full weight of the Nexa network.",
         "url": "https://nexa.org/node",
         "imgUrl": "https://assets.super.so/ddffb637-6356-4624-9f22-bb4755755d09/images/e2b226d0-e5de-48f9-a521-35af4c4f2e53/nexa-logo-mark.svg",
-        "createdAt": 1718408183
-    },
-    {
-        "id": "dbf1d76f-8e6f-46f0-bb50-643de34a80bd",
-        "title": "Wally Wallet",
-        "summary": "A cryptocurrency wallet focused on the Nexa blockchain.",
-        "url": "http://www.wallywallet.org/",
-        "imgUrl": "https://i.ibb.co/vzWndTY/image.png",
         "createdAt": 1718408183
     },
     {
