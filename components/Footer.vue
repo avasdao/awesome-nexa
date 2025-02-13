@@ -49,7 +49,7 @@ const subscribe = async () => {
                                 </li>
 
                                 <li>
-                                    <a href="https://www.nexa.org/download" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <a href="https://www.nexa.org/wallets" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Download Wallet
                                     </a>
                                 </li>
@@ -68,10 +68,15 @@ const subscribe = async () => {
                             </h3>
 
                             <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <NuxtLink to="/v1" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        JSON-REST API
+                                    </NuxtLink>
+                                </li>
 
                                 <li>
-                                    <NuxtLink to="/api" class="text-base leading-6 text-gray-300 hover:text-white">
-                                        API Data Feeds
+                                    <NuxtLink to="/broadcast" class="text-base leading-6 text-gray-300 hover:text-white">
+                                        Broadcast Raw Tx
                                     </NuxtLink>
                                 </li>
 

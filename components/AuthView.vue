@@ -1,14 +1,13 @@
 <script setup>
 /* Import modules. */
-import { ethers } from 'ethers'
-import moment from 'moment'
+// import moment from 'moment'
 import QRCode from 'qrcode'
 
 /* Initialize stores. */
 import { useProfileStore } from '@/stores/profile'
 
 /* Set constants. */
-const NEXID_ENDPOINT = 'nexid://awesomenexa.org/v1/_auth'
+const NEXID_AUTH_ENDPOINT = 'nexid://awesomenexa.com/_auth'
 
 /* Initialize (reactive) holders. */
 let regLink = ref(null)
@@ -36,7 +35,7 @@ const qr = computed(() => {
     /* Initialize (string) value. */
     let strValue = ''
 
-    regLink.value = `${NEXID_ENDPOINT}?op=reg&proto=http&chal=${Profile.challenge}&cookie=${Profile.sessionid}&hdl=r&email=o`
+    regLink.value = `${NEXID_AUTH_ENDPOINT}?op=reg&proto=http&chal=${Profile.challenge}&cookie=${Profile.sessionid}&hdl=r&email=o`
     console.log('CHALLENGE STRING', Profile.challenge)
     console.log('REG STRING', regLink.value)
 
@@ -65,80 +64,6 @@ const qr = computed(() => {
     /* Return (string) value. */
     return strValue
 })
-
-
-const web3Auth = async () => {
-    /* Validate embedded Web3 objects. */
-    if (!window.ethereum) {
-        return console.error('No Web3 provider found.')
-    }
-
-    /* Connect accounts. */
-    const accounts = await ethereum.request({
-        method: 'eth_requestAccounts'
-    })
-    console.info('Connected Web3 accounts:', accounts)
-
-    if (!accounts || accounts.length < 1) {
-        return alert('Please connect your MetaMask account to continue.')
-    }
-
-    /* Initialize provider. */
-    const provider = new ethers
-        .providers
-        .Web3Provider(window.ethereum, 'any')
-
-    /* Set signer. */
-    const signer = provider.getSigner()
-    console.log('SIGNER', signer)
-}
-
-const web3Signin = async () => {
-    console.log('Web3 sign-in')
-
-    /* Initialize provider. */
-    const provider = new ethers
-        .BrowserProvider(window.ethereum, 'any')
-    // console.log('PROVIDER', provider)
-
-    /* Set signer. */
-    const signer = await provider.getSigner()
-    // console.log('SIGNER', signer)
-
-    // Our message
-    const message = `Awesome Nexa Authorization
-
-Your New Session ID is d572abee-b6e4-481c-b1b7-2369943c6411
-
-Requested on ${moment().format('LLLL')}`
-
-    // The raw signature; 65 bytes
-    const rawSig = await signer.signMessage(message)
-        .catch(err => {
-            console.error(err)
-            console.info('***TODO: HANDLE USER INTERACTION***')
-        })
-    console.log('rawSig', rawSig)
-    // '0xa617d0558818c7a479d5063987981b59d6e619332ef52249be8243572ef1086807e381afe644d9bb56b213f6e08374c893db308ac1a5ae2bf8b33bcddcb0f76a1b'
-
-    // Converting it to a Signature object provides more
-    // flexibility, such as using it as a struct
-    const sig = ethers.Signature.from(rawSig);
-    console.log('sig', sig)
-    // Signature { r: "0xa617d0558818c7a479d5063987981b59d6e619332ef52249be8243572ef10868", s: "0x07e381afe644d9bb56b213f6e08374c893db308ac1a5ae2bf8b33bcddcb0f76a", yParity: 0, networkV: null }
-
-    const response = await $fetch('/api/session', {
-        method: 'POST',
-        body: {
-            sessionid: Profile.sessionid,
-            message,
-            sig: rawSig,
-        },
-    })
-    .catch(err => console.error(err))
-    console.log('AUTH RESPONSE', response)
-}
-
 </script>
 
 <template>

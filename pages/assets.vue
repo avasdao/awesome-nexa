@@ -1,25 +1,99 @@
+<script setup>
+/* Import modules. */
+import numeral from 'numeral'
+
+useHead({
+    title: 'Assets — Awesome Nexa',
+    meta: [{
+        name: 'description',
+        content: 'Assets'
+    }]
+})
+
+
+const topAssets = ref(null)
+
+
+const init = async () => {
+    const response = await $fetch('/api/assets/top')
+        .catch(err => console.error(err))
+    // console.log('RESPONSE', response)
+
+    topAssets.value = response.filter(_asset => {
+        return _asset.documentUrl
+    })
+}
+
+
+onMounted(() => {
+    // init()
+})
+
+// onBeforeUnmount(() => {
+//     console.log('Before Unmount!')
+//     // Now is the time to perform all cleanup operations.
+// })
+</script>
+
 <template>
-    <main class="w-screen h-screen bg-gradient-to-r from-rose-100 to-rose-300">
-        <div class="pt-10 flex justify-center">
-            <h1 class="text-5xl font-bold tracking-widest">
-                Awesome Nexa Assets
+    <main class="px-3 max-w-7xl mx-auto">
+        <!-- <section class="my-5 max-w-7xl mx-auto">
+            <h1 class="text-4xl font-medium">
+                Assets
             </h1>
-        </div>
 
-        <section class="py-10 flex flex-col items-center gap-10">
-            <div class="px-5 py-3 flex flex-col items-center gap-4 bg-rose-100 border-4 border-rose-400 rounded-lg">
-                <img src="https://assets.awesomenexa.org/ani-banner.gif" class="h-32" />
-                <h2 class="text-3xl font-medium">
-                    Animated Banner
-                </h2>
-            </div>
+            <p>
+                Chain Value -- $0.00
+            </p>
+        </section> -->
 
-            <div class="px-5 py-3 flex flex-col items-center gap-4 bg-rose-100 border-4 border-rose-400 rounded-lg">
-                <img src="https://assets.awesomenexa.org/banner.png" class="h-32" />
-                <h2 class="text-3xl font-medium">
-                    Banner
+        <section class="py-5 flex flex-col grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <h2 class="col-span-1 sm:col-span-2 text-3xl font-medium">
+                Featured Assets
+            </h2>
+
+            <NuxtLink
+                v-for="asset of topAssets"
+                :key="asset.token"
+                :to="'/token/' + asset.token"
+                class="px-3 py-1 bg-gray-100 border-2 border-gray-300 rounded-lg shadow"
+            >
+                <h2 class="text-2xl text-sky-800 font-medium">
+                    {{asset.name}}
                 </h2>
-            </div>
+
+                <h3 class="text-lg text-sky-600 font-medium">
+                    ${{asset.ticker}}
+                </h3>
+
+                <h5 class="text-sm text-sky-700 font-medium">
+                    Decimals: {{asset.decimals || 0}}
+                </h5>
+
+                <h4 class="text-sky-600 font-medium">
+                    <span class="text-lg text-sky-700 font-bold">
+                        {{numeral(asset.txCount).format('0,0')}}
+                    </span>
+                    transactions
+                </h4>
+
+                <section class="w-fit mx-3 my-2 px-3 py-1 bg-sky-100 border-2 border-sky-300 rounded-xl">
+                    <h5 class="text-xs text-sky-700 font-medium truncate">
+                        {{asset.token}}
+                    </h5>
+
+                    <h5 class="text-xs text-sky-700 font-medium truncate">
+                        {{asset.tokenIdHex}}
+                    </h5>
+
+                    <h5 class="text-xs text-sky-700 font-medium truncate">
+                        {{asset.documentUrl}}
+                    </h5>
+
+                </section>
+
+            </NuxtLink>
+            <!-- <pre>{{topAssets}}</pre> -->
         </section>
     </main>
 </template>

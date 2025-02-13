@@ -37,7 +37,7 @@ export const useSystemStore = defineStore('system', {
         ONE_META: BigInt('1000000000000000000'),
 
         /* Set WiserSwap API endpoint. */
-        WISERSWAP_ENDPOINT: 'https://wiserswap.com/v1',
+        WISERSWAP_API_ENDPOINT: 'https://wiserswap.com/v1',
 
         /* Initialize notifications. */
         notif: {
@@ -93,27 +93,46 @@ export const useSystemStore = defineStore('system', {
          *
          * Support for multiple exchange tickers across multiple currencies.
          */
-        // _tickers: null,
+        _tickers: null,
     }),
 
     getters: {
-        // nex() {
-        //     if (!this._tickers?.NEXA) {
-        //         return null
-        //     }
-
-        //     return this._tickers.NEXA.quote.USD.price
-        // },
-
         ticker(_state) {
             return _state._ticker
         },
 
-        usd(_state) {
-            const usd = _state._ticker?.quote?.USD?.price
+        tickers(_state) {
+            return _state._tickers
+        },
 
+        usd(_state) {
+            if (typeof _state._ticker === 'undefined' || !_state._ticker) {
+                return 0.00
+            }
+
+            /* Set ticker. */
+            const ticker = _state._ticker
+
+            /* Validate ticker. */
+            if (typeof ticker === 'undefined' || !ticker) {
+                return 0.00
+            }
+
+            /* Set quote. */
+            const quote = ticker.quote
+
+            /* Validate quote. */
+            if (typeof quote === 'undefined' || !quote) {
+                return 0.00
+            }
+
+            /* Set price. */
+            const usd = quote.USD?.price
+
+            /* Set (formatted) price. */
             const formatted = parseFloat((usd * 1000000.0).toFixed(4))
 
+            /* Return (formatted) price. */
             return formatted
         },
 
@@ -124,7 +143,6 @@ export const useSystemStore = defineStore('system', {
 
             return _state._locale
         },
-
     },
 
     actions: {
@@ -162,64 +180,21 @@ export const useSystemStore = defineStore('system', {
         },
 
         async updateTicker() {
-            this._ticker = await $fetch(this.WISERSWAP_ENDPOINT + '/ticker/NEXA')
+            this._ticker = await $fetch(this.WISERSWAP_API_ENDPOINT + '/ticker/NEXA')
                 .catch(err => console.error(err))
             // console.info('SYSTEM (update ticker):', this.ticker)
-        },
-        // async updateTicker () {
-        //     if (!this._tickers.AVAS) {
-        //         this._tickers.AVAS = {}
-        //     }
 
-        //     if (!this._tickers.NEXA) {
-        //         this._tickers.NEXA = {}
-        //     }
-
-        //     this._tickers.AVAS = await $fetch('https://nexa.exchange/v1/ticker/quote/57f46c1766dc0087b207acde1b3372e9f90b18c7e67242657344dcd2af660000')
-
-        //     this._tickers.NEXA = await $fetch('https://nexa.exchange/ticker')
-        // },
-
-        async getSender(_tx) {
-            const inputs = _tx?.vin
-            // console.log('INPUTS', inputs)
-
-            const hex = inputs[0]?.scriptSig.hex
-            // console.log('HEX', hex)
-
-            const publicKey = hexToBin(hex.slice(4, 70))
-            // console.log('PUBLIC KEY', binToHex(publicKey))
-
-            /* Hash the public key hash according to the P2PKH/P2PKT scheme. */
-            const scriptPushPubKey = encodeDataPush(publicKey)
-            // console.log('SCRIPT PUSH PUBLIC KEY', scriptPushPubKey);
-
-            const publicKeyHash = ripemd160(sha256(scriptPushPubKey))
-            // console.log('PUBLIC KEY HASH (hex)', binToHex(publicKeyHash))
-
-            /* Generate public key hash script. */
-            const scriptPubKey = new Uint8Array([
-                OP.ZERO,
-                OP.ONE,
-                ...encodeDataPush(publicKeyHash)
-            ])
-
-            /* Generate address. */
-            const address = encodeAddress(
-                'nexa',
-                'TEMPLATE',
-                scriptPubKey,
-            )
-
-            /* Set sender. */
-            const sender = {
-                address,
-                inputs,
+            if (!this._tickers.AVAS) {
+                this._tickers.AVAS = {}
             }
 
-            /* Return sender. */
-            return sender
-        },
+            if (!this._tickers.NEXA) {
+                this._tickers.NEXA = {}
+            }
 
+            // this._tickers.AVAS = await $fetch('https://nexa.exchange/v1/ticker/quote/57f46c1766dc0087b207acde1b3372e9f90b18c7e67242657344dcd2af660000')
+
+            // this._tickers.NEXA = await $fetch('https://nexa.exchange/ticker')
+        },
     },
 })

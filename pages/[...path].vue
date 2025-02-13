@@ -12,13 +12,37 @@ import { useSystemStore } from '@/stores/system'
 const System = useSystemStore()
 
 const route = useRoute()
-// console.log('ROUTE', route)
+console.log('ROUTE', route)
 
 const category = ref('')
+// const slug = route.params.slug?.[0]
 const path = ref(route?.path)
 const listingid = ref()
 const hasListingDetail = ref(false)
 const isNotFound = ref(false)
+
+/* Validate for transaction. */
+// if (path && typeof path[0] !== 'undefined' && path[0].length === 64) {
+//     /* Set transaction id. */
+//     const txid = path[0]
+//     console.log('TXID', txid)
+//
+//     // TODO: Validate transaction.
+//
+//     /* Redirect to transaction page. */
+//     await navigateTo({ path: '/tx/' + txid })
+// }
+
+// if (path[0].slice(0, 7) === 'nexa:tr') {
+//     /* Set group id. */
+//     const groupid = path[0]
+//     console.log('TOKEN ID', groupid)
+//
+//     // TODO: Validate token.
+//
+//     /* Redirect to token page. */
+//     await navigateTo({ path: '/token/' + groupid })
+// }
 
 const init = () => {
     /* Validate (listing detail) path. */
