@@ -9,8 +9,8 @@ import { useProfileStore } from '@/stores/profile'
 /* Set constants. */
 const NEXID_AUTH_ENDPOINT = 'nexid://awesomenexa.com/_auth'
 
-/* Initialize (reactive) holders. */
-let regLink = ref(null)
+/* Initialize (local) handlers. */
+let authLink = ref(null)
 
 /* Initialize Profile store. */
 const Profile = useProfileStore()
@@ -35,11 +35,11 @@ const qr = computed(() => {
     /* Initialize (string) value. */
     let strValue = ''
 
-    regLink.value = `${NEXID_AUTH_ENDPOINT}?op=reg&proto=http&chal=${Profile.challenge}&cookie=${Profile.sessionid}&hdl=r&email=o`
+    authLink.value = `${NEXID_AUTH_ENDPOINT}?op=reg&proto=http&chal=${Profile.challenge}&cookie=${Profile.sessionid}&hdl=r&email=o`
     console.log('CHALLENGE STRING', Profile.challenge)
-    console.log('REG STRING', regLink.value)
+    console.log('REG STRING', authLink.value)
 
-    dataString = regLink.value
+    dataString = authLink.value
 
     /* Initialize scanner parameters. */
     const params = {
@@ -68,28 +68,20 @@ const qr = computed(() => {
 
 <template>
     <main class="px-3 max-w-5xl mx-auto">
-        <div class="max-w-xl mx-auto mt-5 flex flex-col gap-4 items-center">
-            <p class="px-10 text-sm font-medium text-center">
-                If you're using the Wally mobile wallet, just click the link below
-            </p>
+        <section class="max-w-xl mx-auto mt-5 flex flex-col gap-4 items-center">
+            <h3 class="px-10 text-lg font-medium text-center">
+                If you're using the Wally mobile wallet, just click the button below
+            </h3>
 
-            <div class="flex flex-row gap-4">
-                <NuxtLink :to="regLink" class="px-5 py-2 flex justify-center bg-yellow-400 border-4 border-yellow-700 rounded-lg">
-                    <span class="text-lg text-yellow-900 font-medium">
-                        Wally Wallet Login
-                    </span>
-                </NuxtLink>
-
-                <button @click="web3Signin" class="px-5 py-2 flex justify-center bg-yellow-400 border-4 border-yellow-700 rounded-lg">
-                    <span class="text-lg text-yellow-900 font-medium">
-                        MetaMask/Web3 Sign-in
-                    </span>
-                </button>
-            </div>
-        </div>
+            <NuxtLink :to="authLink" class="px-5 py-2 flex justify-center bg-yellow-400 border-4 border-yellow-700 rounded-lg">
+                <span class="text-lg text-yellow-900 font-medium">
+                    Wally Wallet Login
+                </span>
+            </NuxtLink>
+        </section>
 
         <div class="py-10 flex flex-col items-center gap-10">
-            <p class="px-10 text-sm font-medium text-center">
+            <p class="px-10 text-lg font-medium text-center">
                 If you're using a Desktop browser, scan the Qr Code below with Wally wallet
             </p>
 
@@ -99,12 +91,12 @@ const qr = computed(() => {
 
             <section class="max-w-xl px-5 py-2 bg-yellow-100 border-2 border-yellow-400 rounded-lg">
                 <span class="text-yellow-700 text-sm font-medium uppercase">
-                    Registration Link
+                    Authorization Link
                 </span>
 
                 <span class="block font-bold">
-                    <a :href="regLink" class="text-sm text-blue-500 hover:underline">
-                        {{regLink}}
+                    <a :href="authLink" class="text-sm text-blue-500 hover:underline">
+                        {{authLink}}
                     </a>
                 </span>
             </section>

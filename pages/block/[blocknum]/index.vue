@@ -10,16 +10,18 @@ useHead({
 const route = useRoute()
 // console.log('ROUTE PARAMS', route.params)
 
+/* Set block number. */
 const blocknum = route.params.blocknum
 
-/* Set Nexa GraphQL endpoint. */
-const ENDPOINT = 'https://nexa.sh/graphql'
+/* Initialize handlers. */
+const block = ref(null)
+
+/* Set GraphQL endpoint. */
+const ENDPOINT = 'https://awesomenexa.com/graphql'
 
 const query = `
 {
-    block(height: [${blocknum}]) {
-    hash
-    confirmations
+  block(height: ${blocknum}) {
     height
     size
     txcount
@@ -43,44 +45,27 @@ const query = `
 }
 `
 
-let block
-
-/* Make query request. */
-const result = await $fetch(ENDPOINT,
-    {
+const init = async () => {
+    /* Make query request. */
+    const result = await $fetch(ENDPOINT, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
         },
         body: JSON.stringify({ query }),
-    })
-    .catch(err => console.error(err))
+    }).catch(err => console.error(err))
+console.log('BLOCK RESULT', result)
 
-if (result?.data?.block) {
-    block = result.data.block[0]
+    /* Validate result. */
+    if (result?.data?.block) {
+        block.value = result.data.block[0]
+    }
 }
 
-// const init = async () => {
-//     /* Initialize locals. */
-//     let response
-//
-//     /* Request transaction. */
-//     response = await $fetch('/v1/tx/' + id)
-//         .catch(err => console.error(err))
-//     // console.log('RESPONSE', response)
-//
-//     /* Set transaction details. */
-//     transaction.value = response
-//
-//     /* Set flag. */
-//     isLoaded.value = true
-// }
-//
-// onMounted(() => {
-//     init()
-// })
-
+onMounted(() => {
+    init()
+})
 </script>
 
 <template>
