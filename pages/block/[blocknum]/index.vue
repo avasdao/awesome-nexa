@@ -25,7 +25,10 @@ const query = `
     edges {
       node {
         height
+        previousBlockHash
+        bits
       }
+      cursor
     }
   }
 }
@@ -45,7 +48,7 @@ console.log('BLOCK RESULT', result)
 
     /* Validate result. */
     if (result?.data?.block) {
-        block.value = result.data.block[0]
+        block.value = result.data.block.edges[0].node
     }
 }
 
