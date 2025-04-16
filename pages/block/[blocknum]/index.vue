@@ -27,6 +27,17 @@ const query = `
         height
         previousBlockHash
         bits
+        ancestorHash
+        merkleRoot
+        txFilterHash
+        chainWork
+        size
+        txCount
+        feePoolAmount
+        utxoCommitment
+        minerData
+        nonce
+        createdAt
       }
       cursor
     }
@@ -59,97 +70,110 @@ onMounted(() => {
 
 <template>
     <main v-if="block" class="">
-        <main class="max-w-7xl mx-auto">
+        <main class="py-5 max-w-7xl mx-auto flex flex-col gap-4">
             <h1 class="text-4xl font-medium">
                 Block # {{blocknum}}
             </h1>
 
-            <BlockItem
-                title="Block Hash"
-                :value="block.hash"
-            />
+            <section class="grid grid-cols-4 gap-4">
+                <!-- <BlockItem
+                    title="Block Hash"
+                    :value="block.hash"
+                /> -->
 
-            <BlockItem
-                title="Confirmations"
-                :value="block.confirmations"
-            />
+                <!-- <BlockItem
+                    title="Confirmations"
+                    :value="block.confirmations"
+                /> -->
 
-            <BlockItem
-                title="Height"
-                :value="block.height"
-            />
+                <BlockItem
+                    title="Height"
+                    :value="block.height"
+                />
 
-            <BlockItem
-                title="Size"
-                :value="block.size"
-            />
+                <BlockItem
+                    title="Size"
+                    :value="block.size"
+                />
 
-            <BlockItem
-                title="Transaction Count"
-                :value="block.txcount"
-            />
+                <BlockItem
+                    title="Transaction Count"
+                    :value="block.txCount"
+                />
 
-            <BlockItem
-                title="Fee Pool Amount"
-                :value="block.feePoolAmt"
-            />
+                <BlockItem
+                    title="Fee Pool Amount"
+                    :value="block.feePoolAmount"
+                />
+            </section>
 
-            <BlockItem
-                title="Merkle Root"
-                :value="block.merkleroot"
-            />
+            <section class="grid grid-cols-1 gap-4">
+                <BlockItem
+                    title="Merkle Root"
+                    :value="block.merkleRoot"
+                />
+            </section>
 
-            <BlockItem
-                title="Time"
-                :value="block.time"
-            />
+            <section class="grid grid-cols-4 gap-4">
+                <BlockItem
+                    title="Time"
+                    :value="block.createdAt"
+                />
 
-            <BlockItem
-                title="Median Time"
-                :value="block.mediantime"
-            />
+                <BlockItem
+                    title="Median Time"
+                    :value="block.createdAt"
+                />
 
-            <BlockItem
-                title="Nonce"
-                :value="block.nonce"
-            />
+                <BlockItem
+                    title="Bits"
+                    :value="block.bits"
+                />
 
-            <BlockItem
-                title="Bits"
-                :value="block.bits"
-            />
+                <BlockItem
+                    title="Difficulty"
+                    value="n/a"
+                />
+            </section>
 
-            <BlockItem
-                title="Difficulty"
-                :value="block.difficulty"
-            />
+            <section class="grid grid-cols-1 gap-4">
+                <BlockItem
+                    title="Nonce"
+                    :value="block.nonce"
+                />
 
-            <BlockItem
-                title="Chainwork"
-                :value="block.chainwork"
-            />
+                <BlockItem
+                    title="Chainwork"
+                    :value="block.chainWork"
+                />
 
-            <BlockItem
-                title="UTXO Commitment"
-                :value="block.utxoCommitment"
-            />
+                <BlockItem
+                    title="UTXO Commitment"
+                    :value="block.utxoCommitment"
+                />
 
-            <BlockItem
-                title="Miner Data"
-                :value="block.minerData"
-            />
+                <BlockItem
+                    title="Miner Data"
+                    :value="block.minerData"
+                />
 
-            <BlockItem
-                title="Ancestor Hash"
-                :value="block.ancestorhash"
-            />
+                <BlockItem
+                    title="Ancestor Hash"
+                    :value="block.ancestorHash"
+                />
 
-            <BlockItem
-                title="Next Block Hash"
-                :value="block.nextblockhash"
-            />
+                <BlockItem
+                    title="Previous Block Hash"
+                    :value="block.previousBlockHash"
+                />
 
-            <pre>{{JSON.stringify(block, null, 2)}}</pre>
+                <!-- <BlockItem
+                    title="Next Block Hash"
+                    :value="block.nextBlockHash"
+                /> -->
+            </section>
+
+            <!-- <pre>{{JSON.stringify(block, null, 2)}}</pre> -->
         </main>
     </main>
 
