@@ -22,25 +22,11 @@ const ENDPOINT = 'https://awesomenexa.com/graphql'
 const query = `
 {
   block(height: ${blocknum}) {
-    height
-    size
-    txcount
-    feePoolAmt
-    merkleroot
-    time
-    mediantime
-    nonce
-    bits
-    difficulty
-    chainwork
-    utxoCommitment
-    minerData
-    status
-    onMainChain
-    ancestorhash
-    nextblockhash
-    txid
-    txidem
+    edges {
+      node {
+        height
+      }
+    }
   }
 }
 `
