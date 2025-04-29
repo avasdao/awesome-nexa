@@ -172,11 +172,11 @@ const subscribe = async () => {
 
                 <div class="mt-10 xl:mt-0">
                     <h3 class="text-lg font-semibold leading-6 text-white">
-                        Subscribe to our newsletter
+                        Subscribe to our monthly newsletter
                     </h3>
 
                     <p class="mt-2 text-lg leading-6 text-gray-300">
-                        Receive the latest Nexa news, reviews and resources, sent to your inbox each week.
+                        Receive the latest news, rave reviews and upcoming events, sent straight to your inbox.
                     </p>
 
                     <div class="mt-6 sm:flex sm:max-w-md">
