@@ -105,7 +105,7 @@ const subscribe = async () => {
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h3 class="text-lg font-semibold leading-6 text-white">
-                                Bitcoin Unlimited
+                                Team Nexa/BU
                             </h3>
 
                             <ul role="list" class="mt-6 space-y-4">
