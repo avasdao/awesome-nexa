@@ -175,8 +175,8 @@ const subscribe = async () => {
                         Subscribe to our monthly newsletter
                     </h3>
 
-                    <p class="mt-2 text-lg leading-6 text-gray-300">
-                        Receive the latest news, rave reviews and upcoming events, sent straight to your inbox.
+                    <p class="mt-2 text-lg/8 text-gray-300">
+                        Receive the latest news, rave reviews and upcoming events, directly to your inbox.
                     </p>
 
                     <div class="mt-6 sm:flex sm:max-w-md">
