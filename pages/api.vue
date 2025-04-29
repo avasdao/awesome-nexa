@@ -1,13 +1,12 @@
 <script setup>
 /* Import modules. */
+//
 
+// const status = await $fetch('/status')
+// console.log('STATUS', status)
 
-const status = await $fetch('/status')
-console.log('STATUS', status)
-
-const hello = await $fetch('/api/hello?name=Satoshi')
-console.log('HELLO', hello)
-
+// const hello = await $fetch('/api/hello?name=Satoshi')
+// console.log('HELLO', hello)
 </script>
 
 <template>

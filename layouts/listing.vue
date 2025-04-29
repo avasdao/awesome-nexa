@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
         <section class="flex flex-col-reverse sm:flex-row gap-7">
             <slot name="slideshow">
                 <img
-                    src="~/assets/ani-banner.gif"
+                    src="https://assets.awesomenexa.org/banner.gif"
                     class="w-full sm:w-7/12 h-96 border-2 border-gray-300 rounded-xl shadow-md object-cover"
                 />
             </slot>
