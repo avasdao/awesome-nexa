@@ -12,7 +12,7 @@ useHead({
 })
 
 /* Set Nexa GraphQL endpoint. */
-const ENDPOINT = 'https://nexa.sh/graphql'
+const ENDPOINT = 'https://awesomenexa.org/graphql'
 const META_QUERY_COUNT_MIN = 5
 
 const contracts = ref(null)

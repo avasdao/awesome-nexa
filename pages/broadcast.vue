@@ -14,7 +14,7 @@ const bytecode = ref()
 const txidem = ref()
 
 /* Set Nexa GraphQL endpoint. */
-const ENDPOINT = 'https://awesomenexa.com/graphql'
+const ENDPOINT = 'https://awesomenexa.org/graphql'
 
 /**
  * Make Broadcast

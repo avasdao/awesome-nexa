@@ -17,7 +17,7 @@ const blocknum = parseInt(route.params.blocknum)
 const block = ref(null)
 
 /* Set GraphQL endpoint. */
-const ENDPOINT = 'https://awesomenexa.com/graphql'
+const ENDPOINT = 'https://awesomenexa.org/graphql'
 
 const query = `
 {

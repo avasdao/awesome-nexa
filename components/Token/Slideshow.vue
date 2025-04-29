@@ -21,7 +21,7 @@ const displayedTxs = computed(() => {
 
 /* Create client. */
 const client = createClient({
-    url: 'wss://nexa.sh/graphql',
+    url: 'wss://awesomenexa.org/graphql',
 })
 
 const query = `

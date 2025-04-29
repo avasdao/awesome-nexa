@@ -14,7 +14,7 @@ console.log('ROUTE PARAMS', route.params)
 const groupid = route.params.groupid
 
 /* Set Nexa GraphQL endpoint. */
-const ENDPOINT = 'https://nexa.sh/graphql'
+const ENDPOINT = 'https://awesomenexa.org/graphql'
 
 const query = `
 {
