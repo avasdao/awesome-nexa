@@ -172,10 +172,10 @@ const subscribe = async () => {
 
                 <div class="mt-10 xl:mt-0">
                     <h3 class="text-lg font-semibold leading-6 text-white">
-                        Subscribe to our monthly newsletter
+                        Subscribe to our Monthly Newsletter
                     </h3>
 
-                    <p class="mt-2 text-lg/8 text-gray-300">
+                    <p class="mt-2 text-lg/7 text-gray-300">
                         Receive the latest news, rave reviews and upcoming events, directly to your inbox.
                     </p>
 
