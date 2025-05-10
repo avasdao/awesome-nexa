@@ -1,14 +1,3 @@
-<script setup>
-/* Import modules. */
-//
-
-// const status = await $fetch('/status')
-// console.log('STATUS', status)
-
-// const hello = await $fetch('/api/hello?name=Satoshi')
-// console.log('HELLO', hello)
-</script>
-
 <template>
     <main class="px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex flex-col items-center">
@@ -55,6 +44,8 @@
                 <li><a href="/api/nexid" class="text-blue-500 font-medium hover:underline">/api/nexid</a></li>
             </ul>
         </section>
+
+        <ApiAddKey />
 
         <section class="mx-20 my-5 py-3 grid grid-cols-2 gap-x-4 gap-y-2 bg-gradient-to-r from-gray-50 to-gray-200 border-2 border-gray-300 rounded shadow">
             <div class="col-span-2 flex justify-center">
@@ -148,3 +139,13 @@
 
     </main>
 </template>
+
+<script setup>
+/* Import modules. */
+
+const status = {}//await $fetch('/status')
+console.log('STATUS', status)
+
+// const hello = await $fetch('/api/hello?name=Satoshi')
+// console.log('HELLO', hello)
+</script>
