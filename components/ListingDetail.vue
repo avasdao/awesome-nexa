@@ -28,9 +28,9 @@ const init = async () => {
     }
 
     /* Request ALL listings. */
-    const listings = await $fetch(`${API_ENDPOINT}/listings/${props.category}.json`)
+    const listings = await $fetch(`${API_ENDPOINT}/listing?category=${props.category}`)
         .catch(err => console.error(err))
-    // console.log('LISTINGS', listings)
+console.log('LISTINGS DETAIL', listings)
 
     listing.value = listings.find(_listing => {
         return _listing?.slug === props.listingid

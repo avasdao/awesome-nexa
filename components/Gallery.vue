@@ -16,9 +16,9 @@ const featuredListings = computed(() => {
     // console.log('LISTINGS', listings)
     if (listings?.value) {
         if (typeof props.showAll !== 'undefined' && props.showAll === true) {
-            return listings.value
+            return listings.value.data
         } else {
-            return listings.value.slice(0, MAXIMUM_LISTINGS_PER_CATEGORY)
+            return listings.value.data.slice(0, MAXIMUM_LISTINGS_PER_CATEGORY)
         }
     }
 
@@ -31,8 +31,9 @@ const init = async () => {
 
     switch(props.cat) {
     case 'apps':
-        listings.value = await $fetch(`${API_ENDPOINT}/listings/apps.json`)
+        listings.value = await $fetch(`${API_ENDPOINT}/listing?category=apps`)
             .catch(err => console.error(err))
+console.log('LISTINGS GALLERY', listings.value)
         break
     case 'builders':
         listings.value = await $fetch(`${API_ENDPOINT}/listings/builders.json`)
@@ -121,7 +122,7 @@ onMounted(() => {
             :to="getUrl(listing)"
             :target="getTarget(listing)"
             v-for="listing of featuredListings"
-            :key="listing.id"
+            :key="listing.listingid"
             class="py-5 w-full flex gap-4"
         >
             <img

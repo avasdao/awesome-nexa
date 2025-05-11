@@ -55,31 +55,6 @@ export default defineNuxtConfig({
         '@kevinmarrec/nuxt-pwa',
     ],
 
-    /* Route Rules */
-    routeRules: {
-        /* Disable server-side rendering for Admin area. */
-        '/admin/**': { ssr: false },
-
-        /* Add CORS headers to API. */
-        '/v1/**': { cors: true },
-
-        /* Pre-rendered (dynamic) routes. */
-        '/v1/listings/apps.json': { prerender: true },
-        '/v1/listings/builders.json': { prerender: true },
-        '/v1/listings/cex.json': { prerender: true },
-        '/v1/listings/daos.json': { prerender: true },
-        '/v1/listings/defi.json': { prerender: true },
-        '/v1/listings/dex.json': { prerender: true },
-        '/v1/listings/gaming.json': { prerender: true },
-        '/v1/listings/media.json': { prerender: true },
-        '/v1/listings/merchants.json': { prerender: true },
-        '/v1/listings/mining.json': { prerender: true },
-        '/v1/listings/nfts.json': { prerender: true },
-        '/v1/listings/references.json': { prerender: true },
-        '/v1/listings/tooling.json': { prerender: true },
-        '/v1/listings/wallets.json': { prerender: true },
-    },
-
     /* Set compatibility date. */
-    compatibilityDate: '2024-07-26',
+    compatibilityDate: '2025-05-05',
 })
