@@ -17,29 +17,29 @@ const bannerUrl = ref(null)
 let bannerInterval
 
 const launchBanner = async () => {
-    console.log('launching banner...')
+// console.log('launching banner...')
 
     switch(bannerid.value) {
     case 0:
-        window.open('https://www.bitget.com/spot/NEXAUSDT')
+        window.open('https://niftyart.cash/')
         break
     case 1:
-        window.open('https://agnar.pages.dev')
+        window.open('https://nebula.markets/')
         break
     case 2:
-        window.open('http://www.wallywallet.org')
+        window.open('http://www.wallywallet.org/')
         break
     default:
-        window.open('https://agnar.pages.dev')
+        window.open('https://agnar.pages.dev/')
         break
     }
 }
 
 const BANNERS = [
-    'https://assets.awesomenexa.org/banner/nebula-markets.webp', // alt
-    'https://i.ibb.co/6tYhtm1/nexa-on-bitget.jpg', // fb
-    'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg', // fb
-    'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg', // fb
+    'https://assets.awesomenexa.org/banner/nifty-art-v2.webp',
+    'https://assets.awesomenexa.org/banner/nebula-markets.webp',
+    'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg',
+    'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg',
 ]
 
 /**
@@ -49,7 +49,7 @@ const BANNERS = [
  * NOTE: ALT banner size is 1024 x 480.
  */
 const loadBanner = async (_bannerid) => {
-    console.log('loading banner...', _bannerid)
+// console.log('loading banner...', _bannerid)
 
     bannerid.value = _bannerid
 
