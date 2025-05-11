@@ -36,7 +36,7 @@ const launchBanner = async () => {
 }
 
 const BANNERS = [
-    'https://assets.awesomenexa.org/banners/nebula-markets.webp', // alt
+    'https://assets.awesomenexa.org/banner/nebula-markets.webp', // alt
     'https://i.ibb.co/6tYhtm1/nexa-on-bitget.jpg', // fb
     'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg', // fb
     'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg', // fb

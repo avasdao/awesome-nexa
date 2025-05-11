@@ -4,7 +4,7 @@
         "title": "BzMiner",
         "summary": "Fast Windows/Linux crypto miner with remote management.",
         "url": "https://www.bzminer.com/",
-        "imgUrl": "https://assets.awesomenexa.org/icons/bzminer.webp",
+        "imgUrl": "https://assets.awesomenexa.org/icon/bzminer.webp",
         "createdAt": 1738735994
     },
     {
@@ -12,7 +12,7 @@
         "title": "WildRig Multi",
         "summary": "Multi algo miner for AMD, NVIDIA and Intel gpu's.",
         "url": "https://github.com/andru-kun/wildrig-multi",
-        "imgUrl": "https://assets.awesomenexa.org/icons/wildrig.webp",
+        "imgUrl": "https://assets.awesomenexa.org/icon/wildrig.webp",
         "createdAt": 1738735994
     },
     {
@@ -20,7 +20,7 @@
         "title": "WoolyPooly",
         "summary": "WoolyPooly stands out as an exceptionally lucrative pool, concentrating on diminishing commission fees for both PPLNS and SOLO reward structures.",
         "url": "https://woolypooly.com/en/coin/nexa",
-        "imgUrl": "https://assets.awesomenexa.org/icons/woolypooly.webp",
+        "imgUrl": "https://assets.awesomenexa.org/icon/woolypooly.webp",
         "createdAt": 1738735994
     },
     {
@@ -28,7 +28,7 @@
         "title": "2Miners",
         "summary": "The most profitable Nexa mining pool for GPU and ASIC. Regular payments, tutorials, reliable servers, rig monitoring bot. Fully compatible with Nicehash.",
         "url": "https://2miners.com/nexa-mining-pool",
-        "imgUrl": "https://assets.awesomenexa.org/icons/2miners.webp",
+        "imgUrl": "https://assets.awesomenexa.org/icon/2miners.webp",
         "createdAt": 1738741768
     },
     {
@@ -36,7 +36,7 @@
         "title": "f2pool",
         "summary": "f2pool has officially launched the Nexa (NEXA) mining pool! The pool will apply 1% PPLNS as the payout scheme.",
         "url": "https://f2pool.zendesk.com/hc/en-us/articles/31821667302169-Nexa-NEXA-mining-pool-launched-at-f2pool",
-        "imgUrl": "https://assets.awesomenexa.org/icons/f2pool.webp",
+        "imgUrl": "https://assets.awesomenexa.org/icon/f2pool.webp",
         "createdAt": 1738745386
     },
     {
@@ -44,7 +44,7 @@
         "title": "OneThirtySeven Pool",
         "summary": "Pool137 uses a fair reward system \"Pay Per Last N Shares\" or PPLNS. This system is used to prevent \"pool hopping\".",
         "url": "https://nexa.pool137.io/",
-        "imgUrl": "https://assets.awesomenexa.org/icons/onethirtyseven.webp",
+        "imgUrl": "https://assets.awesomenexa.org/icon/onethirtyseven.webp",
         "createdAt": 1738742217
     },
     {
@@ -52,7 +52,7 @@
         "title": "Rplant",
         "summary": "Proof of work ( PoW ) mining pool. Realtime hashrate data.",
         "url": "https://pool.rplant.xyz/",
-        "imgUrl": "https://assets.awesomenexa.org/icons/rplant.webp",
+        "imgUrl": "https://assets.awesomenexa.org/icon/rplant.webp",
         "createdAt": 1738745212
     }
 ]
