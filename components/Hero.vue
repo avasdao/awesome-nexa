@@ -24,9 +24,12 @@ const launchBanner = async () => {
         window.open('https://niftyart.cash/')
         break
     case 1:
-        window.open('https://nebula.markets/')
+        window.open('https://www.nverse.space/pixelwar')
         break
     case 2:
+        window.open('https://nebula.markets/')
+        break
+    case 3:
         window.open('http://www.wallywallet.org/')
         break
     default:
@@ -37,6 +40,7 @@ const launchBanner = async () => {
 
 const BANNERS = [
     'https://assets.awesomenexa.org/banner/nifty-art-v2.webp',
+    'https://assets.awesomenexa.org/banner/pixel-war.webp',
     'https://assets.awesomenexa.org/banner/nebula-markets.webp',
     'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg',
     'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg',
@@ -65,6 +69,9 @@ const loadBanner = async (_bannerid) => {
         break
     case 3:
         bannerUrl.value = BANNERS[3]
+        break
+    case 4:
+        bannerUrl.value = BANNERS[4]
         break
     default:
         bannerUrl.value = BANNERS[0]
