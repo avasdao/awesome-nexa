@@ -2,7 +2,7 @@
     <main class="px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex flex-col items-center gap-3">
             <h1 class="text-5xl font-bold tracking-widest">
-                Awesome Nexa REST API
+                Awesome Nexa Status
             </h1>
 
             <h2 class="text-3xl font-medium text-slate-500 italic">
@@ -13,38 +13,6 @@
         <p class="p-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat veniam, corrupti amet in sed itaque omnis? Sequi provident praesentium et expedita at. Modi quas quasi nobis, ratione officiis expedita accusantium?
         </p>
-
-        <section class="py-10 flex flex-col items-center">
-            <h3 class="text-2xl font-medium">
-                Featured Endpoints
-            </h3>
-
-            <ul class="list-disc mt-3 pl-10 flex flex-col gap-3">
-                <li><a href="/api/address" class="text-blue-500 font-medium text-2xl hover:underline">Address</a></li>
-                <li><a href="/api/persona" class="text-blue-500 font-medium text-2xl hover:underline">Persona</a></li>
-            </ul>
-        </section>
-
-        <section class="py-10 flex flex-col items-center">
-            <h3 class="text-2xl font-medium">
-                Category Endpoints
-            </h3>
-
-            <ul class="list-disc mt-3 pl-10 flex flex-col gap-3">
-                <li><a href="/api/mining" class="text-blue-500 font-medium hover:underline">/api/mining</a></li>
-                <li><a href="/api/wallets" class="text-blue-500 font-medium hover:underline">/api/wallets</a></li>
-            </ul>
-        </section>
-
-        <section class="py-10 flex flex-col items-center">
-            <h3 class="text-2xl font-medium">
-                Other Endpoints
-            </h3>
-
-            <ul class="list-disc mt-3 pl-10 flex flex-col gap-3">
-                <li><a href="/api/nexid" class="text-blue-500 font-medium hover:underline">/api/nexid</a></li>
-            </ul>
-        </section>
 
         <section class="mx-20 my-5 py-3 grid grid-cols-2 gap-x-4 gap-y-2 bg-gradient-to-r from-gray-50 to-gray-200 border-2 border-gray-300 rounded shadow">
             <div class="col-span-2 flex justify-center">
@@ -94,7 +62,7 @@
         <section class="mx-20 my-5 py-3 grid grid-cols-2 gap-x-4 gap-y-2 bg-gradient-to-r from-gray-50 to-gray-200 border-2 border-gray-300 rounded shadow">
             <div class="col-span-2 flex justify-center">
                 <h1 class="text-2xl text-gray-500 font-medium tracking-widest uppercase">
-                    Market Details
+                    Network Details
                 </h1>
             </div>
 
