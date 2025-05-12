@@ -18,7 +18,7 @@
             </header>
         </div>
 
-        <Gallery cat="apps" />
+        <Gallery cat="apps" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -36,7 +36,7 @@
             </header>
         </div>
 
-        <Gallery cat="merchants" />
+        <Gallery cat="merchants" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -54,7 +54,7 @@
             </header>
         </div>
 
-        <Gallery cat="defi" />
+        <Gallery cat="defi" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -72,7 +72,7 @@
             </header>
         </div>
 
-        <Gallery cat="mining" />
+        <Gallery cat="mining" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -90,7 +90,7 @@
             </header>
         </div>
 
-        <Gallery cat="wallets" />
+        <Gallery cat="wallets" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -108,7 +108,7 @@
             </header>
         </div>
 
-        <Gallery cat="gaming" />
+        <Gallery cat="gaming" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -126,7 +126,7 @@
             </header>
         </div>
 
-        <Gallery cat="nfts" />
+        <Gallery cat="nfts" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -144,7 +144,7 @@
             </header>
         </div>
 
-        <Gallery cat="cex" />
+        <Gallery cat="cex" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -162,7 +162,7 @@
             </header>
         </div>
 
-        <Gallery cat="dex" />
+        <Gallery cat="dex" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -180,7 +180,7 @@
             </header>
         </div>
 
-        <Gallery cat="media" />
+        <Gallery cat="media" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -198,7 +198,7 @@
             </header>
         </div>
 
-        <Gallery cat="builders" />
+        <Gallery cat="builders" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -216,7 +216,7 @@
             </header>
         </div>
 
-        <Gallery cat="tooling" />
+        <Gallery cat="tooling" class="px-3 lg:px-7" />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
@@ -234,7 +234,7 @@
             </header>
         </div>
 
-        <Gallery cat="references" />
+        <Gallery cat="references" class="px-3 lg:px-7" />
 
         <Team />
 
