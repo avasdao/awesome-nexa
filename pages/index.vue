@@ -2,7 +2,7 @@
     <main>
         <Hero />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Apps
@@ -20,7 +20,7 @@
 
         <Gallery cat="apps" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Merchants
@@ -38,7 +38,7 @@
 
         <Gallery cat="merchants" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     DeFi
@@ -56,7 +56,7 @@
 
         <Gallery cat="defi" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Mining
@@ -74,7 +74,7 @@
 
         <Gallery cat="mining" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Wallets
@@ -92,7 +92,7 @@
 
         <Gallery cat="wallets" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Gaming
@@ -110,7 +110,7 @@
 
         <Gallery cat="gaming" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     NFT Collections
@@ -128,7 +128,7 @@
 
         <Gallery cat="nfts" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Exchanges — Centralized
@@ -146,7 +146,7 @@
 
         <Gallery cat="cex" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Exchanges — Decentralized
@@ -164,7 +164,7 @@
 
         <Gallery cat="dex" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     News &amp; Media
@@ -182,7 +182,7 @@
 
         <Gallery cat="media" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Builders
@@ -200,7 +200,7 @@
 
         <Gallery cat="builders" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Tooling
@@ -218,7 +218,7 @@
 
         <Gallery cat="tooling" />
 
-        <div class="px-3 lg:px-5 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     References
