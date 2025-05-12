@@ -10,6 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@headlessui/vue": "1.7.23",
+    "@heroicons/vue": "2.2.0",
     "@intlify/message-compiler": "11.1.3",
     "@kevinmarrec/nuxt-pwa": "0.17.0",
     "@mailchimp/mailchimp_marketing": "3.0.80",

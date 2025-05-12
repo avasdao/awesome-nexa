@@ -7,6 +7,8 @@
         <p>
             Create active monitoring agents that can perform predetermined actions.
         </p>
+
+        <OverwatchSummary />
     </main>
 
     <Footer />
