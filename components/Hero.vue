@@ -58,27 +58,27 @@
                     />
                 </NuxtLink>
 
-                <NuxtLink to="https://auscryptocon.com/" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
-                    <div class="flex flex-col gap-1">
+                <NuxtLink to="https://www.futuristconference.com/" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
+                    <div class="flex flex-col gap-1 w-[240px]">
                         <h3 class="text-purple-300 text-xs font-medium uppercase">
                             Featured Event
                         </h3>
 
                         <h2 class="text-purple-100 text-base font-bold truncate overflow-hidden">
-                            AU Crypto Convention
+                            Blockchain Futurist Conference
                         </h2>
 
                         <h3 class="text-purple-100 text-xs font-medium italic truncate overflow-hidden">
-                            Sat, Nov 23 thru 24
+                            Tuesday, May 13th
                         </h3>
 
                         <h3 class="text-purple-100 text-xs font-bold truncate overflow-hidden">
-                            FPGA Hardware Demo
+                            Leading w/ Code: Developers Building the Web3 Future
                         </h3>
                     </div>
 
                     <img
-                        src="https://i.ibb.co/qmX4HHm/Australian-Crypto-Convention-2022.png"
+                        src="https://assets.awesomenexa.org/icon/blockchain-futurist.webp"
                         class="h-full border border-purple-400 rounded-lg shadow"
                     />
                 </NuxtLink>
