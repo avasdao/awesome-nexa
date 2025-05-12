@@ -1,112 +1,3 @@
-<script setup lang="ts">
-/* Define properties. */
-// https://vuejs.org/guide/components/props.html#props-declaration
-const props = defineProps({
-    data: {
-        type: [Object],
-    },
-})
-
-const MAX_SHOWCASE_BANNERS = 3
-const SLIDESHOW_INTERVAL = 7000
-
-const bannerid = ref(null)
-const bannerUrl = ref(null)
-
-/* Initialize banner interval. */
-let bannerInterval
-
-const launchBanner = async () => {
-// console.log('launching banner...')
-
-    switch(bannerid.value) {
-    case 0:
-        window.open('https://niftyart.cash/')
-        break
-    case 1:
-        window.open('https://www.nverse.space/pixelwar')
-        break
-    case 2:
-        window.open('https://nebula.markets/')
-        break
-    case 3:
-        window.open('http://www.wallywallet.org/')
-        break
-    default:
-        window.open('https://agnar.pages.dev/')
-        break
-    }
-}
-
-const BANNERS = [
-    'https://assets.awesomenexa.org/banner/nifty-art-v2.webp',
-    'https://assets.awesomenexa.org/banner/pixel-war.webp',
-    'https://assets.awesomenexa.org/banner/nebula-markets.webp',
-    'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg',
-    'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg',
-]
-
-/**
- * Load Banner
- *
- * NOTE: Banner sizes are (FB) standard 640 x 281.
- * NOTE: ALT banner size is 1024 x 480.
- */
-const loadBanner = async (_bannerid) => {
-// console.log('loading banner...', _bannerid)
-
-    bannerid.value = _bannerid
-
-    switch(_bannerid) {
-    case 0:
-        bannerUrl.value = BANNERS[0]
-        break
-    case 1:
-        bannerUrl.value = BANNERS[1]
-        break
-    case 2:
-        bannerUrl.value = BANNERS[2]
-        break
-    case 3:
-        bannerUrl.value = BANNERS[3]
-        break
-    case 4:
-        bannerUrl.value = BANNERS[4]
-        break
-    default:
-        bannerUrl.value = BANNERS[0]
-        break
-    }
-}
-
-const init = async () => {
-    /* Set banner id. */
-    bannerid.value = 0
-
-    /* Set banner url. */
-    bannerUrl.value = BANNERS[0]
-
-    /* Begin slideshow. */
-    bannerInterval = setInterval(() => {
-        if (bannerid.value >= MAX_SHOWCASE_BANNERS - 1) {
-            loadBanner(0)
-        } else {
-            loadBanner(bannerid.value + 1)
-        }
-    }, SLIDESHOW_INTERVAL)
-}
-
-onMounted(() => {
-    init()
-})
-
-onBeforeUnmount(() => {
-    console.log('Cleaning up Hero...')
-
-    clearInterval(bannerInterval)
-})
-</script>
-
 <template>
     <main class="max-w-7xl px-0 lg:px-5 py-5 mx-auto flex flex-col lg:flex-row gap-4">
         <section class="w-full lg:w-2/3 h-[300px] lg:h-[400px]">
@@ -131,6 +22,10 @@ onBeforeUnmount(() => {
                     <button @click.stop="loadBanner(1)" class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
 
                     <button @click.stop="loadBanner(2)" class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
+
+                    <button @click.stop="loadBanner(3)" class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
+
+                    <button @click.stop="loadBanner(4)" class="block w-4 h-4 bg-gray-200 rounded-full hover:bg-yellow-400" />
                 </div>
             </div>
         </section>
@@ -216,3 +111,115 @@ onBeforeUnmount(() => {
         </section>
     </main>
 </template>
+
+<script setup lang="ts">
+/* Define properties. */
+// https://vuejs.org/guide/components/props.html#props-declaration
+const props = defineProps({
+    data: {
+        type: [Object],
+    },
+})
+
+const MAX_SHOWCASE_BANNERS = 5
+const SLIDESHOW_INTERVAL = 7000
+
+const bannerid = ref(null)
+const bannerUrl = ref(null)
+
+/* Initialize banner interval. */
+let bannerInterval
+
+const launchBanner = async () => {
+// console.log('launching banner...')
+
+    switch(bannerid.value) {
+    case 0:
+        window.open('https://niftyart.cash/')
+        break
+    case 1:
+        window.open('https://www.nverse.space/pixelwar')
+        break
+    case 2:
+        window.open('https://nebula.markets/')
+        break
+    case 3:
+        window.open('http://www.wallywallet.org/')
+        break
+    case 4:
+        window.open('https://agnar.pages.dev/')
+        break
+    default:
+        window.open('http://www.wallywallet.org/')
+        break
+    }
+}
+
+const BANNERS = [
+    'https://assets.awesomenexa.org/banner/nifty-art-v2.webp',
+    'https://assets.awesomenexa.org/banner/pixel-war.webp',
+    'https://assets.awesomenexa.org/banner/nebula-markets.webp',
+    'https://i.ibb.co/BtD2RGR/01-wally-wallet.jpg',
+    'https://i.ibb.co/CmgK4Sj/02-nexa-runes.jpg',
+]
+
+/**
+ * Load Banner
+ *
+ * NOTE: Banner sizes are (FB) standard 640 x 281.
+ * NOTE: ALT banner size is 1024 x 480.
+ */
+const loadBanner = async (_bannerid) => {
+// console.log('loading banner...', _bannerid)
+
+    bannerid.value = _bannerid
+
+    switch(_bannerid) {
+    case 0:
+        bannerUrl.value = BANNERS[0]
+        break
+    case 1:
+        bannerUrl.value = BANNERS[1]
+        break
+    case 2:
+        bannerUrl.value = BANNERS[2]
+        break
+    case 3:
+        bannerUrl.value = BANNERS[3]
+        break
+    case 4:
+        bannerUrl.value = BANNERS[4]
+        break
+    default:
+        bannerUrl.value = BANNERS[0]
+        break
+    }
+}
+
+const init = async () => {
+    /* Set banner id. */
+    bannerid.value = 0
+
+    /* Set banner url. */
+    bannerUrl.value = BANNERS[0]
+
+    /* Begin slideshow. */
+    bannerInterval = setInterval(() => {
+        if (bannerid.value >= MAX_SHOWCASE_BANNERS - 1) {
+            loadBanner(0)
+        } else {
+            loadBanner(bannerid.value + 1)
+        }
+    }, SLIDESHOW_INTERVAL)
+}
+
+onMounted(() => {
+    init()
+})
+
+onBeforeUnmount(() => {
+    console.log('Cleaning up Hero...')
+
+    clearInterval(bannerInterval)
+})
+</script>
