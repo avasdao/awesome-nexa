@@ -1,3 +1,8 @@
+<template>
+    <ListingDetail v-if="hasListingDetail" :category="category" :listingid="listingid" />
+    <PageNotFound v-if="isNotFound" />
+</template>
+
 <script setup lang="ts">
 useHead({
     title: `Awesome Nexa`,
@@ -79,8 +84,3 @@ onMounted(() => {
 //     // Now is the time to perform all cleanup operations.
 // })
 </script>
-
-<template>
-    <ListingDetail v-if="hasListingDetail" :category="category" :listingid="listingid" />
-    <PageNotFound v-if="isNotFound" />
-</template>

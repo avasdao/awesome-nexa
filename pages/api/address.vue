@@ -1,11 +1,11 @@
 <template>
     <main class="max-w-5xl mx-auto py-5 flex flex-col gap-4">
         <h1 class="text-5xl font-medium">
-            Blank
+            Address API
         </h1>
 
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eius voluptatem minus natus at eveniet dolorum eos mollitia, maxime animi excepturi harum omnis illum odit recusandae pariatur! Unde, explicabo molestias.
+            Connect with real-time Address data; request assets, history and owner details with simple REST calls.
         </p>
     </main>
 
@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 useHead({
-    title: `Blank — Awesome Nexa`,
+    title: `Address API — Awesome Nexa`,
     meta: [
         { name: 'description', content: `Awesome Nexa makes building your next BIG idea effortless.` }
     ],
