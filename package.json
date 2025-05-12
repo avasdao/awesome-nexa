@@ -1,6 +1,6 @@
 {
   "name": "awesome-nexa",
-  "version": "25.4.11",
+  "version": "25.5.12",
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
@@ -19,6 +19,7 @@
     "@nuxtjs/tailwindcss": "6.4.1",
     "@pinia/nuxt": "0.4.7",
     "chart.js": "4.4.7",
+    "ethereum-blockies-base64": "1.0.2",
     "jspdf": "2.5.2",
     "moment": "2.29.4",
     "numeral": "2.0.6",
