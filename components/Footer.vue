@@ -69,7 +69,7 @@ const subscribe = async () => {
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <NuxtLink to="/v1" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink to="/api" class="text-base leading-6 text-gray-300 hover:text-white">
                                         JSON-REST API
                                     </NuxtLink>
                                 </li>
