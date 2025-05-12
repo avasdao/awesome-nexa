@@ -30,7 +30,7 @@
     "qrcode": "1.5.1",
     "simple-analytics-vue": "3.0.2",
     "typescript": "5.6.3",
-    "uuid": "10.0.0",
+    "uuid": "11.0.0",
     "vue-chartjs": "5.3.2"
   },
   "devDependencies": {
