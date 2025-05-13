@@ -1,0 +1,14 @@
+################################################################################
+#
+# Nexabase Dockerfile (Developer Mode)
+#
+# NOTE: All debugging/reporting is turned on by default.
+##
+
+version: '3.8'
+
+services:
+
+volumes:
+
+networks:

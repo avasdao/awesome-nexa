@@ -1,0 +1,25 @@
+################################################################################
+#
+# Nexabase Dockerfile
+#
+# These are the most popular presets.
+##
+
+version: '3.7'
+
+services:
+  db:
+    image: couchdb:3.3.1
+    restart: always
+    ports:
+      - '127.0.0.1:5984:5984'
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=password
+      - COUCHDB_ERLANG_COOKIE=5dbef5d8-0faf-4865-9e31-d73b0da2575d
+    volumes:
+      - ./volumes/couchdb:/opt/couchdb/data # NOTE This is a local path.
+
+#volumes:
+
+#networks:

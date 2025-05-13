@@ -1,0 +1,70 @@
+# Base image
+#FROM bchunlimited/nexa:ubuntu20.04
+#FROM debian:bullseye-slim
+FROM debian:bullseye
+#FROM ubuntu:20.04
+
+# Download latest listing of available packages:
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
+
+# Upgrade already installed packages:
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
+
+# Install all dependencies:
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install build-essential libtool autotools-dev autoconf automake pkg-config libssl-dev libevent-dev libgmp-dev bsdmainutils git
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install libdb-dev libdb++-dev
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install libzmq3-dev
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install clang cmake build-essential # for building 'rust-rocksdb'
+
+# Make configuration folder.
+RUN mkdir /root/.nexa
+
+# Set the working directory.
+WORKDIR /root/.nexa
+
+# Copy the Nexa configuration to the container.
+COPY nexa.conf ./
+
+# Set the working directory.
+WORKDIR /usr/src
+
+# Pull from the Bitcoin Unlimted repo.
+RUN git clone --depth 1 --branch nexa1.1.0.0 https://gitlab.com/nexa/nexa.git
+
+# Set the working directory.
+WORKDIR /usr/src/nexa
+
+# Checkout the "development" branch.
+#RUN git checkout dev
+
+# Run the auto-generation script.
+RUN ./autogen.sh
+
+# Run the configuration command.
+RUN ./configure --disable-dependency-tracking --enable-glibc-back-compat --enable-reduce-exports LDFLAGS=-static-libstdc++ --with-gui=no --with-incompatible-bdb
+#RUN ./configure --disable-wallet --with-gui=no
+
+# Build the executables.
+RUN make -j`nproc`
+RUN make install
+
+# Install Rust.
+# NOTE: Using sh for better compatibility with other base images.
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+
+# Add .cargo/bin to PATH
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+# Check cargo is visible
+RUN cargo --help
+
+# Install Rostrum.
+RUN cargo install rostrum --features=nexa --locked
+RUN ln -s $(which rostrum) /usr/local/bin/rostrum
+
+EXPOSE 7227
+EXPOSE 7228
+
+#CMD ["nexad", "-daemon"]
+CMD ["nexad", "-printtoconsole"] # FOR DEBUGGING PURPOSES ONLY

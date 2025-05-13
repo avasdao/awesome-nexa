@@ -1,0 +1,14 @@
+################################################################################
+#
+# Nexabase Dockerfile (Kitchen Sink)
+#
+# These are the most common presets.
+##
+
+version: '3.8'
+
+services:
+
+volumes:
+
+networks:

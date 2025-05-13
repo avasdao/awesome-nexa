@@ -1,0 +1,14 @@
+################################################################################
+#
+# Nexabase Dockerfile (Slim/Lite Mode)
+#
+# These are the most basic modules required to run the minimal setup.
+##
+
+version: '3.8'
+
+services:
+
+volumes:
+
+networks:

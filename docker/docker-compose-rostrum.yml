@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  rostrum:
+    build: Dockerfile.rostrum
+    command: start --skip-sanity-check=true
+    ports:
+      - '7228:7228'
+    restart: always
+    volumes:
+      - nexa_data:/root/.nexa
+volumes:
+    nexa_data:
