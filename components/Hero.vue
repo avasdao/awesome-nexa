@@ -33,27 +33,27 @@
         <section class="w-full lg:w-1/3 h-[400px] px-3 py-2">
             <div class="h-full px-3 py-5 flex flex-col justify-around gap-4 bg-purple-900 border-4 border-purple-400 rounded-2xl shadow-md">
 
-                <NuxtLink to="https://www.youtube.com/watch?v=Oi48tcshfuU" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
+                <NuxtLink to="https://www.youtube.com/live/5JExkeDGyXk?t=50" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
                     <div class="flex flex-col gap-1">
                         <h3 class="text-purple-300 text-xs font-medium uppercase">
-                            Featured Social
+                            Featured Videos
                         </h3>
 
                         <h2 class="text-purple-100 text-base font-bold truncate overflow-hidden">
-                            Team AMA
+                            BCH Bliss 2025
                         </h2>
 
                         <h3 class="text-purple-100 text-xs font-medium italic truncate overflow-hidden">
-                            Wed, May 29 @ 8am UTC
+                            Peter Rizun
                         </h3>
 
                         <h3 class="text-purple-100 text-xs font-bold truncate overflow-hidden">
-                            Project + Marketing Updates
+                            Intro to Hardware Acceleration
                         </h3>
                     </div>
 
                     <img
-                        src="https://pbs.twimg.com/media/GOQI9N5aUAEA7uj?format=jpg&name=900x900"
+                        src="https://assets.awesomenexa.org/banner/bch-bliss-peter-rizum.webp"
                         class="h-full border border-purple-400 rounded-lg shadow"
                     />
                 </NuxtLink>
@@ -83,27 +83,27 @@
                     />
                 </NuxtLink>
 
-                <NuxtLink to="https://www.youtube.com/watch?v=7pmoT3M262A" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
+                <NuxtLink to="https://www.youtube.com/watch?v=Oi48tcshfuU" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
                     <div class="flex flex-col gap-1">
                         <h3 class="text-purple-300 text-xs font-medium uppercase">
-                            Featured Video
+                            Featured Socials
                         </h3>
 
                         <h2 class="text-purple-100 text-base font-bold truncate overflow-hidden">
-                            The Nexa Drop
+                            Team AMA
                         </h2>
 
                         <h3 class="text-purple-100 text-xs font-medium italic truncate overflow-hidden">
-                            Andrew Stone & Paul Church
+                            Wed, May 29 @ 8am UTC
                         </h3>
 
                         <h3 class="text-purple-100 text-xs font-bold truncate overflow-hidden">
-                            The Power of Tokens on Nexa
+                            Project + Marketing Updates
                         </h3>
                     </div>
 
                     <img
-                        src="~/assets/thumbnails/the-power-of-tokens-on-nexa.jpg"
+                        src="https://pbs.twimg.com/media/GOQI9N5aUAEA7uj?format=jpg&name=900x900"
                         class="h-full border border-purple-400 rounded-lg shadow"
                     />
                 </NuxtLink>
