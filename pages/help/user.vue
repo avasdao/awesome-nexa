@@ -1,27 +1,8 @@
-<script setup>
-/* Import modules. */
-
-
-//
-</script>
-
 <template>
-    <main class="bg-white">
-        <section class="grid grid-cols-2 gap-8">
-            <div class="mx-auto max-w-7xl px-6 pt-10">
-                Please check out the
-                <NuxtLink to="https://nexa.wiki" target="_blank" class="text-lg text-blue-500 font-medium hover:underline">
-                    Wiki
-                </NuxtLink>
-            </div>
-
-            <div class="mx-auto max-w-7xl px-6 py-12">
-                Please check out the
-                <NuxtLink to="https://forum.nexa.org/" target="_blank" class="text-lg text-blue-500 font-medium hover:underline">
-                    Forum
-                </NuxtLink>
-            </div>
-        </section>
+    <main class="max-w-5xl mx-auto py-5 flex flex-col gap-4">
+        <h1 class="text-5xl font-medium">
+            Everyday People
+        </h1>
 
         <div class="mx-auto max-w-7xl px-6 py-6 sm:py-8 lg:py-10 lg:px-8">
             <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
@@ -72,4 +53,28 @@
         </div>
     </main>
 
+    <Footer />
 </template>
+
+<script setup lang="ts">
+useHead({
+    title: `Everyday People — Awesome Nexa`,
+    meta: [
+        { name: 'description', content: `Awesome Nexa makes building your next BIG idea effortless.` }
+    ],
+})
+
+/* Initialize stores. */
+import { useSystemStore } from '@/stores/system'
+const System = useSystemStore()
+
+// onMounted(() => {
+//     console.log('Mounted!')
+//     // Now it's safe to perform setup operations.
+// })
+
+// onBeforeUnmount(() => {
+//     console.log('Before Unmount!')
+//     // Now is the time to perform all cleanup operations.
+// })
+</script>

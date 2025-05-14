@@ -3,6 +3,10 @@
         <Hero />
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
+            <NetworkSpotlight />
+        </div>
+
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">
                 <h2 class="text-3xl font-medium">
                     Apps
