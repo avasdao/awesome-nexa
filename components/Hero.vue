@@ -83,27 +83,27 @@
                     />
                 </NuxtLink>
 
-                <NuxtLink to="https://www.youtube.com/watch?v=Oi48tcshfuU" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
-                    <div class="flex flex-col gap-1">
+                <NuxtLink to="https://forum.nexa.org/t/nexa-community-event-create-a-niftyart-nft-collection" target="_blank" class="w-full h-24 pl-2 pr-1 py-1 flex justify-between bg-purple-700 border border-purple-400 rounded-lg shadow-md">
+                    <div class="w-[180px] flex flex-col gap-1">
                         <h3 class="text-purple-300 text-xs font-medium uppercase">
                             Featured Socials
                         </h3>
 
-                        <h2 class="text-purple-100 text-base font-bold truncate overflow-hidden">
-                            Team AMA
+                        <h2 class="text-purple-100 text-base font-bold truncate text-ellipsis">
+                            NFT Art Competition
                         </h2>
 
                         <h3 class="text-purple-100 text-xs font-medium italic truncate overflow-hidden">
-                            Wed, May 29 @ 8am UTC
+                            May 16th thru May 23rd
                         </h3>
 
                         <h3 class="text-purple-100 text-xs font-bold truncate overflow-hidden">
-                            Project + Marketing Updates
+                            NiftyArt 2.0 Mini-Collection
                         </h3>
                     </div>
 
                     <img
-                        src="https://pbs.twimg.com/media/GOQI9N5aUAEA7uj?format=jpg&name=900x900"
+                        src="https://assets.awesomenexa.org/banner/create-nifty-art-nft-collection.webp"
                         class="h-full border border-purple-400 rounded-lg shadow"
                     />
                 </NuxtLink>
