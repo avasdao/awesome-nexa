@@ -11,17 +11,17 @@
 
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
-                <!-- <p class="pl-3 text-base/7 font-semibold text-fuchsia-600 tracking-widest">
+                <p class="pl-3 text-base/7 font-semibold text-fuchsia-600 tracking-widest">
                     Awesome Nexa Academy
-                </p> -->
+                </p>
 
                 <h1 class="mt-2 text-pretty text-7xl font-light italic tracking-tight text-stone-500 sm:text-8xl">
-                    Why <span class="text-amber-400">Nexa</span>?
+                    Hey <span class="text-amber-400">Builder</span>!
                 </h1>
 
                 <p class="mt-6 text-xl/8 text-gray-700">
-                    Nexa is the first cryptocurrency that is scalable via hardware, offering smart contracts, native tokens and instant transactions.
-                    It is a programmable protocol originating from the original Bitcoin source code, already achieving the speed of VISA, MASTERCARD and SWIFT combined.
+                    Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas
+                    fringilla sapien.
                 </p>
             </div>
 
@@ -112,7 +112,7 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
 
 useHead({
-    title: `Why Nexa? — Awesome Nexa`,
+    title: `Welcome Builder! — Awesome Nexa Academy`,
     meta: [
         { name: 'description', content: `Awesome Nexa makes building your next BIG idea effortless.` }
     ],
