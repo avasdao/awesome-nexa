@@ -16,7 +16,7 @@
                 </p>
 
                 <h1 class="mt-2 text-pretty text-7xl font-light italic tracking-tight text-stone-500 sm:text-8xl">
-                    Hey <span class="text-amber-400">Builder</span>!
+                    Hey <span class="text-green-400">Builder</span>!
                 </h1>
 
                 <p class="mt-6 text-xl/8 text-gray-700">
