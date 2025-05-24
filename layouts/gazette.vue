@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-    title: 'NEWSLETTER — Awesome Nexa',
+    title: 'GAZETTE — Awesome Nexa',
     meta: [
         { name: 'description', content: 'Everything that is awesome about Nexa, all in one place.' }
     ],
@@ -64,11 +64,11 @@ onBeforeUnmount(() => {
     <main class="px-3 max-w-5xl mx-auto">
 
         <header class="pt-10 flex flex-col items-center">
-            <h1 class="text-2xl text-yellow-600 font-medium tracking-wider uppercase">
-                Awesome Nexa Newsletter
+            <h1 class="text-3xl text-fuchsia-700 font-medium tracking-widest uppercase">
+                Awesome Nexa Gazette
             </h1>
 
-            <h2 class="text-7xl font-bold tracking-widest">
+            <h2 class="text-7xl font-bold text-stone-400 tracking-widest">
                 <slot name="title">
                     Month
                 </slot>

@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <NuxtLayout name="newsletter">
+    <NuxtLayout name="gazette">
         <template #title>
             January 2023
         </template>

@@ -8,7 +8,7 @@
 <template>
     <NuxtLayout name="gazette">
         <template #title>
-            February 2023
+            July 2025
         </template>
 
         <template #summary>
