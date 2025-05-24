@@ -65,7 +65,7 @@ onBeforeUnmount(() => {
 
         <header class="pt-10 flex flex-col items-center">
             <h1 class="text-3xl text-fuchsia-700 font-medium tracking-widest uppercase">
-                Awesome Nexa Gazette
+                The Awesome Nexa Gazette
             </h1>
 
             <h2 class="text-7xl font-bold text-stone-400 tracking-widest">
