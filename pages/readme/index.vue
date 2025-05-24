@@ -16,7 +16,7 @@
                 </p>
 
                 <h1 class="mt-2 text-pretty text-7xl font-light italic tracking-tight text-stone-500 sm:text-8xl">
-                    Read <span class="text-green-400">The</span> Docs!
+                    <span class="text-teal-400">Read</span> The <span class="text-teal-400">Docs</span>!
                 </h1>
 
                 <p class="mt-6 text-xl/8 text-gray-700">
