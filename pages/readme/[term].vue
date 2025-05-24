@@ -15,7 +15,7 @@
                     Awesome Nexa Academy
                 </p>
 
-                <h1 class="mt-2 text-pretty text-7xl font-light italic tracking-tight text-sky-500 sm:text-8xl uppercase">
+                <h1 class="mt-2 text-pretty text-7xl font-light italic tracking-tight text-teal-400 sm:text-8xl uppercase">
                     {{term}}
                 </h1>
 
