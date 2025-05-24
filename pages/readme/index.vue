@@ -11,9 +11,9 @@
 
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
-                <p class="pl-3 text-base/7 font-semibold text-fuchsia-600 tracking-widest">
-                    Awesome Nexa Academy
-                </p>
+                <!-- <p class="pl-3 text-base/7 font-semibold text-fuchsia-600 tracking-widest">
+                    Read The Docs!
+                </p> -->
 
                 <h1 class="mt-2 text-pretty text-7xl font-light italic tracking-tight text-stone-500 sm:text-8xl">
                     <span class="text-teal-400">Read</span> The <span class="text-teal-400">Docs</span>!
