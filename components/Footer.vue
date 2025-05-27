@@ -37,21 +37,21 @@ const subscribe = async () => {
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="https://explorer.nexa.org/" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink to="/blocks" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Block Explorer
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.nexa.org/roadmap" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink href="https://www.nexa.org/roadmap" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Roadmap
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.nexa.org/wallets" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink href="https://www.nexa.org/wallets" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Download Wallet
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
@@ -110,27 +110,27 @@ const subscribe = async () => {
 
                             <ul role="list" class="mt-6 space-y-4">
                                 <li>
-                                    <a href="https://www.bitcoinunlimited.info/about/organization" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink href="https://www.bitcoinunlimited.info/about/organization" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         About
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.bitcoinunlimited.info/faq/what-is-bu" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink href="https://www.bitcoinunlimited.info/faq/what-is-bu" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         FAQ
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.bitcoinunlimited.info/blog" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink href="https://www.bitcoinunlimited.info/blog" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Blog
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.bitcoinunlimited.info/donate" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
+                                    <NuxtLink href="https://www.bitcoinunlimited.info/donate" target="_blank" class="text-base leading-6 text-gray-300 hover:text-white">
                                         Donate
-                                    </a>
+                                    </NuxtLink>
                                 </li>
 
                             </ul>
