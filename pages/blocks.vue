@@ -1,13 +1,3 @@
-<script setup>
-useHead({
-    title: 'Blocks — Awesome Nexa',
-    meta: [{
-        name: 'description',
-        content: 'Blocks'
-    }]
-})
-</script>
-
 <template>
     <main class="mx-3 lg:mx-auto my-5 max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-4">
         <section class="">
@@ -20,6 +10,8 @@ useHead({
                     type="text"
                     placeholder="Enter a block height or hash"
                     class="w-full px-3 py-1 text-yellow-100 font-light bg-yellow-600 border-2 border-yellow-700 rounded-md placeholder:text-yellow-100"
+                    v-model="blockHeight"
+                    @keyup.enter="loadBlock"
                 />
             </div>
         </section>
@@ -29,3 +21,24 @@ useHead({
         </ClientOnly>
     </main>
 </template>
+
+<script setup lang="ts">
+useHead({
+    title: 'Blocks — Awesome Nexa',
+    meta: [{
+        name: 'description',
+        content: 'View complete on-chain details about a Nexa block(s).'
+    }]
+})
+
+/* Initialize local handlers. */
+const blockHeight = ref(null)
+
+const loadBlock = () => {
+    /* Initialize router. */
+    const router = useRouter()
+
+    /* Load block (height). */
+    router.push(`/block/${blockHeight.value}`)
+}
+</script>
