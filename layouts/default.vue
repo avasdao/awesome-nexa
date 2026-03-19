@@ -1,3 +1,16 @@
+<!-- layouts/default.vue -->
+<template>
+    <main>
+        <Header />
+
+        <slot />
+
+        <Footer />
+
+        <SpotlightWin />
+    </main>
+</template>
+
 <script setup lang="ts">
 /* Initialize stores. */
 import { useProfileStore } from '@/stores/profile'
@@ -52,15 +65,3 @@ onBeforeUnmount(() => {
     console.info('Application is shutting down...')
 })
 </script>
-
-<template>
-    <main>
-        <Header />
-
-        <slot />
-
-        <Footer />
-
-        <SpotlightWin />
-    </main>
-</template>

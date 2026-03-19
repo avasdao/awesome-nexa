@@ -2,9 +2,9 @@
     <main>
         <Hero />
 
-        <!-- <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
+        <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <NetworkSpotlight />
-        </div> -->
+        </div>
 
         <div class="px-3 lg:px-7 max-w-7xl mx-auto mt-10">
             <header class="flex justify-between items-end">

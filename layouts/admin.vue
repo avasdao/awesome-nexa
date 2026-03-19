@@ -1,8 +1,4 @@
-<script setup lang="ts">
-const showProfileMenu = ref(true)
-
-</script>
-
+<!-- layouts/admin.vue -->
 <template>
     <main>
         <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
@@ -420,3 +416,8 @@ const showProfileMenu = ref(true)
         </div>
     </main>
 </template>
+
+<script setup lang="ts">
+const showProfileMenu = ref(true)
+
+</script>
