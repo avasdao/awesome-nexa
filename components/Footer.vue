@@ -1,27 +1,4 @@
-<script setup>
-/* Import modules. */
-
-const email = ref()
-
-const subscribe = async () => {
-    console.log('SUBSCRIBE')
-
-    const response = await fetch('/api/mailchimp', {
-        method: 'POST',
-        body: JSON.stringify({
-            email: email.value,
-        })
-    }).catch(err => console.error(err))
-    console.log('RESPONSE', response)
-
-    const status = await response.json()
-        .catch(err => console.error(err))
-    console.log('STATUS', status)
-}
-
-//
-</script>
-
+<!-- components/Footer.vue -->
 <template>
     <footer class="bg-gray-900" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -249,3 +226,23 @@ const subscribe = async () => {
         </div>
     </footer>
 </template>
+
+<script setup>
+const email = ref()
+
+const subscribe = async () => {
+    console.log('SUBSCRIBE')
+
+    const response = await fetch('/api/mailchimp', {
+        method: 'POST',
+        body: JSON.stringify({
+            email: email.value,
+        })
+    }).catch(err => console.error(err))
+    console.log('RESPONSE', response)
+
+    const status = await response.json()
+        .catch(err => console.error(err))
+    console.log('STATUS', status)
+}
+</script>

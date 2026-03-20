@@ -1,11 +1,4 @@
-<script setup>
-/* Import modules. */
-
-
-/* Initialize showing flag. */
-const isShowing = ref(false)
-</script>
-
+<!-- components/Banner.vue -->
 <template>
     <main v-if="isShowing" class="fixed inset-x-0 bottom-0 pb-2 sm:pb-5">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -54,3 +47,8 @@ const isShowing = ref(false)
         </div>
     </main>
 </template>
+
+<script setup>
+/* Initialize showing flag. */
+const isShowing = ref(false)
+</script>

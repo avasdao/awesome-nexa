@@ -1,3 +1,44 @@
+<!-- components/Block/Slideshow.vue -->
+<template>
+    <main class="px-3 py-2 bg-gray-700 border-4 border-gray-900 rounded-xl shadow-md">
+        <h2 class="text-2xl text-gray-100 font-medium">
+            Most Recent Blocks
+        </h2>
+
+        <h3 class="text-xs text-gray-300 font-medium uppercase">
+            Last 100 blocks confirmed on avg
+            <br class="sm:hidden" />every <span class="text-base text-amber-400">{{avgBlockTime}}</span> minutes
+        </h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 h-40 gap-4 overflow-hidden">
+            <NuxtLink :to="'/block/' + block.height"
+                class="mt-5 mb-2 px-3 py-2 h-32 flex flex-col justify-between bg-gray-300 border-2 border-gray-500 rounded-lg shadow group hover:bg-gray-200"
+                v-for="block of displayedTxs" :key="block.height"
+            >
+                <span class="block text-base text-gray-700 font-medium uppercase group-hover:font-bold group-hover:text-rose-700">
+                    #{{numeral(block.height).format('0,0')}}
+                </span>
+
+                <span class="block text-sm text-gray-700 font-medium truncate">
+                    {{block.hash}}
+                </span>
+
+                <span class="block text-xs text-gray-700 text-right font-medium truncate">
+                    {{displayTxCount(block)}}
+                </span>
+
+                <span class="block text-xs text-gray-700 text-right font-medium truncate">
+                    {{displaySize(block)}}
+                </span>
+
+                <span class="block text-xs text-gray-700 text-right font-medium truncate">
+                    {{displayTime(block)}}
+                </span>
+            </NuxtLink>
+        </div>
+    </main>
+</template>
+
 <script setup lang="ts">
 /* Import modules. */
 import { createClient } from 'graphql-ws'
@@ -134,43 +175,3 @@ onMounted(() => {
 //     // Now is the time to perform all cleanup operations.
 // })
 </script>
-
-<template>
-    <main class="px-3 py-2 bg-gray-700 border-4 border-gray-900 rounded-xl shadow-md">
-        <h2 class="text-2xl text-gray-100 font-medium">
-            Most Recent Blocks
-        </h2>
-
-        <h3 class="text-xs text-gray-300 font-medium uppercase">
-            Last 100 blocks confirmed on avg
-            <br class="sm:hidden" />every <span class="text-base text-amber-400">{{avgBlockTime}}</span> minutes
-        </h3>
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 h-40 gap-4 overflow-hidden">
-            <NuxtLink :to="'/block/' + block.height"
-                class="mt-5 mb-2 px-3 py-2 h-32 flex flex-col justify-between bg-gray-300 border-2 border-gray-500 rounded-lg shadow group hover:bg-gray-200"
-                v-for="block of displayedTxs" :key="block.height"
-            >
-                <span class="block text-base text-gray-700 font-medium uppercase group-hover:font-bold group-hover:text-rose-700">
-                    #{{numeral(block.height).format('0,0')}}
-                </span>
-
-                <span class="block text-sm text-gray-700 font-medium truncate">
-                    {{block.hash}}
-                </span>
-
-                <span class="block text-xs text-gray-700 text-right font-medium truncate">
-                    {{displayTxCount(block)}}
-                </span>
-
-                <span class="block text-xs text-gray-700 text-right font-medium truncate">
-                    {{displaySize(block)}}
-                </span>
-
-                <span class="block text-xs text-gray-700 text-right font-medium truncate">
-                    {{displayTime(block)}}
-                </span>
-            </NuxtLink>
-        </div>
-    </main>
-</template>

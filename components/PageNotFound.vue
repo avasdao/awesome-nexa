@@ -1,20 +1,4 @@
-<script setup lang="ts">
-const route = useRoute()
-// console.log('ROUTE', route)
-
-const path = ref(route?.path)
-
-// onMounted(() => {
-//     console.log('Mounted!')
-//     // Now it's safe to perform setup operations.
-// })
-
-// onBeforeUnmount(() => {
-//     console.log('Before Unmount!')
-//     // Now is the time to perform all cleanup operations.
-// })
-</script>
-
+<!-- components/PageNotFound.vue -->
 <template>
     <main class="mx-auto w-full max-w-7xl px-6 pb-16 pt-10 sm:pb-24 lg:px-8">
         <div class="mx-auto mt-5 max-w-2xl text-center">
@@ -141,3 +125,20 @@ const path = ref(route?.path)
         </div>
     </main>
 </template>
+
+<script setup lang="ts">
+const route = useRoute()
+// console.log('ROUTE', route)
+
+const path = ref(route?.path)
+
+// onMounted(() => {
+//     console.log('Mounted!')
+//     // Now it's safe to perform setup operations.
+// })
+
+// onBeforeUnmount(() => {
+//     console.log('Before Unmount!')
+//     // Now is the time to perform all cleanup operations.
+// })
+</script>

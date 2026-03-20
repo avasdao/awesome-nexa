@@ -1,3 +1,4 @@
+<!-- components/_Blank.vue -->
 <template>
     <main class="">
         <h1 class="">

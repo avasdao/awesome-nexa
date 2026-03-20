@@ -1,18 +1,4 @@
-<script setup>
-/* Import modules. */
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
-
-const isShowingSpotlight = ref(false)
-
-const loadBuy = () => {
-    isShowingSpotlight.value = false
-
-    router.push('/buy')
-}
-</script>
-
+<!-- components/SpotlightWin.vue -->
 <template>
     <main v-if="isShowingSpotlight" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <!--
@@ -86,3 +72,18 @@ const loadBuy = () => {
         </div>
     </main>
 </template>
+
+<script setup>
+/* Import modules. */
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const isShowingSpotlight = ref(false)
+
+const loadBuy = () => {
+    isShowingSpotlight.value = false
+
+    router.push('/buy')
+}
+</script>

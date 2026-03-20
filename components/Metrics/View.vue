@@ -1,3 +1,4 @@
+<!-- components/Metrics/View.vue -->
 <template>
     <main class="relative bg-gray-900">
         <div class="absolute inset-x-0 bottom-0 h-80 xl:top-0 xl:h-full">

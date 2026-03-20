@@ -1,3 +1,4 @@
+<!-- components/Hero.vue -->
 <template>
     <main class="max-w-7xl px-0 lg:px-5 py-5 mx-auto flex flex-col lg:flex-row gap-4">
         <section class="w-full lg:w-2/3 h-[300px] lg:h-[400px]">

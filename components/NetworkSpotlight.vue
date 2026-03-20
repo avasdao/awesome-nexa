@@ -1,3 +1,4 @@
+<!-- components/NetworkSpotlight.vue -->
 <template>
     <div>
         <h3 class="pl-3 text-sm font-medium text-slate-500 tracking-widest uppercase">
@@ -27,11 +28,11 @@
 </template>
 
 <script setup>
-    import { ArrowDownIcon, ArrowUpIcon } from "@heroicons/vue/20/solid";
+import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/vue/20/solid'
 
-    const stats = [
-        { name: "NFT Spotlight", stat: "71,897", previousStat: "70,946", change: "12%", changeType: "increase" },
-        { name: "Token Spotlight", stat: "58.16%", previousStat: "56.14%", change: "2.02%", changeType: "increase" },
-        { name: "Contract Spotlight", stat: "24.57%", previousStat: "28.62%", change: "4.05%", changeType: "decrease" },
-    ];
+const stats = [
+    { name: 'NFT Spotlight', stat: '71,897', previousStat: '70,946', change: '12%', changeType: 'increase' },
+    { name: 'Token Spotlight', stat: '58.16%', previousStat: '56.14%', change: '2.02%', changeType: 'increase' },
+    { name: 'Contract Spotlight', stat: '24.57%', previousStat: '28.62%', change: '4.05%', changeType: 'decrease' },
+]
 </script>

@@ -1,3 +1,34 @@
+<!-- components/Token/Slideshow.vue -->
+<template>
+    <main class="px-3 py-2 bg-gray-500 border-4 border-gray-700 rounded-xl shadow-md">
+        <h2 class="text-2xl text-gray-100 font-medium">
+            Asset Transfers <small class="pl-2 text-amber-400">FT, NFT &amp; SFT</small>
+        </h2>
+
+        <h3 class="text-xs text-gray-900 font-medium uppercase">
+            Including pending in mempool
+        </h3>
+
+        <div class="px-10 py-5">
+            <SkeletonAsset />
+        </div>
+
+
+        <section
+            class="my-5 px-3 py-2 bg-gray-300 border-2 border-gray-500 rounded-lg shadow"
+            v-for="block of displayedTxs" :key="block.height"
+        >
+            <span class="block text-base text-gray-700 font-medium uppercase">
+                #{{numeral(block.height).format('0,0')}}
+            </span>
+
+            <NuxtLink :to="'block/' + block.height" class="block text-sm text-gray-700 font-medium truncate">
+                {{block.hash}}
+            </NuxtLink>
+        </section>
+    </main>
+</template>
+
 <script setup lang="ts">
 /* Import modules. */
 import { createClient } from 'graphql-ws'
@@ -89,33 +120,3 @@ const startUpdates = async () => {
 //     // Now is the time to perform all cleanup operations.
 // })
 </script>
-
-<template>
-    <main class="px-3 py-2 bg-gray-500 border-4 border-gray-700 rounded-xl shadow-md">
-        <h2 class="text-2xl text-gray-100 font-medium">
-            Asset Transfers <small class="pl-2 text-amber-400">FT, NFT &amp; SFT</small>
-        </h2>
-
-        <h3 class="text-xs text-gray-900 font-medium uppercase">
-            Including pending in mempool
-        </h3>
-
-        <div class="px-10 py-5">
-            <SkeletonAsset />
-        </div>
-
-
-        <section
-            class="my-5 px-3 py-2 bg-gray-300 border-2 border-gray-500 rounded-lg shadow"
-            v-for="block of displayedTxs" :key="block.height"
-        >
-            <span class="block text-base text-gray-700 font-medium uppercase">
-                #{{numeral(block.height).format('0,0')}}
-            </span>
-
-            <NuxtLink :to="'block/' + block.height" class="block text-sm text-gray-700 font-medium truncate">
-                {{block.hash}}
-            </NuxtLink>
-        </section>
-    </main>
-</template>

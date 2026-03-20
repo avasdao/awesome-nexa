@@ -1,10 +1,4 @@
-<script setup>
-/* Import modules. */
-
-
-//
-</script>
-
+<!-- components/BuyWidget.vue -->
 <template>
     <main class="mx-10 my-3 px-7 py-3 bg-gradient-to-r from-rose-200 to-rose-400 border-4 border-rose-700 rounded-full shadow">
 

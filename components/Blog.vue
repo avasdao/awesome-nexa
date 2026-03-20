@@ -1,51 +1,4 @@
-<script setup>
-/* Import modules. */
-
-
-const articles = ref([])
-
-articles.value[0] = {
-    id: '67ead8c7-8647-4e22-9328-214802d69384',
-    category: 'Economics',
-    title: `Nexa’s Supply Schedule - Using A Tried and True Model`,
-    author: `Paul Church`,
-    url: 'https://www.nexa.org/news/nexa-s-supply-schedule-using-a-tried-and-true-model',
-    banner: 'https://i.ibb.co/jbkcpsK/nexa-supply.jpg',
-    description: `To put it simply, Nexa’s supply schedule maps directly to Bitcoin’s. 2.1 quadrillion (2,100,000,000,000,000) satoshis will have been mined in roughly 140 years time, or 21 trillion NEX...`,
-    readTime: 6,
-    publishedAt: 'Dec 19, 2022',
-}
-
-articles.value[1] = {
-    id: '839b8a96-9e16-49cc-877e-9bba7c0b4520',
-    category: 'Scaling',
-    title: `Nexa’s Scaling Strategy - How We Enable Over 100,000TPS`,
-    author: `Paul Church`,
-    url: 'https://www.nexa.org/news/nexa-s-scaling-strategy-how-we-enable-over-100-000tps',
-    banner: 'https://i.ibb.co/9Z8znXc/image.png',
-    description: `There are a number of bottlenecks to allowing blockchain scaling on a PoW and UTXO-based network but they can be summarised as:
-
-Bandwidth: how much data can be sent between nodes.
-Speed: at validating transactions.
-Storage: space to store the blockchain.`,
-    readTime: 6,
-    publishedAt: 'Dec 13, 2022',
-}
-
-articles.value[2] = {
-    id: 'caa4c43f-16f3-470f-88ea-1b6b2122565a',
-    category: 'Software, Mining, Bounty',
-    title: `$10,000 Bounty for an Open-source GPU Mining Software Provided By B.U.`,
-    author: `Paul Church`,
-    url: 'https://www.nexa.org/news/10-000-bounty-for-an-open-source-gpu-mining-software-provided-by-b.u',
-    banner: 'https://i.ibb.co/N61S3nK/image.png',
-    description: `'Today, B.U. announces a bounty equivalent to US$10,000 (paid in BTC or BCH) for fully functional and fully open-source GPU mining software made free to the community.`,
-    readTime: 2,
-    publishedAt: 'Nov 21, 2022',
-}
-
-</script>
-
+<!-- components/Blog.vue -->
 <template>
     <div class="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
         <div class="absolute inset-0">
@@ -123,8 +76,46 @@ articles.value[2] = {
     </div>
 </template>
 
-<script>
-export default {
-    //
+<script setup>
+const articles = ref([])
+
+articles.value[0] = {
+    id: '67ead8c7-8647-4e22-9328-214802d69384',
+    category: 'Economics',
+    title: `Nexa’s Supply Schedule - Using A Tried and True Model`,
+    author: `Paul Church`,
+    url: 'https://www.nexa.org/news/nexa-s-supply-schedule-using-a-tried-and-true-model',
+    banner: 'https://i.ibb.co/jbkcpsK/nexa-supply.jpg',
+    description: `To put it simply, Nexa’s supply schedule maps directly to Bitcoin’s. 2.1 quadrillion (2,100,000,000,000,000) satoshis will have been mined in roughly 140 years time, or 21 trillion NEX...`,
+    readTime: 6,
+    publishedAt: 'Dec 19, 2022',
+}
+
+articles.value[1] = {
+    id: '839b8a96-9e16-49cc-877e-9bba7c0b4520',
+    category: 'Scaling',
+    title: `Nexa’s Scaling Strategy - How We Enable Over 100,000TPS`,
+    author: `Paul Church`,
+    url: 'https://www.nexa.org/news/nexa-s-scaling-strategy-how-we-enable-over-100-000tps',
+    banner: 'https://i.ibb.co/9Z8znXc/image.png',
+    description: `There are a number of bottlenecks to allowing blockchain scaling on a PoW and UTXO-based network but they can be summarised as:
+
+Bandwidth: how much data can be sent between nodes.
+Speed: at validating transactions.
+Storage: space to store the blockchain.`,
+    readTime: 6,
+    publishedAt: 'Dec 13, 2022',
+}
+
+articles.value[2] = {
+    id: 'caa4c43f-16f3-470f-88ea-1b6b2122565a',
+    category: 'Software, Mining, Bounty',
+    title: `$10,000 Bounty for an Open-source GPU Mining Software Provided By B.U.`,
+    author: `Paul Church`,
+    url: 'https://www.nexa.org/news/10-000-bounty-for-an-open-source-gpu-mining-software-provided-by-b.u',
+    banner: 'https://i.ibb.co/N61S3nK/image.png',
+    description: `'Today, B.U. announces a bounty equivalent to US$10,000 (paid in BTC or BCH) for fully functional and fully open-source GPU mining software made free to the community.`,
+    readTime: 2,
+    publishedAt: 'Nov 21, 2022',
 }
 </script>

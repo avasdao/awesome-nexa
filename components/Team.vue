@@ -1,3 +1,4 @@
+<!-- components/Team.vue -->
 <template>
     <div class="bg-white">
         <div class="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">

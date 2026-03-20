@@ -1,19 +1,4 @@
-<script setup lang="ts">
-
-const Router = useRouter()
-
-
-const search = ref(null)
-
-watch(search, (_search) => {
-    console.log('SEARCH CHANGED', _search)
-
-    if (_search.length === 64) {
-        Router.push('tx/' + _search)
-    }
-})
-</script>
-
+<!-- components/Search/Hero.vue -->
 <template>
     <main class="relative mt-2 flex items-center">
         <input
@@ -28,3 +13,16 @@ watch(search, (_search) => {
         </div>
     </main>
 </template>
+
+<script setup lang="ts">
+const Router = useRouter()
+const search = ref(null)
+
+watch(search, (_search) => {
+    console.log('SEARCH CHANGED', _search)
+
+    if (_search.length === 64) {
+        Router.push('tx/' + _search)
+    }
+})
+</script>

@@ -1,123 +1,4 @@
-<script setup>
-/* Import modules. */
-import numeral from 'numeral'
-
-/* Import stores. */
-import { useProfileStore } from '@/stores/profile'
-import { useSystemStore } from '@/stores/system'
-const Profile = useProfileStore()
-const System = useSystemStore()
-
-const props = defineProps({
-    isShowingPrice: Boolean,
-    isShowingCommunity: Boolean,
-    isShowingMenu: Boolean,
-})
-
-const emit = defineEmits(['togglePrice', 'toggleCommunity', 'toggleMenu'])
-
-const isShowingMobileMenu = ref(false)
-
-const togglePrice = () => {
-    emit('togglePrice')
-}
-
-const toggleCommunity = () => {
-    emit('toggleCommunity')
-}
-
-const toggleMenu = () => {
-    emit('toggleMenu')
-}
-
-const displayTicker = computed(() => {
-    if (!System.ticker) {
-        return '$0.00'
-    }
-
-    /* Set quote. */
-    const quote = System.ticker.quote
-
-    /* Validate quote. */
-    if (!quote) {
-        return '$0.00'
-    }
-
-    /* Set price. */
-    const price = quote?.USD?.price
-
-    /* Validate price. */
-    if (!price) {
-        return '$0.00'
-    }
-
-    /* Return formatted price. */
-    return numeral(price * 1000000).format('$0,0.00')
-})
-
-const displayPctChg = computed(() => {
-    if (!System.ticker) {
-        return '0.0%'
-    }
-
-    /* Set quote. */
-    const quote = System.ticker.quote
-
-    /* Validate quote. */
-    if (!quote) {
-        return '0.0%'
-    }
-
-    /* Set percentage change. */
-    const pctChg24h = quote?.USD?.pctChg24h
-
-    /* Validate change. */
-    if (!pctChg24h) {
-        return '0.0%'
-    }
-
-    /* Return formatted price. */
-    return numeral(pctChg24h / 100).format('0.00%')
-})
-
-const displayVol = computed(() => {
-    if (!System.ticker) {
-        return '0'
-    }
-
-    /* Set quote. */
-    const quote = System.ticker.quote
-
-    /* Validate quote. */
-    if (!quote) {
-        return '0'
-    }
-
-    /* Set percentage change. */
-    const vol = quote?.USD?.vol24
-
-    /* Validate change. */
-    if (!vol) {
-        return '0'
-    }
-
-    /* Return formatted price. */
-    return numeral(vol).format('0[.]0a')
-})
-
-const displayPctChgArrow = computed(() => {
-    const intVal = parseInt(displayPctChg.value)
-    console.log('INTVAL', intVal)
-    if (intVal < 0) {
-        return `down`
-        return `<svg class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>`
-    } else {
-        return `up`
-        return `<svg class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>`
-    }
-})
-</script>
-
+<!-- components/Header.vue -->
 <template>
     <!-- <div class="relative bg-white"> -->
     <div class="sticky top-0 z-50 bg-white opacity-[.99]">
@@ -395,3 +276,123 @@ const displayPctChgArrow = computed(() => {
         </div>
     </div>
 </template>
+
+<script setup>
+/* Import modules. */
+import numeral from 'numeral'
+
+/* Import stores. */
+import { useProfileStore } from '@/stores/profile'
+import { useSystemStore } from '@/stores/system'
+const Profile = useProfileStore()
+const System = useSystemStore()
+
+const props = defineProps({
+    isShowingPrice: Boolean,
+    isShowingCommunity: Boolean,
+    isShowingMenu: Boolean,
+})
+
+const emit = defineEmits(['togglePrice', 'toggleCommunity', 'toggleMenu'])
+
+const isShowingMobileMenu = ref(false)
+
+const togglePrice = () => {
+    emit('togglePrice')
+}
+
+const toggleCommunity = () => {
+    emit('toggleCommunity')
+}
+
+const toggleMenu = () => {
+    emit('toggleMenu')
+}
+
+const displayTicker = computed(() => {
+    if (!System.ticker) {
+        return '$0.00'
+    }
+
+    /* Set quote. */
+    const quote = System.ticker.quote
+
+    /* Validate quote. */
+    if (!quote) {
+        return '$0.00'
+    }
+
+    /* Set price. */
+    const price = quote?.USD?.price
+
+    /* Validate price. */
+    if (!price) {
+        return '$0.00'
+    }
+
+    /* Return formatted price. */
+    return numeral(price * 1000000).format('$0,0.00')
+})
+
+const displayPctChg = computed(() => {
+    if (!System.ticker) {
+        return '0.0%'
+    }
+
+    /* Set quote. */
+    const quote = System.ticker.quote
+
+    /* Validate quote. */
+    if (!quote) {
+        return '0.0%'
+    }
+
+    /* Set percentage change. */
+    const pctChg24h = quote?.USD?.pctChg24h
+
+    /* Validate change. */
+    if (!pctChg24h) {
+        return '0.0%'
+    }
+
+    /* Return formatted price. */
+    return numeral(pctChg24h / 100).format('0.00%')
+})
+
+const displayVol = computed(() => {
+    if (!System.ticker) {
+        return '0'
+    }
+
+    /* Set quote. */
+    const quote = System.ticker.quote
+
+    /* Validate quote. */
+    if (!quote) {
+        return '0'
+    }
+
+    /* Set percentage change. */
+    const vol = quote?.USD?.vol24
+
+    /* Validate change. */
+    if (!vol) {
+        return '0'
+    }
+
+    /* Return formatted price. */
+    return numeral(vol).format('0[.]0a')
+})
+
+const displayPctChgArrow = computed(() => {
+    const intVal = parseInt(displayPctChg.value)
+    console.log('INTVAL', intVal)
+    if (intVal < 0) {
+        return `down`
+        return `<svg class="inline w-3 h-3 text-red-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path></svg>`
+    } else {
+        return `up`
+        return `<svg class="inline w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>`
+    }
+})
+</script>

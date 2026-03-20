@@ -1,3 +1,4 @@
+<!-- components/Overwatch/Summary.vue -->
 <template>
     <main>
         <div class="relative isolate overflow-hidden pt-16">
