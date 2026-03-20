@@ -1,3 +1,4 @@
+<!-- pages/blocks.vue -->
 <template>
     <main class="mx-3 lg:mx-auto my-5 max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-4">
         <section class="">

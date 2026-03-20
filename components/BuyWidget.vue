@@ -14,7 +14,7 @@
 
         <div class="flex justify-end">
             <h3 class="text-sm text-rose-900">
-                Powered by <NuxtLink to="https://nexa.exchange" target="_blank" class="font-medium hover:underline">Nexa.Exchange</NuxtLink>
+                Powered by <NuxtLink to="https://wiserswap.com" target="_blank" class="font-medium hover:underline">WiserSwap</NuxtLink>
             </h3>
         </div>
 

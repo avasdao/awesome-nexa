@@ -133,7 +133,7 @@ const displayPctChgArrow = computed(() => {
                     </NuxtLink>
 
                     <ClientOnly>
-                        <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="flex flex-col lg:hidden pr-2 sm:pr-8 lg:pr-16 items-center cursor-pointer">
+                        <NuxtLink to="/markets" class="flex flex-col lg:hidden pr-2 sm:pr-8 lg:pr-16 items-center cursor-pointer">
                             <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
                                 <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
                                     {{displayTicker}}
@@ -202,7 +202,7 @@ const displayPctChgArrow = computed(() => {
 
                     <div class="flex items-center md:ml-12">
                         <ClientOnly>
-                            <NuxtLink to="https://nexa.exchange/markets" target="_blank" class="pr-2 sm:pr-8 lg:pr-16 flex flex-col items-center cursor-pointer">
+                            <NuxtLink to="/markets" class="pr-2 sm:pr-8 lg:pr-16 flex flex-col items-center cursor-pointer">
                                 <div class="flex flex-row items-center gap-1 hover:text-yellow-600 font-medium group">
                                     <h2 class="text-3xl text-sky-600 tracking-wider group-hover:text-yellow-400">
                                         {{displayTicker}}

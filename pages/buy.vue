@@ -67,7 +67,7 @@
 
             <div class="flex justify-end">
                 <h3 class="text-sm text-indigo-900">
-                    Powered by <NuxtLink to="https://nexa.exchange" target="_blank" class="font-medium hover:underline">Nexa.Exchange</NuxtLink>
+                    Powered by <NuxtLink to="https://wiserswap.com" target="_blank" class="font-medium hover:underline">WiserSwap</NuxtLink>
                 </h3>
             </div>
 
@@ -167,7 +167,7 @@
             </h3>
 
             <h3 class="text-xl">
-                Visit <NuxtLink to="https://swap.nexa.exchange" target="_blank" class="text-2xl text-blue-500 font-medium hover:underline">NexaSwap</NuxtLink> for instant exchange to <span class="font-medium">over 100+</span> Cryptos
+                Visit <NuxtLink to="https://wiserswap.com" target="_blank" class="text-2xl text-blue-500 font-medium hover:underline">WiserSwap</NuxtLink> for instant exchange to <span class="font-medium">over 100+</span> Cryptos
             </h3>
         </section>
 

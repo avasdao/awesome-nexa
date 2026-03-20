@@ -1,43 +1,4 @@
-<script setup>
-/* Import modules. */
-
-
-/* Initialize stores. */
-import { useProfileStore } from '@/stores/profile'
-
-/* Initialize Profile store. */
-const Profile = useProfileStore()
-
-/* Initialize reactive holders. */
-const summary = ref(null)
-const title = ref(null)
-const url = ref(null)
-
-/**
- * Submit a Listing
- */
-const submit = async () => {
-    /* Build listing body. */
-    const body = {
-        session: Profile.session,
-        title: title.value,
-        url: url.value,
-        summary: summary.value,
-    }
-    console.log('SUBMIT (body):', body)
-
-    /* Submit to API. */
-    const success = await $fetch('/api/submit', {
-        method: 'POST',
-        body,
-    })
-    console.log('SUBMIT (success):', success)
-
-    alert('Thank you for your submission. We will review and add it to our Catalog shortly..')
-}
-
-</script>
-
+<!-- pages/add.vue -->
 <template>
     <main class="max-w-2xl px-3 max-w-5xl mx-auto">
         <div class="pt-10 flex justify-center">
@@ -134,3 +95,42 @@ const submit = async () => {
         </section>
     </main>
 </template>
+
+<script setup>
+/* Import modules. */
+
+
+/* Initialize stores. */
+import { useProfileStore } from '@/stores/profile'
+
+/* Initialize Profile store. */
+const Profile = useProfileStore()
+
+/* Initialize reactive holders. */
+const summary = ref(null)
+const title = ref(null)
+const url = ref(null)
+
+/**
+ * Submit a Listing
+ */
+const submit = async () => {
+    /* Build listing body. */
+    const body = {
+        session: Profile.session,
+        title: title.value,
+        url: url.value,
+        summary: summary.value,
+    }
+    console.log('SUBMIT (body):', body)
+
+    /* Submit to API. */
+    const success = await $fetch('/api/submit', {
+        method: 'POST',
+        body,
+    })
+    console.log('SUBMIT (success):', success)
+
+    alert('Thank you for your submission. We will review and add it to our Catalog shortly..')
+}
+</script>

@@ -1,3 +1,4 @@
+<!-- pages/[...path].vue -->
 <template>
     <ListingDetail v-if="hasListingDetail" :category="category" :listingid="listingid" />
     <PageNotFound v-if="isNotFound" />

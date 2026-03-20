@@ -1,40 +1,4 @@
-<script setup>
-/* Import modules. */
-import numeral from 'numeral'
-
-useHead({
-    title: 'Assets — Awesome Nexa',
-    meta: [{
-        name: 'description',
-        content: 'Assets'
-    }]
-})
-
-
-const topAssets = ref(null)
-
-
-const init = async () => {
-    const response = await $fetch('/api/assets/top')
-        .catch(err => console.error(err))
-    // console.log('RESPONSE', response)
-
-    topAssets.value = response.filter(_asset => {
-        return _asset.documentUrl
-    })
-}
-
-
-onMounted(() => {
-    // init()
-})
-
-// onBeforeUnmount(() => {
-//     console.log('Before Unmount!')
-//     // Now is the time to perform all cleanup operations.
-// })
-</script>
-
+<!-- pages/assets.vue -->
 <template>
     <main class="px-3 max-w-7xl mx-auto">
         <!-- <section class="my-5 max-w-7xl mx-auto">
@@ -97,3 +61,40 @@ onMounted(() => {
         </section>
     </main>
 </template>
+
+<script setup>
+/* Import modules. */
+import numeral from 'numeral'
+
+useHead({
+    title: 'Assets — Awesome Nexa',
+    meta: [{
+        name: 'description',
+        content: 'Assets'
+    }]
+})
+
+
+const topAssets = ref(null)
+
+
+const init = async () => {
+    const response = await $fetch('/api/assets/top')
+        .catch(err => console.error(err))
+    // console.log('RESPONSE', response)
+
+    topAssets.value = response.filter(_asset => {
+        return _asset.documentUrl
+    })
+}
+
+
+onMounted(() => {
+    // init()
+})
+
+// onBeforeUnmount(() => {
+//     console.log('Before Unmount!')
+//     // Now is the time to perform all cleanup operations.
+// })
+</script>
