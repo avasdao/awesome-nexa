@@ -1,19 +1,4 @@
-<script setup>
-useHead({
-    title: 'Privacy Report — Awesome Nexa',
-    meta: [{
-        name: 'description',
-        content: 'Privacy Report'
-    }]
-})
-
-const route = useRoute()
-
-console.log('ROUTE PARAMS', route.params)
-
-const id = route.params.id
-</script>
-
+<!-- pages/tx/[id]/privacy.vue -->
 <template>
     <main class="max-w-5xl mx-auto px-3 py-10 flex flex-col gap-3">
         <h1 class="text-4xl text-gray-700 font-medium">
@@ -33,3 +18,19 @@ const id = route.params.id
         </NuxtLink>
     </main>
 </template>
+
+<script setup>
+useHead({
+    title: 'Privacy Report — Awesome Nexa',
+    meta: [{
+        name: 'description',
+        content: 'Privacy Report'
+    }]
+})
+
+const route = useRoute()
+
+console.log('ROUTE PARAMS', route.params)
+
+const id = route.params.id
+</script>

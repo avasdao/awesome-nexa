@@ -1,48 +1,4 @@
-<script setup>
-useHead({
-    title: 'Transaction — Awesome Nexa',
-    meta: [{
-        name: 'description',
-        content: 'Transaction'
-    }]
-})
-
-const isLoaded = ref(false)
-const transaction = ref(null)
-
-const route = useRoute()
-// console.log('ROUTE PARAMS', route.params)
-
-/* Set id. */
-const id = route.params.id
-
-const init = async () => {
-    /* Initialize locals. */
-    let response
-
-    /* Request transaction. */
-    response = await $fetch('/v1/tx/' + id)
-        .catch(err => console.error(err))
-    // console.log('RESPONSE', response)
-
-    /* Set transaction details. */
-    transaction.value = response
-
-    /* Set flag. */
-    isLoaded.value = true
-}
-
-onMounted(() => {
-    init()
-})
-
-// onBeforeUnmount(() => {
-//     console.log('Before Unmount!')
-//     // Now is the time to perform all cleanup operations.
-// })
-
-</script>
-
+<!-- pages/tx/[id]/index.vue -->
 <template>
     <main v-if="!isLoaded" class="max-w-5xl mx-auto py-20">
         <h2 class="text-3xl font-medium text-center">
@@ -182,3 +138,47 @@ onMounted(() => {
         </div>
     </main>
 </template>
+
+<script setup>
+useHead({
+    title: 'Transaction — Awesome Nexa',
+    meta: [{
+        name: 'description',
+        content: 'Transaction'
+    }]
+})
+
+const isLoaded = ref(false)
+const transaction = ref(null)
+
+const route = useRoute()
+// console.log('ROUTE PARAMS', route.params)
+
+/* Set id. */
+const id = route.params.id
+
+const init = async () => {
+    /* Initialize locals. */
+    let response
+
+    /* Request transaction. */
+    response = await $fetch('/v1/tx/' + id)
+        .catch(err => console.error(err))
+    // console.log('RESPONSE', response)
+
+    /* Set transaction details. */
+    transaction.value = response
+
+    /* Set flag. */
+    isLoaded.value = true
+}
+
+onMounted(() => {
+    init()
+})
+
+// onBeforeUnmount(() => {
+//     console.log('Before Unmount!')
+//     // Now is the time to perform all cleanup operations.
+// })
+</script>

@@ -1,3 +1,33 @@
+<!-- pages/tx/[id]/receipt.vue -->
+<template>
+    <main class="max-w-5xl mx-auto px-3 py-10 flex flex-col gap-3">
+        <h1 class="text-4xl text-gray-700 font-medium">
+            Transaction Receipt
+        </h1>
+
+        <span class="block text-lg text-gray-500 font-medium truncate">
+            {{id}}
+        </span>
+
+        <p class="text-gray-800">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit at omnis alias minima ut quaerat tempore velit deserunt quia quisquam maxime, ipsam sequi? Vero animi explicabo obcaecati voluptatem alias.
+        </p>
+
+        <button @click="openDoc" target="_blank" class="w-fit px-3 py-1 text-xl font-medium text-blue-500 bg-blue-100 border-2 border-blue-300 rounded-lg shadow hover:bg-blue-200">
+            Open PDF Receipt
+        </button>
+
+        <div class="w-1/2 p-3 text-sm">
+            Please choose your preferred format:
+
+            <div class="grid grid-cols-2">
+                <button>US Letter</button>
+                <button>Universal A4</button>
+            </div>
+        </div>
+    </main>
+</template>
+
 <script setup>
 /* Import modules. */
 import { jsPDF } from 'jspdf'
@@ -134,32 +164,3 @@ onMounted(() => {
 //     // Now is the time to perform all cleanup operations.
 // })
 </script>
-
-<template>
-    <main class="max-w-5xl mx-auto px-3 py-10 flex flex-col gap-3">
-        <h1 class="text-4xl text-gray-700 font-medium">
-            Transaction Receipt
-        </h1>
-
-        <span class="block text-lg text-gray-500 font-medium truncate">
-            {{id}}
-        </span>
-
-        <p class="text-gray-800">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit at omnis alias minima ut quaerat tempore velit deserunt quia quisquam maxime, ipsam sequi? Vero animi explicabo obcaecati voluptatem alias.
-        </p>
-
-        <button @click="openDoc" target="_blank" class="w-fit px-3 py-1 text-xl font-medium text-blue-500 bg-blue-100 border-2 border-blue-300 rounded-lg shadow hover:bg-blue-200">
-            Open PDF Receipt
-        </button>
-
-        <div class="w-1/2 p-3 text-sm">
-            Please choose your preferred format:
-
-            <div class="grid grid-cols-2">
-                <button>US Letter</button>
-                <button>Universal A4</button>
-            </div>
-        </div>
-    </main>
-</template>

@@ -1,11 +1,11 @@
 <!-- components/Block/Item.vue -->
 <template>
-    <main class="px-3 py-1 w-fit bg-yellow-100 border-2 border-yellow-300 rounded-lg shadow">
-        <h3 class="block text-xs text-yellow-600 font-medium uppercase">
+    <main class="w-fit">
+        <h3 v-if="title" class="block text-xs text-slate-400 font-medium uppercase tracking-wider">
             {{title}}
         </h3>
 
-        <span class="block text-yellow-900 font-medium">
+        <span class="block text-slate-800 font-medium text-lg break-all">
             {{value}}
         </span>
     </main>
