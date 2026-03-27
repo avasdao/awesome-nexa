@@ -141,6 +141,10 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 ### Java/Kotlin
 - [Kotlin for JS](https://kotlinlang.org/docs/js-interop.html) - Use JavaScript code from Kotlin.
 
+### Templates - getting started
+
+#### Nexa web template
+- [Nexa web template repo](https://gitlab.com/gandrewstone/nexawebtemplate) - JVM/Kotlin backend serving a jQuery client.
 
 ## Articles and Explanations
 
