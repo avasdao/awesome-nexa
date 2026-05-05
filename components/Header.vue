@@ -279,7 +279,8 @@
 
 <script setup>
 /* Import modules. */
-import numeral from 'numeral'
+import { useFormats } from '@/composables/useFormats'
+const { formatNumber } = useFormats()
 
 /* Import stores. */
 import { useProfileStore } from '@/stores/profile'
@@ -331,7 +332,7 @@ const displayTicker = computed(() => {
     }
 
     /* Return formatted price. */
-    return numeral(price * 1000000).format('$0,0.00')
+    return formatNumber(price * 1000000, '$0,0.00')
 })
 
 const displayPctChg = computed(() => {
@@ -356,7 +357,7 @@ const displayPctChg = computed(() => {
     }
 
     /* Return formatted price. */
-    return numeral(pctChg24h / 100).format('0.00%')
+    return formatNumber(pctChg24h / 100, '0.00%')
 })
 
 const displayVol = computed(() => {
@@ -381,7 +382,7 @@ const displayVol = computed(() => {
     }
 
     /* Return formatted price. */
-    return numeral(vol).format('0[.]0a')
+    return formatNumber(vol, '0[.]0a')
 })
 
 const displayPctChgArrow = computed(() => {

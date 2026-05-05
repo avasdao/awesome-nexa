@@ -1,7 +1,12 @@
+<!-- pages/contracts/index.vue -->
 <script setup>
 /* Import modules. */
-import moment from 'moment'
-import numeral from 'numeral'
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
+dayjs.extend(relativeTime)
+
+import { useFormats } from '@/composables/useFormats'
+const { formatNumber } = useFormats()
 
 useHead({
     title: 'Contracts — Awesome Nexa',
@@ -21,10 +26,6 @@ const uniqueScripts = ref(null)
 
 const isShowingMenu = ref(false)
 // const totalTxCount = ref(0)
-
-
-
-
 
 const displayCards = computed(() => {
     if (!uniqueScripts.value) {
@@ -114,7 +115,6 @@ const init = async () => {
     // await loadScripts()
 }
 
-
 onMounted(() => {
     init()
 })
@@ -174,7 +174,7 @@ onMounted(() => {
                         </h2>
 
                         <h2 class="text-5xl font-medium text-fuchsia-600 italic">
-                            {{numeral(Object.keys(uniqueScripts).length).format('0,0')}}
+                            {{formatNumber(Object.keys(uniqueScripts).length, '0,0')}}
                         </h2>
                     </div>
 
@@ -185,7 +185,7 @@ onMounted(() => {
                         </h2>
 
                         <h2 class="text-5xl font-medium text-fuchsia-600 italic">
-                            {{numeral(scripts.length).format('0,0')}}
+                            {{formatNumber(scripts.length, '0,0')}}
                         </h2>
                     </div>
                 </div>
@@ -297,7 +297,7 @@ onMounted(() => {
                                 </dt>
 
                                 <dd class="text-fuchsia-600 text-sm font-medium">
-                                    {{moment.unix(contract.timestamp).fromNow()}}
+                                    {{dayjs.unix(contract.timestamp).fromNow()}}
                                 </dd>
                             </div>
 

@@ -36,7 +36,7 @@
 
                 <h4 class="text-sky-600 font-medium">
                     <span class="text-lg text-sky-700 font-bold">
-                        {{numeral(asset.txCount).format('0,0')}}
+                        {{formatNumber(asset.txCount, '0,0')}}
                     </span>
                     transactions
                 </h4>
@@ -64,7 +64,8 @@
 
 <script setup>
 /* Import modules. */
-import numeral from 'numeral'
+import { useFormats } from '@/composables/useFormats'
+const { formatNumber } = useFormats()
 
 useHead({
     title: 'Assets — Awesome Nexa',
@@ -74,9 +75,7 @@ useHead({
     }]
 })
 
-
 const topAssets = ref(null)
-
 
 const init = async () => {
     const response = await $fetch('/api/assets/top')
@@ -87,7 +86,6 @@ const init = async () => {
         return _asset.documentUrl
     })
 }
-
 
 onMounted(() => {
     // init()

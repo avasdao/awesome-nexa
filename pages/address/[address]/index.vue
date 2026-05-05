@@ -1,7 +1,9 @@
+<!-- pages/address/[address]/index.vue -->
 <script setup lang="ts">
 /* Import modules. */
 import { decodeAddress } from '@nexajs/address'
-import numeral from 'numeral'
+import { useFormats } from '@/composables/useFormats'
+const { formatNumber } = useFormats()
 
 import { listUnspent } from '@nexajs/address'
 
@@ -43,7 +45,7 @@ const balanceDisplay = computed(() => {
         return '0.00'
     }
 
-    return numeral(parseFloat(balance.value) / 100.0).format('0,0.00')
+    return formatNumber(parseFloat(balance.value) / 100.0, '0,0.00')
 })
 
 const tokenBalancesDisplay = computed(() => {
@@ -242,7 +244,7 @@ onMounted(() => {
                         </h4>
 
                         <h3 class="flex flex-row gap-1 items-end font-medium">
-                            <span class="text-2xl">{{numeral(token.amount).format('0,0.00[000000]')}}</span>
+                            <span class="text-2xl">{{formatNumber(token.amount, '0,0.00[000000]')}}</span>
 
                             <span class="text-base text-sky-300">${{token.ticker}}</span>
                         </h3>

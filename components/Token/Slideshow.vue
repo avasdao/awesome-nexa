@@ -13,13 +13,12 @@
             <SkeletonAsset />
         </div>
 
-
-        <section
+<section
             class="my-5 px-3 py-2 bg-gray-300 border-2 border-gray-500 rounded-lg shadow"
             v-for="block of displayedTxs" :key="block.height"
         >
             <span class="block text-base text-gray-700 font-medium uppercase">
-                #{{numeral(block.height).format('0,0')}}
+                #{{formatNumber(block.height, '0,0')}}
             </span>
 
             <NuxtLink :to="'block/' + block.height" class="block text-sm text-gray-700 font-medium truncate">
@@ -32,7 +31,8 @@
 <script setup lang="ts">
 /* Import modules. */
 import { createClient } from 'graphql-ws'
-import numeral from 'numeral'
+import { useFormats } from '@/composables/useFormats'
+const { formatNumber } = useFormats()
 
 const props = defineProps({
     title: String,

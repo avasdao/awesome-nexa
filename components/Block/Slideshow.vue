@@ -16,7 +16,7 @@
                 v-for="block of displayedTxs" :key="block.height"
             >
                 <span class="block text-base text-gray-700 font-medium uppercase group-hover:font-bold group-hover:text-rose-700">
-                    #{{numeral(block.height).format('0,0')}}
+                    #{{formatNumber(block.height, '0,0')}}
                 </span>
 
                 <span class="block text-sm text-gray-700 font-medium truncate">
@@ -42,8 +42,8 @@
 <script setup lang="ts">
 /* Import modules. */
 import { createClient } from 'graphql-ws'
-import moment from 'moment'
-import numeral from 'numeral'
+import { useFormats } from '@/composables/useFormats'
+const { formatNumber, formatTimeAgo } = useFormats()
 
 const props = defineProps({
     title: String,
@@ -70,28 +70,27 @@ const avgBlockTime = computed(() => {
     console.log('NUM BLOCKS', numBlocks)
 
     const duration = blocks.value[0].time - blocks.value[numBlocks - 1].time
-    console.log('DURATION', duration, moment.duration(duration, 'seconds').humanize())
+    console.log('DURATION', duration)
 
     const avg = duration / numBlocks
     console.log('AVG', avg)
 
-    const rate = numeral(avg / 60.0).format('0[.]0')
+    const rate = formatNumber(avg / 60.0, '0[.]0')
 
     return rate
 })
 
 const displayTime = (_block) => {
-    return moment.unix(_block.time).fromNow()
+    return formatTimeAgo(_block.time)
 }
 
 const displayTxCount = (_block) => {
-    return numeral(_block.txcount).format('0,0') + ' txs'
+    return formatNumber(_block.txcount, '0,0') + ' txs'
 }
 
 const displaySize = (_block) => {
-    return numeral(_block.size).format('0[.]0 ib')
+    return formatNumber(_block.size, '0[.]0 ib')
 }
-
 
 /* Create client. */
 const client = createClient({
@@ -149,7 +148,6 @@ const startUpdates = async () => {
         })
     })
 }
-
 
 const init = async () => {
     let response

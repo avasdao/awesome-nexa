@@ -261,7 +261,8 @@
 
 <script setup lang="ts">
 /* Import modules. */
-import numeral from 'numeral'
+import { useFormats } from '@/composables/useFormats'
+const { formatNumber } = useFormats()
 
 useHead({
     title: `Markets — Awesome Nexa`,
@@ -348,7 +349,7 @@ const displayTicker = computed(() => {
     }
 
     /* Return formatted price. */
-    return numeral(price * 1000000).format('$0,0.00')
+    return formatNumber(price * 1000000, '$0,0.00')
 })
 
 const displayPctChg = computed(() => {
@@ -373,7 +374,7 @@ const displayPctChg = computed(() => {
     }
 
     /* Return formatted price. */
-    return numeral(pctChg24h / 100).format('0.00%')
+    return formatNumber(pctChg24h / 100, '0.00%')
 })
 
 const pctChgIsNegative = computed(() => {
@@ -402,7 +403,7 @@ const displayVol = computed(() => {
     }
 
     /* Return formatted volume. */
-    return '$' + numeral(vol).format('0[.]0a')
+    return '$' + formatNumber(vol, '0[.]0a')
 })
 
 const displayMarketCap = computed(() => {
@@ -427,7 +428,7 @@ const displayMarketCap = computed(() => {
     }
 
     /* Return formatted market cap. */
-    return '$' + numeral(marketCap).format('0[.]0a')
+    return '$' + formatNumber(marketCap, '0[.]0a')
 })
 
 // onMounted(() => {
