@@ -38,6 +38,13 @@
     "@vite-pwa/nuxt": "1.1.1",
     "vitest": "4.1.5"
   },
+  "pnpm": {
+    "overrides": {
+      "@intlify/message-compiler": "10.0.8",
+      "@intlify/shared": "10.0.8",
+      "@intlify/core-base": "10.0.8"
+    }
+  },
   "resolutions": {
     "string-width": "4.2.3"
   },
