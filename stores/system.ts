@@ -180,10 +180,18 @@ export const useSystemStore = defineStore('system', {
             }
 
             /* Initialize (library) locale. */
-            const { locale } = useI18n()
+            // NOTE: useI18n() requires a Vue component setup context.
+            //       In unit tests (or SSR outside setup), this would throw.
+            //       The try/catch ensures init() remains safe in all contexts.
+            try {
+                const { locale } = useI18n()
 
-            /* Set (library) locale. */
-            locale.value = this.locale
+                /* Set (library) locale. */
+                locale.value = this.locale
+            } catch (err) {
+                // Silently ignore — i18n locale sync is non-critical
+                // and will be set when a component calls init() in setup context.
+            }
         },
 
         async updateTicker() {

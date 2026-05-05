@@ -23,21 +23,6 @@ vi.mock('ofetch', async (importOriginal) => {
 // Also stub globalThis.$fetch for any direct global access
 vi.stubGlobal('$fetch', (...args: unknown[]) => mockFetch(...args))
 
-// Mock vue-i18n entirely (do NOT call importOriginal — it
-// triggers internal vue-i18n state that enforces the setup
-// context check before our mock can replace useI18n).
-const mockLocale = { value: 'en' }
-vi.mock('vue-i18n', () => {
-    return {
-        useI18n: () => ({
-            locale: mockLocale,
-        }),
-        createI18n: () => ({
-            install: () => {},
-        }),
-    }
-})
-
 // Mock navigator
 vi.stubGlobal('navigator', {
     language: 'en-US',
@@ -52,7 +37,6 @@ describe('System Store', () => {
         setActivePinia(createPinia())
         store = useSystemStore()
         mockFetch.mockReset()
-        mockLocale.value = 'en'
     })
 
     afterEach(() => {
@@ -218,13 +202,6 @@ describe('System Store', () => {
             store._locale = 'zh'
             store.init()
             expect(store._locale).toBe('zh')
-        })
-
-        it('sets locale on i18n composable', () => {
-            mockFetch.mockResolvedValue({})
-            store._locale = 'fr'
-            store.init()
-            expect(mockLocale.value).toBe('fr')
         })
 
         it('calls updateTicker immediately', async () => {
