@@ -1,3 +1,5 @@
+// stores/system.ts
+
 /* Import modules. */
 import { defineStore } from 'pinia'
 
@@ -128,6 +130,11 @@ export const useSystemStore = defineStore('system', {
 
             /* Set price. */
             const usd = quote.USD?.price
+
+            /* Validate price. */
+            if (typeof usd === 'undefined' || usd === null) {
+                return 0.00
+            }
 
             /* Set (formatted) price. */
             const formatted = parseFloat((usd * 1000000.0).toFixed(4))

@@ -6,19 +6,34 @@ import {
 import { setActivePinia, createPinia } from 'pinia'
 import { useSystemStore } from '~/stores/system'
 
-// Mock $fetch
+// Mock $fetch at the ofetch level — this is what Nuxt's
+// auto-imported $fetch resolves to under the hood.
 const mockFetch = vi.fn()
-vi.stubGlobal('$fetch', mockFetch)
-
-// Mock useI18n (auto-imported by Nuxt)
-vi.mock('#imports', async (importOriginal) => {
+vi.mock('ofetch', async (importOriginal) => {
     const original = await importOriginal() as Record<
         string, unknown
     >
     return {
         ...original,
+        $fetch: (...args: unknown[]) => mockFetch(...args),
+        ofetch: (...args: unknown[]) => mockFetch(...args),
+    }
+})
+
+// Also stub globalThis.$fetch for any direct global access
+vi.stubGlobal('$fetch', (...args: unknown[]) => mockFetch(...args))
+
+// Mock vue-i18n entirely (do NOT call importOriginal — it
+// triggers internal vue-i18n state that enforces the setup
+// context check before our mock can replace useI18n).
+const mockLocale = { value: 'en' }
+vi.mock('vue-i18n', () => {
+    return {
         useI18n: () => ({
-            locale: { value: 'en' },
+            locale: mockLocale,
+        }),
+        createI18n: () => ({
+            install: () => {},
         }),
     }
 })
@@ -37,6 +52,7 @@ describe('System Store', () => {
         setActivePinia(createPinia())
         store = useSystemStore()
         mockFetch.mockReset()
+        mockLocale.value = 'en'
     })
 
     afterEach(() => {
@@ -109,6 +125,15 @@ describe('System Store', () => {
             }
         )
 
+        it('returns 0.00 when quote.USD.price is null',
+            () => {
+                store._ticker = {
+                    quote: { USD: { price: null } },
+                }
+                expect(store.usd).toBe(0.00)
+            }
+        )
+
         it('calculates formatted USD price correctly', () => {
             store._ticker = {
                 quote: {
@@ -128,6 +153,15 @@ describe('System Store', () => {
             // 0.0000001 * 1000000.0 = 0.1
             expect(store.usd).toBe(0.1)
         })
+
+        it('handles zero price', () => {
+            store._ticker = {
+                quote: {
+                    USD: { price: 0 },
+                },
+            }
+            expect(store.usd).toBe(0.0)
+        })
     })
 
     describe('locale getter', () => {
@@ -144,12 +178,14 @@ describe('System Store', () => {
 
     describe('init action', () => {
         it('increments _appStarts', () => {
+            mockFetch.mockResolvedValue({})
             const before = store._appStarts
             store.init()
             expect(store._appStarts).toBe(before + 1)
         })
 
         it('increments _appStarts on each call', () => {
+            mockFetch.mockResolvedValue({})
             store.init()
             store.init()
             store.init()
@@ -157,30 +193,41 @@ describe('System Store', () => {
         })
 
         it('initializes _tickers if null', () => {
+            mockFetch.mockResolvedValue({})
             store._tickers = null
             store.init()
             expect(store._tickers).toEqual({})
         })
 
         it('preserves existing _tickers', () => {
+            mockFetch.mockResolvedValue({})
             store._tickers = { NEXA: { price: 1 } }
             store.init()
             expect(store._tickers.NEXA).toEqual({ price: 1 })
         })
 
         it('sets _locale from navigator when null', () => {
+            mockFetch.mockResolvedValue({})
             store._locale = null
             store.init()
             expect(store._locale).toBe('en-US')
         })
 
         it('does not overwrite existing _locale', () => {
+            mockFetch.mockResolvedValue({})
             store._locale = 'zh'
             store.init()
             expect(store._locale).toBe('zh')
         })
 
-        it('calls updateTicker immediately', () => {
+        it('sets locale on i18n composable', () => {
+            mockFetch.mockResolvedValue({})
+            store._locale = 'fr'
+            store.init()
+            expect(mockLocale.value).toBe('fr')
+        })
+
+        it('calls updateTicker immediately', async () => {
             mockFetch.mockResolvedValue({})
             store.init()
             expect(mockFetch).toHaveBeenCalledWith(
@@ -188,16 +235,18 @@ describe('System Store', () => {
             )
         })
 
-        it('sets 30s interval for ticker updates', () => {
-            mockFetch.mockResolvedValue({})
-            store.init()
-            mockFetch.mockClear()
+        it('sets 30s interval for ticker updates',
+            async () => {
+                mockFetch.mockResolvedValue({})
+                store.init()
+                mockFetch.mockClear()
 
-            vi.advanceTimersByTime(30000)
-            expect(mockFetch).toHaveBeenCalled()
-        })
+                vi.advanceTimersByTime(30000)
+                expect(mockFetch).toHaveBeenCalled()
+            }
+        )
 
-        it('does not update before 30s', () => {
+        it('does not update before 30s', async () => {
             mockFetch.mockResolvedValue({})
             store.init()
             mockFetch.mockClear()
@@ -208,6 +257,12 @@ describe('System Store', () => {
     })
 
     describe('updateTicker action', () => {
+        beforeEach(() => {
+            if (!store._tickers) {
+                store._tickers = {}
+            }
+        })
+
         it('fetches from WiserSwap endpoint', async () => {
             mockFetch.mockResolvedValue({
                 quote: { USD: { price: 0.001 } },

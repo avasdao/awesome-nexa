@@ -22,8 +22,10 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 &nbsp;&nbsp;
 <a href="https://gitlab.com/nexa/nexa">
 <img src="https://img.shields.io/badge/License-CC--0-blue.svg" /></a>
+&nbsp;&nbsp;
+<a href="https://codecov.io/gh/avasdao/awesome-nexa">
+<img src="https://codecov.io/gh/avasdao/awesome-nexa/branch/master/graph/badge.svg" /></a>
 </div>
-
 
 ## Contents
 
@@ -50,7 +52,6 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [Community](#community)
 - [Related Projects](#related-projects)
 
-
 ## Official Sites
 
 - [Homepage](https://nexa.org/) - A digital economy with capacity for all.
@@ -65,27 +66,22 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [Instagram](https://www.instagram.com/nexacoin/) - Official Instagram account.
 - [TikTok](https://www.tiktok.com/@nexacoin) - Official TikTok account.
 
-
 ## Featured Sites
 
 - [Forum](https://nexa.forum/) - A community-run forum for Nexa questions and answers.
-
 
 ## Blockchain Explorers
 
 - [Nexa Explorer _(explorer.nexa.org)_](https://explorer.nexa.org/) - Official block explorer.
 
-
 ## Faucets
 
 - [Nexa Club](https://faucet.nexaclub.org/) - A community-run NEXA faucet.
-
 
 ## Trackers
 
 - [CoinMarketCap](https://coinmarketcap.com/currencies/nexa/) - The #1 Crypto price & market tracking portal.
 - [CoinGecko](https://www.coingecko.com/en/coins/nexacoin) - One of the leading Crypto price indices.
-
 
 ## Exchanges
 
@@ -99,7 +95,6 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 
 ### Instant
 - [Nexa Swap](https://nexaswap.com) - Offering instant exchange to/from NEXA and over 100+ cryptocurrencies.
-
 
 ## Mining
 
@@ -127,7 +122,6 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 ### Charts & Statistics
 - [MiningPoolStats](https://miningpoolstats.stream/nexa) - View and compare statistics for all of the NexaPOW supported mining pools.
 
-
 ## Development Tools
 
 > Nexa offers a premium __Developer Experience (DX)__ from beginner thru advanced __Decentralized Application (dApp)__ development; supporting many of today's MOST popular programming languages.
@@ -141,27 +135,22 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 ### Java/Kotlin
 - [Kotlin for JS](https://kotlinlang.org/docs/js-interop.html) - Use JavaScript code from Kotlin.
 
-
 ## Articles and Explanations
 
 - [Official Roadmap](https://www.nexa.org/roadmap) - A detailed guide explaining when and how the Nexa project will proceed over the next few years.
-
 
 ## Videos
 
 - [Signature Scaling Via Hardware](https://www.youtube.com/watch?v=pDRCWcw5sAU) - A technical presentation by [Peter Rizun](https://twitter.com/PeterRizun) (Nexa's Chief Scientist).
 
-
 ## Community
 
 - [Nexa OTC](https://t.me/nexaP2Ptrading) - P2P trading chat.
-
 
 ## Related Projects
 
 - [Bitcoin (BTC)](https://bitcoin.org) - 1st generation P2P electronic cash blockchain.
 - [Bitcoin Cash (BCH)](https://bitcoincash.org) - 2nd generation P2P electronic cash blockchain.
-
 
 ## Contributing
 
