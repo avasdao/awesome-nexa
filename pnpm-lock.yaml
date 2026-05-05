@@ -41,6 +41,9 @@ importers:
       '@pinia/nuxt':
         specifier: 0.11.3
         version: 0.11.3(magicast@0.5.2)(pinia@3.0.4(typescript@5.8.3)(vue@3.5.33(typescript@5.8.3)))
+      '@vite-pwa/nuxt':
+        specifier: 1.1.1
+        version: 1.1.1(magicast@0.5.2)(vite@7.3.2(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.2)(yaml@2.8.4))(workbox-build@7.4.1)(workbox-window@7.4.1)
       chart.js:
         specifier: 4.4.7
         version: 4.4.7
@@ -84,9 +87,6 @@ importers:
       '@types/node':
         specifier: 22.15.3
         version: 22.15.3
-      '@vite-pwa/nuxt':
-        specifier: 1.1.1
-        version: 1.1.1(magicast@0.5.2)(vite@7.3.2(@types/node@22.15.3)(jiti@2.6.1)(terser@5.46.2)(yaml@2.8.4))(workbox-build@7.4.1)(workbox-window@7.4.1)
       '@vitest/coverage-v8':
         specifier: 4.1.5
         version: 4.1.5(vitest@4.1.5)
