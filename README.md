@@ -107,6 +107,7 @@ Nexa is an open-source, proof-of-work blockchain and peer-to-peer digital value 
 - [Vipor.net](https://vipor.net/) - A Solo and PPLNS GPU mining pool.
 - [WoolyPooly](https://woolypooly.com/en/coin/nexa) - A Solo and PPLNS GPU mining pool.
 - [ACC Pool](https://nexa.acc-pool.pw/) - A PPLNS GPU mining pool.
+- [VeinPool](https://veinpool.fr/en/coin/nexa) - A PPLNS and SOLO GPU mining pool (EU, France), 1% fee.
 
 ### Software
 - [Nexa Nvidia Miner](https://gitlab.com/proteanx/nexa-nvidia-miner) - The first NVIDIA GPU miner.
